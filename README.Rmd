@@ -1,0 +1,65 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# monitorOSM <img src="man/figures/icgc-osm_logo.png" align="right" height="110/"/>
+
+<!-- badges: start -->
+[![pre-commit](https://github.com/OSM-Catalan/monitorOSM/actions/workflows/pre-commit.yaml/badge.svg)](https://github.com/OSM-Catalan/monitorOSM/actions/workflows/pre-commit.yaml)
+[![R-CMD-check](https://github.com/OSM-Catalan/monitorOSM/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/OSM-Catalan/monitorOSM/actions/workflows/R-CMD-check.yaml)
+[![test-coverage](https://github.com/OSM-Catalan/monitorOSM/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/OSM-Catalan/monitorOSM/actions/workflows/test-coverage.yaml)
+<!-- badges: end -->
+
+`monitorOSM` és un repositori que serveix per coordinar la col·laboració entre
+l'Institut Cartogràfic i Geològic de Catalunya (ICGC) i OpenStreetMap (OSM) un
+cop [autoritzada la reutilització de les dades de l'ICGC](https://wiki.openstreetmap.org/wiki/File:20230109_CartaObertaICGC-OSM_SIGNADA.pdf).
+
+
+<!-- ## Instal·lació -->
+
+<!-- Podeu instal·lar la versió en desenvolupament del paquet d'R des de  -->
+<!-- [GitHub](https://github.com/) amb: -->
+
+<!-- ``` r -->
+<!-- # install.packages("devtools") -->
+<!-- devtools::install_github("OSM-Catalan/monitorOSM") -->
+<!-- ``` -->
+
+<!-- ## Exemples -->
+
+<!-- <!-- https://github.com/HanOostdijk/HOQCwfs/blob/main/README.Rmd --> -->
+<!-- This is a basic example which shows you how to solve a common problem: -->
+
+<!-- ``` r -->
+<!-- library(monitorOSM) -->
+<!-- library(osmdata) -->
+<!-- library(sf) -->
+<!-- library(mapview) -->
+
+<!-- ## basic example code -->
+<!-- osm<- st_as_sf(osm_icgc, coords=c("osm_center_lon", "osm_center_lat"), remove=FALSE, -->
+<!--                crs="+proj=longlat +datum=WGS84 +no_defs") -->
+
+<!-- icgc<- st_as_sf(osm_icgc, coords=c("UTMX_ETRS89", "UTMY_ETRS89"), remove=FALSE, -->
+<!--                 crs=st_crs("EPSG:25831")) # ETRS89 UTM fus 31 Nord https://epsg.io/25831 -->
+<!-- icgc<- st_transform(icgc, crs = st_crs(osm)) -->
+
+<!-- zona<- opq_osm_id(id="6020306", type="relation") |> osmdata_sf() -->
+<!-- osm<- st_crop(osm, zona$osm_multipolygons) -->
+<!-- icgc<- st_crop(icgc, zona$osm_multipolygons) -->
+
+<!-- mapa<- mapview(list(osm, icgc), col.regions=list("green","orange"), col=list("green","orange")) -->
+<!-- ``` -->
+
+<!-- ![Topònims OSM i ICGC](man/figures/toponimia_osm-icgc.png) -->
