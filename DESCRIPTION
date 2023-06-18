@@ -7,7 +7,7 @@ Authors@R: c(
            comment = c(ORCID = "0000-0003-2286-8727"))
   )
 Maintainer: Joan Maspons <joanmaspons@gmail.com>
-Description: Monitoreja objectes d'OpenStreetMaps i informa si hi ha canvis.
+Description: Monitoreja objectes d'OpenStreetMap i informa si hi ha canvis.
 License: GPL (>= 3)
 License_is_FOSS: yes
 URL: https://github.com/OSM-Catalan/monitorOSM
@@ -18,8 +18,8 @@ Imports:
     compareDF,
     osmdata (>= 0.2.1)
 Suggests: 
-    testthat (>= 3.0.0)
-Remotes: jmaspons/dbTools
+    testthat (>= 3.0.0),
+    usethis
 Config/testthat/edition: 3
 Encoding: UTF-8
 Language: ca

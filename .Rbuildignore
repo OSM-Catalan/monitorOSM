@@ -5,6 +5,6 @@
 ^\.github$
 ^\.lintr$
 ^\.pre-commit-config\.yaml$
-^inst/WORDLIST$
-^data-raw$
 ^\.quarto$
+^data-raw$
+^inst/WORDLIST$

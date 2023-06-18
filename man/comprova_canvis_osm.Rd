@@ -21,8 +21,8 @@ Consulta etiquetes d'OSM
 }
 \examples{
 \dontrun{
-comarques_canviades<- comarques
-comarques_canviades<- comarques_canviades$name[1]<- "Malnom"
+comarques_canviades <- comarques
+comarques_canviades <- comarques_canviades$name[1] <- "Malnom"
 canvis <- comprova_canvis_osm(comarques)
 compareDF::view_html(canvis)
 }

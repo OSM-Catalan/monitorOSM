@@ -1,6 +1,6 @@
 ## Prepara la base de dades de PPCC a partir del fitxer PPCC.tsv
 
-PPCC <- utils::read.table(
+PPCC <- utils::read.table( # nolint
   file = "data-raw/PPCC.tsv",
   header = TRUE,
   sep = "\t",
