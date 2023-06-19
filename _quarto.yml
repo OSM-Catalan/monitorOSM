@@ -1,0 +1,34 @@
+project:
+  type: website
+  execute-dir: project
+  render:
+    - web/*.qmd
+
+website:
+  title: "monitorOSM"
+  repo-url: https://github.com/OSM-Catalan/monitorOSM
+  repo-actions: [edit, issue]
+  open-graph: true
+  navbar:
+    left:
+      - web/inici.qmd
+      # - quant_a.qmd
+    tools:
+      - icon: github
+        href: https://github.com/OSM-Catalan/monitorOSM
+  sidebar:
+    style: "docked"
+    contents:
+      - section: Control de canvis
+        contents:
+          - web/limits.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    lang: ca
+    language: _language-ca.yml # TODO: elimina. Pendent de https://github.com/quarto-dev/quarto-cli/pull/5968
+
+editor: source

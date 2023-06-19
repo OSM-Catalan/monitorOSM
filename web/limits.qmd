@@ -1,0 +1,40 @@
+---
+title: "Municipis, comarques i regions"
+engine: knitr
+execute:
+  echo: false
+---
+
+```{r biblioteques}
+suppressPackageStartupMessages(library(monitorOSM, quietly = TRUE))
+library(compareDF)
+```
+
+
+## Països Catalans
+
+```{r ppcc}
+canvis_ppcc <- comprova_canvis_osm(PPCC, centre = TRUE)
+canvis_html(canvis_ppcc)
+```
+
+## Territoris
+
+```{r territoris}
+canvis_territoris <- comprova_canvis_osm(territoris[, setdiff(names(territoris), "regio")], centre = TRUE)
+canvis_html(canvis_territoris)
+```
+
+## Comarques
+
+```{r comarques}
+canvis_comarques <- comprova_canvis_osm(comarques[, setdiff(names(comarques), "regio")], centre = TRUE)
+canvis_html(canvis_comarques)
+```
+
+## Municipis
+
+```{r municipis}
+canvis_municipis <- comprova_canvis_osm(municipis[, setdiff(names(municipis), c("regio", "comarca"))], centre = TRUE)
+canvis_html(canvis_municipis)
+```

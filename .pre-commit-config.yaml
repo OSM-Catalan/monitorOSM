@@ -50,6 +50,7 @@ repos:
           data/.*|
           data-raw/.+\.tsv|
           LICENSE\.md|
+          _language-ca.yml
           )$
         args: [--lang=ca_ES]
     -   id: lintr
