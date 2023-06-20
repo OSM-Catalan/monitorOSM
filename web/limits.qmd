@@ -5,11 +5,17 @@ execute:
   echo: false
 ---
 
+
+
 ```{r biblioteques}
 suppressPackageStartupMessages(library(monitorOSM, quietly = TRUE))
 library(compareDF)
+library(monitorOSM)
+
+# TODO: Sys.setlocale("LC_TIME", "ca_AD.UTF-8") # requereix configurar locale a gh action
 ```
 
+Última actualització: `r format(Sys.time(), "%a %d %b %Y - %X")`
 
 ## Països Catalans
 
