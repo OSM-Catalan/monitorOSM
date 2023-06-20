@@ -18,8 +18,8 @@
 comprova_canvis_osm <- function(x, centre = FALSE) {
   x_osm <- consulta_etiquetes_osm(x, etiquetes = names(x), centre = centre)
 
-  x_osm$osm_url <- paste0("https//osm.org/", x_osm$osm_type, "/", x_osm$osm_id)
-  x$osm_url <- paste0("https//osm.org/", x$osm_type, "/", x$osm_id)
+  x_osm$osm_url <- paste0("https://osm.org/", x_osm$osm_type, "/", x_osm$osm_id)
+  x$osm_url <- paste0("https://osm.org/", x$osm_type, "/", x$osm_id)
   x[, c("osm_id", "osm_type")] <- NULL
 
   out <- suppressWarnings(suppressMessages(
@@ -41,7 +41,12 @@ comprova_canvis_osm <- function(x, centre = FALSE) {
 #' @examples
 canvis_html <- function(x) {
   if (nrow(x$comparison_df) > 0) {
-    out <- suppressMessages(compareDF::create_output_table(x))
+    out <- suppressMessages(compareDF::create_output_table(x, change_col_name = "canvi"))
+    out <- gsub(
+      "; text-align: center;'>(https://osm.org/(node|way|relation)/[0-9]+)</td>",
+      "; text-align: left;'><a href=\"\\1\">\\1<a></td>",
+      out
+    )
     return(out)
   } else {
     out <- "\U1F389 Tot en ordre \U1F389"
