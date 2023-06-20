@@ -2,7 +2,7 @@
 % Please edit documentation in R/comprova_canvis_osm.R
 \name{canvis_html}
 \alias{canvis_html}
-\title{canvis_html}
+\title{Canvis en html}
 \usage{
 canvis_html(x)
 }

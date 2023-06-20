@@ -53,7 +53,7 @@ consulta_etiquetes_osm <- function(x, etiquetes, centre = FALSE) {
   x$`_ordre_files_` <- seq_len(nrow(x))
   out <- merge(x[, setdiff(names(x), columnes_actualitzades)], etiquetes, by = c("osm_id", "osm_type"))
 
-  # Conserva l'ordre de les files i columnes original.
+  # Conserva l'ordre original de les files i columnes.
   out <- out[order(out$`_ordre_files_`), unique(c(names(x), names(out)))]
   out$`_ordre_files_` <- NULL
 

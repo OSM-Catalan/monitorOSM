@@ -1,4 +1,7 @@
 -
+action
+actions
+AD
 aut
 Authors
 BugReports
@@ -10,6 +13,8 @@ Config
 cosmo
 cre
 css
+d
+d'
 d'OSM
 Depends
 Description
@@ -19,6 +24,7 @@ edition
 Encoding
 engine
 FOSS
+gh
 github
 gmail
 href
@@ -34,11 +40,13 @@ language
 language-ca
 LazyData
 LazyDataCompression
+LC
 left
 library
 License
 limits
 list
+locale
 Maintainer
 markdown
 Maspons
@@ -72,8 +80,10 @@ repo-actions
 repo-url
 Roxygen
 RoxygenNote
+runner-images
 section
 setdiff
+setlocale
 sidebar
 source
 street
@@ -81,8 +91,11 @@ style
 styles
 Suggests
 suppressPackageStartupMessages
+Sys
 testthat
 theme
+time
+TIME
 tools
 true
 TRUE
@@ -93,5 +106,6 @@ UTF-
 website
 X-schema
 xz
+Y
 yes
 yml

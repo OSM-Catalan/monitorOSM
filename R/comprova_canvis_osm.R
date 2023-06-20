@@ -1,11 +1,14 @@
-#' Consulta etiquetes d'OSM
+#' Comprova canvis a OSM
 #'
-#' @param x un `data.frame` amb les columnes `osm_type` i `osm_id`.
+#' Compara objectes d'OSM respecte a una taula de referència
+#'
+#' @param x un `data.frame` amb les columnes `osm_type`, `osm_id` i etiquetes que vulguem comprovar.
 #' @param centre si és `TRUE`, afegeix les coordenades del centre de l'objecte a les columnes `osm_center_lon` i
 #'   `osm_center_lat`.
+#' @details Només es comparen les etiquetes presents com a columnes d'`x` i la resta s'ometen.
 #'
-#' @return Retorna `x` amb les etiquetes dels objectes com a columnes. Si les columnes ja existien, actualitza els
-#'   valors de les etiquetes i conserva l'ordre de les columnes originals afegint les noves al final.
+#' @return Retorna una comparació amb [compareDF::compare_df()] de les diferències d'etiquetes dels objectes d'OSM d'`x`
+#'   respecte a les etiquetes actuals a OSM.
 #' @export
 #'
 #' @examples
@@ -16,7 +19,7 @@
 #' compareDF::view_html(canvis)
 #' }
 comprova_canvis_osm <- function(x, centre = FALSE) {
-  x_osm <- consulta_etiquetes_osm(x, etiquetes = names(x), centre = centre)
+  x_osm <- monitorOSM::consulta_etiquetes_osm(x, etiquetes = names(x), centre = centre)
 
   x_osm$osm_url <- paste0("https://osm.org/", x_osm$osm_type, "/", x_osm$osm_id)
   x$osm_url <- paste0("https://osm.org/", x$osm_type, "/", x$osm_id)
@@ -29,7 +32,7 @@ comprova_canvis_osm <- function(x, centre = FALSE) {
   return(out)
 }
 
-#' canvis_html
+#' Canvis en html
 #'
 #' Mostra diferències de taules en html si n'hi ha. Funció pensada per usar en fitxers `.qmd` o `.Rmd`.
 #'

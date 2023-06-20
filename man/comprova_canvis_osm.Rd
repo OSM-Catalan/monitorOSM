@@ -2,22 +2,25 @@
 % Please edit documentation in R/comprova_canvis_osm.R
 \name{comprova_canvis_osm}
 \alias{comprova_canvis_osm}
-\title{Consulta etiquetes d'OSM}
+\title{Comprova canvis a OSM}
 \usage{
 comprova_canvis_osm(x, centre = FALSE)
 }
 \arguments{
-\item{x}{un \code{data.frame} amb les columnes \code{osm_type} i \code{osm_id}.}
+\item{x}{un \code{data.frame} amb les columnes \code{osm_type}, \code{osm_id} i etiquetes que vulguem comprovar.}
 
 \item{centre}{si és \code{TRUE}, afegeix les coordenades del centre de l'objecte a les columnes \code{osm_center_lon} i
 \code{osm_center_lat}.}
 }
 \value{
-Retorna \code{x} amb les etiquetes dels objectes com a columnes. Si les columnes ja existien, actualitza els
-valors de les etiquetes i conserva l'ordre de les columnes originals afegint les noves al final.
+Retorna una comparació amb \code{\link[compareDF:compare_df]{compareDF::compare_df()}} de les diferències d'etiquetes dels objectes d'OSM d'\code{x}
+respecte a les etiquetes actuals a OSM.
 }
 \description{
-Consulta etiquetes d'OSM
+Compara objectes d'OSM respecte a una taula de referència
+}
+\details{
+Només es comparen les etiquetes presents com a columnes d'\code{x} i la resta s'ometen.
 }
 \examples{
 \dontrun{
