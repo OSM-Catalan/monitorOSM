@@ -33,7 +33,7 @@ comprova_canvis_osm <- function(x, centre = FALSE) {
 #'
 #' Mostra diferències de taules en html si n'hi ha. Funció pensada per usar en fitxers `.qmd` o `.Rmd`.
 #'
-#' @param x un objecte de [compare_df][compareDF]
+#' @param x un objecte de [compareDF::compare_df()].
 #'
 #' @return la taula html amb les diferències o una cadena de text indicant que no hi ha diferències.
 #' @export
@@ -44,7 +44,7 @@ canvis_html <- function(x) {
     out <- suppressMessages(compareDF::create_output_table(x))
     return(out)
   } else {
-    out <- "🎉 Tot en ordre 🎉"
+    out <- "\U1F389 Tot en ordre \U1F389"
     message(out)
     invisible(out)
   }

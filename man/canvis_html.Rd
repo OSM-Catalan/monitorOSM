@@ -7,7 +7,7 @@
 canvis_html(x)
 }
 \arguments{
-\item{x}{un objecte de \link[=compareDF]{compare_df}}
+\item{x}{un objecte de \code{\link[compareDF:compare_df]{compareDF::compare_df()}}.}
 }
 \value{
 la taula html amb les diferències o una cadena de text indicant que no hi ha diferències.
