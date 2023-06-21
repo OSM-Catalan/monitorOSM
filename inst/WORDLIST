@@ -29,6 +29,7 @@ docked
 dontrun
 echo
 edition
+else
 Encoding
 engine
 examples
@@ -46,6 +47,8 @@ https
 httr
 icon
 id
+if
+in
 issue
 issues
 joanmaspons
@@ -56,6 +59,7 @@ lang
 Language
 language
 language-ca
+lapply
 LazyData
 LazyDataCompression
 LC
@@ -65,6 +69,7 @@ License
 limits
 list
 locale
+lon
 Maintainer
 markdown
 Maspons
@@ -75,6 +80,7 @@ monitoritzar
 monitorOSM
 names
 navbar
+nd
 objects
 obtain
 open-graph
@@ -115,7 +121,9 @@ setdiff
 setlocale
 sidebar
 source
+stopifnot
 street
+string
 style
 styles
 Suggests
@@ -123,6 +131,7 @@ suppressPackageStartupMessages
 Sys
 tag
 tags
+tags'
 testthat
 the
 theme
