@@ -36,7 +36,7 @@ get_relation_history <- function(osm_id){
           tag_key = xml2::xml_attr(xml2::xml_find_all(x, ".//tag"),"k"),
           tag_value = xml2::xml_attr(xml2::xml_find_all( x, ".//tag"),"v")))
   tags <- do.call(rbind, tags)
-  members <- relation.nodes |> 
+  members <- osm_objects |> 
     map(\(x)
         data.frame(
           osm_id = xml2::xml_attr(x, "id"),
