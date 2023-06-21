@@ -21,7 +21,7 @@ get_relation_history <- function(osm_id){
                                 "/history")) |> 
     httr2::req_perform() |> 
     httr2::resp_body_xml()
-  relation.nodes <- xml2::xml_find_all(resp, ".//relation")
+  osm_objects <- xml2::xml_find_all(resp, ".//node|.//way|.//relation")
   #build the data.frame
   
   tags <- relation.nodes |> 
