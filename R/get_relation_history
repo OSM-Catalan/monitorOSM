@@ -24,7 +24,7 @@ get_relation_history <- function(osm_id){
   osm_objects <- xml2::xml_find_all(resp, ".//node|.//way|.//relation")
   #build the data.frame
   
-  tags <- relation.nodes |> 
+  tags <- osm_objects |> 
     map(\(x)
         data.frame(
           osm_id = xml2::xml_attr(x, "id"),
