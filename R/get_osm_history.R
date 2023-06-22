@@ -3,10 +3,11 @@
 #' Obté totes les versions de tots els elements i tags d'una relació d'OSM
 #'
 #' @param osm_id una id d'una relació de la qual volem obtenir la història
-# 1 @param osm_type string que especifica el tipus d'element ("node", "way" o "relation")
+#' @param osm_type string que especifica el tipus d'element ("node", "way" o "relation")
 #' @details Pensat per a realitzar un informe dels últims canvis realitzats a un objecte
 #'
-#' @return En el cas que l'objecte sigui una relació, retorna una llista amb dos data.frames, un amb els membres de totes les versions de l'objecte
+#' @return En el cas que l'objecte sigui una relació, retorna una llista amb dos data.frames, 
+#'   un amb els membres de totes les versions de l'objecte
 #'   i un amb tots els tags, el número de versió, la id del changeset, la data del canvi, el nom de l'usuari que el va fer i el seu uid.
 #'   En cas que sigui una via, retorna una llista amb dos data.frame, un amb tots els nodes que formen la via i un amb tots els tags.
 #'   En cas que sigui un node, retorna un data.frame amb informació sobre tots els canvis i tags'
