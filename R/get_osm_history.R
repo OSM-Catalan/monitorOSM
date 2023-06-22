@@ -20,7 +20,7 @@
 get_osm_history <- function(osm_id, osm_type) {
   stopifnot(osm_type %in% c("node", "way", "relation"))
   # obtain data
-  resp <- httr2::resp_body_xm(httr2::req_perform(httr2::request(paste0(
+  resp <- httr2::resp_body_xml(httr2::req_perform(httr2::request(paste0(
     "https://www.openstreetmap.org/api/0.6/",
     osm_type,
     "/",
