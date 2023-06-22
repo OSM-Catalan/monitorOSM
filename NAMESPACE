@@ -3,3 +3,4 @@
 export(canvis_html)
 export(comprova_canvis_osm)
 export(consulta_etiquetes_osm)
+export(get_osm_history)
