@@ -15,24 +15,21 @@
 #' @examples
 #' \dontrun{
 #' id_la_selva <- 368462 # totes les versions de la relació que conté la comarca de la Selva
-#' canvis <- get_osm_history(id_la_selva)
+#' canvis <- get_osm_history(id_la_selva, "relation")
 #' }
 
 get_osm_history <- function(osm_id, osm_type){
   stopifnot(osm_type %in% c("node","way","relation"))
   # obtain data
-  resp <- httr2::request(paste0("https://www.openstreetmap.org/api/0.6/",
+  resp <-  httr2::resp_body_xm(httr2::req_perform(httr2::request(paste0("https://www.openstreetmap.org/api/0.6/",
                                 osm_type,
                                 "/",
                                 osm_id,
-                                "/history")) |> 
-    httr2::req_perform() |> 
-    httr2::resp_body_xml()
+                                "/history"))))
   osm_objects <- xml2::xml_find_all(resp, ".//node|.//way|.//relation")
   #build the data.frame
   if(osm_type == "relation"){
-    tags <- osm_objects |> 
-      lapply(\(x)
+    tags <- lapply(osm_objects, function(x)
              data.frame(
                osm_id = xml2::xml_attr(x, "id"),
                version = xml2::xml_attr(x, "version"),
@@ -43,8 +40,7 @@ get_osm_history <- function(osm_id, osm_type){
                tag_key = xml2::xml_attr(xml2::xml_find_all(x, ".//tag"),"k"),
                tag_value = xml2::xml_attr(xml2::xml_find_all( x, ".//tag"),"v")))
     tags <- do.call(rbind, tags)
-    members <- osm_objects |> 
-      lapply(\(x)
+    members <- lapply(osm_objects, function(x)
              data.frame(
                osm_id = xml2::xml_attr(x, "id"),
                version = xml2::xml_attr(x, "version"),
@@ -60,8 +56,7 @@ get_osm_history <- function(osm_id, osm_type){
     return(out)
   }
   else if(osm_type == "way"){
-    tags <- osm_objects |> 
-      lapply(\(x)
+    tags <- lapply(osm_objects, function(x)
              data.frame(
                osm_id = xml2::xml_attr(x, "id"),
                version = xml2::xml_attr(x, "version"),
@@ -72,8 +67,7 @@ get_osm_history <- function(osm_id, osm_type){
                tag_key = xml2::xml_attr(xml2::xml_find_all(x, ".//tag"),"k"),
                tag_value = xml2::xml_attr(xml2::xml_find_all( x, ".//tag"),"v")))
     tags <- do.call(rbind, tags)
-    nodes <- osm_objects |> 
-      lapply(\(x)
+    nodes <- lapply(osm_objects, function(x)
              data.frame(
                osm_id = xml2::xml_attr(x, "id"),
                version = xml2::xml_attr(x, "version"),
@@ -87,8 +81,7 @@ get_osm_history <- function(osm_id, osm_type){
     return(out)
   }
   else{
-    tags <- osm_objects |> 
-      lapply(\(x)
+    tags <- lapply(osm_objects, function(x)
              data.frame(
                osm_id = xml2::xml_attr(x, "id"),
                version = xml2::xml_attr(x, "version"),
@@ -100,7 +93,6 @@ get_osm_history <- function(osm_id, osm_type){
                lon = xml2::xml_attr(x, "lon"),
                tag_key = xml2::xml_attr(xml2::xml_find_all(x, ".//tag"),"k"),
                tag_value = xml2::xml_attr(xml2::xml_find_all( x, ".//tag"),"v")))
-    tags <- do.call(rbind, tags)
     return(tags)
   }
 
