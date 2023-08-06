@@ -22,7 +22,7 @@ canvis_ppcc <- comprova_canvis_osm(PPCC, centre = TRUE)
 canvis_html(canvis_ppcc)
 ```
 
-### Conjunt de canvis
+`r if(nrow(canvis_ppcc$comparison_df) > 0){"### Conjunt de canvis"}`
 
 ```{r ppcc_canvis, results='asis'}
 versio_canvis_ppcc <- cerca_versio_canvis(canvis_ppcc)
@@ -38,7 +38,7 @@ canvis_territoris <- comprova_canvis_osm(territoris[, setdiff(names(territoris),
 canvis_html(canvis_territoris)
 ```
 
-### Conjunts de canvis
+`r if(nrow(canvis_territoris$comparison_df) > 0){"### Conjunts de canvis"}`
 
 ```{r territoris_canvis, results='asis'}
 versio_canvis_territoris <- cerca_versio_canvis(canvis_territoris)
@@ -54,7 +54,7 @@ canvis_comarques <- comprova_canvis_osm(comarques[, setdiff(names(comarques), "r
 canvis_html(canvis_comarques)
 ```
 
-### Conjunts de canvis
+`r if(nrow(canvis_comarques$comparison_df) > 0){"### Conjunts de canvis"}`
 
 ```{r comarques_canvis, results='asis'}
 versio_canvis_comarques <- cerca_versio_canvis(canvis_comarques)
@@ -70,7 +70,7 @@ canvis_municipis <- comprova_canvis_osm(municipis[, setdiff(names(municipis), c(
 canvis_html(canvis_municipis)
 ```
 
-### Conjunt de canvis
+`r if(nrow(canvis_municipis$comparison_df) > 0){"### Conjunts de canvis"}`
 
 ```{r municipis_canvis, results='asis'}
 versio_canvis_municipis <- cerca_versio_canvis(canvis_municipis)

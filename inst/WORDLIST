@@ -11,6 +11,7 @@ c
 CatNord
 comment
 compareDF
+comparison
 Config
 cosmo
 cre
@@ -20,6 +21,7 @@ d'
 d'OSM
 Depends
 Description
+df
 docked
 echo
 edition
@@ -61,6 +63,7 @@ monitoritzar
 monitorOSM
 names
 navbar
+nrow
 open-graph
 openstreetmap
 ORCID
