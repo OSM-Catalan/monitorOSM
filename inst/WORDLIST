@@ -1,7 +1,9 @@
 -
+'asis'
 action
 actions
 AD
+along
 aut
 Authors
 BugReports
@@ -23,6 +25,7 @@ echo
 edition
 Encoding
 engine
+for
 FOSS
 gh
 github
@@ -30,6 +33,8 @@ gmail
 href
 https
 icon
+if
+in
 issue
 issues
 jmaspons
@@ -69,6 +74,7 @@ p
 Package
 ppcc
 pre-commit
+print
 pull
 qmd
 quarto-cli
@@ -80,10 +86,12 @@ R-CMD-check
 regio
 repo-actions
 repo-url
+results
 Roxygen
 RoxygenNote
 runner-images
 section
+seq
 setdiff
 setlocale
 sidebar
@@ -98,6 +106,7 @@ testthat
 theme
 time
 TIME
+titol
 tools
 true
 TRUE

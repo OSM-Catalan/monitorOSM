@@ -22,11 +22,29 @@ canvis_ppcc <- comprova_canvis_osm(PPCC, centre = TRUE)
 canvis_html(canvis_ppcc)
 ```
 
+### Conjunt de canvis
+
+```{r ppcc_canvis, results='asis'}
+versio_canvis_ppcc <- cerca_versio_canvis(canvis_ppcc)
+for (i in seq_along(versio_canvis_ppcc)) {
+  print(versio_canvis_html(versio_canvis_ppcc[[i]], titol = names(versio_canvis_ppcc)[i]))
+}
+```
+
 ## Territoris
 
 ```{r territoris}
 canvis_territoris <- comprova_canvis_osm(territoris[, setdiff(names(territoris), "regio")], centre = TRUE)
 canvis_html(canvis_territoris)
+```
+
+### Conjunts de canvis
+
+```{r territoris_canvis, results='asis'}
+versio_canvis_territoris <- cerca_versio_canvis(canvis_territoris)
+for (i in seq_along(versio_canvis_territoris)) {
+  print(versio_canvis_html(versio_canvis_territoris[[i]], titol = names(versio_canvis_territoris)[i]))
+}
 ```
 
 ## Comarques
@@ -36,9 +54,27 @@ canvis_comarques <- comprova_canvis_osm(comarques[, setdiff(names(comarques), "r
 canvis_html(canvis_comarques)
 ```
 
+### Conjunts de canvis
+
+```{r comarques_canvis, results='asis'}
+versio_canvis_comarques <- cerca_versio_canvis(canvis_comarques)
+for (i in seq_along(versio_canvis_comarques)) {
+  print(versio_canvis_html(versio_canvis_comarques[[i]], titol = names(versio_canvis_comarques)[i]))
+}
+```
+
 ## Municipis
 
 ```{r municipis}
 canvis_municipis <- comprova_canvis_osm(municipis[, setdiff(names(municipis), c("regio", "comarca"))], centre = TRUE)
 canvis_html(canvis_municipis)
+```
+
+### Conjunt de canvis
+
+```{r municipis_canvis, results='asis'}
+versio_canvis_municipis <- cerca_versio_canvis(canvis_municipis)
+for (i in seq_along(versio_canvis_municipis)) {
+  print(versio_canvis_html(versio_canvis_municipis[[i]], titol = names(versio_canvis_municipis)[i]))
+}
 ```

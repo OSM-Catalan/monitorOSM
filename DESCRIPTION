@@ -16,6 +16,7 @@ Depends:
     R (>= 3.5)
 Imports: 
     compareDF,
+    knitr,
     osmapiR,
     osmdata (>= 0.2.1)
 Suggests: 

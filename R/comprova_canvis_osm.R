@@ -50,7 +50,6 @@ comprova_canvis_osm <- function(x, centre = FALSE) {
 #' }
 cerca_versio_canvis <- function(x) { # nolint
   res <- by(x$comparison_df, x$comparison_df[[x$group_col]], function(canvi) {
-    message("Objecte: ", unique(canvi[[x$group_col]]))
     osm_type <- gsub("https://osm.org/|/[0-9]+", "", unique(canvi[[x$group_col]]))
     osm_id <- gsub("https://osm.org/(node|way|relation)/", "", unique(canvi[[x$group_col]]))
 
@@ -110,31 +109,4 @@ cerca_versio_canvis <- function(x) { # nolint
   })
 
   return(res)
-}
-
-
-#' Canvis en html
-#'
-#' Mostra diferències de taules en html si n'hi ha. Funció pensada per usar en fitxers `.qmd` o `.Rmd`.
-#'
-#' @param x un objecte de [compareDF::compare_df()].
-#'
-#' @return la taula html amb les diferències o una cadena de text indicant que no hi ha diferències.
-#' @export
-#'
-#' @examples
-canvis_html <- function(x) {
-  if (nrow(x$comparison_df) > 0) {
-    out <- suppressMessages(compareDF::create_output_table(x, change_col_name = "canvi"))
-    out <- gsub(
-      "; text-align: center;'>(https://osm.org/(node|way|relation)/[0-9]+)</td>",
-      "; text-align: left;'><a href=\"\\1\">\\1<a></td>",
-      out
-    )
-    return(out)
-  } else {
-    out <- "\U1F389 Tot en ordre \U1F389"
-    message(out)
-    invisible(out)
-  }
 }
