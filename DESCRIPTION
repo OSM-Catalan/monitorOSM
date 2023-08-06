@@ -1,7 +1,7 @@
 Type: Package
 Package: monitorOSM
 Title: Monitor d'OSM
-Version: 0.0.1
+Version: 0.0.1.1
 Authors@R: c(
     person("Joan", "Maspons", , "joanmaspons@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-2286-8727"))
@@ -16,10 +16,12 @@ Depends:
     R (>= 3.5)
 Imports: 
     compareDF,
+    osmapiR,
     osmdata (>= 0.2.1)
 Suggests: 
     testthat (>= 3.0.0),
     usethis
+Remotes: jmaspons/osmapiR
 Config/testthat/edition: 3
 Encoding: UTF-8
 Language: ca

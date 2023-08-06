@@ -32,6 +32,87 @@ comprova_canvis_osm <- function(x, centre = FALSE) {
   return(out)
 }
 
+
+#' Cerca les versions que introdueixen canvis
+#'
+#' @param x El resultat de [comprova_canvis_osm()] o similar.
+#'
+#' @return Retorna una llista de les versions que introdueixen canvis per cada etiqueta.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' comarques_canviades <- comarques[, setdiff(names(comarques), "regio")]
+#' comarques_canviades$name[1] <- "Malnom"
+#' canvis <- comprova_canvis_osm(comarques_canviades)
+#' versions_canvi <- cerca_versio_canvis(canvis)
+#' versions_canvi
+#' }
+cerca_versio_canvis <- function(x) { # nolint
+  res <- by(x$comparison_df, x$comparison_df[[x$group_col]], function(canvi) {
+    message("Objecte: ", unique(canvi[[x$group_col]]))
+    osm_type <- gsub("https://osm.org/|/[0-9]+", "", unique(canvi[[x$group_col]]))
+    osm_id <- gsub("https://osm.org/(node|way|relation)/", "", unique(canvi[[x$group_col]]))
+
+    historial <- osmapiR::osm_history_object(osm_type = osm_type, osm_id = osm_id)
+
+    canvi_etiquetes <- apply(canvi[, setdiff(names(canvi), "chng_type")], 2, unique)
+    canvi_etiquetes <- canvi_etiquetes[sapply(canvi_etiquetes, length) > 1]
+
+    canvis_trobats <- FALSE
+    i <- nrow(historial)
+    canvis_introduits <- data.frame()
+    while (i != 0 && !canvis_trobats) {
+      etiquetes_analitzar <- lapply(historial$tags[c(i, i - 1)], function(etiquetes) { # 1: versió i; 2: versió anterior
+        etiquetes[etiquetes$key %in% names(canvi_etiquetes), ]
+      })
+      if (length(unique(etiquetes_analitzar)) > 1) { # Hi ha algun canvi d'etiquetes
+        for (clau in names(canvi_etiquetes)) {
+          # valor_actual <- canvi_etiquetes[[clau]][1]
+          valor_referencia <- canvi_etiquetes[[clau]][2]
+
+          if (!clau %in% etiquetes_analitzar[[1]]$key &&
+            clau %in% etiquetes_analitzar[[2]]$key) { # Etiqueta eliminada
+            canvis_introduits <- rbind(canvis_introduits, data.frame(
+              historial[i, c("version", "changeset", "timestamp", "user", "uid")],
+              key = clau, value = NA_character_, ref_value = valor_referencia
+            ))
+            if (etiquetes_analitzar[[2]]$value[etiquetes_analitzar[[2]]$key == clau] == valor_referencia) {
+              # Versió anterior correcte
+              canvi_etiquetes <- canvi_etiquetes[setdiff(names(canvi_etiquetes), clau)]
+            }
+          } else if (clau %in% etiquetes_analitzar[[1]]$key &&
+            clau %in% etiquetes_analitzar[[2]]$key &&
+            etiquetes_analitzar[[2]]$value[etiquetes_analitzar[[2]]$key == clau] !=
+              etiquetes_analitzar[[1]]$value[etiquetes_analitzar[[1]]$key == clau]) {
+            # Etiqueta modificada
+            if (etiquetes_analitzar[[2]]$value[etiquetes_analitzar[[2]]$key == clau] == valor_referencia) {
+              # Versió anterior correcte
+              canvis_introduits <- rbind(canvis_introduits, data.frame(
+                historial[i, c("version", "changeset", "timestamp", "user", "uid")],
+                key = clau,
+                value = etiquetes_analitzar[[1]]$value[etiquetes_analitzar[[1]]$key == clau],
+                ref_value = valor_referencia
+              ))
+              canvi_etiquetes <- canvi_etiquetes[setdiff(names(canvi_etiquetes), clau)]
+            }
+          }
+        }
+      }
+
+      i <- i - 1
+      if (all(names(canvi_etiquetes) %in% canvis_introduits$key)) {
+        canvis_trobats <- TRUE
+      }
+    }
+
+    return(canvis_introduits)
+  })
+
+  return(res)
+}
+
+
 #' Canvis en html
 #'
 #' Mostra diferències de taules en html si n'hi ha. Funció pensada per usar en fitxers `.qmd` o `.Rmd`.

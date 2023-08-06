@@ -15,6 +15,7 @@ repos:
         additional_dependencies:
         - git2r
         - compareDF
+        - jmaspons/osmapiR
         - osmdata
     # codemeta must be above use-tidy-description when both are used
     # -   id: codemeta-description-updated
