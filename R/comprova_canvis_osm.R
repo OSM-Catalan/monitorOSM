@@ -1,6 +1,6 @@
 #' Comprova canvis a OSM
 #'
-#' Compara objectes d'OSM respecte a una taula de referència
+#' Compara l'estat actual d'objectes d'OSM respecte a una taula de referència.
 #'
 #' @param x un `data.frame` amb les columnes `osm_type`, `osm_id` i etiquetes que vulguem comprovar.
 #' @param centre si és `TRUE`, afegeix les coordenades del centre de l'objecte a les columnes `osm_center_lon` i
@@ -13,10 +13,10 @@
 #'
 #' @examples
 #' \dontrun{
-#' comarques_canviades <- comarques
-#' comarques_canviades <- comarques_canviades$name[1] <- "Malnom"
-#' canvis <- comprova_canvis_osm(comarques)
-#' compareDF::view_html(canvis)
+#' comarques_canviades <- comarques[, setdiff(names(comarques), "regio")]
+#' comarques_canviades$name[1] <- "Malnom"
+#' canvis <- comprova_canvis_osm(comarques_canviades)
+#' canvis_html(canvis)
 #' }
 comprova_canvis_osm <- function(x, centre = FALSE) {
   x_osm <- monitorOSM::consulta_etiquetes_osm(x, etiquetes = names(x), centre = centre)
