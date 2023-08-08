@@ -28,6 +28,65 @@ usethis::use_data(municipis, overwrite = TRUE, compress = "xz")
 # )
 
 
+## Afegeix els admin_center ----
+
+municipis_osm <- by(municipis, municipis$comarca, function(x) {
+  osmapiR::osm_fetch_objects(osm_type = "relation", osm_ids = x$osm_id)
+})
+
+admin_centre_list <- lapply(municipis_osm, function(x) {
+  admin_centres <- lapply(x$members, function(y) {
+    admin_centre <- y[y[, "role"] %in% "admin_centre", 1:2, drop = FALSE]
+    colnames(admin_centre) <- c("osm_type", "osm_id")
+    admin_centre
+  })
+
+  x$admin_centre <- admin_centres
+
+  return(x)
+})
+
+admin_centre <- do.call(rbind, admin_centre_list)
+rownames(admin_centre) <- NULL
+
+n_centres <- sapply(admin_centre$admin_centre, nrow)
+table(n_centres)
+admin_centre[n_centres == 2, ]
+
+admin_centre_objs <- do.call(rbind, admin_centre$admin_centre)
+admin_centre_osm <- consulta_etiquetes_osm(
+  x = admin_centre_objs,
+  etiquetes = c("name:ca", "osm_id", "osm_type", "name", "wikidata", "wikipedia", "admin_level")
+)
+
+
+### Afegeix comarca i regió ----
+admin_centre_osm[, c("regio", "comarca")] <- NA_character_
+for (i in seq_len(nrow(admin_centre))) {
+  admin_centre_id <- admin_centre$admin_centre[[i]]
+  sel_admin_centre <- admin_centre_osm$osm_type %in% admin_centre_id[, "osm_type"] &
+    admin_centre_osm$osm_id %in% admin_centre_id[, "osm_id"]
+  sel_municipi <- municipis$osm_type %in% admin_centre$type[i] & municipis$osm_id %in% admin_centre$id[i]
+  admin_centre_osm[sel_admin_centre, c("regio", "comarca")] <- municipis[sel_municipi, c("regio", "comarca")]
+}
+
+municipis_admin_centre <- admin_centre_osm[, c(
+  "name:ca", "regio", "comarca", "osm_id", "osm_type", "name", "wikipedia", "wikidata", "admin_level"
+)]
+
+
+municipis_centres <- rbind(municipis, municipis_admin_centre)
+municipis_centres <- unique(municipis_centres[
+  order(municipis_centres$regio, municipis_centres$comarca, municipis_centres$`name:ca`),
+])
+rownames(municipis_centres) <- NULL
+
+sum(nrow(municipis), nrow(municipis_admin_centre)) == nrow(municipis_centres)
+# dbTools::duplicatedPK(municipis_centres, pk = c("osm_type", "osm_id"))
+
+municipis <- municipis_centres
+
+
 ## Consulta dades a OSM ----
 
 municipis_osm <- consulta_etiquetes_osm(
