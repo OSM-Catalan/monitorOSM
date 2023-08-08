@@ -7,14 +7,15 @@ Dades dels territoris dels Països Catalans.
 }
 \usage{territoris}
 \format{
-  Un \code{data.frame} amb dades dels 8 territoris per les següents 6 variables.
+  Un \code{data.frame} amb dades dels 10 territoris per les següents 7 variables.
   \describe{
     \item{name:ca}{Etiqueta \code{name:ca}.}
-    \item{regio}{Nom de la regió ["Principat", "Illes", "País Valencià", "Catalunya Nord", "Franja de Ponent", "l'Alguer", "el Carxe", "Andorra"].}
-    \item{id}{Número identificador a OSM.}
-    \item{type}{Tipus d'objecte d'OSM.}
-    \item{wikidata}{Etiqueta \code{wikidata}.}
+    \item{regio}{Nom de la regió ["Andorra", "Aran", "CatNord", "Franja", "Illes", "Múrcia", "Principat", "PV"].}
+    \item{osm_id}{Número identificador a OSM.}
+    \item{osm_type}{Tipus d'objecte d'OSM.}
     \item{name}{Etiqueta \code{name}.}
+    \item{wikipedia}{Etiqueta \code{wikipedia}.}
+    \item{wikidata}{Etiqueta \code{wikidata}.}
   }
 }
 \seealso{
