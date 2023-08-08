@@ -1,6 +1,6 @@
 #' Consulta etiquetes d'OSM
 #'
-#' @param x un `data.frame` amb les columnes `osm_type` i `osm_id`.
+#' @param x un `data.frame` o `matrix` amb les columnes `osm_type` i `osm_id`.
 #' @param etiquetes noms de les claus de les etiquetes a consultar. Si no s'especifica, s'afegeixen totes les etiquetes
 #'   dels objectes.
 #' @param centre si és `TRUE`, afegeix les coordenades del centre de l'objecte a les columnes `osm_center_lon` i
@@ -15,15 +15,15 @@
 #' territoris_etiquetes_completes <- consulta_etiquetes_osm(territoris)
 #' }
 consulta_etiquetes_osm <- function(x, etiquetes, centre = FALSE) {
-  if (!all(c("osm_id", "osm_type") %in% names(x))) {
+  if (!all(c("osm_id", "osm_type") %in% colnames(x))) {
     stop("Les dades no contenen columnes `osm_type` i `osm_id` que permetin identificar objectes d'OSM.")
   }
 
   x_unic <- unique(x[, c("osm_type", "osm_id")]) # minimitza la consulta
 
   consulta <- osmdata::opq_osm_id(
-    id = x_unic$osm_id,
-    type = x_unic$osm_type,
+    id = x_unic[, "osm_id"],
+    type = x_unic[ , "osm_type"],
     out = if (centre) "tags center" else "tags",
     timeout = 1000
   )
@@ -50,11 +50,15 @@ consulta_etiquetes_osm <- function(x, etiquetes, centre = FALSE) {
   etiquetes[, center_cols] <- lapply(etiquetes[, center_cols], as.numeric)
 
   columnes_actualitzades <- setdiff(intersect(names(x), names(etiquetes)), c("osm_id", "osm_type"))
-  x$`_ordre_files_` <- seq_len(nrow(x))
-  out <- merge(x[, setdiff(names(x), columnes_actualitzades)], etiquetes, by = c("osm_id", "osm_type"))
+  x <- cbind(`_ordre_files_` = seq_len(nrow(x)), x)
+
+  x <- x[, setdiff(colnames(x), columnes_actualitzades)]
+  if (ncol(x) > 0) {
+    out <- merge(x, etiquetes, by = c("osm_id", "osm_type"))
+  }
 
   # Conserva l'ordre original de les files i columnes.
-  out <- out[order(out$`_ordre_files_`), unique(c(names(x), names(out)))]
+  out <- out[order(out$`_ordre_files_`), unique(c(colnames(x), names(out)))]
   out$`_ordre_files_` <- NULL
 
   return(out)

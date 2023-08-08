@@ -7,7 +7,7 @@
 consulta_etiquetes_osm(x, etiquetes, centre = FALSE)
 }
 \arguments{
-\item{x}{un \code{data.frame} amb les columnes \code{osm_type} i \code{osm_id}.}
+\item{x}{un \code{data.frame} o \code{matrix} amb les columnes \code{osm_type} i \code{osm_id}.}
 
 \item{etiquetes}{noms de les claus de les etiquetes a consultar. Si no s'especifica, s'afegeixen totes les etiquetes
 dels objectes.}
