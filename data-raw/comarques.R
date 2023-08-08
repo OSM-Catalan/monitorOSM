@@ -1,4 +1,4 @@
-## Prepara la base de dades de comarques a partir del fitxer comarques.tsv
+## Prepara la base de dades de comarques a partir del fitxer comarques.tsv ----
 
 comarques <- utils::read.table(
   file = "data-raw/comarques.tsv",
@@ -26,3 +26,26 @@ usethis::use_data(comarques, overwrite = TRUE, compress = "xz")
 #   col.names = TRUE,
 #   qmethod = "double"
 # )
+
+
+## Consulta dades a OSM ----
+
+comarques_osm <- consulta_etiquetes_osm(
+  x = comarques,
+  etiquetes = c("name:ca", "osm_id", "osm_type", "name", "wikidata", "wikipedia", "admin_level", "historic:admin_level")
+)
+
+lapply(comarques_osm, unique)
+
+comarques <- comarques_osm[, c(
+  "name:ca", "regio", "osm_id", "osm_type", "name", "wikipedia", "wikidata", "admin_level", "historic:admin_level"
+)]
+
+
+## Compara nova base de dades amb la del paquet instal·lat ----
+
+library(compareDF)
+
+cols <- intersect(names(comarques), names(monitorOSM::comarques))
+diff_comarques <- compare_df(comarques[, cols], monitorOSM::comarques[, cols], group_col = c("osm_type", "osm_id"))
+view_html(diff_comarques)

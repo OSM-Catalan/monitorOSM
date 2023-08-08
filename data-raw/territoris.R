@@ -26,3 +26,24 @@ usethis::use_data(territoris, overwrite = TRUE, compress = "xz")
 #   col.names = TRUE,
 #   qmethod = "double"
 # )
+
+
+## Consulta dades a OSM ----
+
+territoris_osm <- consulta_etiquetes_osm(
+  x = territoris,
+  etiquetes = c("name:ca", "osm_id", "osm_type", "name", "wikidata", "wikipedia")
+)
+
+lapply(territoris_osm, unique)
+
+territoris <- territoris_osm[, c("name:ca", "regio", "osm_id", "osm_type", "name", "wikipedia", "wikidata")]
+
+
+## Compara nova base de dades amb la del paquet instal·lat ----
+
+library(compareDF)
+
+cols <- intersect(names(territoris), names(monitorOSM::territoris))
+diff_territoris <- compare_df(territoris[, cols], monitorOSM::territoris[, cols], group_col = c("osm_type", "osm_id"))
+view_html(diff_territoris)
