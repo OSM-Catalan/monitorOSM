@@ -17,6 +17,8 @@ suppressPackageStartupMessages(library(monitorOSM, quietly = TRUE))
 
 ## Països Catalans
 
+[BD de referència](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/PPCC.tsv)
+
 ```{r ppcc}
 canvis_ppcc <- comprova_canvis_osm(PPCC, centre = TRUE)
 canvis_html(canvis_ppcc)
@@ -32,6 +34,8 @@ for (i in seq_along(versio_canvis_ppcc)) {
 ```
 
 ## Territoris
+
+[BD de referència](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/territoris.tsv)
 
 ```{r territoris}
 canvis_territoris <- comprova_canvis_osm(territoris[, setdiff(names(territoris), "regio")], centre = TRUE)
@@ -49,6 +53,8 @@ for (i in seq_along(versio_canvis_territoris)) {
 
 ## Comarques
 
+[BD de referència](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/comarques.tsv)
+
 ```{r comarques}
 canvis_comarques <- comprova_canvis_osm(comarques[, setdiff(names(comarques), "regio")], centre = TRUE)
 canvis_html(canvis_comarques)
@@ -64,6 +70,8 @@ for (i in seq_along(versio_canvis_comarques)) {
 ```
 
 ## Municipis
+
+[BD de referència](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/municipis.tsv)
 
 ```{r municipis}
 canvis_municipis <- comprova_canvis_osm(municipis[, setdiff(names(municipis), c("regio", "comarca"))], centre = TRUE)
