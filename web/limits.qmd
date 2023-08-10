@@ -28,9 +28,7 @@ canvis_html(canvis_ppcc)
 
 ```{r ppcc_canvis, results='asis'}
 versio_canvis_ppcc <- cerca_versio_canvis(canvis_ppcc)
-for (i in seq_along(versio_canvis_ppcc)) {
-  print(versio_canvis_html(versio_canvis_ppcc[[i]], titol = names(versio_canvis_ppcc)[i]))
-}
+versio_canvis_html(versio_canvis_ppcc)
 ```
 
 ## Territoris
@@ -46,9 +44,7 @@ canvis_html(canvis_territoris)
 
 ```{r territoris_canvis, results='asis'}
 versio_canvis_territoris <- cerca_versio_canvis(canvis_territoris)
-for (i in seq_along(versio_canvis_territoris)) {
-  print(versio_canvis_html(versio_canvis_territoris[[i]], titol = names(versio_canvis_territoris)[i]))
-}
+versio_canvis_html(versio_canvis_territoris)
 ```
 
 ## Comarques
@@ -64,9 +60,7 @@ canvis_html(canvis_comarques)
 
 ```{r comarques_canvis, results='asis'}
 versio_canvis_comarques <- cerca_versio_canvis(canvis_comarques)
-for (i in seq_along(versio_canvis_comarques)) {
-  print(versio_canvis_html(versio_canvis_comarques[[i]], titol = names(versio_canvis_comarques)[i]))
-}
+versio_canvis_html(versio_canvis_comarques)
 ```
 
 ## Municipis
@@ -82,7 +76,5 @@ canvis_html(canvis_municipis)
 
 ```{r municipis_canvis, results='asis'}
 versio_canvis_municipis <- cerca_versio_canvis(canvis_municipis)
-for (i in seq_along(versio_canvis_municipis)) {
-  print(versio_canvis_html(versio_canvis_municipis[[i]], titol = names(versio_canvis_municipis)[i]))
-}
+versio_canvis_html(versio_canvis_municipis)
 ```

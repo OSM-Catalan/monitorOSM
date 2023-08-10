@@ -4,16 +4,14 @@
 \alias{versio_canvis_html}
 \title{Mostra les versions que introdueixen canvis en html}
 \usage{
-versio_canvis_html(x, titol)
+versio_canvis_html(x)
 }
 \arguments{
-\item{x}{Un dels elements de la llista retornada per \code{\link[=cerca_versio_canvis]{cerca_versio_canvis()}}.}
-
-\item{titol}{Títol de la taula. S'espera una url i se li afegiran les etiquetes \\if{html}{\out{<a href=titol\\>}}titol\if{html}{\out{</a>}}}
+\item{x}{Una llista de canvis retornada per \code{\link[=cerca_versio_canvis]{cerca_versio_canvis()}}.}
 }
 \value{
-La taula html amb informació del conjunt de canvis que ha modificat etiquetes.
+Mostra les taules html amb informació del conjunt de canvis que ha modificat etiquetes.
 }
 \description{
-Mostra les versions que introdueixen canvis en html
+Funció pensada per usar en fitxers \code{.qmd} o \code{.Rmd}.
 }
