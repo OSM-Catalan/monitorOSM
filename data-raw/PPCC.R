@@ -1,6 +1,6 @@
 ## Prepara la base de dades de PPCC a partir del fitxer PPCC.tsv ----
 
-PPCC <- utils::read.table( # nolint
+PPCC <- utils::read.table( # nolint: object_name_linter
   file = "data-raw/PPCC.tsv",
   header = TRUE,
   sep = "\t",
@@ -27,11 +27,11 @@ usethis::use_data(PPCC, overwrite = TRUE, compress = "xz")
 
 ## Consulta dades a OSM ----
 
-PPCC_osm <- consulta_etiquetes_osm(
+PPCC_osm <- consulta_etiquetes_osm( # nolint: object_name_linter
   x = PPCC,
   etiquetes = c("name:ca", "osm_id", "osm_type", "name", "wikidata", "wikipedia")
 )
 
 lapply(PPCC_osm, unique)
 
-PPCC <- PPCC_osm[, c("name:ca", "osm_id", "osm_type", "name", "wikipedia", "wikidata")]
+PPCC <- PPCC_osm[, c("name:ca", "osm_id", "osm_type", "name", "wikipedia", "wikidata")] # nolint: object_name_linter

@@ -19,6 +19,7 @@ css
 d
 d'
 d'OSM
+data-raw
 Depends
 Description
 df
@@ -55,6 +56,7 @@ License
 limits
 list
 locale
+main
 Maintainer
 markdown
 Maspons
@@ -113,6 +115,7 @@ titol
 tools
 true
 TRUE
+tsv
 Type
 type
 usethis

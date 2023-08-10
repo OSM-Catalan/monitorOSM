@@ -48,7 +48,7 @@ comprova_canvis_osm <- function(x, centre = FALSE) {
 #' versions_canvi <- cerca_versio_canvis(canvis)
 #' versions_canvi
 #' }
-cerca_versio_canvis <- function(x) { # nolint
+cerca_versio_canvis <- function(x) { # nolint: cyclocomp_linter
   res <- by(x$comparison_df, x$comparison_df[[x$group_col]], function(canvi) {
     osm_type <- gsub("https://osm.org/|/[0-9]+", "", unique(canvi[[x$group_col]]))
     osm_id <- gsub("https://osm.org/(node|way|relation)/", "", unique(canvi[[x$group_col]]))
