@@ -35,7 +35,7 @@ canvis_html <- function(x) {
 versio_canvi_kable <- function(x, titol) {
   titol_valid <- !missing(titol) || !is.null(titol) || !is.na(titol)
   if (nrow(x) == 0) {
-    out <- "No s'ha trobat cap versió en l'estat de referència"
+    out <- "No s'ha trobat cap versi\U00F3 en l'estat de refer\U00E8ncia"
     if (titol_valid) {
       out <- paste0(out, " per <a href=\"", titol, "\">", titol, "</a>.")
     } else {
