@@ -2,43 +2,50 @@
   {
     "objectID": "web/limits.html",
     "href": "web/limits.html",
-    "title": "Municipis, comarques i regions",
+    "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Sat 12 Aug 2023 - 17:16:22"
+    "text": "Última actualització: Sat 12 Aug 2023 - 18:37:50"
   },
   {
     "objectID": "web/limits.html#països-catalans",
     "href": "web/limits.html#països-catalans",
-    "title": "Municipis, comarques i regions",
+    "title": "Municipis, comarques i territoris",
     "section": "Països Catalans",
     "text": "Països Catalans\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
   },
   {
     "objectID": "web/limits.html#territoris",
     "href": "web/limits.html#territoris",
-    "title": "Municipis, comarques i regions",
+    "title": "Municipis, comarques i territoris",
     "section": "Territoris",
     "text": "Territoris\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
   },
   {
     "objectID": "web/limits.html#comarques",
     "href": "web/limits.html#comarques",
-    "title": "Municipis, comarques i regions",
+    "title": "Municipis, comarques i territoris",
     "section": "Comarques",
     "text": "Comarques\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
   },
   {
     "objectID": "web/limits.html#municipis",
     "href": "web/limits.html#municipis",
-    "title": "Municipis, comarques i regions",
+    "title": "Municipis, comarques i territoris",
     "section": "Municipis",
     "text": "Municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
   },
   {
-    "objectID": "web/inici.html",
-    "href": "web/inici.html",
+    "objectID": "README.html#afegir-nous-objectes-a-les-bases-de-dades",
+    "href": "README.html#afegir-nous-objectes-a-les-bases-de-dades",
     "title": "monitorOSM",
-    "section": "",
-    "text": "Projecte en construcció a https://github.com/OSM-Catalan/monitorOSM"
+    "section": "Afegir nous objectes a les bases de dades",
+    "text": "Afegir nous objectes a les bases de dades\nSi voleu afegir objectes amb les seves etiquetes a les bases de dades, podeu obrir un tiquet. Fora bo que els estats de referència dels objectes siguin consensuats amb la Comunitat d’OpenStreetmap en català."
+  },
+  {
+    "objectID": "README.html#paquet-dr",
+    "href": "README.html#paquet-dr",
+    "title": "monitorOSM",
+    "section": "Paquet d’R",
+    "text": "Paquet d’R\nLa consulta, comparació amb bases de dades de referència i renderització de la web es fan amb un paquet d’R i accions de github. El paquet també inclou funcions per restaurar els objectes de manera ràpida, però com a projecte comunitari, és important intentar parlar amb els usuaris que discrepen de les bases de dades de referència.\n\nExemple de restauració\nInstal·leu el paquet d’R:\n# install.packages(\"devtools\")\ndevtools::install_github(\"OSM-Catalan/monitorOSM\")\nRestauració de les etiquetes name i wikipedia de les comarques del País Valencià:\nid &lt;- modifica_etiquetes_osm(\n  comarques[comarques$regio == \"PV\", ],\n  claus = c(\"name\", \"wikipedia\"),\n  comentari = \"Restaura els noms de les comarques dels Països Catalans\", hashtags = \"monitorOSM\"\n)\nRetorna l’identificador del conjunt de canvis."
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>monitorOSM</title>
+<title>monitorOSM – readme</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +20,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,10 +95,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="monitorOSM">
-<meta property="og:description" content="">
-<meta property="og:site-name" content="monitorOSM">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -74,25 +105,14 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">monitorOSM</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Cerca"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Commuta la navegació" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="../web/inici.html" rel="" target="" aria-current="page">
- <span class="menu-text">monitorOSM</span></a>
-  </li>  
-</ul>
-            <div class="quarto-navbar-tools ms-auto">
+        <div class="quarto-navbar-tools ms-auto">
     <a href="https://github.com/OSM-Catalan/monitorOSM" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
+          <div id="quarto-search" class="" title="Cerca"></div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
@@ -100,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Commuta la navegació de la barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">monitorOSM</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Commuta la navegació de la barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -123,8 +143,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../web/limits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Municipis, comarques i regions</span></a>
+  <a href="./web/limits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Municipis, comarques i territoris</span></a>
   </div>
 </li>
       </ul>
@@ -135,31 +155,118 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En aquesta pàgina</h2>
+   
+  <ul>
+  <li><a href="#monitorosm" id="toc-monitorosm" class="nav-link active" data-scroll-target="#monitorosm">monitorOSM</a>
+  <ul class="collapse">
+  <li><a href="#afegir-nous-objectes-a-les-bases-de-dades" id="toc-afegir-nous-objectes-a-les-bases-de-dades" class="nav-link" data-scroll-target="#afegir-nous-objectes-a-les-bases-de-dades">Afegir nous objectes a les bases de dades</a></li>
+  <li><a href="#paquet-dr" id="toc-paquet-dr" class="nav-link" data-scroll-target="#paquet-dr">Paquet d’R</a>
+  <ul class="collapse">
+  <li><a href="#exemple-de-restauració" id="toc-exemple-de-restauració" class="nav-link" data-scroll-target="#exemple-de-restauració">Exemple de restauració</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/OSM-Catalan/monitorOSM/edit/main/README.md" class="toc-action">Edita aquesta pàgina</a></p><p><a href="https://github.com/OSM-Catalan/monitorOSM/issues/new" class="toc-action">Informa d'un problema</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">monitorOSM</h1>
-</div>
 
 
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+<p><img src="man/figures/255px-Osmcatala.svg.png" align="right" height="110/"></p>
+<section id="monitorosm" class="level1">
+<h1>monitorOSM</h1>
+<!-- badges: start -->
+<p><a href="https://github.com/OSM-Catalan/monitorOSM/actions/workflows/quarto-publish.yml"><img src="https://github.com/OSM-Catalan/monitorOSM/actions/workflows/quarto-publish.yml/badge.svg" class="img-fluid" alt="Actualitza i publica"></a> <a href="https://github.com/OSM-Catalan/monitorOSM/actions/workflows/pre-commit.yaml"><img src="https://github.com/OSM-Catalan/monitorOSM/actions/workflows/pre-commit.yaml/badge.svg" class="img-fluid" alt="pre-commit"></a> <a href="https://github.com/OSM-Catalan/monitorOSM/actions/workflows/R-CMD-check.yaml"><img src="https://github.com/OSM-Catalan/monitorOSM/actions/workflows/R-CMD-check.yaml/badge.svg" class="img-fluid" alt="R-CMD-check"></a> <!-- [![test-coverage](https://github.com/OSM-Catalan/monitorOSM/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/OSM-Catalan/monitorOSM/actions/workflows/test-coverage.yaml) --></p>
+<!-- badges: end -->
+<p><code>monitorOSM</code> és un repositori que serveix per monitoritzar canvis a <a href="http://www.openstreemap.com">OpenStreetMap</a> comparant els objectes amb <a href="https://github.com/OSM-Catalan/monitorOSM/tree/main/data-raw">bases de dades de referència</a>.</p>
+<p>Podeu veure els informes que s’actualitzen diàriament a <a href="https://osm-catalan.github.io/monitorOSM" class="uri">https://osm-catalan.github.io/monitorOSM</a>. Els informes de canvis mostren taules amb l’estat de les etiquetes a OSM i a les bases de dades de referència:</p>
 
-<div class="quarto-title-meta">
+<table class="gmisc_table" style="border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;">
+<thead>
+<tr>
+<th style="font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
+osm_url
+</th>
+<th style="font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
+canvi
+</th>
+<th style="font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
+name:ca
+</th>
+<th style="font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
+name
+</th>
+<th style="font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
+wikipedia
+</th>
+</tr>
+</thead>
+<tbody>
+<tr style="background-color: #ffffff;">
+<td style="padding: .2em; color: #999999; background-color: #ffffff; text-align: center;">
+<a href="http://osm.org/node/XXXX" class="uri">http://osm.org/node/XXXX</a>
+</td>
+<td style="padding: .2em; color: #52854C; background-color: #ffffff; text-align: center;">
++
+</td>
+<td style="padding: .2em; color: #52854C; background-color: #ffffff; text-align: center;">
+nom a OSM
+</td>
+<td style="padding: .2em; color: #999999; background-color: #ffffff; text-align: center;">
+Sense canvis
+</td>
+<td style="padding: .2em; color: #52854C; background-color: #ffffff; text-align: center;">
+</td>
+</tr>
+<tr style="background-color: #ffffff;">
+<td style="padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey; text-align: center;">
+<a href="http://osm.org/node/XXXX" class="uri">http://osm.org/node/XXXX</a>
+</td>
+<td style="padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey; text-align: center;">
+-
+</td>
+<td style="padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey; text-align: center;">
+nom de referència
+</td>
+<td style="padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey; text-align: center;">
+Sense canvis
+</td>
+<td style="padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey; text-align: center;">
+ca:Eliminat
+</td>
+</tr>
+</tbody>
 
-    
-  
-    
-  </div>
-  
+</table>
+<p>També es mostra quins conjunts de canvis han trencat les etiquetes amb enllaços per si es vol deixar comentaris.</p>
+<section id="afegir-nous-objectes-a-les-bases-de-dades" class="level2">
+<h2 class="anchored" data-anchor-id="afegir-nous-objectes-a-les-bases-de-dades">Afegir nous objectes a les bases de dades</h2>
+<p>Si voleu afegir objectes amb les seves etiquetes a les bases de dades, podeu obrir un <a href="https://github.com/OSM-Catalan/monitorOSM/issues">tiquet</a>. Fora bo que els estats de referència dels objectes siguin consensuats amb la <a href="https://wiki.openstreetmap.org/wiki/WikiProject_Catalan#Canals_de_comunicaci%C3%B3_i_mitjans_de_difusi%C3%B3">Comunitat d’OpenStreetmap en català</a>.</p>
+</section>
+<section id="paquet-dr" class="level2">
+<h2 class="anchored" data-anchor-id="paquet-dr">Paquet d’R</h2>
+<p>La consulta, comparació amb bases de dades de referència i renderització de la web es fan amb un paquet d’<a href="https://cran.r-project.org/">R</a> i accions de github. El paquet també inclou funcions per restaurar els objectes de manera ràpida, però com a projecte comunitari, és important intentar parlar amb els usuaris que discrepen de les bases de dades de referència.</p>
+<section id="exemple-de-restauració" class="level3">
+<h3 class="anchored" data-anchor-id="exemple-de-restauració">Exemple de restauració</h3>
+<p>Instal·leu el paquet d’R:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("devtools")</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"OSM-Catalan/monitorOSM"</span>)</span></code><button title="Copia al porta-retalls" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Restauració de les etiquetes <code>name</code> i <code>wikipedia</code> de les comarques del País Valencià:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>id <span class="ot">&lt;-</span> <span class="fu">modifica_etiquetes_osm</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  comarques[comarques<span class="sc">$</span>regio <span class="sc">==</span> <span class="st">"PV"</span>, ],</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">claus =</span> <span class="fu">c</span>(<span class="st">"name"</span>, <span class="st">"wikipedia"</span>),</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">comentari =</span> <span class="st">"Restaura els noms de les comarques dels Països Catalans"</span>, <span class="at">hashtags =</span> <span class="st">"monitorOSM"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copia al porta-retalls" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Retorna l’identificador del conjunt de canvis.</p>
 
-</header>
 
-<p>Projecte en construcció a <a href="https://github.com/OSM-Catalan/monitorOSM" class="uri">https://github.com/OSM-Catalan/monitorOSM</a></p>
-
-
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -399,4 +506,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/OSM-Catalan/monitorOSM/edit/main/web/inici.qmd" class="toc-action">Edita aquesta pàgina</a></p><p><a href="https://github.com/OSM-Catalan/monitorOSM/issues/new" class="toc-action">Informa d'un problema</a></p></div></div></div></div></footer></body></html>
+</body></html>
