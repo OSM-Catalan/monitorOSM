@@ -23,7 +23,7 @@ consulta_etiquetes_osm <- function(x, etiquetes, centre = FALSE) {
 
   consulta <- osmdata::opq_osm_id(
     id = x_unic[, "osm_id"],
-    type = x_unic[ , "osm_type"],
+    type = x_unic[, "osm_type"],
     out = if (centre) "tags center" else "tags",
     timeout = 1000
   )
