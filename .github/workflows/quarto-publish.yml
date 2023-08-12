@@ -32,6 +32,10 @@ jobs:
           echo R_TELEGRAM_BOT_monitorOSM_bot="$R_TELEGRAM_BOT_MONITOROSM_BOT" >> ~/.Renviron
           echo TME_OSMCAT_CHATID="$TME_OSMCAT_CHATID" >> ~/.Renviron
         shell: bash
+        env:
+          R_TELEGRAM_BOT_MONITOROSM_BOT: ${{ secrets.R_TELEGRAM_BOT_MONITOROSM_BOT }}
+          TME_OSMCAT_CHATID: ${{ secrets.TME_OSMCAT_CHATID}}
+
 
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
