@@ -90,8 +90,11 @@ if ( # any(hi_ha_canvis) &&
   # format(Sys.Date(), format = "%u") %in% "5" &&  # Només els divendres
   Sys.getenv("GITHUB_WORKFLOW") == "Render and Publish"
 ) {
-  message("GITHUB_EVENT_NAME:", Sys.getenv("GITHUB_EVENT_NAME"))
-  message("GITHUB_WORKFLOW:", Sys.getenv("GITHUB_WORKFLOW"))
-  m <- missatge_telegram(missatge = "Hi ha canvis a [*limits*](https://osm-catalan.github.io/monitorOSM/web/limits.html).")
+  message("GITHUB_EVENT_NAME: ", Sys.getenv("GITHUB_EVENT_NAME"))
+  message("GITHUB_WORKFLOW: ", Sys.getenv("GITHUB_WORKFLOW"))
+  message("TME_OSMCAT_CHATID: ", Sys.getenv("TME_OSMCAT_CHATID"))
+  print(paste("monitorOSM_bot buit:", Sys.getenv("R_TELEGRAM_BOT_monitorOSM_bot") == ""))
+  print(paste("bot_token buit:", as.character(telegram.bot::bot_token("monitorOSM_bot") == "")))
+  # m <- missatge_telegram(missatge = "Hi ha canvis a [*limits*](https://osm-catalan.github.io/monitorOSM/web/limits.html).")
 }
 ```

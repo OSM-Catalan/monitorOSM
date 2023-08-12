@@ -17,6 +17,7 @@ repos:
         - compareDF
         - jmaspons/osmapiR
         - osmdata
+        - telegram.bot
     # codemeta must be above use-tidy-description when both are used
     # -   id: codemeta-description-updated
     -   id: use-tidy-description
