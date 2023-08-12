@@ -2,6 +2,7 @@ project:
   type: website
   execute-dir: project
   render:
+    - README.md
     - web/*.qmd
 
 website:
@@ -10,9 +11,6 @@ website:
   repo-actions: [edit, issue]
   open-graph: true
   navbar:
-    left:
-      - web/inici.qmd
-      # - quant_a.qmd
     tools:
       - icon: github
         href: https://github.com/OSM-Catalan/monitorOSM

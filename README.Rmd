@@ -13,6 +13,8 @@ knitr::opts_chunk$set(
 )
 ```
 
+<img src='man/figures/255px-Osmcatala.svg.png' align="right" height=110/>
+
 # monitorOSM
 
 <!-- badges: start -->
@@ -24,4 +26,64 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-`monitorOSM` és un repositori que serveix per monitoritzar canvis a OpenStreetMap comparant els objectes amb bases de dades externes.
+`monitorOSM` és un repositori que serveix per monitoritzar canvis a [OpenStreetMap](http://www.openstreemap.com)
+comparant els objectes amb [bases de dades de referència](https://github.com/OSM-Catalan/monitorOSM/tree/main/data-raw).
+
+Podeu veure els informes que s'actualitzen diàriament a <https://osm-catalan.github.io/monitorOSM>. Els informes de
+canvis mostren taules amb l'estat de les etiquetes a OSM i a les bases de dades de referència:
+
+```{r exemple diferències, echo=FALSE}
+referencia <- data.frame(
+  osm_url = "http://osm.org/node/XXXX", `name:ca` = "nom de referència", name = "Sense canvis",
+  wikipedia = "ca:Eliminat", check.names = FALSE
+)
+osm <- data.frame(
+  osm_url = "http://osm.org/node/XXXX", `name:ca` = "nom a OSM", name = "Sense canvis",
+  wikipedia = NA_character_, check.names = FALSE
+)
+
+dif <- suppressWarnings(suppressMessages(
+  compareDF::compare_df(df_new = osm, df_old = referencia, group_col = "osm_url", stop_on_error = FALSE)
+))
+suppressMessages(compareDF::create_output_table(dif, change_col_name = "canvi"))
+```
+
+També es mostra quins conjunts de canvis han trencat les etiquetes amb enllaços per si es vol deixar comentaris.
+
+
+## Afegir nous objectes a les bases de dades
+
+Si voleu afegir objectes amb les seves etiquetes a les bases de dades, podeu obrir un
+[tiquet](https://github.com/OSM-Catalan/monitorOSM/issues). Fora bo que els estats de referència dels objectes siguin
+consensuats amb la 
+[Comunitat d'OpenStreetmap en català](https://wiki.openstreetmap.org/wiki/WikiProject_Catalan#Canals_de_comunicaci%C3%B3_i_mitjans_de_difusi%C3%B3).
+
+
+## Paquet d'R
+
+La consulta, comparació amb bases de dades de referència i renderització de la web es fan amb un paquet
+d'[R](https://cran.r-project.org/) i accions de github. El paquet també inclou funcions per restaurar els objectes de
+manera ràpida, però com a projecte comunitari, és important intentar parlar amb els usuaris que discrepen de les bases
+de dades de referència.
+
+### Exemple de restauració
+
+Instal·leu el paquet d'R:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("OSM-Catalan/monitorOSM")
+```
+
+Restauració de les etiquetes `name` i `wikipedia` de les comarques del País Valencià:
+
+``` r
+id <- modifica_etiquetes_osm(
+  comarques[comarques$regio == "PV", ],
+  claus = c("name", "wikipedia"),
+  comentari = "Restaura els noms de les comarques dels Països Catalans", hashtags = "monitorOSM"
+)
+```
+Retorna l'identificador del conjunt de canvis.
+
+

@@ -1,5 +1,5 @@
 ---
-title: "Municipis, comarques i regions"
+title: "Municipis, comarques i territoris"
 engine: knitr
 execute:
   echo: false
