@@ -85,11 +85,11 @@ hi_ha_canvis <- sapply(list(canvis_ppcc, canvis_territoris, canvis_comarques, ca
   nrow(x$comparison_df) > 0
 })
 
-if ( # any(hi_ha_canvis) &&
-  # Sys.getenv("GITHUB_EVENT_NAME") == "schedule" &&
+if (any(hi_ha_canvis) &&
+  Sys.getenv("GITHUB_EVENT_NAME") == "schedule" &&
   # format(Sys.Date(), format = "%u") %in% "5" &&  # Només els divendres
   Sys.getenv("GITHUB_WORKFLOW") == "Render and Publish"
 ) {
-  m <- missatge_telegram(missatge = "Hi ha canvis a [*limits*](https://osm-catalan.github.io/monitorOSM/web/limits.html).")
+  m <- missatge_telegram(missatge = "Hi ha canvis a *[limits](https://osm-catalan.github.io/monitorOSM/web/limits.html)*.")
 }
 ```
