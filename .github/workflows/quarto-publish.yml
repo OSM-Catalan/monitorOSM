@@ -27,6 +27,12 @@ jobs:
         with:
           extra-packages: local::.
 
+      - name: Crea i omple .Renviron amb secrets accessibles des d'R
+        run: |
+          echo R_TELEGRAM_BOT_monitorOSM_bot="$R_TELEGRAM_BOT_MONITOROSM_BOT" >> ~/.Renviron
+          echo TME_OSMCAT_CHATID="TME_OSMCAT_CHATID" >> ~/.Renviron
+        shell: bash
+
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
         with:
