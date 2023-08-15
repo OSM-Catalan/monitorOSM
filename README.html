@@ -99,7 +99,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-sidebar docked nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -176,22 +176,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">En aquesta pàgina</h2>
-   
-  <ul>
-  <li><a href="#monitorosm" id="toc-monitorosm" class="nav-link active" data-scroll-target="#monitorosm">monitorOSM <img src="man/figures/logo.png" align="right" height="130/"></a>
-  <ul class="collapse">
-  <li><a href="#afegir-nous-objectes-a-les-bases-de-dades" id="toc-afegir-nous-objectes-a-les-bases-de-dades" class="nav-link" data-scroll-target="#afegir-nous-objectes-a-les-bases-de-dades">Afegir nous objectes a les bases de dades</a></li>
-  <li><a href="#paquet-dr" id="toc-paquet-dr" class="nav-link" data-scroll-target="#paquet-dr">Paquet d’R</a>
-  <ul class="collapse">
-  <li><a href="#exemple-de-restauració" id="toc-exemple-de-restauració" class="nav-link" data-scroll-target="#exemple-de-restauració">Exemple de restauració</a></li>
-  </ul></li>
-  </ul></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/OSM-Catalan/monitorOSM/edit/main/README.md" class="toc-action">Edita aquesta pàgina</a></p><p><a href="https://github.com/OSM-Catalan/monitorOSM/issues/new" class="toc-action">Informa d'un problema</a></p></div></div></nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -205,64 +190,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- badges: end -->
 <p><code>monitorOSM</code> és un repositori que serveix per monitoritzar canvis a <a href="http://www.openstreemap.com">OpenStreetMap</a> comparant els objectes amb <a href="https://github.com/OSM-Catalan/monitorOSM/tree/main/data-raw">bases de dades de referència</a>.</p>
 <p>Podeu veure els informes que s’actualitzen diàriament a <a href="https://osm-catalan.github.io/monitorOSM" class="uri">https://osm-catalan.github.io/monitorOSM</a>. Els informes de canvis mostren taules amb l’estat de les etiquetes a OSM i a les bases de dades de referència:</p>
-
-<table class="gmisc_table" style="border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;">
+<div class="cell">
+<div class="cell-output-display">
+<table class="gmisc_table table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
-<tr>
-<th style="font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
-osm_url
-</th>
-<th style="font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
-canvi
-</th>
-<th style="font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
-name:ca
-</th>
-<th style="font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
-name
-</th>
-<th style="font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
-wikipedia
-</th>
+<tr class="header">
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">osm_url</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">canvi</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">name:ca</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">name</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">wikipedia</th>
 </tr>
 </thead>
 <tbody>
-<tr style="background-color: #ffffff;">
-<td style="padding: .2em; color: #999999; background-color: #ffffff; text-align: center;">
-<a href="http://osm.org/node/XXXX" class="uri">http://osm.org/node/XXXX</a>
-</td>
-<td style="padding: .2em; color: #52854C; background-color: #ffffff; text-align: center;">
-+
-</td>
-<td style="padding: .2em; color: #52854C; background-color: #ffffff; text-align: center;">
-nom a OSM
-</td>
-<td style="padding: .2em; color: #999999; background-color: #ffffff; text-align: center;">
-Sense canvis
-</td>
-<td style="padding: .2em; color: #52854C; background-color: #ffffff; text-align: center;">
-</td>
+<tr class="odd" style="background-color: #ffffff;">
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;">http://osm.org/node/XXXX</td>
+<td style="text-align: center; padding: .2em; color: #52854C; background-color: #ffffff;">+</td>
+<td style="text-align: center; padding: .2em; color: #52854C; background-color: #ffffff;">nom a OSM</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;">Sense canvis</td>
+<td style="text-align: center; padding: .2em; color: #52854C; background-color: #ffffff;"></td>
 </tr>
-<tr style="background-color: #ffffff;">
-<td style="padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey; text-align: center;">
-<a href="http://osm.org/node/XXXX" class="uri">http://osm.org/node/XXXX</a>
-</td>
-<td style="padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey; text-align: center;">
--
-</td>
-<td style="padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey; text-align: center;">
-nom de referència
-</td>
-<td style="padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey; text-align: center;">
-Sense canvis
-</td>
-<td style="padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey; text-align: center;">
-ca:Eliminat
-</td>
+<tr class="even" style="background-color: #ffffff;">
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;">http://osm.org/node/XXXX</td>
+<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey;">-</td>
+<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey;">nom de referència</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;">Sense canvis</td>
+<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey;">ca:Eliminat</td>
 </tr>
 </tbody>
-
 </table>
+</div>
+</div>
 <p>També es mostra quins conjunts de canvis han trencat les etiquetes amb enllaços per si es vol deixar comentaris.</p>
 <section id="afegir-nous-objectes-a-les-bases-de-dades" class="level2">
 <h2 class="anchored" data-anchor-id="afegir-nous-objectes-a-les-bases-de-dades">Afegir nous objectes a les bases de dades</h2>
@@ -529,4 +487,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/OSM-Catalan/monitorOSM/edit/main/README.Rmd" class="toc-action">Edita aquesta pàgina</a></p><p><a href="https://github.com/OSM-Catalan/monitorOSM/issues/new" class="toc-action">Informa d'un problema</a></p></div></div></div></div></footer></body></html>
