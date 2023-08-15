@@ -14,7 +14,7 @@ jobs:
       - name: Install system dependencies
         if: runner.os == 'Linux'
         run: |
-          sudo apt-get install -y hunspell-ca
+          sudo apt-get install -y hunspell-ca libcurl4-openssl-dev
 
       - name: Set up Python
         uses: actions/setup-python@v3
