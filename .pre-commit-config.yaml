@@ -52,7 +52,8 @@ repos:
           data/.*|
           data-raw/.+\.tsv|
           LICENSE\.md|
-          _language-ca.yml
+          _language-ca.yml|
+          pkgdown/.*|
           )$
         args: [--lang=ca_ES]
     -   id: lintr

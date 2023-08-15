@@ -1,3 +1,4 @@
 url: https://osm-catalan.github.io/monitorOSM/docs/
 template:
   bootstrap: 5
+lang: ca
