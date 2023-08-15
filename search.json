@@ -4,7 +4,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Tue 15 Aug 2023 - 21:26:43"
+    "text": "Última actualització: Tue 15 Aug 2023 - 22:54:31"
   },
   {
     "objectID": "web/limits.html#països-catalans",
@@ -37,14 +37,14 @@
   {
     "objectID": "README.html#afegir-nous-objectes-a-les-bases-de-dades",
     "href": "README.html#afegir-nous-objectes-a-les-bases-de-dades",
-    "title": "monitorOSM",
+    "title": "",
     "section": "Afegir nous objectes a les bases de dades",
     "text": "Afegir nous objectes a les bases de dades\nSi voleu afegir objectes amb les seves etiquetes a les bases de dades, podeu obrir un tiquet o podeu provar de fer un PR amb les instruccions que trobareu a aquí. Fora bo que els estats de referència dels objectes siguin consensuats amb la Comunitat d’OpenStreetmap en català."
   },
   {
     "objectID": "README.html#paquet-dr",
     "href": "README.html#paquet-dr",
-    "title": "monitorOSM",
+    "title": "",
     "section": "Paquet d’R",
     "text": "Paquet d’R\nLa consulta, comparació amb bases de dades de referència i renderització de la web es fan amb un paquet d’R i accions de github. El paquet també inclou funcions per restaurar els objectes de manera ràpida, però com a projecte comunitari, és important intentar parlar amb els usuaris que discrepen de les bases de dades de referència. Vegeu la documentació del paquet d’R per més detalls.\n\nExemple de restauració\nInstal·leu el paquet d’R:\n# install.packages(\"devtools\")\ndevtools::install_github(\"OSM-Catalan/monitorOSM\")\nRestauració de les etiquetes name i wikipedia de les comarques del País Valencià:\nlibrary(monitorOSM)\n\nid &lt;- modifica_etiquetes_osm(\n  comarques[comarques$regio == \"PV\", ],\n  claus = c(\"name\", \"wikipedia\"),\n  comentari = \"Restaura els noms de les comarques dels País Valencià\", hashtags = \"monitorOSM\"\n)\nRetorna l’identificador del conjunt de canvis."
   },
