@@ -103,7 +103,9 @@ de la web es fan amb un paquet d’[R](https://cran.r-project.org/) i
 accions de github. El paquet també inclou funcions per restaurar els
 objectes de manera ràpida, però com a projecte comunitari, és important
 intentar parlar amb els usuaris que discrepen de les bases de dades de
-referència.
+referència. Vegeu la [documentació del paquet
+d’R](https://osm-catalan.github.io/monitorOSM/docs/reference/) per més
+detalls.
 
 ### Exemple de restauració
 
