@@ -87,5 +87,3 @@ id <- modifica_etiquetes_osm(
 )
 ```
 Retorna l'identificador del conjunt de canvis.
-
-

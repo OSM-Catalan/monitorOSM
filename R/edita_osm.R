@@ -51,7 +51,7 @@ modifica_etiquetes_osm <- function(x, claus, comentari, ...) {
 
   changeset_id <- osmapiR::osm_create_changeset(comment = comentari, ...)
 
-  res <- osmapiR::osm_diff_upload_changeset(changeset_id = changeset_id, osmcha = osmchange)
+  osmapiR::osm_diff_upload_changeset(changeset_id = changeset_id, osmcha = osmchange)
   osmapiR::osm_close_changeset(changeset_id = changeset_id)
 
   return(changeset_id)
