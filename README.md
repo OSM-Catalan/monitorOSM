@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-<img src='man/figures/255px-Osmcatala.svg.png' align="right" height=110/>
+<img src='man/figures/255px-Osmcatala.svg.png' align="right" height=130/>
 
 # monitorOSM
 
@@ -116,10 +116,12 @@ Restauració de les etiquetes `name` i `wikipedia` de les comarques del
 País Valencià:
 
 ``` r
+library(monitorOSM)
+
 id <- modifica_etiquetes_osm(
   comarques[comarques$regio == "PV", ],
   claus = c("name", "wikipedia"),
-  comentari = "Restaura els noms de les comarques dels Països Catalans", hashtags = "monitorOSM"
+  comentari = "Restaura els noms de les comarques dels País Valencià", hashtags = "monitorOSM"
 )
 ```
 

@@ -3,6 +3,7 @@ project:
   execute-dir: project
   render:
     - README.md
+    - data-raw/README.md
     - web/*.qmd
 
 website:
@@ -11,6 +12,8 @@ website:
   repo-actions: [edit, issue]
   open-graph: true
   navbar:
+    left:
+    - data-raw/README.md
     tools:
       - icon: github
         href: https://github.com/OSM-Catalan/monitorOSM

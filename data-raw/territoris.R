@@ -1,4 +1,4 @@
-## Prepara la base de dades de territoris a partir del fitxer territoris.tsv
+## Prepara la base de dades de territoris a partir del fitxer territoris.tsv ----
 
 territoris <- utils::read.table(
   file = "data-raw/territoris.tsv",

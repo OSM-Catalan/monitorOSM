@@ -1,0 +1,102 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Bases de dades de referència
+
+```{r taules, echo=FALSE}
+d <- data(package = "monitorOSM")
+d_list <- new.env()
+data(list = d$results[d$results[, "Title"] != "", "Item"], package = "monitorOSM", envir = d_list)
+
+taules <- mapply(function(x, nom) {
+  url <- paste0("[", nom, "](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/", nom, ".tsv)")
+  out <- data.frame(bd = url, n_obj = nrow(x), n_cols = ncol(x))
+  out$columnes <- list(colnames(x))
+
+  return(out)
+}, x = as.list(d_list), nom = names(d_list), SIMPLIFY = FALSE)
+taules <- do.call(rbind, taules)
+
+knitr::kable(taules, row.names = FALSE)
+```
+
+En total es monitoritzen `r sum(taules$n_obj)` objectes d'OpenStreetMap.
+
+Abans de revertir canvis a OSM o comentar conjunts de canvis, comproveu les dades i, si cal, corregiu les bases de dades
+de referència.
+
+## Com afegir noves bases de dades?
+
+Creeu una taula amb els estats de referència. Cal que cada fil·la contingui les etiquetes que volgueu monitorejar i els
+identificadors únics d'OpenStreetMap (`osm_type` i `osm_id`). Podeu generar les taules amb el paquet d'R `osmdata`.
+
+Exemple per generar una taula les etiquetes `name:ca`, `name`, `wikipedia` i `wikidata` de tots els cims dels Països
+Catalans (`relation(id:11747082)`):
+
+``` {r exemple cims}
+library(osmdata)
+
+cims <- opq(bbox = "relation(id:11747082)", out = "tags", timeout = "100") |>
+  add_osm_feature(key = "natural", value = "peak") |>
+  opq_csv(fields = c("name:ca" , "::id", "::type", "name", "wikipedia", "wikidata")) |>
+  osmdata_data_frame()
+
+names(cims) <- gsub("^@", "osm_", names(cims))
+head(cims)
+```
+
+És pràctic afegir la comarca i territori de cada objecte per poder fer les reversions amb conjunts de canvis més petits:
+
+``` {r exemple cims per comarques}
+library(osmdata)
+library(monitorOSM) # comarques
+
+cims_comarca <- mapply(function(id, nom, territori) {
+  out <- opq(bbox = paste0("relation(id:", id, ")"), out = "tags", timeout = "100") |>
+    add_osm_feature(key = "natural", value = "peak") |>
+    opq_csv(fields = c("name:ca" , "::id", "::type", "name", "wikipedia", "wikidata")) |>
+    osmdata_data_frame()
+  
+  if (nrow(out) > 0) {
+    out$regio <- territori
+    out$comarca <- nom
+  }
+  
+  return(out)
+}, id = comarques$osm_id, nom = comarques$`name:ca`, territori = comarques$regio, SIMPLIFY = FALSE)
+
+cims_comarques <- do.call(rbind, cims_comarca)
+names(cims_comarques) <- gsub("^@", "osm_", names(cims_comarques))
+
+cims_comarques <- cims_comarques[!duplicated(cims_comarques[, c("osm_type", "osm_id")]), ] # elimina objectes duplicats
+ordre <- order(cims_comarques$regio, cims_comarques$comarca, cims_comarques$`name:ca`)
+ordre_columnes <- c("name:ca", "regio", "comarca", "osm_id", "osm_type", "name", "wikipedia", "wikidata")
+cims_comarques <- unique(cims_comarques[ordre, ordre_columnes])
+rownames(cims_comarques) <- NULL
+
+head(cims_comarques)
+```
+
+Un cop tingueu la base de dades a punt, es pot afegir al paquet de manera que estigui disponible quan el carreguem:
+
+``` r
+usethis::use_data(cims_comarques, overwrite = TRUE, compress = "xz")
+```
+
+És recomanable preparar un fitxer per gestionar la nova base de dades i desar-la com a taula
+([exemple](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/comarques.R)). També cal documentar la nova
+taula ([exemple](https://github.com/OSM-Catalan/monitorOSM/blob/main/man/comarques.Rd)).
+
+Per començar a monitoritzar la nova base de dades cal crear o afegir-la a un fitxer com [limits.qmd](https://github.com/OSM-Catalan/monitorOSM/blob/main/web/limits.qmd).
