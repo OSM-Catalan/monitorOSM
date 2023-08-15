@@ -2,7 +2,7 @@ project:
   type: website
   execute-dir: project
   render:
-    - README.md
+    - README.Rmd
     - data-raw/README.md
     - web/*.qmd
 

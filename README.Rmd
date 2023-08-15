@@ -1,5 +1,8 @@
 ---
 output: github_document
+format:
+  html:
+    toc: false
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
