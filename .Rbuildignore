@@ -6,5 +6,8 @@
 ^\.lintr$
 ^\.pre-commit-config\.yaml$
 ^\.quarto$
+^_pkgdown\.yml$
 ^data-raw$
+^docs$
 ^inst/WORDLIST$
+^pkgdown$
