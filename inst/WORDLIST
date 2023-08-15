@@ -37,6 +37,7 @@ edition
 Encoding
 engine
 EVENT
+favicon
 FOSS
 function
 getenv
@@ -49,6 +50,7 @@ https
 icon
 id
 if
+image
 in
 io
 issue

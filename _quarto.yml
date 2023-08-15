@@ -11,6 +11,8 @@ website:
   repo-url: https://github.com/OSM-Catalan/monitorOSM
   repo-actions: [edit, issue]
   open-graph: true
+  image: man/figures/logo.png
+  favicon: man/figures/logo.png
   navbar:
     logo: man/figures/logo.png
     left:
