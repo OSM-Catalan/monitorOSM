@@ -1,9 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# <img src='man/figures/logo.png' align="right" height=130/>
-
-# monitorOSM
+# monitorOSM <img src='man/figures/logo.png' align="right" height=130/>
 
 <!-- badges: start -->
 
