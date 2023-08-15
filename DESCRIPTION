@@ -10,7 +10,7 @@ Maintainer: Joan Maspons <joanmaspons@gmail.com>
 Description: Monitoreja objectes d'OpenStreetMap i informa si hi ha canvis.
 License: GPL (>= 3)
 License_is_FOSS: yes
-URL: https://github.com/OSM-Catalan/monitorOSM
+URL: https://github.com/OSM-Catalan/monitorOSM, https://osm-catalan.github.io/monitorOSM/
 BugReports: https://github.com/OSM-Catalan/monitorOSM/issues
 Depends:
     R (>= 3.5)

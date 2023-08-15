@@ -12,8 +12,13 @@ website:
   repo-actions: [edit, issue]
   open-graph: true
   navbar:
+    logo: man/figures/255px-Osmcatala.svg.png
     left:
-    - data-raw/README.md
+      - data-raw/README.md
+    right:
+      - text: Paquet d'R
+        icon: r-circle-fill
+        href: https://osm-catalan.github.io/monitorOSM/docs/
     tools:
       - icon: github
         href: https://github.com/OSM-Catalan/monitorOSM
