@@ -39,7 +39,7 @@ de referència.
 
 ## Com afegir noves bases de dades?
 
-Creeu una taula amb els estats de referència. Cal que cada fil·la contingui les etiquetes que volgueu monitorejar i els
+Creeu una taula amb els estats de referència. Cal que cada fila contingui les etiquetes que vulgueu monitorejar i els
 identificadors únics d'OpenStreetMap (`osm_type` i `osm_id`). Podeu generar les taules amb el paquet d'R `osmdata`.
 
 Exemple per generar una taula les etiquetes `name:ca`, `name`, `wikipedia` i `wikidata` de tots els cims dels Països
@@ -50,7 +50,7 @@ library(osmdata)
 
 cims <- opq(bbox = "relation(id:11747082)", out = "tags", timeout = "100") |>
   add_osm_feature(key = "natural", value = "peak") |>
-  opq_csv(fields = c("name:ca" , "::id", "::type", "name", "wikipedia", "wikidata")) |>
+  opq_csv(fields = c("name:ca", "::id", "::type", "name", "wikipedia", "wikidata")) |>
   osmdata_data_frame()
 
 names(cims) <- gsub("^@", "osm_", names(cims))
@@ -66,14 +66,14 @@ library(monitorOSM) # comarques
 cims_comarca <- mapply(function(id, nom, territori) {
   out <- opq(bbox = paste0("relation(id:", id, ")"), out = "tags", timeout = "100") |>
     add_osm_feature(key = "natural", value = "peak") |>
-    opq_csv(fields = c("name:ca" , "::id", "::type", "name", "wikipedia", "wikidata")) |>
+    opq_csv(fields = c("name:ca", "::id", "::type", "name", "wikipedia", "wikidata")) |>
     osmdata_data_frame()
-  
+
   if (nrow(out) > 0) {
     out$regio <- territori
     out$comarca <- nom
   }
-  
+
   return(out)
 }, id = comarques$osm_id, nom = comarques$`name:ca`, territori = comarques$regio, SIMPLIFY = FALSE)
 

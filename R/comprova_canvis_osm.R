@@ -71,7 +71,7 @@ cerca_versio_canvis <- function(x) { # nolint: cyclocomp_linter
           valor_referencia <- canvi_etiquetes[[clau]][2]
 
           if (!clau %in% etiquetes_analitzar[[1]]$key &&
-            clau %in% etiquetes_analitzar[[2]]$key &&
+            clau %in% etiquetes_analitzar[[2]]$key && # nolint: indentation_linter
             etiquetes_analitzar[[2]]$value[etiquetes_analitzar[[2]]$key == clau] == valor_referencia) {
             # Versió anterior correcte i eliminada en aquesta versió
 
@@ -81,7 +81,7 @@ cerca_versio_canvis <- function(x) { # nolint: cyclocomp_linter
             ))
             canvi_etiquetes <- canvi_etiquetes[setdiff(names(canvi_etiquetes), clau)]
           } else if (clau %in% etiquetes_analitzar[[1]]$key &&
-            clau %in% etiquetes_analitzar[[2]]$key &&
+            clau %in% etiquetes_analitzar[[2]]$key && # nolint: indentation_linter
             etiquetes_analitzar[[2]]$value[etiquetes_analitzar[[2]]$key == clau] !=
               etiquetes_analitzar[[1]]$value[etiquetes_analitzar[[1]]$key == clau] &&
             etiquetes_analitzar[[2]]$value[etiquetes_analitzar[[2]]$key == clau] == valor_referencia) {

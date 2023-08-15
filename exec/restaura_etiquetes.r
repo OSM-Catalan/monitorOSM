@@ -6,7 +6,7 @@ canvis_ppcc <- comprova_canvis_osm(PPCC, centre = TRUE)
 # canvis_html(canvis_ppcc)
 
 if (nrow(canvis_ppcc$comparison_df) > 0) {
-  conjunt_de_canvis_PPCC <- modifica_etiquetes_osm(
+  conjunt_de_canvis_PPCC <- modifica_etiquetes_osm( # nolint: object_name_linter
     x = PPCC,
     claus = c("name:ca", "name", "wikipedia", "wikidata"),
     comentari = "Restaura les etiquetes de la relació PPCC.",
