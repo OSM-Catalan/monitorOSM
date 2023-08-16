@@ -183,7 +183,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#bases-de-dades-de-referència" id="toc-bases-de-dades-de-referència" class="nav-link active" data-scroll-target="#bases-de-dades-de-referència">Bases de dades de referència</a>
   <ul class="collapse">
-  <li><a href="#com-afegir-noves-bases-de-dades" id="toc-com-afegir-noves-bases-de-dades" class="nav-link" data-scroll-target="#com-afegir-noves-bases-de-dades">Com afegir noves bases de dades?</a></li>
+  <li><a href="#com-afegir-noves-bases-de-dades" id="toc-com-afegir-noves-bases-de-dades" class="nav-link" data-scroll-target="#com-afegir-noves-bases-de-dades">Com afegir noves bases de dades?</a>
+  <ul class="collapse">
+  <li><a href="#instruccions" id="toc-instruccions" class="nav-link" data-scroll-target="#instruccions">Instruccions</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/OSM-Catalan/monitorOSM/edit/main/data-raw/README.md" class="toc-action">Edita aquesta pàgina</a></p><p><a href="https://github.com/OSM-Catalan/monitorOSM/issues/new" class="toc-action">Informa d'un problema</a></p></div></div></nav>
@@ -236,6 +239,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Abans de revertir canvis a OSM o comentar conjunts de canvis, comproveu les dades i, si cal, corregiu les bases de dades de referència.</p>
 <section id="com-afegir-noves-bases-de-dades" class="level2">
 <h2 class="anchored" data-anchor-id="com-afegir-noves-bases-de-dades">Com afegir noves bases de dades?</h2>
+<p>Si voleu afegir objectes amb les seves etiquetes a les bases de dades, podeu obrir un <a href="https://github.com/OSM-Catalan/monitorOSM/issues">tiquet</a> o un <a href="https://github.com/OSM-Catalan/monitorOSM/pulls">PR</a> que inclogui la base de dades i el codi per generar els informes.</p>
+<section id="instruccions" class="level3">
+<h3 class="anchored" data-anchor-id="instruccions">Instruccions</h3>
 <p>Creeu una taula amb els estats de referència. Cal que cada fila contingui les etiquetes que vulgueu monitorejar i els identificadors únics d’OpenStreetMap (<code>osm_type</code> i <code>osm_id</code>). Podeu generar les taules amb el paquet d’R <code>osmdata</code>.</p>
 <p>Exemple per generar una taula les etiquetes <code>name:ca</code>, <code>name</code>, <code>wikipedia</code> i <code>wikidata</code> de tots els cims dels Països Catalans (<code>relation(id:11747082)</code>):</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(osmdata)</span>
@@ -308,9 +314,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Un cop tingueu la base de dades a punt, es pot afegir al paquet de manera que estigui disponible quan el carreguem:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_data</span>(cims_comarques, <span class="at">overwrite =</span> <span class="cn">TRUE</span>, <span class="at">compress =</span> <span class="st">"xz"</span>)</span></code><button title="Copia al porta-retalls" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>És recomanable preparar un fitxer per gestionar la nova base de dades i desar-la com a taula (<a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/comarques.R">exemple</a>). També cal documentar la nova taula (<a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/man/comarques.Rd">exemple</a>).</p>
-<p>Per començar a monitoritzar la nova base de dades cal crear o afegir-la a un fitxer com <a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/web/limits.qmd">limits.qmd</a>.</p>
+<p>Per començar a monitorar la nova base de dades cal crear o afegir-la a un fitxer com <a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/web/limits.qmd">limits.qmd</a>.</p>
 
 
+</section>
 </section>
 </section>
 
