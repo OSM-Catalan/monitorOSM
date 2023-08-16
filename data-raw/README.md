@@ -17,6 +17,14 @@ les dades i, si cal, corregiu les bases de dades de referència.
 
 ## Com afegir noves bases de dades?
 
+Si voleu afegir objectes amb les seves etiquetes a les bases de dades,
+podeu obrir un
+[tiquet](https://github.com/OSM-Catalan/monitorOSM/issues) o un
+[PR](https://github.com/OSM-Catalan/monitorOSM/pulls) que inclogui la
+base de dades i el codi per generar els informes.
+
+### Instruccions
+
 Creeu una taula amb els estats de referència. Cal que cada fila
 contingui les etiquetes que vulgueu monitorejar i els identificadors
 únics d’OpenStreetMap (`osm_type` i `osm_id`). Podeu generar les taules
@@ -114,6 +122,6 @@ desar-la com a taula
 També cal documentar la nova taula
 ([exemple](https://github.com/OSM-Catalan/monitorOSM/blob/main/man/comarques.Rd)).
 
-Per començar a monitoritzar la nova base de dades cal crear o afegir-la
-a un fitxer com
+Per començar a monitorar la nova base de dades cal crear o afegir-la a
+un fitxer com
 [limits.qmd](https://github.com/OSM-Catalan/monitorOSM/blob/main/web/limits.qmd).
