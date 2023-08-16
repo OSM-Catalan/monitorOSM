@@ -2,3 +2,12 @@ url: https://osm-catalan.github.io/monitorOSM/docs/
 template:
   bootstrap: 5
 lang: ca
+deploy:
+  install_metadata: true
+reference:
+- title: "Funcions"
+  contents:
+  - lacks_concepts("Bases de dades de referència")
+- title: "Bases de dades de referència"
+  contents:
+  - has_concept("Bases de dades de referència")

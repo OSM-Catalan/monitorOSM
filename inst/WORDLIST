@@ -16,6 +16,8 @@ CatNord
 comment
 compareDF
 comparison
+concept
+concepts
 Config
 cosmo
 cre
@@ -29,6 +31,7 @@ d’OpenStreetmap
 d’R
 data-raw
 Depends
+deploy
 Description
 df
 docked
@@ -52,12 +55,14 @@ id
 if
 image
 in
+install
 io
 issue
 issues
 jmaspons
 joanmaspons
 knitr
+lacks
 lang
 language
 Language
@@ -117,6 +122,7 @@ R
 r-circle-fill
 R-CMD-check
 README
+reference
 regio
 repo-actions
 repo-url

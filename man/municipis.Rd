@@ -30,8 +30,10 @@ Les parròquies d'Andorra corresponen a comarques (\code{admin_level = "7"}) i e
 Els pobles no s'inclouen.
 }
 \seealso{
+  Altres bases de dades de referència:
   \code{\link{PPCC}}, \code{\link{comarques}}, \code{\link{territoris}}.
 }
+\concept{Bases de dades de referència}
 \examples{
 municipis[, c("name:ca", "regio", "name")]
 }

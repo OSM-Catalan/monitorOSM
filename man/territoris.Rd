@@ -19,8 +19,10 @@ Dades dels territoris dels Països Catalans.
   }
 }
 \seealso{
+  Altres bases de dades de referència:
   \code{\link{municipis}}, \code{\link{comarques}}, \code{\link{PPCC}}.
 }
+\concept{Bases de dades de referència}
 \examples{
 territoris[, c("regio", "name")]
 }

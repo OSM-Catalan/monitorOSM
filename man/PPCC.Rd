@@ -18,8 +18,10 @@ Dades dels Països Catalans a OSM.
   }
 }
 \seealso{
+  Altres bases de dades de referència:
   \code{\link{municipis}}, \code{\link{comarques}}, \code{\link{territoris}}.
 }
+\concept{Bases de dades de referència}
 \examples{
 PPCC[, 1:3]
 }
