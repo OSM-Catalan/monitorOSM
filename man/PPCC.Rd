@@ -19,7 +19,8 @@ Dades dels Països Catalans a OSM.
 }
 \seealso{
   Altres bases de dades de referència:
-  \code{\link{municipis}}, \code{\link{comarques}}, \code{\link{territoris}}.
+  \code{\link{municipis}}, \code{\link{comarques}}, \code{\link{territoris}},
+  \code{\link{loc_admin_centre_municipis}}.
 }
 \concept{Bases de dades de referència}
 \examples{

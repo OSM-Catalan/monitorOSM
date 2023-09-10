@@ -25,7 +25,8 @@ Les parròquies d'Andorra corresponen a comarques (\code{admin_level = "7"}) i s
 }
 \seealso{
   Altres bases de dades de referència:
-  \code{\link{PPCC}}, \code{\link{municipis}}, \code{\link{territoris}}.
+  \code{\link{PPCC}}, \code{\link{municipis}}, \code{\link{territoris}},
+  \code{\link{loc_admin_centre_municipis}}.
 }
 \concept{Bases de dades de referència}
 \examples{

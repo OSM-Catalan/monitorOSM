@@ -90,6 +90,6 @@ if (any(hi_ha_canvis) &&
   # format(Sys.Date(), format = "%u") %in% "5" &&  # Només els divendres
   Sys.getenv("GITHUB_WORKFLOW") == "Render and Publish"
 ) {
-  m <- missatge_telegram(missatge = "Hi ha canvis a [**limits**](https://osm-catalan.github.io/monitorOSM/web/limits.html).")
+  m <- missatge_telegram(missatge = "Hi ha canvis a [limits](https://osm-catalan.github.io/monitorOSM/web/limits.html).")
 }
 ```

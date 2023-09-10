@@ -11,7 +11,7 @@ Alguns noms de municipis tenen duplicats. Per construir noms únics (p. ex. per 
 }
 \usage{municipis}
 \format{
-  Un \code{data.frame} amb dades dels 1671 municipis (1671 relacions + 1673 nodes que fan d'\code{admin_centre}) per
+  Un \code{data.frame} amb dades dels 1671 municipis per
   les següents 9 variables.
   \describe{
     \item{name:ca}{Etiqueta \code{name:ca}.}
@@ -26,12 +26,13 @@ Alguns noms de municipis tenen duplicats. Per construir noms únics (p. ex. per 
   }
 }
 \note{
-Les parròquies d'Andorra corresponen a comarques (\code{admin_level = "7"}) i els pobles no tenen relacions, només nodes.
-Els pobles no s'inclouen.
+Les parròquies d'Andorra corresponen a comarques (\code{admin_level = "7"}) i els pobles no tenen relacions, només
+nodes. Els pobles no s'inclouen.
 }
 \seealso{
   Altres bases de dades de referència:
-  \code{\link{PPCC}}, \code{\link{comarques}}, \code{\link{territoris}}.
+  \code{\link{PPCC}}, \code{\link{comarques}}, \code{\link{territoris}},
+  \code{\link{loc_admin_centre_municipis}}.
 }
 \concept{Bases de dades de referència}
 \examples{

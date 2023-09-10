@@ -20,7 +20,7 @@ Dades dels territoris dels Països Catalans.
 }
 \seealso{
   Altres bases de dades de referència:
-  \code{\link{municipis}}, \code{\link{comarques}}, \code{\link{PPCC}}.
+  \code{\link{municipis}}, \code{\link{comarques}}, \code{\link{PPCC}}, \code{\link{loc_admin_centre_municipis}}.
 }
 \concept{Bases de dades de referència}
 \examples{

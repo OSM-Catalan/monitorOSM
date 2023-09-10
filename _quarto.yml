@@ -30,6 +30,7 @@ website:
       - section: Control de canvis
         contents:
           - web/limits.qmd
+          - web/localitats.qmd
 
 format:
   html:
