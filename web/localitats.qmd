@@ -17,23 +17,23 @@ suppressPackageStartupMessages(library(monitorOSM, quietly = TRUE))
 
 ## Països Catalans
 
-[BD de referència](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/localitats_admin_centre_municipis.tsv)
+[BD de referència](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/loc_admin_centre_municipis.tsv)
 
 ```{r admin_centre municipis}
-canvis_localitats_admin_centre_municipis <- comprova_canvis_osm(localitats_admin_centre_municipis, centre = TRUE)
-canvis_html(canvis_localitats_admin_centre_municipis)
+canvis_loc_admin_centre_municipis <- comprova_canvis_osm(loc_admin_centre_municipis, centre = TRUE)
+canvis_html(canvis_loc_admin_centre_municipis)
 ```
 
-`r if(nrow(canvis_localitats_admin_centre_municipis$comparison_df) > 0){"### Conjunts de canvis"}`
+`r if(nrow(canvis_loc_admin_centre_municipis$comparison_df) > 0){"### Conjunts de canvis"}`
 
 ```{r localitats_admin_centre_municipis_canvis, results='asis'}
-versio_canvis_localitats_admin_centre_municipis <- cerca_versio_canvis(canvis_localitats_admin_centre_municipis)
-versio_canvis_html(versio_canvis_localitats_admin_centre_municipis)
+versio_canvis_loc_admin_centre_municipis <- cerca_versio_canvis(canvis_loc_admin_centre_municipis)
+versio_canvis_html(versio_canvis_loc_admin_centre_municipis)
 ```
 
 
 ```{r telegram}
-hi_ha_canvis <- sapply(list(canvis_localitats_admin_centre_municipis), function(x) {
+hi_ha_canvis <- sapply(list(canvis_loc_admin_centre_municipis), function(x) {
   nrow(x$comparison_df) > 0
 })
 
