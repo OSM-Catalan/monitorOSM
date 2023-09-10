@@ -1,7 +1,7 @@
 Type: Package
 Package: monitorOSM
 Title: Monitor d'OSM
-Version: 0.0.2
+Version: 0.0.3
 Authors@R: c(
     person("Joan", "Maspons", , "joanmaspons@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-2286-8727"))
@@ -21,9 +21,12 @@ Imports:
     osmdata (>= 0.2.1),
     telegram.bot
 Suggests: 
+    dbTools,
     testthat (>= 3.0.0),
     usethis
-Remotes: jmaspons/osmapiR
+Remotes: 
+    jmaspons/dbTools
+    jmaspons/osmapiR
 Config/testthat/edition: 3
 Encoding: UTF-8
 Language: ca
