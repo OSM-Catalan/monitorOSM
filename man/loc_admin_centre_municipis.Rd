@@ -5,7 +5,7 @@
 \description{
 Dades de les localitats que fan d'\code{admin_centre} dels municipis dels Països Catalans.
 }
-\usage{"loc_admin_centre_municipis"}
+\usage{loc_admin_centre_municipis}
 \format{
   Un \code{data.frame} amb dades de les 1673 localitats establertes com a \code{admin_centre} de les relacions dels
   municipis per les següents 10 variables.
