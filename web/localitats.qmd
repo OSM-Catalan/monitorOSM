@@ -1,5 +1,5 @@
 ---
-title: "localitats"
+title: "Localitats"
 engine: knitr
 execute:
   echo: false
@@ -20,7 +20,10 @@ suppressPackageStartupMessages(library(monitorOSM, quietly = TRUE))
 [BD de referència](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/loc_admin_centre_municipis.tsv)
 
 ```{r admin_centre municipis}
-canvis_loc_admin_centre_municipis <- comprova_canvis_osm(loc_admin_centre_municipis, centre = TRUE)
+canvis_loc_admin_centre_municipis <- comprova_canvis_osm(
+  loc_admin_centre_municipis[, setdiff(names(loc_admin_centre_municipis), c("regio", "comarca", "municipi"))],
+  centre = TRUE
+)
 canvis_html(canvis_loc_admin_centre_municipis)
 ```
 
