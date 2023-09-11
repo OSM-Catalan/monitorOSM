@@ -15,7 +15,7 @@ suppressPackageStartupMessages(library(monitorOSM, quietly = TRUE))
 
 Última actualització: `r format(Sys.time(), "%a %d %b %Y - %X")`
 
-## Països Catalans
+## Localitats que fan d'`admin_centre` de relacions de municipis
 
 [BD de referència](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/loc_admin_centre_municipis.tsv)
 
