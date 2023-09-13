@@ -62,12 +62,16 @@ usethis::use_data(loc_admin_centre_municipis, overwrite = TRUE, compress = "xz")
 
 loc_admin_centre_municipis_osm <- consulta_etiquetes_osm(
   x = loc_admin_centre_municipis,
-  etiquetes = c("name:ca", "osm_id", "osm_type", "name", "wikidata", "wikipedia", "place")
+  etiquetes = c("name:ca", "osm_id", "osm_type", "name", "wikidata", "wikipedia", "place", "capital", "admin_level")
 )
 lapply(loc_admin_centre_municipis_osm, unique)
 
+# TODO: afegeix capital segons l'admin_level de la relació que fan d'admin_centre
+edita <- loc_admin_centre_municipis_osm[is.na(loc_admin_centre_municipis_osm$capital), ]
+
 loc_admin_centre_municipis_osm <- loc_admin_centre_municipis_osm[, c(
-  "name:ca", "regio", "comarca", "osm_id", "osm_type", "name", "wikipedia", "wikidata", "place"
+  "name:ca", "regio", "comarca", "osm_id", "osm_type", "name", "wikipedia", "wikidata",
+  "place", "capital", "admin_level"
 )]
 
 
@@ -75,9 +79,9 @@ loc_admin_centre_municipis_osm <- loc_admin_centre_municipis_osm[, c(
 
 library(compareDF)
 
-cols <- intersect(names(loc_admin_centre_municipis_osm), names(monitorOSM::loc_admin_centre_municipis_osm))
+cols <- intersect(names(loc_admin_centre_municipis_osm), names(monitorOSM::loc_admin_centre_municipis))
 diff_loc_admin_centre_muni <- compare_df(
-  loc_admin_centre_municipis_osm[, cols], monitorOSM::loc_admin_centre_municipis_osm[, cols],
+  loc_admin_centre_municipis_osm[, cols], monitorOSM::loc_admin_centre_municipis[, cols],
   group_col = c("osm_type", "osm_id")
 )
 view_html(diff_loc_admin_centre_muni)
