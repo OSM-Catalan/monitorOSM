@@ -4,14 +4,14 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Wed 13 Sep 2023 - 02:00:16"
+    "text": "Última actualització: Wed 13 Sep 2023 - 22:58:19"
   },
   {
     "objectID": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\nplace\n\n\n\n\nhttps://osm.org/node/1470839189\n+\nSant Jordi Desvalls\nSant Jordi Desvalls\nca:Sant Jordi Desvalls\nQ13454\nvillage\n\n\nhttps://osm.org/node/1470839189\n-\nSant Jordi Desvalls\nSant Jordi Desvalls\nca:Església de Sant Jordi Desvalls\nQ28197064\nlocality\n\n\nhttps://osm.org/node/2191070562\n+\nOsor\nOsor\n\nQ13016\nvillage\n\n\nhttps://osm.org/node/2191070562\n-\nOsor\nOsor\n\n\nvillage\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1470839189\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n11\n141101152\n2023-09-11 09:17:21\nHugoren Martinako\n3392826\nwikipedia\nca:Sant Jordi Desvalls\nca:Església de Sant Jordi Desvalls\n\n\n11\n141101152\n2023-09-11 09:17:21\nHugoren Martinako\n3392826\nwikidata\nQ13454\nQ28197064\n\n\n11\n141101152\n2023-09-11 09:17:21\nHugoren Martinako\n3392826\nplace\nvillage\nlocality\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/2191070562."
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
   },
   {
     "objectID": "data-raw/README.html",
@@ -53,7 +53,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Wed 13 Sep 2023 - 02:00:01"
+    "text": "Última actualització: Wed 13 Sep 2023 - 22:58:11"
   },
   {
     "objectID": "web/limits.html#països-catalans",
@@ -67,7 +67,7 @@
     "href": "web/limits.html#territoris",
     "title": "Municipis, comarques i territoris",
     "section": "Territoris",
-    "text": "Territoris\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\n\n\n\n\nhttps://osm.org/relation/349043\n+\nComunitat Valenciana\nComunitat Valenciana\nca:País Valencià\nQ5720\n\n\nhttps://osm.org/relation/349043\n-\nComunitat Valenciana\nComunitat Valenciana\nes:Comunidad Valenciana\nQ5720\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/349043\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n211\n141182295\n2023-09-12 21:30:30\nJordi MF\n8278438\nwikipedia\nca:País Valencià\nes:Comunidad Valenciana"
+    "text": "Territoris\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
   },
   {
     "objectID": "web/limits.html#comarques",
@@ -81,6 +81,6 @@
     "href": "web/limits.html#municipis",
     "title": "Municipis, comarques i territoris",
     "section": "Municipis",
-    "text": "Municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\nadmin_level\n\n\n\n\nhttps://osm.org/relation/342670\n+\nPalmera\nPalmera\n\nQ2356806\n8\n\n\nhttps://osm.org/relation/342670\n-\nPalmera\nPalmera\nca:Fuente Palmera\nQ1443622\n8\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/342670\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n14\n141128445\n2023-09-11 18:35:48\ntyler_expedia\n12379599\nwikipedia\nNA\nca:Fuente Palmera\n\n\n14\n141128445\n2023-09-11 18:35:48\ntyler_expedia\n12379599\nwikidata\nQ2356806\nQ1443622"
+    "text": "Municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
   }
 ]
