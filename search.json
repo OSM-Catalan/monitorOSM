@@ -4,14 +4,14 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Thu 14 Sep 2023 - 01:59:18"
+    "text": "Última actualització: Fri 15 Sep 2023 - 02:03:09"
   },
   {
     "objectID": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1446993987\n+\nla Canyada de Beric\nLa Cañada de Verich\nQ1553963\nes:La Cañada de Verich\nvillage\n8\n\n\n\nhttps://osm.org/node/1446993987\n-\nla Canyada de Beric\nLa Cañada de Verich / la Canyada de Beric\nQ1553963\nca:La Canyada de Beric\nvillage\n8\n\n\n\nhttps://osm.org/node/793210842\n+\nBellmunt de Mesquí\nBelmonte de San José\nQ1652468\nes:Belmonte de San José\nvillage\n8\n\n\n\nhttps://osm.org/node/793210842\n-\nBellmunt de Mesquí\nBelmonte de San José / Bellmunt de Mesquí\nQ1652468\nca:Bellmunt de Mesquí\nvillage\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1446993987\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n31\n141278700\n2023-09-14 22:47:38\nVLanzarote\n11441079\nname\nLa Cañada de Verich\nLa Cañada de Verich / la Canyada de Beric\n\n\n31\n141278700\n2023-09-14 22:47:38\nVLanzarote\n11441079\nwikipedia\nes:La Cañada de Verich\nca:La Canyada de Beric\n\n\n\n\nhttps://osm.org/node/793210842\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n30\n141278741\n2023-09-14 22:49:40\nVLanzarote\n11441079\nname\nBelmonte de San José\nBelmonte de San José / Bellmunt de Mesquí\n\n\n30\n141278741\n2023-09-14 22:49:40\nVLanzarote\n11441079\nwikipedia\nes:Belmonte de San José\nca:Bellmunt de Mesquí"
   },
   {
     "objectID": "data-raw/README.html",
@@ -53,7 +53,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Thu 14 Sep 2023 - 01:58:30"
+    "text": "Última actualització: Fri 15 Sep 2023 - 02:00:03"
   },
   {
     "objectID": "web/limits.html#països-catalans",
@@ -81,6 +81,6 @@
     "href": "web/limits.html#municipis",
     "title": "Municipis, comarques i territoris",
     "section": "Municipis",
-    "text": "Municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
+    "text": "Municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\nadmin_level\n\n\n\n\nhttps://osm.org/relation/345064\n+\nAiguaviva de Bergantes\nAguaviva\nes:Aguaviva (Teruel)\nQ1770476\n8\n\n\nhttps://osm.org/relation/345064\n-\nAiguaviva de Bergantes\nAguaviva / Aiguaviva de Bergantes\nes:Aguaviva (Teruel)\nQ1770476\n8\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/345064\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n15\n141278616\n2023-09-14 22:42:21\nVLanzarote\n11441079\nname\nAguaviva\nAguaviva / Aiguaviva de Bergantes"
   }
 ]
