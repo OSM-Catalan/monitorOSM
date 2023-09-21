@@ -10,6 +10,7 @@ website:
   title: "monitorOSM"
   repo-url: https://github.com/OSM-Catalan/monitorOSM
   repo-actions: [edit, issue]
+  site-url: https://osm-catalan.github.io/monitorOSM
   open-graph: true
   image: man/figures/logo.png
   favicon: man/figures/logo.png
