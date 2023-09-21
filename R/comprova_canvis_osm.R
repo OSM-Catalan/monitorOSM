@@ -72,8 +72,7 @@ cerca_versio_canvis <- function(x) { # nolint: cyclocomp_linter
 
           if (!clau %in% etiquetes_analitzar[[1]]$key &&
             clau %in% etiquetes_analitzar[[2]]$key && # nolint: indentation_linter
-            !is.na(valor_referencia) &&
-            etiquetes_analitzar[[2]]$value[etiquetes_analitzar[[2]]$key == clau] == valor_referencia) {
+            identical(etiquetes_analitzar[[2]]$value[etiquetes_analitzar[[2]]$key == clau], valor_referencia)) {
             # Versió anterior correcte i eliminada en aquesta versió
 
             canvis_introduits <- rbind(canvis_introduits, data.frame(
@@ -85,8 +84,7 @@ cerca_versio_canvis <- function(x) { # nolint: cyclocomp_linter
             clau %in% etiquetes_analitzar[[2]]$key && # nolint: indentation_linter
             etiquetes_analitzar[[2]]$value[etiquetes_analitzar[[2]]$key == clau] !=
               etiquetes_analitzar[[1]]$value[etiquetes_analitzar[[1]]$key == clau] &&
-            !is.na(valor_referencia) &&
-            etiquetes_analitzar[[2]]$value[etiquetes_analitzar[[2]]$key == clau] == valor_referencia) {
+            identical(etiquetes_analitzar[[2]]$value[etiquetes_analitzar[[2]]$key == clau], valor_referencia)) {
             # Versió anterior correcte modificada en aquesta versió
 
             canvis_introduits <- rbind(canvis_introduits, data.frame(
