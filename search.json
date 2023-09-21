@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Thu 21 Sep 2023 - 18:00:44"
+    "text": "Última actualització: Thu 21 Sep 2023 - 18:19:05"
   },
   {
     "objectID": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
@@ -53,7 +53,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Thu 21 Sep 2023 - 17:58:42"
+    "text": "Última actualització: Thu 21 Sep 2023 - 18:15:59"
   },
   {
     "objectID": "web/limits.html#països-catalans",
@@ -81,6 +81,6 @@
     "href": "web/limits.html#municipis",
     "title": "Municipis, comarques i territoris",
     "section": "Municipis",
-    "text": "Municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\nadmin_level\n\n\n\n\nhttps://osm.org/relation/339573\n+\nVall de Roures\nValderrobres / Vall de Roures\nes:Valderrobres\nQ1641285\n8\n\n\nhttps://osm.org/relation/339573\n-\nVall-de-roures\nValderrobres / Vall de Roures\nes:Valderrobres\nQ1641285\n8\n\n\nhttps://osm.org/relation/345064\n+\nAiguaviva de Bergantes\nAguaviva\nes:Aguaviva (Teruel)\nQ1770476\n8\n\n\nhttps://osm.org/relation/345064\n-\nAiguaviva de Bergantes\nAguaviva / Aiguaviva de Bergantes\nes:Aguaviva (Teruel)\nQ1770476\n8\n\n\nhttps://osm.org/relation/345430\n+\nSant Sadurní d'Osormort\nSant Sadurní d'Osormort\n\nQ13831\n8\n\n\nhttps://osm.org/relation/345430\n-\nSant Sadurní d'Osormort\nSant Sadurní d'Osormort\nca:Cruïlles, Monells i Sant Sadurní de l'Heura\nQ13466\n8\n\n\nhttps://osm.org/relation/346371\n+\nla Vilavella\nla Vilavella\n\nQ1768916\n8\n\n\nhttps://osm.org/relation/346371\n-\nla Vilavella\nla Vilavella\nca:Castelló de la Plana\nQ15092\n8\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/339573\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n8\n60646449\n2018-07-12 10:25:00\nrogerpueyo\n168779\nname:ca\nVall de Roures\nVall-de-roures\n\n\n\n\nhttps://osm.org/relation/345064\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n15\n141278616\n2023-09-14 22:42:21\nVLanzarote\n11441079\nname\nAguaviva\nAguaviva / Aiguaviva de Bergantes\n\n\n\n\nhttps://osm.org/relation/345430\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n16\n141432468\n2023-09-18 16:19:14\ntyler_expedia\n12379599\nwikipedia\nNA\nca:Cruïlles, Monells i Sant Sadurní de l'Heura\n\n\n16\n141432468\n2023-09-18 16:19:14\ntyler_expedia\n12379599\nwikidata\nQ13831\nQ13466\n\n\n\n\nhttps://osm.org/relation/346371\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n14\n141430961\n2023-09-18 15:42:57\ntyler_expedia\n12379599\nwikipedia\nNA\nca:Castelló de la Plana\n\n\n14\n141430961\n2023-09-18 15:42:57\ntyler_expedia\n12379599\nwikidata\nQ1768916\nQ15092"
+    "text": "Municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\nadmin_level\n\n\n\n\nhttps://osm.org/relation/339573\n+\nVall de Roures\nValderrobres / Vall de Roures\nes:Valderrobres\nQ1641285\n8\n\n\nhttps://osm.org/relation/339573\n-\nVall-de-roures\nValderrobres / Vall de Roures\nes:Valderrobres\nQ1641285\n8\n\n\nhttps://osm.org/relation/345064\n+\nAiguaviva de Bergantes\nAguaviva\nes:Aguaviva (Teruel)\nQ1770476\n8\n\n\nhttps://osm.org/relation/345064\n-\nAiguaviva de Bergantes\nAguaviva / Aiguaviva de Bergantes\nes:Aguaviva (Teruel)\nQ1770476\n8\n\n\nhttps://osm.org/relation/345430\n+\nSant Sadurní d'Osormort\nSant Sadurní d'Osormort\n\nQ13831\n8\n\n\nhttps://osm.org/relation/345430\n-\nSant Sadurní d'Osormort\nSant Sadurní d'Osormort\nca:Sant Sadurní d'Osormort\nQ13831\n8\n\n\nhttps://osm.org/relation/346371\n+\nla Vilavella\nla Vilavella\n\nQ1768916\n8\n\n\nhttps://osm.org/relation/346371\n-\nla Vilavella\nla Vilavella\nca:La Vilavella\nQ1768916\n8\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/339573\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n8\n60646449\n2018-07-12 10:25:00\nrogerpueyo\n168779\nname:ca\nVall de Roures\nVall-de-roures\n\n\n\n\nhttps://osm.org/relation/345064\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n15\n141278616\n2023-09-14 22:42:21\nVLanzarote\n11441079\nname\nAguaviva\nAguaviva / Aiguaviva de Bergantes\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/345430.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/346371."
   }
 ]
