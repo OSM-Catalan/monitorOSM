@@ -1,1 +1,1 @@
-Sitemap: https://github.com/OSM-Catalan/monitorOSM/sitemap.xml
+Sitemap: https://osm-catalan.github.io/monitorOSM/sitemap.xml
