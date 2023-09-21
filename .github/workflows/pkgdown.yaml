@@ -17,6 +17,7 @@ name: pkgdown
 jobs:
   pkgdown:
     runs-on: ubuntu-latest
+    if: ${{ github.event_name != 'workflow_run' }} || ${{ github.event.workflow_run.conclusion == 'success' }}
     # Only restrict concurrency for non-PR jobs
     concurrency:
       group: pkgdown-${{ github.event_name != 'pull_request' || github.run_id }}
