@@ -88,3 +88,33 @@ if (nrow(canvis_municipis$comparison_df) > 0) {
   message("Conjunts de canvis a municipis:")
   print(conjunts_de_canvis_municipis)
 }
+
+
+## Localitats ----
+
+canvis_loc_admin_centre_munici <- comprova_canvis_osm(
+  loc_admin_centre_municipis[, setdiff(names(loc_admin_centre_municipis), c("regio", "comarca", "municipi"))],
+  centre = TRUE
+)
+# canvis_html(canvis_loc_admin_centre_munici)
+
+if (nrow(canvis_loc_admin_centre_munici$comparison_df) > 0) {
+  uid_modificats <- gsub("https://osm\\.org/", "", canvis_loc_admin_centre_munici$comparison_df$osm_url)
+  uid_localitats <- paste0(loc_admin_centre_municipis$osm_type, "/", loc_admin_centre_municipis$osm_id)
+
+  localitats_modificar <- loc_admin_centre_municipis[uid_localitats %in% uid_modificats, ]
+
+  comarques <- unique(localitats_modificar$comarca)
+  conjunts_de_canvis_localitats <- structure(character(length(comarques)), names = comarques)
+
+  for (comarca in comarques) {
+    conjunts_de_canvis_localitats[comarca] <- modifica_etiquetes_osm(
+      x = localitats_modificar[localitats_modificar$comarca %in% comarca, ],
+      claus = c("name:ca", "name", "wikipedia", "wikidata", "place", "capital", "admin_level"),
+      comentari = paste0("Restaura les etiquetes de les localitats a ", comarca, "."),
+      hashtags = "monitorOSM"
+    )
+  }
+  message("Conjunts de canvis a localitats:")
+  print(conjunts_de_canvis_localitats)
+}
