@@ -116,7 +116,7 @@ admin_centre[n_centres == 2, ]
 admin_centre_objs <- do.call(rbind, admin_centre$admin_centre)
 admin_centre_osm <- consulta_etiquetes_osm(
   x = admin_centre_objs,
-  etiquetes = c("name:ca", "osm_id", "osm_type", "name", "wikidata", "wikipedia", "place")
+  etiquetes = c("name:ca", "osm_id", "osm_type", "name", "wikidata", "wikipedia", "place", "capital", "admin_level")
 )
 
 
@@ -133,11 +133,34 @@ for (i in seq_len(nrow(admin_centre))) {
 }
 
 municipis_admin_centre <- admin_centre_osm[, c(
-  "name:ca", "regio", "comarca", "municipi", "osm_id", "osm_type", "name", "wikipedia", "wikidata", "place"
+  "name:ca", "regio", "comarca", "municipi", "osm_id", "osm_type", "name", "wikipedia", "wikidata",
+  "place", "capital", "admin_level"
 )]
 
 library(compareDF)
 view_html(compare_df(municipis_admin_centre, loc_admin_centre_municipis, group_col = c("osm_type", "osm_id")))
+
+
+#### Afegeix capital a les localitats que no en tenen ----
+sense_capital <- loc_admin_centre_municipis[is.na(loc_admin_centre_municipis$capital), ]
+
+rels_obj <- list()
+for (i in seq_len(nrow(sense_capital))) {
+  rels_obj[[i]] <- osmapiR::osm_relations_object(osm_type = sense_capital$osm_type[i], osm_id = sense_capital$osm_id[i])
+}
+
+sel_rels_obj <- rels_obj[sapply(rels_obj$tags, function(x) "admin_centre" %in% x$key), ]
+
+sel_rels_obj <- lapply(rels_obj, function(x) {
+  x <- x[sapply(x$tags, function(y) "admin_level" %in% y$key), ]
+})
+capital <- sapply(sel_rels_obj, function(x) sapply(x$tags, function(y) y$value[y$key == "admin_level"]))
+
+## CONCLUSIÓ: Tots corresponen a capital = "8"
+loc_admin_centre_municipis$capital[is.na(loc_admin_centre_municipis$capital)] <- capital
+
+# GOTO: admin_centre de municipis per actualitzar la BD local
+# GOTO: exec/restaura_etiquetes per localitats
 
 
 ### TODO: altres tipus de localitat ----
