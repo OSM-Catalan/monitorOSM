@@ -4,14 +4,14 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Tue 26 Sep 2023 - 02:02:04"
+    "text": "Última actualització: Wed 27 Sep 2023 - 02:00:56"
   },
   {
     "objectID": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nl'Alguer/Alghero\nQ166282\nit:Alghero\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nit:Alghero\ncity\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n206\n141745345\n2023-09-25 19:19:36\nDabMK\n17965418\nplace\ntown\ncity"
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1470838546\n+\nMontcada\nMontcada / Moncada\nQ1010291\nca:Montcada (Horta Nord)\ntown\n8\n\n\n\nhttps://osm.org/node/1470838546\n-\nMontcada\nMoncada\nQ1010291\nca:Montcada (Horta Nord)\ntown\n8\n\n\n\nhttps://osm.org/node/232712665\n+\nCastelló de la Plana\nCastelló de la Plana\nQ15092\n\ncity\n6\n\n\n\nhttps://osm.org/node/232712665\n-\nCastelló de la Plana\nCastelló de la Plana\n\n\ncity\n6\n\n\n\nhttps://osm.org/node/308306630\n+\nAiguaviva de Bergantes\nAguaviva\nQ1770476\nes:Aguaviva (Teruel)\nvillage\n8\n\n\n\nhttps://osm.org/node/308306630\n-\nAiguaviva de Bergantes\nAguaviva / Aiguaviva de Bergantes\nQ1770476\nes:Aguaviva (Teruel)\nvillage\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nl'Alguer/Alghero\nQ166282\nit:Alghero\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nit:Alghero\ncity\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1470838546\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n16\n141778354\n2023-09-26 14:52:34\nJordi MF\n8278438\nname\nMontcada / Moncada\nMoncada\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/232712665.\n\n\nhttps://osm.org/node/308306630\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n48\n141776395\n2023-09-26 14:04:33\nVLanzarote\n11441079\nname\nAguaviva\nAguaviva / Aiguaviva de Bergantes\n\n\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n206\n141745345\n2023-09-25 19:19:36\nDabMK\n17965418\nplace\ntown\ncity"
   },
   {
     "objectID": "data-raw/README.html",
@@ -53,7 +53,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Tue 26 Sep 2023 - 01:59:54"
+    "text": "Última actualització: Wed 27 Sep 2023 - 01:59:34"
   },
   {
     "objectID": "web/limits.html#països-catalans",
@@ -81,6 +81,6 @@
     "href": "web/limits.html#municipis",
     "title": "Municipis, comarques i territoris",
     "section": "Municipis",
-    "text": "Municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
+    "text": "Municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\nadmin_level\n\n\n\n\nhttps://osm.org/relation/347872\n+\nMontcada\nMontcada / Moncada\nca:Montcada (Horta Nord)\nQ1010291\n8\n\n\nhttps://osm.org/relation/347872\n-\nMontcada\nMoncada\nca:Montcada (Horta Nord)\nQ1010291\n8\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/347872\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n17\n141778354\n2023-09-26 14:52:34\nJordi MF\n8278438\nname\nMontcada / Moncada\nMoncada"
   }
 ]
