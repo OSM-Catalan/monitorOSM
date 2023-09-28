@@ -4,14 +4,14 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Thu 28 Sep 2023 - 19:03:02"
+    "text": "Última actualització: Thu 28 Sep 2023 - 20:59:40"
   },
   {
     "objectID": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/232712665\n+\nCastelló de la Plana\nCastelló de la Plana\nQ15092\nca:Castelló de la Plana\ncity\n6\n\n\n\nhttps://osm.org/node/232712665\n-\nCastelló de la Plana\nCastelló de la Plana\nQ15092\nca:CAstelló de la Plana\ncity\n6\n\n\n\nhttps://osm.org/node/308306630\n+\nAiguaviva de Bergantes\nAguaviva\nQ1770476\nes:Aguaviva (Teruel)\nvillage\n8\n\n\n\nhttps://osm.org/node/308306630\n-\nAiguaviva de Bergantes\nAguaviva / Aiguaviva de Bergantes\nQ1770476\nes:Aguaviva (Teruel)\nvillage\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nl'Alguer/Alghero\nQ166282\nit:Alghero\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nit:Alghero\ncity\n8\n\n\n\n\n\n\n\nConjunts de canvis\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/232712665.\n\n\nhttps://osm.org/node/308306630\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n48\n141776395\n2023-09-26 14:04:33\nVLanzarote\n11441079\nname\nAguaviva\nAguaviva / Aiguaviva de Bergantes\n\n\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n206\n141745345\n2023-09-25 19:19:36\nDabMK\n17965418\nplace\ntown\ncity"
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/308306630\n+\nAiguaviva de Bergantes\nAguaviva\nQ1770476\nes:Aguaviva (Teruel)\nvillage\n8\n\n\n\nhttps://osm.org/node/308306630\n-\nAiguaviva de Bergantes\nAguaviva / Aiguaviva de Bergantes\nQ1770476\nes:Aguaviva (Teruel)\nvillage\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nl'Alguer/Alghero\nQ166282\nit:Alghero\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nit:Alghero\ncity\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/308306630\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n48\n141776395\n2023-09-26 14:04:33\nVLanzarote\n11441079\nname\nAguaviva\nAguaviva / Aiguaviva de Bergantes\n\n\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n206\n141745345\n2023-09-25 19:19:36\nDabMK\n17965418\nplace\ntown\ncity"
   },
   {
     "objectID": "data-raw/README.html",
@@ -53,7 +53,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Thu 28 Sep 2023 - 19:02:54"
+    "text": "Última actualització: Thu 28 Sep 2023 - 20:59:32"
   },
   {
     "objectID": "web/limits.html#països-catalans",
