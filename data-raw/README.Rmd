@@ -45,10 +45,10 @@ que inclogui la base de dades i el codi per generar els informes.
 
 ### Instruccions
 
-Creeu una taula amb els estats de referència. Cal que cada fila contingui les etiquetes que vulgueu monitorejar i els
+Creeu una taula amb els estats de referència. Cal que cada fila contingui les etiquetes que vulgueu monitorar i els
 identificadors únics d'OpenStreetMap (`osm_type` i `osm_id`). Podeu generar les taules amb el paquet d'R `osmdata`.
 
-Exemple per generar una taula les etiquetes `name:ca`, `name`, `wikipedia` i `wikidata` de tots els cims dels Països
+Exemple per generar una taula amb les etiquetes `name:ca`, `name`, `wikipedia` i `wikidata` de tots els cims dels Països
 Catalans (`relation(id:11747082)`):
 
 ``` {r exemple cims}

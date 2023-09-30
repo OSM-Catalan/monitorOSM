@@ -3,12 +3,13 @@
 
 # Bases de dades de referència
 
-| bd                                                                                        | n_obj | n_cols | columnes                                                                                               |
-|:------------------------------------------------------------------------------------------|------:|-------:|:-------------------------------------------------------------------------------------------------------|
-| [comarques](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/comarques.tsv)   |    95 |      9 | name:ca , regio , osm_id , osm_type , name , wikipedia , wikidata , admin_level , historic:admin_level |
-| [municipis](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/municipis.tsv)   |  3344 |      9 | name:ca , regio , comarca , osm_id , osm_type , name , wikipedia , wikidata , admin_level              |
-| [territoris](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/territoris.tsv) |    10 |      7 | name:ca , regio , osm_id , osm_type , name , wikipedia, wikidata                                       |
-| [PPCC](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/PPCC.tsv)             |     1 |      6 | name:ca , osm_id , osm_type , name , wikipedia, wikidata                                               |
+| bd                                                                                                                        | n_obj | n_cols | columnes                                                                                                               |
+|:--------------------------------------------------------------------------------------------------------------------------|------:|-------:|:-----------------------------------------------------------------------------------------------------------------------|
+| [comarques](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/comarques.tsv)                                   |    95 |      9 | name:ca , regio , osm_id , osm_type , name , wikipedia , wikidata , admin_level , historic:admin_level                 |
+| [municipis](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/municipis.tsv)                                   |  1671 |      9 | name:ca , regio , comarca , osm_id , osm_type , name , wikipedia , wikidata , admin_level                              |
+| [loc_admin_centre_municipis](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/loc_admin_centre_municipis.tsv) |  1673 |     12 | regio , comarca , municipi , osm_type , osm_id , name:ca , name , wikidata , wikipedia , place , capital , admin_level |
+| [territoris](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/territoris.tsv)                                 |    10 |      7 | name:ca , regio , osm_id , osm_type , name , wikipedia, wikidata                                                       |
+| [PPCC](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/PPCC.tsv)                                             |     1 |      6 | name:ca , osm_id , osm_type , name , wikipedia, wikidata                                                               |
 
 En total es monitoritzen 3450 objectes d’OpenStreetMap.
 
@@ -26,11 +27,11 @@ base de dades i el codi per generar els informes.
 ### Instruccions
 
 Creeu una taula amb els estats de referència. Cal que cada fila
-contingui les etiquetes que vulgueu monitorejar i els identificadors
-únics d’OpenStreetMap (`osm_type` i `osm_id`). Podeu generar les taules
-amb el paquet d’R `osmdata`.
+contingui les etiquetes que vulgueu monitorar i els identificadors únics
+d’OpenStreetMap (`osm_type` i `osm_id`). Podeu generar les taules amb el
+paquet d’R `osmdata`.
 
-Exemple per generar una taula les etiquetes `name:ca`, `name`,
+Exemple per generar una taula amb les etiquetes `name:ca`, `name`,
 `wikipedia` i `wikidata` de tots els cims dels Països Catalans
 (`relation(id:11747082)`):
 
