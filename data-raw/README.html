@@ -223,17 +223,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/municipis.tsv">municipis</a></td>
-<td style="text-align: right;">3344</td>
+<td style="text-align: right;">1671</td>
 <td style="text-align: right;">9</td>
 <td style="text-align: left;">name:ca , regio , comarca , osm_id , osm_type , name , wikipedia , wikidata , admin_level</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;"><a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/loc_admin_centre_municipis.tsv">loc_admin_centre_municipis</a></td>
+<td style="text-align: right;">1673</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">regio , comarca , municipi , osm_type , osm_id , name:ca , name , wikidata , wikipedia , place , capital , admin_level</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;"><a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/territoris.tsv">territoris</a></td>
 <td style="text-align: right;">10</td>
 <td style="text-align: right;">7</td>
 <td style="text-align: left;">name:ca , regio , osm_id , osm_type , name , wikipedia, wikidata</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;"><a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/PPCC.tsv">PPCC</a></td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">6</td>
@@ -248,8 +254,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Si voleu afegir objectes amb les seves etiquetes a les bases de dades, podeu obrir un <a href="https://github.com/OSM-Catalan/monitorOSM/issues">tiquet</a> o un <a href="https://github.com/OSM-Catalan/monitorOSM/pulls">PR</a> que inclogui la base de dades i el codi per generar els informes.</p>
 <section id="instruccions" class="level3">
 <h3 class="anchored" data-anchor-id="instruccions">Instruccions</h3>
-<p>Creeu una taula amb els estats de referència. Cal que cada fila contingui les etiquetes que vulgueu monitorejar i els identificadors únics d’OpenStreetMap (<code>osm_type</code> i <code>osm_id</code>). Podeu generar les taules amb el paquet d’R <code>osmdata</code>.</p>
-<p>Exemple per generar una taula les etiquetes <code>name:ca</code>, <code>name</code>, <code>wikipedia</code> i <code>wikidata</code> de tots els cims dels Països Catalans (<code>relation(id:11747082)</code>):</p>
+<p>Creeu una taula amb els estats de referència. Cal que cada fila contingui les etiquetes que vulgueu monitorar i els identificadors únics d’OpenStreetMap (<code>osm_type</code> i <code>osm_id</code>). Podeu generar les taules amb el paquet d’R <code>osmdata</code>.</p>
+<p>Exemple per generar una taula amb les etiquetes <code>name:ca</code>, <code>name</code>, <code>wikipedia</code> i <code>wikidata</code> de tots els cims dels Països Catalans (<code>relation(id:11747082)</code>):</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(osmdata)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Data (c) OpenStreetMap contributors, ODbL 1.0. https://www.openstreetmap.org/copyright</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
