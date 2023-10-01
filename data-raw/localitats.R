@@ -66,13 +66,13 @@ loc_admin_centre_municipis_osm <- consulta_etiquetes_osm(
 )
 lapply(loc_admin_centre_municipis_osm, unique)
 
-# TODO: afegeix capital segons l'admin_level de la relació que fan d'admin_centre
-edita <- loc_admin_centre_municipis_osm[is.na(loc_admin_centre_municipis_osm$capital), ]
-
 loc_admin_centre_municipis_osm <- loc_admin_centre_municipis_osm[, c(
   "name:ca", "regio", "comarca", "osm_id", "osm_type", "name", "wikipedia", "wikidata",
   "place", "capital", "admin_level"
 )]
+
+# Localitats sense etiqueta capital segons l'admin_level de la relació que fan d'admin_centre
+edita <- loc_admin_centre_municipis_osm[is.na(loc_admin_centre_municipis_osm$capital), ]
 
 
 #### Compara nova base de dades amb la del paquet instal·lat ----
@@ -141,7 +141,7 @@ library(compareDF)
 view_html(compare_df(municipis_admin_centre, loc_admin_centre_municipis, group_col = c("osm_type", "osm_id")))
 
 
-#### Afegeix capital a les localitats que no en tenen ----
+#### FET: Afegeix capital a les localitats que no en tenen ----
 sense_capital <- loc_admin_centre_municipis[is.na(loc_admin_centre_municipis$capital), ]
 
 rels_obj <- list()
