@@ -4,14 +4,14 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Tue 10 Oct 2023 - 02:00:34"
+    "text": "Última actualització: Wed 11 Oct 2023 - 02:00:31"
   },
   {
     "objectID": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/256699454\n+\nRialp\nRialp\nQ12686\nca:Rialb\nvillage\n8\n\n\n\nhttps://osm.org/node/256699454\n-\nRialb\nRialp\nQ12686\nca:Rialb\nvillage\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/256699454\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n21\n142270905\n2023-10-07 14:11:55\nToni Serra\n3859465\nname:ca\nRialp\nRialb"
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/249265788\n+\nl'Atzúbia\nl'Atzúbia\nQ23990912\nca:L'Atzúbia\nvillage\n8\n\n\n\nhttps://osm.org/node/249265788\n-\nl'Atzúbia\nl'Atzúbia\nQ23990912\nca:l'Atzúbia\nvillage\n8\n\n\n\nhttps://osm.org/node/256699454\n+\nRialp\nRialp\nQ12686\nca:Rialb\nvillage\n8\n\n\n\nhttps://osm.org/node/256699454\n-\nRialb\nRialp\nQ12686\nca:Rialb\nvillage\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/249265788\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n21\n142362492\n2023-10-09 18:48:35\njmaspons\n11725140\nwikipedia\nca:L'Atzúbia\nca:l'Atzúbia\n\n\n\n\nhttps://osm.org/node/256699454\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n21\n142270905\n2023-10-07 14:11:55\nToni Serra\n3859465\nname:ca\nRialp\nRialb"
   },
   {
     "objectID": "data-raw/README.html",
@@ -53,7 +53,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Tue 10 Oct 2023 - 02:00:25"
+    "text": "Última actualització: Wed 11 Oct 2023 - 02:00:22"
   },
   {
     "objectID": "web/limits.html#països-catalans",
