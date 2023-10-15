@@ -49,6 +49,12 @@ modifica_etiquetes_osm <- function(x, claus, comentari, ...) {
   names(x) <- gsub("^osm_type$", "type", names(x))
   osmchange <- osmapiR::osmchange_modify(x = x, tag_keys = claus)
 
+  if (nrow(osmchange) == 0) {
+    message("No hi ha canvis a cometre.")
+
+    return(NA)
+  }
+
   changeset_id <- osmapiR::osm_create_changeset(comment = comentari, ...)
 
   osmapiR::osm_diff_upload_changeset(changeset_id = changeset_id, osmcha = osmchange)
