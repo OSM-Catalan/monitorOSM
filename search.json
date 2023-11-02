@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Wed 01 Nov 2023 - 02:08:45"
+    "text": "Última actualització: Thu 02 Nov 2023 - 02:00:22"
   },
   {
     "objectID": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
@@ -53,7 +53,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Wed 01 Nov 2023 - 02:05:18"
+    "text": "Última actualització: Thu 02 Nov 2023 - 02:00:12"
   },
   {
     "objectID": "web/limits.html#països-catalans",
@@ -81,6 +81,6 @@
     "href": "web/limits.html#municipis",
     "title": "Municipis, comarques i territoris",
     "section": "Municipis",
-    "text": "Municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
+    "text": "Municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\nadmin_level\n\n\n\n\nhttps://osm.org/relation/343470\n+\nAlmussafes\nAlmussafes\nes:Almusafes\nQ1770040\n8\n\n\nhttps://osm.org/relation/343470\n-\nAlmussafes\nAlmussafes\nca:Almussafes\nQ1770040\n8\n\n\nhttps://osm.org/relation/344953\n+\nValència\nValéncia / Valencia\nes:Valencia\nQ8818\n8\n\n\nhttps://osm.org/relation/344953\n-\nValència\nValència\nca:València\nQ8818\n8\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/343470\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n15\n143500920\n2023-11-01 22:56:47\nFrontesp\n13616938\nwikipedia\nes:Almusafes\nca:Almussafes\n\n\n\n\nhttps://osm.org/relation/344953\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n82\n143500662\n2023-11-01 22:47:53\nFrontesp\n13616938\nname\nValéncia / Valencia\nValència\n\n\n82\n143500662\n2023-11-01 22:47:53\nFrontesp\n13616938\nwikipedia\nes:Valencia\nca:València"
   }
 ]
