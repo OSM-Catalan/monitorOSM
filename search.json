@@ -4,14 +4,14 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Thu 02 Nov 2023 - 02:00:22"
+    "text": "Última actualització: Fri 03 Nov 2023 - 02:01:34"
   },
   {
     "objectID": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1446993987\n+\nla Canyada de Beric\nLa Cañada de Verich\nQ1553963\nes:La Cañada de Verich\nvillage\n8\n\n\n\nhttps://osm.org/node/1446993987\n-\nla Canyada de Beric\nLa Cañada de Verich / la Canyada de Beric\nQ1553963\nca:La Canyada de Beric\nvillage\n8\n\n\n\nhttps://osm.org/node/1446993989\n+\nla Codonyera\nLa Codoñera\nQ1651558\nes:La Codoñera\nvillage\n8\n\n\n\nhttps://osm.org/node/1446993989\n-\nla Codonyera\nLa Codoñera / la Codonyera\nQ1651558\nca:La Codonyera\nvillage\n8\n\n\n\nhttps://osm.org/node/308306630\n+\nAiguaviva de Bergantes\nAguaviva\nQ1770476\nes:Aguaviva (Teruel)\nvillage\n8\n\n\n\nhttps://osm.org/node/308306630\n-\nAiguaviva de Bergantes\nAguaviva / Aiguaviva de Bergantes\nQ1770476\nes:Aguaviva (Teruel)\nvillage\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nl'Alguer/Alghero\nQ166282\nit:Alghero\ncity\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nit:Alghero\ntown\n8\n\n\n\nhttps://osm.org/node/793210842\n+\nBellmunt de Mesquí\nBelmonte de San José\nQ1652468\nes:Belmonte de San José\nvillage\n8\n\n\n\nhttps://osm.org/node/793210842\n-\nBellmunt de Mesquí\nBelmonte de San José / Bellmunt de Mesquí\nQ1652468\nca:Bellmunt de Mesquí\nvillage\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1446993987\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n39\n143543549\n2023-11-02 17:52:31\nVLanzarote\n11441079\nname\nLa Cañada de Verich\nLa Cañada de Verich / la Canyada de Beric\n\n\n39\n143543549\n2023-11-02 17:52:31\nVLanzarote\n11441079\nwikipedia\nes:La Cañada de Verich\nca:La Canyada de Beric\n\n\n\n\nhttps://osm.org/node/1446993989\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n25\n143544922\n2023-11-02 18:34:19\nVLanzarote\n11441079\nname\nLa Codoñera\nLa Codoñera / la Codonyera\n\n\n25\n143544922\n2023-11-02 18:34:19\nVLanzarote\n11441079\nwikipedia\nes:La Codoñera\nca:La Codonyera\n\n\n\n\nhttps://osm.org/node/308306630\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n55\n143543469\n2023-11-02 17:50:49\nVLanzarote\n11441079\nname\nAguaviva\nAguaviva / Aiguaviva de Bergantes\n\n\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n210\n143524054\n2023-11-02 11:04:38\ns141739\n25132\nplace\ncity\ntown\n\n\n\n\nhttps://osm.org/node/793210842\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n38\n143543857\n2023-11-02 18:01:00\nVLanzarote\n11441079\nname\nBelmonte de San José\nBelmonte de San José / Bellmunt de Mesquí\n\n\n38\n143543857\n2023-11-02 18:01:00\nVLanzarote\n11441079\nwikipedia\nes:Belmonte de San José\nca:Bellmunt de Mesquí"
   },
   {
     "objectID": "data-raw/README.html",
@@ -53,7 +53,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Thu 02 Nov 2023 - 02:00:12"
+    "text": "Última actualització: Fri 03 Nov 2023 - 02:01:26"
   },
   {
     "objectID": "web/limits.html#països-catalans",
@@ -81,6 +81,6 @@
     "href": "web/limits.html#municipis",
     "title": "Municipis, comarques i territoris",
     "section": "Municipis",
-    "text": "Municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\nadmin_level\n\n\n\n\nhttps://osm.org/relation/343470\n+\nAlmussafes\nAlmussafes\nes:Almusafes\nQ1770040\n8\n\n\nhttps://osm.org/relation/343470\n-\nAlmussafes\nAlmussafes\nca:Almussafes\nQ1770040\n8\n\n\nhttps://osm.org/relation/344953\n+\nValència\nValéncia / Valencia\nes:Valencia\nQ8818\n8\n\n\nhttps://osm.org/relation/344953\n-\nValència\nValència\nca:València\nQ8818\n8\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/343470\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n15\n143500920\n2023-11-01 22:56:47\nFrontesp\n13616938\nwikipedia\nes:Almusafes\nca:Almussafes\n\n\n\n\nhttps://osm.org/relation/344953\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n82\n143500662\n2023-11-01 22:47:53\nFrontesp\n13616938\nname\nValéncia / Valencia\nValència\n\n\n82\n143500662\n2023-11-01 22:47:53\nFrontesp\n13616938\nwikipedia\nes:Valencia\nca:València"
+    "text": "Municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\nadmin_level\n\n\n\n\nhttps://osm.org/relation/343470\n+\nAlmussafes\nAlmussafes\nca:Alussafes\nQ1770040\n8\n\n\nhttps://osm.org/relation/343470\n-\nAlmussafes\nAlmussafes\nca:Almussafes\nQ1770040\n8\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/343470\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n15\n143500920\n2023-11-01 22:56:47\nFrontesp\n13616938\nwikipedia\nes:Almusafes\nca:Almussafes"
   }
 ]
