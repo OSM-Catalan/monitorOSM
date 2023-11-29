@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Tue 28 Nov 2023 - 02:06:28"
+    "text": "Última actualització: Wed 29 Nov 2023 - 02:07:01"
   },
   {
     "objectID": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
@@ -53,7 +53,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Tue 28 Nov 2023 - 02:05:49"
+    "text": "Última actualització: Wed 29 Nov 2023 - 02:04:56"
   },
   {
     "objectID": "web/limits.html#països-catalans",
@@ -67,7 +67,7 @@
     "href": "web/limits.html#territoris",
     "title": "Municipis, comarques i territoris",
     "section": "Territoris",
-    "text": "Territoris\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
+    "text": "Territoris\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\n\n\n\n\nhttps://osm.org/relation/11739086\n+\nMunicipis de Predomini Lingüístic Valencià\nMunicipis de Predomini Lingüístic Valencià\n\n\n\n\nhttps://osm.org/relation/11739086\n-\nMunicipis de Predomini Lingüístic Valencià\nMunicipis de Predomini Lingüístic Valencià\nca:Valencià\nQ32641\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/11739086\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n107\n144548833\n2023-11-28 13:15:01\nMateusz Konieczny\n1722488\nwikipedia\nNA\nca:Valencià\n\n\n107\n144548833\n2023-11-28 13:15:01\nMateusz Konieczny\n1722488\nwikidata\nNA\nQ32641"
   },
   {
     "objectID": "web/limits.html#comarques",
