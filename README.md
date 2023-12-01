@@ -111,8 +111,8 @@ detalls.
 Instal·leu el paquet d’R:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("OSM-Catalan/monitorOSM")
+# install.packages("remotes")
+remotes::install_github("OSM-Catalan/monitorOSM")
 ```
 
 Restauració de les etiquetes `name` i `wikipedia` de les comarques del
