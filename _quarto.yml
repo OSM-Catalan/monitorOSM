@@ -1,6 +1,7 @@
 project:
   type: website
   execute-dir: project
+  output-dir: web
   render:
     - README.Rmd
     - data-raw/README.md
