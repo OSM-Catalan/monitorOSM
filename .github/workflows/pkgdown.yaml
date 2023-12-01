@@ -1,6 +1,11 @@
 # Workflow derived from https://github.com/r-lib/actions/tree/v2/examples
 # Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
 on:
+  # Render and Publish corre en push i schedule
+  workflow_run:
+    workflows: [Render and Publish]
+    types:
+      - completed
   pull_request:
     branches: [main, master]
   release:
@@ -12,6 +17,7 @@ name: pkgdown
 jobs:
   pkgdown:
     runs-on: ubuntu-latest
+    if: ${{ github.event_name != 'workflow_run' }} || ${{ github.event.workflow_run.conclusion == 'success' }}
     # Only restrict concurrency for non-PR jobs
     concurrency:
       group: pkgdown-${{ github.event_name != 'pull_request' || github.run_id }}
