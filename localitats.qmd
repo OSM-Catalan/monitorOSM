@@ -1,0 +1,52 @@
+---
+title: "Localitats"
+engine: knitr
+execute:
+  echo: false
+---
+
+
+
+```{r biblioteques}
+suppressPackageStartupMessages(library(monitorOSM, quietly = TRUE))
+
+# TODO: Sys.setlocale("LC_TIME", "ca_AD.UTF-8") # requereix configurar locale a gh action https://github.com/actions/runner-images/issues/762
+```
+
+Última actualització: `r format(Sys.time(), "%a %d %b %Y - %X")`
+
+## Localitats que fan d'`admin_centre` de relacions de municipis
+
+[BD de referència](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/loc_admin_centre_municipis.tsv)
+
+```{r admin_centre municipis}
+canvis_loc_admin_centre_municipis <- comprova_canvis_osm(
+  loc_admin_centre_municipis[, setdiff(names(loc_admin_centre_municipis), c("regio", "comarca", "municipi"))],
+  centre = TRUE
+)
+canvis_html(canvis_loc_admin_centre_municipis)
+```
+
+`r if(nrow(canvis_loc_admin_centre_municipis$comparison_df) > 0){"### Conjunts de canvis"}`
+
+```{r localitats_admin_centre_municipis_canvis, results='asis'}
+versio_canvis_loc_admin_centre_municipis <- cerca_versio_canvis(canvis_loc_admin_centre_municipis)
+versio_canvis_html(versio_canvis_loc_admin_centre_municipis)
+```
+
+
+```{r telegram}
+hi_ha_canvis <- sapply(list(canvis_loc_admin_centre_municipis), function(x) {
+  nrow(x$comparison_df) > 0
+})
+
+if (any(hi_ha_canvis) &&
+  Sys.getenv("GITHUB_EVENT_NAME") == "schedule" &&
+  # format(Sys.Date(), format = "%u") %in% "5" &&  # Només els divendres
+  Sys.getenv("GITHUB_WORKFLOW") == "Render and Publish"
+) {
+  m <- missatge_telegram(
+    missatge = "Hi ha canvis a [localitats](https://osm-catalan.github.io/monitorOSM/web/localitats.html)."
+  )
+}
+```

@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://osm-catalan.github.io/monitorOSM/web/localitats.html</loc>
-    <lastmod>2023-12-01T18:03:26.286Z</lastmod>
-  </url>
-  <url>
     <loc>https://osm-catalan.github.io/monitorOSM/data-raw/README.html</loc>
-    <lastmod>2023-12-01T18:02:57.510Z</lastmod>
+    <lastmod>2023-12-01T18:09:40.528Z</lastmod>
   </url>
   <url>
     <loc>https://osm-catalan.github.io/monitorOSM/README.html</loc>
-    <lastmod>2023-12-01T18:02:56.718Z</lastmod>
-  </url>
-  <url>
-    <loc>https://osm-catalan.github.io/monitorOSM/web/limits.html</loc>
-    <lastmod>2023-12-01T18:03:07.554Z</lastmod>
+    <lastmod>2023-12-01T18:09:39.764Z</lastmod>
   </url>
 </urlset>

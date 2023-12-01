@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "web/localitats.html",
-    "href": "web/localitats.html",
-    "title": "Localitats",
-    "section": "",
-    "text": "Última actualització: Fri 01 Dec 2023 - 18:03:08"
-  },
-  {
-    "objectID": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
-    "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
-    "title": "Localitats",
-    "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
-  },
-  {
     "objectID": "data-raw/README.html",
     "href": "data-raw/README.html",
     "title": "Bases de dades de referència",
@@ -47,40 +33,5 @@
     "title": "monitorOSM ",
     "section": "",
     "text": "La consulta, comparació amb bases de dades de referència i renderització de la web es fan amb un paquet d’R i accions de github. El paquet també inclou funcions per restaurar els objectes de manera ràpida, però com a projecte comunitari, és important intentar parlar amb els usuaris que discrepen de les bases de dades de referència. Vegeu la documentació del paquet d’R per més detalls.\n\n\nInstal·leu el paquet d’R:\n# install.packages(\"remotes\")\nremotes::install_github(\"OSM-Catalan/monitorOSM\")\nRestauració de les etiquetes name i wikipedia de les comarques del País Valencià:\nlibrary(monitorOSM)\n\nid &lt;- modifica_etiquetes_osm(\n  comarques[comarques$regio == \"PV\", ],\n  claus = c(\"name\", \"wikipedia\"),\n  comentari = \"Restaura els noms de les comarques dels País Valencià\", hashtags = \"monitorOSM\"\n)\nRetorna l’identificador del conjunt de canvis."
-  },
-  {
-    "objectID": "web/limits.html",
-    "href": "web/limits.html",
-    "title": "Municipis, comarques i territoris",
-    "section": "",
-    "text": "Última actualització: Fri 01 Dec 2023 - 18:02:58"
-  },
-  {
-    "objectID": "web/limits.html#països-catalans",
-    "href": "web/limits.html#països-catalans",
-    "title": "Municipis, comarques i territoris",
-    "section": "Països Catalans",
-    "text": "Països Catalans\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
-  },
-  {
-    "objectID": "web/limits.html#territoris",
-    "href": "web/limits.html#territoris",
-    "title": "Municipis, comarques i territoris",
-    "section": "Territoris",
-    "text": "Territoris\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\n\n\n\n\nhttps://osm.org/relation/11739086\n+\nMunicipis de Predomini Lingüístic Valencià\nMunicipis de Predomini Lingüístic Valencià\n\n\n\n\nhttps://osm.org/relation/11739086\n-\nMunicipis de Predomini Lingüístic Valencià\nMunicipis de Predomini Lingüístic Valencià\nca:Valencià\nQ32641\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/11739086\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n107\n144548833\n2023-11-28 13:15:01\nMateusz Konieczny\n1722488\nwikipedia\nNA\nca:Valencià\n\n\n107\n144548833\n2023-11-28 13:15:01\nMateusz Konieczny\n1722488\nwikidata\nNA\nQ32641"
-  },
-  {
-    "objectID": "web/limits.html#comarques",
-    "href": "web/limits.html#comarques",
-    "title": "Municipis, comarques i territoris",
-    "section": "Comarques",
-    "text": "Comarques\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
-  },
-  {
-    "objectID": "web/limits.html#municipis",
-    "href": "web/limits.html#municipis",
-    "title": "Municipis, comarques i territoris",
-    "section": "Municipis",
-    "text": "Municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
   }
 ]
