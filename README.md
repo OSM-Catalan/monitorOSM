@@ -90,7 +90,7 @@ Si voleu afegir objectes amb les seves etiquetes a les bases de dades,
 podeu obrir un
 [tiquet](https://github.com/OSM-Catalan/monitorOSM/issues) o podeu
 provar de fer un PR amb les instruccions que trobareu a
-[aquí](https://osm-catalan.github.io/monitorOSM/data-raw/README.html).
+[aquí](https://osm-catalan.github.io/monitorOSM/web/data-raw/README.html).
 Fora bo que els estats de referència dels objectes siguin consensuats
 amb la [Comunitat d’OpenStreetmap en
 català](https://wiki.openstreetmap.org/wiki/WikiProject_Catalan#Canals_de_comunicaci%C3%B3_i_mitjans_de_difusi%C3%B3).
