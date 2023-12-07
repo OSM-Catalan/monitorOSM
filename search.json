@@ -4,14 +4,14 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Wed 06 Dec 2023 - 02:05:31"
+    "text": "Última actualització: Thu 07 Dec 2023 - 02:07:09"
   },
   {
     "objectID": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1470838639\n+\nPaterna\nPaterna\nQ24020094\nca:Paterna\ntown\n8\n\n\n\nhttps://osm.org/node/1470838639\n-\nPaterna\nPaterna\nQ23042\nca:Paterna\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1470838639\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n16\n144772932\n2023-12-04 23:13:03\nDavileci\n8123953\nwikidata\nQ24020094\nQ23042"
   },
   {
     "objectID": "data-raw/README.html",
@@ -53,7 +53,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Wed 06 Dec 2023 - 02:05:23"
+    "text": "Última actualització: Thu 07 Dec 2023 - 02:05:31"
   },
   {
     "objectID": "web/limits.html#països-catalans",
