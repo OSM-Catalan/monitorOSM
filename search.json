@@ -4,14 +4,14 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Fri 22 Dec 2023 - 02:04:40"
+    "text": "Última actualització: Sat 23 Dec 2023 - 02:00:38"
   },
   {
     "objectID": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1446993972\n+\nFórnols\nFórnoles\nQ2409408\nes:Fórnoles\nvillage\n8\n\n\n\nhttps://osm.org/node/1446993972\n-\nFórnols\nFórnoles / Fórnols\nQ2409408\nca:Fórnols de Matarranya\nvillage\n8\n\n\n\nhttps://osm.org/node/1446993987\n+\nla Canyada de Beric\nLa Cañada de Verich\nQ1553963\nes:La Cañada de Verich\nvillage\n8\n\n\n\nhttps://osm.org/node/1446993987\n-\nla Canyada de Beric\nLa Cañada de Verich / la Canyada de Beric\nQ1553963\nca:La Canyada de Beric\nvillage\n8\n\n\n\nhttps://osm.org/node/1446993989\n+\nla Codonyera\nLa Codoñera\nQ1651558\nes:La Codoñera\nvillage\n8\n\n\n\nhttps://osm.org/node/1446993989\n-\nla Codonyera\nLa Codoñera / la Codonyera\nQ1651558\nca:La Codonyera\nvillage\n8\n\n\n\nhttps://osm.org/node/1446994155\n+\nla Torre de Vilella\nTorrevelilla\nQ1553894\nes:Torrevelilla\nvillage\n8\n\n\n\nhttps://osm.org/node/1446994155\n-\nla Torre de Vilella\nTorrevelilla / Torre de Vilella\nQ1553894\nes:Torrevelilla\nvillage\n8\n\n\n\nhttps://osm.org/node/308306630\n+\nAiguaviva de Bergantes\nAguaviva\nQ1770476\nes:Aguaviva (Teruel)\nvillage\n8\n\n\n\nhttps://osm.org/node/308306630\n-\nAiguaviva de Bergantes\nAguaviva / Aiguaviva de Bergantes\nQ1770476\nes:Aguaviva (Teruel)\nvillage\n8\n\n\n\nhttps://osm.org/node/793210842\n+\nBellmunt de Mesquí\nBelmonte de San José\nQ1652468\nes:Belmonte de San José\nvillage\n8\n\n\n\nhttps://osm.org/node/793210842\n-\nBellmunt de Mesquí\nBelmonte de San José / Bellmunt de Mesquí\nQ1652468\nca:Bellmunt de Mesquí\nvillage\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1446993972\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n26\n145290132\n2023-12-19 12:41:59\nVLanzarote\n11441079\nwikipedia\nes:Fórnoles\nca:Fórnols de Matarranya\n\n\n25\n145289447\n2023-12-19 12:25:58\nVLanzarote\n11441079\nname\nFórnoles\nFórnoles / Fórnols\n\n\n\n\nhttps://osm.org/node/1446993987\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n46\n145287037\n2023-12-19 11:16:08\nVLanzarote\n11441079\nwikipedia\nes:La Cañada de Verich\nca:La Canyada de Beric\n\n\n45\n145284504\n2023-12-19 10:03:28\nVLanzarote\n11441079\nname\nLa Cañada de Verich\nLa Cañada de Verich / la Canyada de Beric\n\n\n\n\nhttps://osm.org/node/1446993989\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n29\n145288893\n2023-12-19 12:10:35\nVLanzarote\n11441079\nname\nLa Codoñera\nLa Codoñera / la Codonyera\n\n\n29\n145288893\n2023-12-19 12:10:35\nVLanzarote\n11441079\nwikipedia\nes:La Codoñera\nca:La Codonyera\n\n\n\n\nhttps://osm.org/node/1446994155\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n33\n145287141\n2023-12-19 11:19:34\nVLanzarote\n11441079\nname\nTorrevelilla\nTorrevelilla / Torre de Vilella\n\n\n\n\nhttps://osm.org/node/308306630\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n62\n145283866\n2023-12-19 09:45:45\nVLanzarote\n11441079\nname\nAguaviva\nAguaviva / Aiguaviva de Bergantes\n\n\n\n\nhttps://osm.org/node/793210842\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n43\n145285996\n2023-12-19 10:46:15\nVLanzarote\n11441079\nname\nBelmonte de San José\nBelmonte de San José / Bellmunt de Mesquí\n\n\n43\n145285996\n2023-12-19 10:46:15\nVLanzarote\n11441079\nwikipedia\nes:Belmonte de San José\nca:Bellmunt de Mesquí"
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
   },
   {
     "objectID": "data-raw/README.html",
@@ -53,7 +53,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Fri 22 Dec 2023 - 02:02:39"
+    "text": "Última actualització: Sat 23 Dec 2023 - 01:59:22"
   },
   {
     "objectID": "web/limits.html#països-catalans",
@@ -81,6 +81,6 @@
     "href": "web/limits.html#municipis",
     "title": "Municipis, comarques i territoris",
     "section": "Municipis",
-    "text": "Municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉"
+    "text": "Municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\nadmin_level\n\n\n\n\nhttps://osm.org/relation/16787490\n-\nSant Julià de Ramis\nSant Julià de Ramis\nca:Sant Julià de Ramis\nQ13453\n8\n\n\n\n\n\n\nConjunts de canvis\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/16787490."
   }
 ]
