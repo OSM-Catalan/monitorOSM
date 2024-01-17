@@ -4,14 +4,14 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Tue 16 Jan 2024 - 02:06:40"
+    "text": "Última actualització: Wed 17 Jan 2024 - 02:06:27"
   },
   {
     "objectID": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/124083658\n+\nLleida\nLleida\nQ15090\nca:Lleida\ncity\n6\n\n\n\nhttps://osm.org/node/124083658\n-\nLleida\nLleida\nQ23995898\nca:Lleida\ncity\n6\n\n\n\nhttps://osm.org/node/1470838639\n+\nPaterna\nPaterna\nQ23042\nca:Paterna\ntown\n8\n\n\n\nhttps://osm.org/node/1470838639\n-\nPaterna\nPaterna\nQ24020094\nca:Paterna\ntown\n8\n\n\n\nhttps://osm.org/node/1470838825\n+\nSant Boi de Llobregat\nSant Boi de Llobregat\nQ15635\nca:Sant Boi de Llobregat\ntown\n8\n\n\n\nhttps://osm.org/node/1470838825\n-\nSant Boi de Llobregat\nSant Boi de Llobregat\nQ23992295\nca:Sant Boi de Llobregat\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/124083658.\n\n\nhttps://osm.org/node/1470838639\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n17\n144986335\n2023-12-11 06:23:05\nyopaseopor\n500572\nwikidata\nQ23042\nQ24020094\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/1470838825."
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1470838605\n+\nNavars\nNavàs\nQ23994001\nca:Navars\nvillage\n8\n\n\n\nhttps://osm.org/node/1470838605\n-\nNavars\nNavàs\nQ16724\nca:Navars\nvillage\n8\n\n\n\nhttps://osm.org/node/1731104444\n+\nCampmany\nCapmany\nQ24019213\nca:Campmany\nvillage\n8\n\n\n\nhttps://osm.org/node/1731104444\n-\nCampmany\nCapmany\nQ7106\nca:Campmany\nvillage\n8\n\n\n\nhttps://osm.org/node/410459744\n+\nel Figueró\nel Figaró\nQ24001636\nca:El Figueró i Montmany\nvillage\n8\n\n\n\nhttps://osm.org/node/410459744\n-\nel Figueró\nel Figaró\n\nca:El Figueró i Montmany\nvillage\n8\n\n\n\nhttps://osm.org/node/649883120\n+\nCabassers\nCabacés\nQ24015227\nca:Cabassers\nvillage\n8\n\n\n\nhttps://osm.org/node/649883120\n-\nCabassers\nCabacés\nQ1248525\nca:Cabassers\nvillage\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1470838605\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n18\n145861145\n2024-01-04 02:04:52\nDavileci\n8123953\nwikidata\nQ23994001\nQ16724\n\n\n\n\nhttps://osm.org/node/1731104444\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n16\n145756188\n2024-01-01 10:02:10\nDavileci\n8123953\nwikidata\nQ24019213\nQ7106\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/410459744.\n\n\nhttps://osm.org/node/649883120\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n20\n145859377\n2024-01-04 00:12:23\nDavileci\n8123953\nwikidata\nQ24015227\nQ1248525"
   },
   {
     "objectID": "data-raw/README.html",
@@ -53,7 +53,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Tue 16 Jan 2024 - 02:06:33"
+    "text": "Última actualització: Wed 17 Jan 2024 - 02:06:20"
   },
   {
     "objectID": "web/limits.html#països-catalans",
