@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ca" xml:lang="ca"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -46,7 +46,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "Cap resultat",
     "search-matching-documents-text": "documents que coincideixen",
@@ -55,6 +61,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "altra coincidència en aquest document",
     "search-more-matches-text": "altres coincidències en aquest document",
     "search-clear-button-title": "Neteja",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel·la",
     "search-submit-button-title": "Envia",
     "search-label": "Cerca"
@@ -65,16 +72,17 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="monitorOSM - Municipis, comarques i territoris">
 <meta property="og:description" content="">
-<meta property="og:site-name" content="monitorOSM">
+<meta property="og:image" content="https://osm-catalan.github.io/monitorOSM/web/man/figures/logo.png">
+<meta property="og:site_name" content="monitorOSM">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../man/figures/logo.png" alt="" class="navbar-logo">
     </a>
@@ -89,38 +97,38 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../data-raw/README.html" rel="" target="">
- <span class="menu-text">Bases de dades de referència</span></a>
+    <a class="nav-link" href="../data-raw/README.html"> 
+<span class="menu-text">Bases de dades de referència</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://osm-catalan.github.io/monitorOSM/docs/" rel="" target=""><i class="bi bi-r-circle-fill" role="img">
+    <a class="nav-link" href="https://osm-catalan.github.io/monitorOSM/docs/"> <i class="bi bi-r-circle-fill" role="img">
 </i> 
- <span class="menu-text">Paquet d’R</span></a>
+<span class="menu-text">Paquet d’R</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-    <a href="https://github.com/OSM-Catalan/monitorOSM" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+    <a href="https://github.com/OSM-Catalan/monitorOSM" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+</div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Commuta la navegació de la barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Commuta la navegació de la barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../web/limits.html">Control de canvis</a></li><li class="breadcrumb-item"><a href="../web/limits.html">Municipis, comarques i territoris</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Commuta la navegació de la barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../web/limits.html">Control de canvis</a></li><li class="breadcrumb-item"><a href="../web/limits.html">Municipis, comarques i territoris</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Commuta la navegació de la barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
     </div>
   </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
@@ -149,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -159,17 +167,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#països-catalans" id="toc-països-catalans" class="nav-link active" data-scroll-target="#països-catalans">Països Catalans</a></li>
   <li><a href="#territoris" id="toc-territoris" class="nav-link" data-scroll-target="#territoris">Territoris</a></li>
   <li><a href="#comarques" id="toc-comarques" class="nav-link" data-scroll-target="#comarques">Comarques</a></li>
-  <li><a href="#municipis" id="toc-municipis" class="nav-link" data-scroll-target="#municipis">Municipis</a>
-  <ul class="collapse">
-  <li><a href="#conjunts-de-canvis" id="toc-conjunts-de-canvis" class="nav-link" data-scroll-target="#conjunts-de-canvis">Conjunts de canvis</a></li>
-  </ul></li>
+  <li><a href="#municipis" id="toc-municipis" class="nav-link" data-scroll-target="#municipis">Municipis</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/OSM-Catalan/monitorOSM/edit/main/web/limits.qmd" class="toc-action">Edita aquesta pàgina</a></p><p><a href="https://github.com/OSM-Catalan/monitorOSM/issues/new" class="toc-action">Informa d'un problema</a></p></div></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/OSM-Catalan/monitorOSM/edit/main/web/limits.qmd" class="toc-action"><i class="bi bi-github"></i>Edita aquesta pàgina</a></li><li><a href="https://github.com/OSM-Catalan/monitorOSM/issues/new" class="toc-action"><i class="bi empty"></i>Informa d'un problema</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../web/limits.html">Control de canvis</a></li><li class="breadcrumb-item"><a href="../web/limits.html">Municipis, comarques i territoris</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Municipis, comarques i territoris</h1>
 </div>
@@ -184,9 +189,11 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
 
-<p>Última actualització: Wed 24 Jan 2024 - 02:07:39</p>
+
+<p>Última actualització: Thu 25 Jan 2024 - 02:08:41</p>
 <section id="països-catalans" class="level2">
 <h2 class="anchored" data-anchor-id="països-catalans">Països Catalans</h2>
 <p><a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/PPCC.tsv">BD de referència</a></p>
@@ -218,84 +225,12 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="municipis">Municipis</h2>
 <p><a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/municipis.tsv">BD de referència</a></p>
 <div class="cell">
-<div class="cell-output-display">
-<table class="gmisc_table table table-sm table-striped small" data-quarto-postprocess="true">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">osm_url</th>
-<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">canvi</th>
-<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">name:ca</th>
-<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">name</th>
-<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">wikipedia</th>
-<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">wikidata</th>
-<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">admin_level</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" style="background-color: #ffffff;">
-<td style="text-align: left; padding: .2em; color: #999999; background-color: #ffffff;"><a href="https://osm.org/relation/347518">https://osm.org/relation/347518</a></td>
-<td style="text-align: center; padding: .2em; color: #52854C; background-color: #ffffff;">+</td>
-<td style="text-align: center; padding: .2em; color: #52854C; background-color: #ffffff;">Castell d'Aro, Platja d'Aro i s'Agaró</td>
-<td style="text-align: center; padding: .2em; color: #52854C; background-color: #ffffff;">Castell d'Aro, Platja d'Aro i s'Agaró</td>
-<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;">ca:Castell i Platja d'Aro</td>
-<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;">Q13467</td>
-<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;">8</td>
-</tr>
-<tr class="even" style="background-color: #ffffff;">
-<td style="text-align: left; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"><a href="https://osm.org/relation/347518">https://osm.org/relation/347518</a></td>
-<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey;">-</td>
-<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey;">Castell i Platja d'Aro</td>
-<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey;">Castell-Platja d'Aro</td>
-<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;">ca:Castell i Platja d'Aro</td>
-<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;">Q13467</td>
-<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;">8</td>
-</tr>
-</tbody>
-</table>
+<div class="cell-output cell-output-stderr">
+<pre><code>🎉 Tot en ordre 🎉</code></pre>
 </div>
 </div>
-<section id="conjunts-de-canvis" class="level3">
-<h3 class="anchored" data-anchor-id="conjunts-de-canvis">Conjunts de canvis</h3>
-<table data-quarto-postprocess="true" data-cellpadding="10" data-;="" data-rules="rows" class="table">
-<caption><a href="https://osm.org/relation/347518">https://osm.org/relation/347518</a></caption>
-<thead>
-<tr class="header">
-<th style="text-align: center;" data-quarto-table-cell-role="th">version</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">changeset</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">timestamp</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">user</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">uid</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">key</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">value</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">ref_value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">34</td>
-<td style="text-align: center;"><a href="https://osm.org/changeset/146462774">146462774</a></td>
-<td style="text-align: center;">2024-01-20 01:19:49</td>
-<td style="text-align: center;"><a href="https://osm.org/user/Txitxarra">Txitxarra</a></td>
-<td style="text-align: center;">14986792</td>
-<td style="text-align: center;">name:ca</td>
-<td style="text-align: center;">Castell d'Aro, Platja d'Aro i s'Agaró</td>
-<td style="text-align: center;">Castell i Platja d'Aro</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">34</td>
-<td style="text-align: center;"><a href="https://osm.org/changeset/146462774">146462774</a></td>
-<td style="text-align: center;">2024-01-20 01:19:49</td>
-<td style="text-align: center;"><a href="https://osm.org/user/Txitxarra">Txitxarra</a></td>
-<td style="text-align: center;">14986792</td>
-<td style="text-align: center;">name</td>
-<td style="text-align: center;">Castell d'Aro, Platja d'Aro i s'Agaró</td>
-<td style="text-align: center;">Castell-Platja d'Aro</td>
-</tr>
-</tbody>
-</table>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -378,10 +313,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -391,8 +325,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -405,6 +348,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -448,6 +510,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -473,6 +536,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -536,4 +625,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OSM-Catalan/monitorOSM/edit/main/web/limits.qmd" class="toc-action"><i class="bi bi-github"></i>Edita aquesta pàgina</a></li><li><a href="https://github.com/OSM-Catalan/monitorOSM/issues/new" class="toc-action"><i class="bi empty"></i>Informa d'un problema</a></li></ul></div></div></div></footer></body></html>
