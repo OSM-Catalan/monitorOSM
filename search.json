@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Mon 12 Feb 2024 - 01:58:57",
+    "text": "Última actualització: Tue 13 Feb 2024 - 02:04:45",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -63,7 +63,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Mon 12 Feb 2024 - 01:58:49",
+    "text": "Última actualització: Tue 13 Feb 2024 - 01:58:01",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -99,7 +99,7 @@
     "href": "web/limits.html#comarques",
     "title": "Municipis, comarques i territoris",
     "section": "Comarques",
-    "text": "Comarques\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\nadmin_level\nhistoric:admin_level\n\n\n\n\nhttps://osm.org/relation/2804753\n+\nAndorra la Vella\nAndorra la Vella\npt:Andorra-a-Velha (paróquia)\nQ2522163\n7\n\n\n\nhttps://osm.org/relation/2804753\n-\nAndorra la Vella\nAndorra la Vella\npt:Andorra la Vella (paróquia)\nQ2522163\n7\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/2804753\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n14\n147098740\n2024-02-05 15:34:00\nKasperSFranz\n16586381\nwikipedia\npt:Andorra-a-Velha (paróquia)\npt:Andorra la Vella (paróquia)",
+    "text": "Comarques\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\nadmin_level\nhistoric:admin_level\n\n\n\n\nhttps://osm.org/relation/1692438\n+\nl'Alacantí\nl'Alacantí\nes:Campo de Alicante\nQ2046431\n7\n\n\n\nhttps://osm.org/relation/1692438\n-\nl'Alacantí\nl'Alacantí\nes:Alacantí\nQ2046431\n7\n\n\n\nhttps://osm.org/relation/1692446\n+\nel Vinalopó Mitjà\nel Vinalopó Mitjà / El Vinalopó Medio\nes:Vinalopó Medio\nQ2300692\n7\n\n\n\nhttps://osm.org/relation/1692446\n-\nel Vinalopó Mitjà\nel Vinalopó Mitjà / El Vinalopó Medio\nes:Medio Vinalopó\nQ2300692\n7\n\n\n\nhttps://osm.org/relation/2804753\n+\nAndorra la Vella\nAndorra la Vella\npt:Andorra-a-Velha (paróquia)\nQ2522163\n7\n\n\n\nhttps://osm.org/relation/2804753\n-\nAndorra la Vella\nAndorra la Vella\npt:Andorra la Vella (paróquia)\nQ2522163\n7\n\n\n\nhttps://osm.org/relation/6488309\n+\nRibagorça\nLa Ribagorza\nes:Ribagorza\nQ1425491\n7\n\n\n\nhttps://osm.org/relation/6488309\n-\nRibagorça\nLa Ribagorza\nes:La Ribagorza\nQ1425491\n7\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/1692438\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n15\n147368159\n2024-02-12 13:48:03\nKasperSFranz\n16586381\nwikipedia\nes:Campo de Alicante\nes:Alacantí\n\n\n\n\nhttps://osm.org/relation/1692446\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n11\n147368159\n2024-02-12 13:48:03\nKasperSFranz\n16586381\nwikipedia\nes:Vinalopó Medio\nes:Medio Vinalopó\n\n\n\n\nhttps://osm.org/relation/2804753\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n14\n147098740\n2024-02-05 15:34:00\nKasperSFranz\n16586381\nwikipedia\npt:Andorra-a-Velha (paróquia)\npt:Andorra la Vella (paróquia)\n\n\n\n\nhttps://osm.org/relation/6488309\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n19\n147368553\n2024-02-12 13:57:19\nKasperSFranz\n16586381\nwikipedia\nes:Ribagorza\nes:La Ribagorza",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
