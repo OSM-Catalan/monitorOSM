@@ -47,6 +47,21 @@ modifica_etiquetes_osm <- function(x, claus, comentari, ...) {
 
   names(x) <- gsub("^osm_id$", "id", names(x))
   names(x) <- gsub("^osm_type$", "type", names(x))
+  x <- osmapiR::osmapi_objects(x, tag_columns = claus)
+  x <- osmapiR::tags_list2wide(x)
+  elimina_claus <- setdiff(claus, names(x))
+  if (length(elimina_etiquetes) > 1) {
+    elimina_etiquetes <- lapply(elimina_claus, function(y) rep(NA_character_, nrow(x)))
+    names(elimina_etiquetes) <- elimina_claus
+    tag_columns <- attr(x, "tag_columns")
+    cla <- class(x)
+
+    x <- cbind(x, elimina_etiquetes)
+    tag_columns <- c(tag_columns, structure(which(names(x) %in% elimina_claus), names = elimina_claus))
+    attributes(x)$tag_columns <- tag_columns
+    class(x) <- cla
+  }
+
   osmchange <- osmapiR::osmchange_modify(x = x, tag_keys = claus)
 
   if (nrow(osmchange) == 0) {
