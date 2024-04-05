@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Thu 04 Apr 2024 - 18:39:27",
+    "text": "Última actualització: Fri 05 Apr 2024 - 01:59:03",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -16,7 +16,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1347315997\n+\nMonesma i Queixigar\nMonesma y Cajigar / Monesma i Queixigar\nQ984593\nca:Monesma i Queixigar\nvillage\n8\n\n\n\nhttps://osm.org/node/1347315997\n-\nQueixigar\nCajigar / Queixigar\nQ984593\nca:Monesma i Queixigar\nvillage\n8\n\n\n\nhttps://osm.org/node/1446994169\n+\nla Vall del Tormo\nValdeltormo\nQ1650770\nes:Valdeltormo\nvillage\n8\n\n\n\nhttps://osm.org/node/1446994169\n-\nla Vall del Tormo\nValdeltormo / la Vall del Tormo\nQ1650770\nca:La Vall de Tormo\nvillage\n8\n\n\n\nhttps://osm.org/node/249330712\n+\nVall-de-roures\nValderrobres\nQ1641285\nes:Valderrobres\nvillage\n7\n\n\n\nhttps://osm.org/node/249330712\n-\nVall-de-roures\nValderrobres / Vall de Roures\nQ1641285\nca:Vall-de-roures\ntown\n7\n\n\n\nhttps://osm.org/node/308302747\n+\nMont-roig\nMonroyo - Mont-roig\nQ1651239\n\nvillage\n8\n\n\n\nhttps://osm.org/node/308302747\n-\nMontroig\nMonroyo / Montroig\nQ1651239\nca:Mont-roig de Tastavins\nvillage\n8\n\n\n\nhttps://osm.org/node/308302749\n+\nRàfels\nRáfales / Ràfels\nQ1651261\nca:Ràfels\nvillage\n8\n\n\n\nhttps://osm.org/node/308302749\n-\nRàfels\nRàfels / Ráfales\nQ1651261\nca:Ràfels\nvillage\n8\n\n\n\nhttps://osm.org/node/308306630\n+\nAiguaviva de Bergantes\nAguaviva\nQ1770476\nes:Aguaviva (Teruel)\nvillage\n8\n\n\n\nhttps://osm.org/node/308306630\n-\nAiguaviva de Bergantes\nAguaviva / Aiguaviva de Bergantes\nQ1770476\nes:Aguaviva (Teruel)\nvillage\n8\n\n\n\n\n\n\n\n\nConjunts de canvis\n\n\nhttps://osm.org/node/1347315997\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n17\n149564110\n2024-04-04 10:49:52\njmaspons\n11725140\nname:ca\nMonesma i Queixigar\nQueixigar\n\n\n\n\nhttps://osm.org/node/1446994169\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n44\n149591769\n2024-04-04 23:30:43\npeyeh\n21225896\nname\nValdeltormo\nValdeltormo / la Vall del Tormo\n\n\n44\n149591769\n2024-04-04 23:30:43\npeyeh\n21225896\nwikipedia\nes:Valdeltormo\nca:La Vall de Tormo\n\n\n\n\nhttps://osm.org/node/249330712\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n47\n149591574\n2024-04-04 23:22:02\npeyeh\n21225896\nname\nValderrobres\nValderrobres / Vall de Roures\n\n\n47\n149591574\n2024-04-04 23:22:02\npeyeh\n21225896\nwikipedia\nes:Valderrobres\nca:Vall-de-roures\n\n\n47\n149591574\n2024-04-04 23:22:02\npeyeh\n21225896\nplace\nvillage\ntown\n\n\n\n\nhttps://osm.org/node/308302747\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n41\n149590351\n2024-04-04 22:39:09\npeyeh\n21225896\nname\nMonroyo\nMonroyo / Montroig\n\n\n41\n149590351\n2024-04-04 22:39:09\npeyeh\n21225896\nwikipedia\nes:Monroyo\nca:Mont-roig de Tastavins\n\n\n30\n147836770\n2024-02-23 22:31:01\nyopaseopor\n500572\nname:ca\nMont-roig\nMontroig\n\n\n\n\nhttps://osm.org/node/308302749\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n61\n149589276\n2024-04-04 22:03:26\npeyeh\n21225896\nname\nRáfales\nRàfels / Ráfales\n\n\n\n\nhttps://osm.org/node/308306630\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n107\n149589117\n2024-04-04 21:57:47\npeyeh\n21225896\nname\nAguaviva\nAguaviva / Aiguaviva de Bergantes",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -63,7 +63,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Thu 04 Apr 2024 - 18:36:12",
+    "text": "Última actualització: Fri 05 Apr 2024 - 01:58:56",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
