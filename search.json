@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Thu 11 Apr 2024 - 02:01:14",
+    "text": "Última actualització: Fri 12 Apr 2024 - 02:00:11",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -16,7 +16,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1347315997\n+\nQueixigar\nCajigar / Queixigar\nQ13048573\nca:Queixigar\nvillage\n8\n\n\n\nhttps://osm.org/node/1347315997\n-\nQueixigar\nCajigar / Queixigar\nQ984593\nca:Monesma i Queixigar\nvillage\n8\n\n\n\nhttps://osm.org/node/308338651\n+\nMequinensa\nMequinenza\nQ837051\nes:Mequinenza\nvillage\n8\n\n\n\nhttps://osm.org/node/308338651\n-\nMequinensa\nMequinenza / Mequinensa\nQ837051\nca:Mequinensa\nvillage\n8\n\n\n\nhttps://osm.org/node/351953480\n+\nTamarit de Llitera\nTamarite de Litera\nQ633385\nes:Tamarite de Litera\nvillage\n8\n\n\n\nhttps://osm.org/node/351953480\n-\nTamarit de Llitera\nTamarite de Litera / Tamarit de Llitera\nQ633385\nca:Tamarit de Llitera\nvillage\n8\n\n\n\nhttps://osm.org/node/356481105\n+\nel Campell\nAlcampell\nQ22828248\nes:Alcampell\nvillage\n8\n\n\n\nhttps://osm.org/node/356481105\n-\nel Campell\nAlcampell / el Campell\nQ22828248\n\nvillage\n8\n\n\n\nhttps://osm.org/node/364736128\n+\nel Torricó\nAltorricón\nQ444400\nes:Altorricón\nvillage\n8\n\n\n\nhttps://osm.org/node/364736128\n-\nel Torricó\nAltorricón / el Torricó\nQ444400\nca:El Torricó\nvillage\n8\n\n\n\n\n\n\n\n\nConjunts de canvis\n\n\nhttps://osm.org/node/1347315997\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n20\n149624120\n2024-04-05 16:38:27\nDavileci\n8123953\nwikidata\nQ13048573\nQ984593\n\n\n20\n149624120\n2024-04-05 16:38:27\nDavileci\n8123953\nwikipedia\nca:Queixigar\nca:Monesma i Queixigar\n\n\n\n\nhttps://osm.org/node/308338651\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n66\n149844067\n2024-04-11 01:51:21\nnoron42\n21290254\nname\nMequinenza\nMequinenza / Mequinensa\n\n\n66\n149844067\n2024-04-11 01:51:21\nnoron42\n21290254\nwikipedia\nes:Mequinenza\nca:Mequinensa\n\n\n\n\nhttps://osm.org/node/351953480\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n44\n149844089\n2024-04-11 01:53:40\nnoron42\n21290254\nname\nTamarite de Litera\nTamarite de Litera / Tamarit de Llitera\n\n\n44\n149844089\n2024-04-11 01:53:40\nnoron42\n21290254\nwikipedia\nes:Tamarite de Litera\nca:Tamarit de Llitera\n\n\n\n\nhttps://osm.org/node/356481105\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n18\n149844161\n2024-04-11 01:59:29\nnoron42\n21290254\nname\nAlcampell\nAlcampell / el Campell\n\n\n\n\nhttps://osm.org/node/364736128\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n46\n149842156\n2024-04-10 23:39:12\nnoron42\n21290254\nname\nAltorricón\nAltorricón / el Torricó\n\n\n46\n149842156\n2024-04-10 23:39:12\nnoron42\n21290254\nwikipedia\nes:Altorricón\nca:El Torricó",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1347315997\n+\nQueixigar\nCajigar / Queixigar\nQ13048573\nca:Queixigar\nvillage\n8\n\n\n\nhttps://osm.org/node/1347315997\n-\nQueixigar\nCajigar / Queixigar\nQ984593\nca:Monesma i Queixigar\nvillage\n8\n\n\n\nhttps://osm.org/node/356481105\n+\nel Campell\nAlcampell / el Campell\nQ22828248\nes:Alcampell\nvillage\n8\n\n\n\nhttps://osm.org/node/356481105\n-\nel Campell\nAlcampell / el Campell\nQ22828248\n\nvillage\n8\n\n\n\nhttps://osm.org/node/364736128\n+\nel Torricó\nAltorricón\nQ444400\nes:Altorricón\nvillage\n8\n\n\n\nhttps://osm.org/node/364736128\n-\nel Torricó\nAltorricón / el Torricó\nQ444400\nca:El Torricó\nvillage\n8\n\n\n\n\n\n\n\n\nConjunts de canvis\n\n\nhttps://osm.org/node/1347315997\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n20\n149624120\n2024-04-05 16:38:27\nDavileci\n8123953\nwikidata\nQ13048573\nQ984593\n\n\n20\n149624120\n2024-04-05 16:38:27\nDavileci\n8123953\nwikipedia\nca:Queixigar\nca:Monesma i Queixigar\n\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/356481105.\n\n\n\nhttps://osm.org/node/364736128\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n46\n149842156\n2024-04-10 23:39:12\nnoron42\n21290254\nname\nAltorricón\nAltorricón / el Torricó\n\n\n46\n149842156\n2024-04-10 23:39:12\nnoron42\n21290254\nwikipedia\nes:Altorricón\nca:El Torricó",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -63,7 +63,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Thu 11 Apr 2024 - 02:01:05",
+    "text": "Última actualització: Fri 12 Apr 2024 - 02:00:04",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -111,7 +111,7 @@
     "href": "web/limits.html#municipis",
     "title": "Municipis, comarques i territoris",
     "section": "Municipis",
-    "text": "Municipis\nBD de referència\n\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\nadmin_level\n\n\n\n\nhttps://osm.org/relation/344419\n+\nel Torricó\nAltorricón\nes:Altorricón\nQ444400\n8\n\n\nhttps://osm.org/relation/344419\n-\nel Torricó\nAltorricón / el Torricó\nca:El Torricó\nQ444400\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\n\nhttps://osm.org/relation/344419\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n22\n149844137\n2024-04-11 01:57:38\nnoron42\n21290254\nname\nAltorricón\nAltorricón / el Torricó\n\n\n22\n149844137\n2024-04-11 01:57:38\nnoron42\n21290254\nwikipedia\nes:Altorricón\nca:El Torricó",
+    "text": "Municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
