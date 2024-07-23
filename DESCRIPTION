@@ -18,10 +18,11 @@ Imports:
     compareDF,
     knitr,
     osmapiR,
-    osmdata (>= 0.2.1),
-    telegram.bot
+    osmdata (>= 0.2.1)
 Suggests: 
     dbTools,
+    quarto,
+    telegram.bot,
     testthat (>= 3.0.0),
     usethis
 Remotes: 
