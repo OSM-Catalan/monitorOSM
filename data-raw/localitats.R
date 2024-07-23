@@ -91,7 +91,7 @@ view_html(diff_loc_admin_centre_muni)
 #### Consulta admin_centre de municipis a OSM ----
 
 municipis_osm <- by(municipis, municipis$comarca, function(x) {
-  osmapiR::osm_fetch_objects(osm_type = "relation", osm_ids = x$osm_id)
+  osmapiR::osm_get_objects(osm_type = "relation", osm_id = x$osm_id)
 })
 
 admin_centre_list <- lapply(municipis_osm, function(x) {

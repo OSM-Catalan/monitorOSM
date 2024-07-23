@@ -54,7 +54,7 @@ view_html(diff_municipis)
 
 municipis_rel <- municipis[municipis$osm_type == "relation", ]
 municipis_osm <- by(municipis_rel, municipis_rel$comarca, function(x) {
-  osmapiR::osm_fetch_objects(osm_type = "relation", osm_ids = x$osm_id)
+  osmapiR::osm_get_objects(osm_type = "relation", osm_id = x$osm_id)
 })
 
 admin_centre_list <- lapply(municipis_osm, function(x) {

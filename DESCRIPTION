@@ -1,12 +1,11 @@
 Type: Package
 Package: monitorOSM
 Title: Monitor d'OSM
-Version: 0.0.3
+Version: 0.0.4
 Authors@R: c(
     person("Joan", "Maspons", , "joanmaspons@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-2286-8727"))
   )
-Maintainer: Joan Maspons <joanmaspons@gmail.com>
 Description: Monitoreja objectes d'OpenStreetMap i informa si hi ha canvis.
 License: GPL (>= 3)
 License_is_FOSS: yes
@@ -26,8 +25,7 @@ Suggests:
     testthat (>= 3.0.0),
     usethis
 Remotes: 
-    jmaspons/dbTools,
-    jmaspons/osmapiR
+    jmaspons/dbTools
 Config/testthat/edition: 3
 Encoding: UTF-8
 Language: ca
