@@ -1,5 +1,5 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- README.md is generated from README.Rmd. Please edit that file and devtools::build_rmd("README.Rmd")-->
 
 # monitorOSM <img src='man/figures/logo.png' align="right" height=130/>
 
@@ -106,7 +106,7 @@ referència. Vegeu la [documentació del paquet
 d’R](https://osm-catalan.github.io/monitorOSM/docs/reference/) per més
 detalls.
 
-### Exemple de restauració
+### Exemples d’ús del paquet
 
 Instal·leu el paquet d’R:
 
@@ -114,6 +114,19 @@ Instal·leu el paquet d’R:
 # install.packages("remotes")
 remotes::install_github("OSM-Catalan/monitorOSM")
 ```
+
+### Generació dels informes locals
+
+Per refrescar els informes localment i veure la web, podeu clonar el
+repositori i des d’R situat a la carpeta del projecte:
+
+``` r
+# install.packages("quarto")
+library(quarto)
+quarto_render()
+```
+
+#### Exemple de restauració
 
 Restauració de les etiquetes `name` i `wikipedia` de les comarques del
 País Valencià:
