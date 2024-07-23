@@ -202,7 +202,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- README.md is generated from README.Rmd. Please edit that file and devtools::build_rmd("README.Rmd")-->
 <section id="monitorosm" class="level1">
 <h1>monitorOSM <img src="man/figures/logo.png" align="right" height="130/"></h1>
 <!-- badges: start -->
@@ -249,22 +249,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="paquet-dr" class="level2">
 <h2 class="anchored" data-anchor-id="paquet-dr">Paquet d’R</h2>
 <p>La consulta, comparació amb bases de dades de referència i renderització de la web es fan amb un paquet d’<a href="https://cran.r-project.org/">R</a> i accions de github. El paquet també inclou funcions per restaurar els objectes de manera ràpida, però com a projecte comunitari, és important intentar parlar amb els usuaris que discrepen de les bases de dades de referència. Vegeu la <a href="https://osm-catalan.github.io/monitorOSM/docs/reference/">documentació del paquet d’R</a> per més detalls.</p>
-<section id="exemple-de-restauració" class="level3">
-<h3 class="anchored" data-anchor-id="exemple-de-restauració">Exemple de restauració</h3>
+<section id="exemples-dús-del-paquet" class="level3">
+<h3 class="anchored" data-anchor-id="exemples-dús-del-paquet">Exemples d’ús del paquet</h3>
 <p>Instal·leu el paquet d’R:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("remotes")</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"OSM-Catalan/monitorOSM"</span>)</span></code><button title="Copia al porta-retalls" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="generació-dels-informes-locals" class="level3">
+<h3 class="anchored" data-anchor-id="generació-dels-informes-locals">Generació dels informes locals</h3>
+<p>Per refrescar els informes localment i veure la web, podeu clonar el repositori i des d’R situat a la carpeta del projecte:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("quarto")</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(quarto)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">quarto_render</span>()</span></code><button title="Copia al porta-retalls" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="exemple-de-restauració" class="level4">
+<h4 class="anchored" data-anchor-id="exemple-de-restauració">Exemple de restauració</h4>
 <p>Restauració de les etiquetes <code>name</code> i <code>wikipedia</code> de les comarques del País Valencià:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(monitorOSM)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>id <span class="ot">&lt;-</span> <span class="fu">modifica_etiquetes_osm</span>(</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  comarques[comarques<span class="sc">$</span>regio <span class="sc">==</span> <span class="st">"PV"</span>, ],</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">claus =</span> <span class="fu">c</span>(<span class="st">"name"</span>, <span class="st">"wikipedia"</span>),</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">comentari =</span> <span class="st">"Restaura els noms de les comarques dels País Valencià"</span>, <span class="at">hashtags =</span> <span class="st">"monitorOSM"</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copia al porta-retalls" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(monitorOSM)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>id <span class="ot">&lt;-</span> <span class="fu">modifica_etiquetes_osm</span>(</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  comarques[comarques<span class="sc">$</span>regio <span class="sc">==</span> <span class="st">"PV"</span>, ],</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">claus =</span> <span class="fu">c</span>(<span class="st">"name"</span>, <span class="st">"wikipedia"</span>),</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">comentari =</span> <span class="st">"Restaura els noms de les comarques dels País Valencià"</span>, <span class="at">hashtags =</span> <span class="st">"monitorOSM"</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copia al porta-retalls" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Retorna l’identificador del conjunt de canvis.</p>
 
 
+</section>
 </section>
 </section>
 </section>
