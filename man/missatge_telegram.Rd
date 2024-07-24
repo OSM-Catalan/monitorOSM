@@ -2,7 +2,7 @@
 % Please edit documentation in R/telegram.R
 \name{missatge_telegram}
 \alias{missatge_telegram}
-\title{Envia un missatge a al grup de Telegram de la \verb{Comunitat en català d'OpenStreetMap}}
+\title{Envia un missatge a al grup de Telegram de la \verb{Comunitat en catal\\u00E0 d'OpenStreetMap}}
 \usage{
 missatge_telegram(
   missatge = "Hi ha canvis a [monitorOSM](https://osm-catalan.github.io/monitorOSM).",
@@ -15,5 +15,5 @@ missatge_telegram(
 \item{parse_mode}{El missatge s'interpreta com a \code{Markdown} o \code{HTML}.}
 }
 \description{
-Envia un missatge a al grup de Telegram de la \verb{Comunitat en català d'OpenStreetMap}
+Envia un missatge a al grup de Telegram de la \verb{Comunitat en catal\\u00E0 d'OpenStreetMap}
 }
