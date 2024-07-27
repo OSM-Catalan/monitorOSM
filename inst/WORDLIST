@@ -1,6 +1,6 @@
+'asis'
 -
 ---
-'asis'
 action
 actions
 AD
@@ -13,6 +13,7 @@ bootstrap
 BugReports
 c
 CatNord
+collapse
 comment
 compareDF
 comparison
@@ -27,8 +28,6 @@ d'
 d'OpenStreetmap
 d'OSM
 d'R
-d’OpenStreetmap
-d’R
 data-raw
 dbTools
 Depends
@@ -36,6 +35,8 @@ deploy
 Description
 df
 docked
+d’OpenStreetmap
+d’R
 echo
 edition
 Encoding
@@ -43,6 +44,7 @@ engine
 EVENT
 favicon
 FOSS
+frame
 function
 getenv
 gh
@@ -113,6 +115,7 @@ png
 ppcc
 PR
 pre-commit
+print
 Publish
 pull
 px-Osmcatala

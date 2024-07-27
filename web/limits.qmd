@@ -81,8 +81,8 @@ versio_canvis_html(versio_canvis_municipis)
 
 
 ```{r telegram}
-hi_ha_canvis <- sapply(list(canvis_ppcc, canvis_territoris, canvis_comarques, canvis_municipis), function(x) {
-  nrow(x$comparison_df) > 0
+n_canvis <- sapply(list(canvis_ppcc, canvis_territoris, canvis_comarques, canvis_municipis), function(x) {
+  nrow(x$comparison_df) / 2
 })
 
 if (any(hi_ha_canvis) &&
@@ -90,6 +90,14 @@ if (any(hi_ha_canvis) &&
   # format(Sys.Date(), format = "%u") %in% "5" &&  # Només els divendres
   Sys.getenv("GITHUB_WORKFLOW") == "Render and Publish"
 ) {
-  m <- missatge_telegram(missatge = "Hi ha canvis a [limits](https://osm-catalan.github.io/monitorOSM/web/limits.html).")
+  names(n_canvis) <- c("PPCC", "territoris", "comarques", "municipis")
+  n_canvis <- n_canvis[n_canvis > 0]
+
+  missatge <- paste0(
+    "Hi ha ", sum(n_canvis),
+    " objectes amb canvis a [limits](https://osm-catalan.github.io/monitorOSM/web/limits.html).\n",
+    "```", paste(capture.output(print(as.data.frame(n_canvis))), collapse = "```\n```"), "```"
+  )
+  m <- missatge_telegram(missatge = missatge)
 }
 ```
