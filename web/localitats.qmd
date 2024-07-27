@@ -40,7 +40,7 @@ n_canvis <- sapply(list(canvis_loc_admin_centre_municipis), function(x) {
   nrow(x$comparison_df) / 2
 })
 
-if (any(hi_ha_canvis) &&
+if (any(n_canvis) &&
   Sys.getenv("GITHUB_EVENT_NAME") == "schedule" &&
   # format(Sys.Date(), format = "%u") %in% "5" &&  # Només els divendres
   Sys.getenv("GITHUB_WORKFLOW") == "Render and Publish"
