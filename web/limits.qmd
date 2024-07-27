@@ -92,11 +92,12 @@ if (any(n_canvis) &&
 ) {
   names(n_canvis) <- c("PPCC", "territoris", "comarques", "municipis")
   n_canvis <- n_canvis[n_canvis > 0]
+  total_canvis <- sum(n_canvis)
 
   missatge <- paste0(
-    "Hi ha ", sum(n_canvis),
-    " objectes amb canvis a [limits](https://osm-catalan.github.io/monitorOSM/web/limits.html).\n",
-    "```", paste(capture.output(print(as.data.frame(n_canvis))), collapse = "```\n```"), "```"
+    "⚠️ Hi ha ", total_canvis, if (total_canvis > 1) " objectes" else " objecte",
+    " amb canvis a [limits](https://osm-catalan.github.io/monitorOSM/web/limits.html).\n",
+    "`\n", paste(capture.output(print(as.data.frame(n_canvis))), collapse = "\n"), "\n`"
   )
   m <- missatge_telegram(missatge = missatge)
 }
