@@ -144,6 +144,7 @@ schedule
 section
 setdiff
 setlocale
+setNames
 sidebar
 site-url
 source

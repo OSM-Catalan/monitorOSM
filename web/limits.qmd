@@ -91,13 +91,16 @@ if (any(n_canvis) &&
   Sys.getenv("GITHUB_WORKFLOW") == "Render and Publish"
 ) {
   names(n_canvis) <- c("PPCC", "territoris", "comarques", "municipis")
-  n_canvis <- n_canvis[n_canvis > 0]
+  n_obj <- setNames(sapply(list(PPCC, territoris, comarques, municipis), nrow), nm = names(n_canvis))
+  df <- data.frame(n_canvis, n_obj)
+  # n_obj <- n_obj[n_canvis > 0]
+  # n_canvis <- n_canvis[n_canvis > 0]
   total_canvis <- sum(n_canvis)
 
   missatge <- paste0(
     "⚠️ Hi ha ", total_canvis, if (total_canvis > 1) " objectes" else " objecte",
     " amb canvis a [limits](https://osm-catalan.github.io/monitorOSM/web/limits.html).\n",
-    "`\n", paste(capture.output(print(as.data.frame(n_canvis))), collapse = "\n"), "\n`"
+    "`\n", paste(capture.output(print(df)), collapse = "\n"), "\n`"
   )
   m <- missatge_telegram(missatge = missatge)
 }
