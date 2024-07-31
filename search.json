@@ -4,7 +4,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Wed 31 Jul 2024 - 09:41:38",
+    "text": "Última actualització: Wed 31 Jul 2024 - 16:44:46",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -99,7 +99,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Wed 31 Jul 2024 - 09:41:33",
+    "text": "Última actualització: Wed 31 Jul 2024 - 16:44:41",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -111,7 +111,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1460478422\n+\nla Barriada Nova\nla Barriada Nova\nQ5962158\n\nneighbourhood\n8\n\n\n\nhttps://osm.org/node/1460478422\n-\nCanovelles\nCanovelles\nQ15402\nca:Canovelles\ntown\n8\n\n\n\nhttps://osm.org/node/249330712\n+\nVall-de-roures\nValderrobres / Vall de Roures\nQ1641285\nes:Valderrobres\ntown\n7\n\n\n\nhttps://osm.org/node/249330712\n-\nVall-de-roures\nValderrobres / Vall de Roures\nQ1641285\nca:Vall-de-roures\ntown\n7\n\n\n\nhttps://osm.org/node/364850322\n+\nValldellou\nBaldellou / Valdellou\nQ804776\nes:Baldellou\nvillage\n8\n\n\n\nhttps://osm.org/node/364850322\n-\nValldellou\nBaldellou / Valdellou\nQ804776\nca:Valldellou\nvillage\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1460478422\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n17\n154061114\n2024-07-17 14:24:51\nquelgir\n13293058\nname:ca\nla Barriada Nova\nCanovelles\n\n\n17\n154061114\n2024-07-17 14:24:51\nquelgir\n13293058\nname\nla Barriada Nova\nCanovelles\n\n\n17\n154061114\n2024-07-17 14:24:51\nquelgir\n13293058\nwikidata\nQ5962158\nQ15402\n\n\n17\n154061114\n2024-07-17 14:24:51\nquelgir\n13293058\nwikipedia\nNA\nca:Canovelles\n\n\n17\n154061114\n2024-07-17 14:24:51\nquelgir\n13293058\nplace\nneighbourhood\ntown\n\n\n\n\n\n\nhttps://osm.org/node/249330712\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n93\n150390587\n2024-04-23 11:28:19\nfranjaragon\n21241590\nwikipedia\nes:Valderrobres\nca:Vall-de-roures\n\n\n\n\n\n\nhttps://osm.org/node/364850322\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n17\n150026382\n2024-04-15 09:12:40\nAquaevitae\n21300969\nwikipedia\nes:Baldellou\nca:Valldellou\n\n\n\n\n\nWarning in any(n_canvis): coercing argument of type 'double' to logical",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉\n\n\n\n\nWarning in any(n_canvis): coercing argument of type 'double' to logical",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
