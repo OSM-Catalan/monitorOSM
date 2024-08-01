@@ -92,7 +92,7 @@ if (any(n_canvis) &&
 ) {
   names(n_canvis) <- c("PPCC", "territoris", "comarques", "municipis")
   n_obj <- setNames(sapply(list(PPCC, territoris, comarques, municipis), nrow), nm = names(n_canvis))
-  df <- data.frame(n_canvis, n_obj)
+  df <- data.frame(dif = n_canvis, obj = n_obj)
   # n_obj <- n_obj[n_canvis > 0]
   # n_canvis <- n_canvis[n_canvis > 0]
   total_canvis <- sum(n_canvis)

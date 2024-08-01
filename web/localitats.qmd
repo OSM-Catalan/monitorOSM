@@ -47,7 +47,7 @@ if (any(n_canvis) &&
 ) {
   names(n_canvis) <- c("admin_centre")
   n_obj <- setNames(sapply(list(loc_admin_centre_municipis), nrow), nm = names(n_canvis))
-  df <- data.frame(n_canvis, n_obj)
+  df <- data.frame(dif = n_canvis, obj = n_obj)
   # n_obj <- n_obj[n_canvis > 0]
   # n_canvis <- n_canvis[n_canvis > 0]
   total_canvis <- sum(n_canvis)
