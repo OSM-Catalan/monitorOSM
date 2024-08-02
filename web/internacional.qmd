@@ -41,7 +41,7 @@ n_canvis <- sapply(list(canvis_estats), function(x) {
   nrow(x$comparison_df) / 2
 })
 
-if (any(n_canvis) &&
+if (any(n_canvis > 0) &&
   Sys.getenv("GITHUB_EVENT_NAME") == "schedule" &&
   # format(Sys.Date(), format = "%u") %in% "5" &&  # Només els divendres
   Sys.getenv("GITHUB_WORKFLOW") == "Render and Publish"
