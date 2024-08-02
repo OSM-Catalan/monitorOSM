@@ -67,3 +67,6 @@ q <- opq(bbox = c(xmin = -180, ymin = -90, xmax = 180, ymax = 90), osm_types = "
 cat(opq_string(q))
 estats <- osmdata_data_frame(q)
 estats <- estats[, sapply(estats, function(x) !all(is.na(x)))]
+ord <- c("name:ca", "name", "osm_id", "osm_type")
+ord <- c(ord, setdiff(names(estats), ord))
+estats <- estats[, ord]
