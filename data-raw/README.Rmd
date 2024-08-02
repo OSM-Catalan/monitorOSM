@@ -103,6 +103,7 @@ usethis::use_data(cims_comarques, overwrite = TRUE, compress = "xz")
 
 És recomanable preparar un fitxer per gestionar la nova base de dades i desar-la com a taula
 ([exemple](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/comarques.R)). També cal documentar la nova
-taula ([exemple](https://github.com/OSM-Catalan/monitorOSM/blob/main/man/comarques.Rd)).
+taula ([exemple](https://github.com/OSM-Catalan/monitorOSM/blob/main/man/comarques.Rd)) i refrescar aquesta pàgina amb
+`devtools::build_rmd("data-raw/README.Rmd")`.
 
 Per començar a monitorar la nova base de dades cal crear o afegir-la a un fitxer com [limits.qmd](https://github.com/OSM-Catalan/monitorOSM/blob/main/web/limits.qmd).
