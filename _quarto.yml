@@ -32,6 +32,7 @@ website:
         contents:
           - web/limits.qmd
           - web/localitats.qmd
+          - web/internacional.qmd
 
 format:
   html:

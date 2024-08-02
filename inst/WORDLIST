@@ -5,11 +5,13 @@ action
 actions
 AD
 admin
+administrative
 and
 aut
 Authors
 bd
 bootstrap
+boundary
 BugReports
 c
 CatNord
@@ -34,6 +36,7 @@ Depends
 deploy
 Description
 df
+dif
 docked
 d’OpenStreetmap
 d’R
@@ -100,6 +103,8 @@ names
 navbar
 nrow
 obj
+official
+old
 open-graph
 openstreetmap
 ORCID

@@ -1,0 +1,63 @@
+---
+title: "Internacional"
+engine: knitr
+execute:
+  echo: false
+---
+
+
+
+```{r biblioteques}
+suppressPackageStartupMessages(library(monitorOSM, quietly = TRUE))
+
+# TODO: Sys.setlocale("LC_TIME", "ca_AD.UTF-8") # requereix configurar locale a gh action https://github.com/actions/runner-images/issues/762
+```
+
+Última actualització: `r format(Sys.time(), "%a %d %b %Y - %X")`
+
+## Estats, relacions amb `admin_centre = 2` i `boundary = administrative`
+
+[BD de referència](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/estats.tsv)
+
+```{r estats}
+cols <- c(
+  "name:ca", "name", "osm_id", "osm_type", "official_name", "official_name:ca", "old_name", "old_name:ca",
+  "old_official_name", "old_official_name:ca", "wikidata"
+)
+canvis_estats <- comprova_canvis_osm(estats[, cols])
+canvis_html(canvis_estats)
+```
+
+`r if(nrow(canvis_estats$comparison_df) > 0){"### Conjunts de canvis"}`
+
+```{r localitats_admin_centre_municipis_canvis, results='asis'}
+versio_canvis_estats <- cerca_versio_canvis(canvis_estats)
+versio_canvis_html(versio_canvis_estats)
+```
+
+
+```{r telegram}
+n_canvis <- sapply(list(canvis_estats), function(x) {
+  nrow(x$comparison_df) / 2
+})
+
+if (any(n_canvis) &&
+  Sys.getenv("GITHUB_EVENT_NAME") == "schedule" &&
+  # format(Sys.Date(), format = "%u") %in% "5" &&  # Només els divendres
+  Sys.getenv("GITHUB_WORKFLOW") == "Render and Publish"
+) {
+  names(n_canvis) <- c("admin_centre")
+  n_obj <- setNames(sapply(list(estats), nrow), nm = names(n_canvis))
+  df <- data.frame(dif = n_canvis, obj = n_obj)
+  # n_obj <- n_obj[n_canvis > 0]
+  # n_canvis <- n_canvis[n_canvis > 0]
+  total_canvis <- sum(n_canvis)
+
+  missatge <- paste0(
+    "⚠️ Hi ha ", total_canvis, if (total_canvis > 1) " objectes" else " objecte",
+    " amb canvis a [localitats](https://osm-catalan.github.io/monitorOSM/web/estats.html).\n",
+    "`\n", paste(capture.output(print(knitr::kable(df))), collapse = "\n"), "\n`"
+  )
+  m <- missatge_telegram(missatge = missatge)
+}
+```
