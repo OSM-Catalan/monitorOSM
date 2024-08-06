@@ -30,16 +30,17 @@ usethis::use_data(estats, overwrite = TRUE, compress = "xz")
 
 ## Consulta dades a OSM ----
 
-estats_osm <- consulta_etiquetes_osm(
-  x = estats,
-  etiquetes = c("name:ca", "osm_id", "osm_type", "name", "wikidata", "wikipedia", "admin_level", "historic:admin_level")
+etiquetes <- c(
+  "name:ca", "name", "osm_id", "osm_type", "alt_name", "alt_name:ca", "long_name", "native_name",
+  "official_name", "official_name:ca", "old_name", "old_name:ca", "old_official_name", "old_official_name:ca",
+  "short_name", "short_name:ca", "wikidata"
 )
+
+estats_osm <- consulta_etiquetes_osm(x = estats, etiquetes = etiquetes)
 
 lapply(estats_osm, unique)
 
-estats <- estats_osm[, c(
-  "name:ca", "regio", "osm_id", "osm_type", "name", "wikipedia", "wikidata", "admin_level", "historic:admin_level"
-)]
+estats <- estats_osm[, etiquetes]
 
 
 ## Compara nova base de dades amb la del paquet instal·lat ----
@@ -53,6 +54,8 @@ view_html(diff_estats)
 
 ## Busca estats ----
 
+library(osmdata)
+
 etiquetes <- c(
   "name", "alt_name", "official_name", "long_name", "native_name", "old_name", "old_official_name", "short_name"
 )
@@ -61,9 +64,7 @@ etiquetes <- c(sort(c(etiquetes, paste0(etiquetes, ":ca"))), "wikidata")
 q <- opq(bbox = c(xmin = -180, ymin = -90, xmax = 180, ymax = 90), osm_types = "rel", out = "tags", timeout = 1000) |>
   add_osm_feature(key = "admin_level", value = "2") |>
   add_osm_feature(key = "boundary", value = "administrative") |>
-  opq_csv(
-    fields = c(etiquetes, "::type", "::id")
-  )
+  opq_csv(fields = c(etiquetes, "::type", "::id"))
 cat(opq_string(q))
 estats <- osmdata_data_frame(q)
 estats <- estats[, sapply(estats, function(x) !all(is.na(x)))]
