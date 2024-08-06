@@ -3,16 +3,24 @@
 
 # Bases de dades de referència
 
-| bd                                                                                                                        | n_obj | n_cols | columnes                                                                                                                                                                                                                            |
-|:--------------------------------------------------------------------------------------------------------------------------|------:|-------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [comarques](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/comarques.tsv)                                   |    96 |      9 | name:ca , regio , osm_id , osm_type , name , wikipedia , wikidata , admin_level , historic:admin_level                                                                                                                              |
-| [municipis](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/municipis.tsv)                                   |  1699 |      9 | name:ca , regio , comarca , osm_id , osm_type , name , wikipedia , wikidata , admin_level                                                                                                                                           |
-| [loc_admin_centre_municipis](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/loc_admin_centre_municipis.tsv) |  1674 |     12 | regio , comarca , municipi , osm_type , osm_id , name:ca , name , wikidata , wikipedia , place , capital , admin_level                                                                                                              |
-| [territoris](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/territoris.tsv)                                 |    13 |      7 | name:ca , regio , osm_id , osm_type , name , wikipedia, wikidata                                                                                                                                                                    |
-| [estats](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/estats.tsv)                                         |   243 |     17 | name:ca , name , osm_id , osm_type , alt_name , alt_name:ca , long_name , native_name , official_name , official_name:ca , old_name , old_name:ca , old_official_name , old_official_name:ca, short_name , short_name:ca , wikidata |
-| [PPCC](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/PPCC.tsv)                                             |     1 |      6 | name:ca , osm_id , osm_type , name , wikipedia, wikidata                                                                                                                                                                            |
+| bd                                                                                                                        | n_obj | n_cols | columnes                                                                                                               |
+|:--------------------------------------------------------------------------------------------------------------------------|------:|-------:|:-----------------------------------------------------------------------------------------------------------------------|
+| [PPCC](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/PPCC.tsv)                                             |     1 |      6 | name:ca , osm_id , osm_type , name , wikipedia, wikidata                                                               |
+| [territoris](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/territoris.tsv)                                 |    13 |      7 | name:ca , regio , osm_id , osm_type , name , wikipedia, wikidata                                                       |
+| [comarques](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/comarques.tsv)                                   |    96 |      9 | name:ca , regio , osm_id , osm_type , name , wikipedia , wikidata , admin_level , historic:admin_level                 |
+| [municipis](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/municipis.tsv)                                   |  1699 |      9 | name:ca , regio , comarca , osm_id , osm_type , name , wikipedia , wikidata , admin_level                              |
+| [loc_admin_centre_municipis](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/loc_admin_centre_municipis.tsv) |  1674 |     12 | regio , comarca , municipi , osm_type , osm_id , name:ca , name , wikidata , wikipedia , place , capital , admin_level |
 
-En total es monitoritzen 3726 objectes d’OpenStreetMap.
+Topònims dels PPCC
+
+| bd                                                                                | n_obj | n_cols | columnes                                                                                                                                                                                                                            |
+|:----------------------------------------------------------------------------------|------:|-------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [mars](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/mars.tsv)     |   155 |      8 | name:ca , name , osm_id , osm_type , alt_name , alt_name:ca, place , wikidata                                                                                                                                                       |
+| [estats](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/estats.tsv) |   243 |     17 | name:ca , name , osm_id , osm_type , alt_name , alt_name:ca , long_name , native_name , official_name , official_name:ca , old_name , old_name:ca , old_official_name , old_official_name:ca, short_name , short_name:ca , wikidata |
+
+Exotopònims
+
+En total es monitoritzen 3881 objectes d’OpenStreetMap.
 
 Abans de revertir canvis a OSM o comentar conjunts de canvis, comproveu
 les dades i, si cal, corregiu les bases de dades de referència.

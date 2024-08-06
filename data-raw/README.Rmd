@@ -29,7 +29,11 @@ taules <- mapply(function(x, nom) {
 }, x = as.list(d_list), nom = names(d_list), SIMPLIFY = FALSE)
 taules <- do.call(rbind, taules)
 
-knitr::kable(taules, row.names = FALSE)
+toponims <- c("PPCC", "territoris", "comarques", "municipis", "loc_admin_centre_municipis")
+exotoponims <- setdiff(rownames(taules), toponims)
+
+knitr::kable(taules[toponims, ], row.names = FALSE, caption = "Topònims dels PPCC")
+knitr::kable(taules[rownames(taules) %in% exotoponims, ], row.names = FALSE, caption = "Exotopònims")
 ```
 
 En total es monitoritzen `r sum(taules$n_obj)` objectes d'OpenStreetMap.
