@@ -15,7 +15,9 @@ suppressPackageStartupMessages(library(monitorOSM, quietly = TRUE))
 
 Última actualització: `r format(Sys.time(), "%a %d %b %Y - %X")`
 
-## Estats, relacions amb `admin_centre = 2` i `boundary = administrative`
+## Estats
+
+*Relacions amb `admin_centre = 2` i `boundary = administrative`*
 
 [BD de referència](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/estats.tsv)
 
@@ -30,14 +32,36 @@ canvis_html(canvis_estats)
 
 `r if(nrow(canvis_estats$comparison_df) > 0){"### Conjunts de canvis"}`
 
-```{r localitats_admin_centre_municipis_canvis, results='asis'}
+```{r estats_canvis, results='asis'}
 versio_canvis_estats <- cerca_versio_canvis(canvis_estats)
 versio_canvis_html(versio_canvis_estats)
 ```
 
 
+
+
+## Mars i oceans
+
+*Objectes amb `place = ocean` o `place = sea`*
+
+[BD de referència](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/mars.tsv)
+
+```{r mars}
+cols <- c("name:ca", "name", "osm_id", "osm_type", "alt_name", "alt_name:ca", "place", "wikidata")
+canvis_mars <- comprova_canvis_osm(mars[, cols])
+canvis_html(canvis_mars)
+```
+
+`r if(nrow(canvis_mars$comparison_df) > 0){"### Conjunts de canvis"}`
+
+```{r mars_canvis, results='asis'}
+versio_canvis_mars <- cerca_versio_canvis(canvis_mars)
+versio_canvis_html(versio_canvis_mars)
+```
+
+
 ```{r telegram}
-n_canvis <- sapply(list(canvis_estats), function(x) {
+n_canvis <- sapply(list(canvis_estats, canvis_mars), function(x) {
   nrow(x$comparison_df) / 2
 })
 
@@ -46,8 +70,8 @@ if (any(n_canvis > 0) &&
   # format(Sys.Date(), format = "%u") %in% "5" &&  # Només els divendres
   Sys.getenv("GITHUB_WORKFLOW") == "Render and Publish"
 ) {
-  names(n_canvis) <- c("admin_centre")
-  n_obj <- setNames(sapply(list(estats), nrow), nm = names(n_canvis))
+  names(n_canvis) <- c("estats", "mars")
+  n_obj <- setNames(sapply(list(estats, mars), nrow), nm = names(n_canvis))
   df <- data.frame(dif = n_canvis, obj = n_obj)
   # n_obj <- n_obj[n_canvis > 0]
   # n_canvis <- n_canvis[n_canvis > 0]
@@ -55,7 +79,7 @@ if (any(n_canvis > 0) &&
 
   missatge <- paste0(
     "⚠️ Hi ha ", total_canvis, if (total_canvis > 1) " objectes" else " objecte",
-    " amb canvis a [localitats](https://osm-catalan.github.io/monitorOSM/web/estats.html).\n",
+    " amb canvis a [Internacional](https://osm-catalan.github.io/monitorOSM/web/internacional.html).\n",
     "`\n", paste(capture.output(print(knitr::kable(df))), collapse = "\n"), "\n`"
   )
   m <- missatge_telegram(missatge = missatge)
