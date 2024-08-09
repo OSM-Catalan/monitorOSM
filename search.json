@@ -4,7 +4,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Fri 09 Aug 2024 - 08:16:55",
+    "text": "Última actualització: Fri 09 Aug 2024 - 12:32:16",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -60,27 +60,27 @@
     ]
   },
   {
-    "objectID": "web/internacional.html",
-    "href": "web/internacional.html",
-    "title": "Internacional",
+    "objectID": "web/localitats.html",
+    "href": "web/localitats.html",
+    "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Fri 09 Aug 2024 - 08:16:47",
+    "text": "Última actualització: Fri 09 Aug 2024 - 12:32:08",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
-      "Internacional"
+      "Localitats"
     ]
   },
   {
-    "objectID": "web/internacional.html#estats-relacions-amb-admin_centre-2-i-boundary-administrative",
-    "href": "web/internacional.html#estats-relacions-amb-admin_centre-2-i-boundary-administrative",
-    "title": "Internacional",
-    "section": "Estats, relacions amb admin_centre = 2 i boundary = administrative",
-    "text": "Estats, relacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n🎉 Tot en ordre 🎉",
+    "objectID": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
+    "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
+    "title": "Localitats",
+    "section": "Localitats que fan d’admin_centre de relacions de municipis",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
-      "Internacional"
+      "Localitats"
     ]
   },
   {
@@ -109,7 +109,7 @@
     "href": "data-raw/README.html",
     "title": "Bases de dades de referència",
     "section": "",
-    "text": "bd\nn_obj\nn_cols\ncolumnes\n\n\n\n\ncomarques\n96\n9\nname:ca , regio , osm_id , osm_type , name , wikipedia , wikidata , admin_level , historic:admin_level\n\n\nmunicipis\n1699\n9\nname:ca , regio , comarca , osm_id , osm_type , name , wikipedia , wikidata , admin_level\n\n\nloc_admin_centre_municipis\n1674\n12\nregio , comarca , municipi , osm_type , osm_id , name:ca , name , wikidata , wikipedia , place , capital , admin_level\n\n\nterritoris\n13\n7\nname:ca , regio , osm_id , osm_type , name , wikipedia, wikidata\n\n\nestats\n243\n17\nname:ca , name , osm_id , osm_type , alt_name , alt_name:ca , long_name , native_name , official_name , official_name:ca , old_name , old_name:ca , old_official_name , old_official_name:ca, short_name , short_name:ca , wikidata\n\n\nPPCC\n1\n6\nname:ca , osm_id , osm_type , name , wikipedia, wikidata\n\n\n\nEn total es monitoritzen 3726 objectes d’OpenStreetMap.\nAbans de revertir canvis a OSM o comentar conjunts de canvis, comproveu les dades i, si cal, corregiu les bases de dades de referència.\n\n\nSi voleu afegir objectes amb les seves etiquetes a les bases de dades, podeu obrir un tiquet o un PR que inclogui la base de dades i el codi per generar els informes.\n\n\nCreeu una taula amb els estats de referència. Cal que cada fila contingui les etiquetes que vulgueu monitorar i els identificadors únics d’OpenStreetMap (osm_type i osm_id). Podeu generar les taules amb el paquet d’R osmdata.\nExemple per generar una taula amb les etiquetes name:ca, name, wikipedia i wikidata de tots els cims dels Països Catalans (relation(id:11747082)):\nlibrary(osmdata)\n#&gt; Data (c) OpenStreetMap contributors, ODbL 1.0. https://www.openstreetmap.org/copyright\n\ncims &lt;- opq(bbox = \"relation(id:11747082)\", out = \"tags\", timeout = \"100\") |&gt;\n  add_osm_feature(key = \"natural\", value = \"peak\") |&gt;\n  opq_csv(fields = c(\"name:ca\", \"::id\", \"::type\", \"name\", \"wikipedia\", \"wikidata\")) |&gt;\n  osmdata_data_frame()\n\nnames(cims) &lt;- gsub(\"^@\", \"osm_\", names(cims))\nhead(cims)\n#&gt;                    name:ca   osm_id osm_type                     name\n#&gt; 1           Puig de l'Ofre 26783257     node           Puig de l'Ofre\n#&gt; 2        Puig de Bassegoda 26862531     node        Puig de Bassegoda\n#&gt; 3           Cap de Boumort 26862611     node           Cap de Boumort\n#&gt; 4             Cap del Verd 26862659     node             Cap del Verd\n#&gt; 5       Pic de Comaloforno 26862732     node       Pic de Comaloforno\n#&gt; 6 Cap de la Gallina Pelada 26862904     node Cap de la Gallina Pelada\n#&gt;                     wikipedia  wikidata\n#&gt; 1           ca:Puig de l'Ofre  Q1652824\n#&gt; 2        ca:Puig de Bassegoda  Q4894784\n#&gt; 3           ca:Cap de Boumort  Q5034453\n#&gt; 4             ca:Cap del Verd  Q5034455\n#&gt; 5       ca:Pic de Comaloforno  Q2984642\n#&gt; 6 ca:Cap de la Gallina Pelada Q17482071\nÉs pràctic afegir la comarca i territori de cada objecte per poder fer les reversions amb conjunts de canvis més petits:\nlibrary(osmdata)\nlibrary(monitorOSM) # comarques\n#&gt; Dades sota llicència ODbL 1.0. (c) Col·laboradors d'OpenStreetMap https://www.openstreetmap.org/copyright\n\ncims_comarca &lt;- mapply(function(id, nom, territori) {\n  out &lt;- opq(bbox = paste0(\"relation(id:\", id, \")\"), out = \"tags\", timeout = \"100\") |&gt;\n    add_osm_feature(key = \"natural\", value = \"peak\") |&gt;\n    opq_csv(fields = c(\"name:ca\", \"::id\", \"::type\", \"name\", \"wikipedia\", \"wikidata\")) |&gt;\n    osmdata_data_frame()\n\n  if (nrow(out) &gt; 0) {\n    out$regio &lt;- territori\n    out$comarca &lt;- nom\n  }\n\n  return(out)\n}, id = comarques$osm_id, nom = comarques$`name:ca`, territori = comarques$regio, SIMPLIFY = FALSE)\n\ncims_comarques &lt;- do.call(rbind, cims_comarca)\nnames(cims_comarques) &lt;- gsub(\"^@\", \"osm_\", names(cims_comarques))\n\ncims_comarques &lt;- cims_comarques[!duplicated(cims_comarques[, c(\"osm_type\", \"osm_id\")]), ] # elimina objectes duplicats\nordre &lt;- order(cims_comarques$regio, cims_comarques$comarca, cims_comarques$`name:ca`)\nordre_columnes &lt;- c(\"name:ca\", \"regio\", \"comarca\", \"osm_id\", \"osm_type\", \"name\", \"wikipedia\", \"wikidata\")\ncims_comarques &lt;- unique(cims_comarques[ordre, ordre_columnes])\nrownames(cims_comarques) &lt;- NULL\n\nhead(cims_comarques)\n#&gt;         name:ca   regio          comarca     osm_id osm_type           name\n#&gt; 1          &lt;NA&gt; Andorra Andorra la Vella 1473165520     node     Pic Carroi\n#&gt; 2          &lt;NA&gt; Andorra Andorra la Vella 2188366026     node Pic de Coll Pa\n#&gt; 3          &lt;NA&gt; Andorra Andorra la Vella 3956298776     node           &lt;NA&gt;\n#&gt; 4          &lt;NA&gt; Andorra Andorra la Vella 9706258659     node Roc dels Corbs\n#&gt; 5          &lt;NA&gt; Andorra Andorra la Vella 9706258725     node Roc de Patapou\n#&gt; 6 Alt de Juclar Andorra          Canillo 3887374186     node  Alt de Juclar\n#&gt;          wikipedia  wikidata\n#&gt; 1             &lt;NA&gt; Q21329274\n#&gt; 2             &lt;NA&gt; Q21329357\n#&gt; 3             &lt;NA&gt;      &lt;NA&gt;\n#&gt; 4             &lt;NA&gt; Q21329430\n#&gt; 5             &lt;NA&gt;      &lt;NA&gt;\n#&gt; 6 ca:Alt de Juclar Q21329826\nUn cop tingueu la base de dades a punt, es pot afegir al paquet de manera que estigui disponible quan el carreguem:\nusethis::use_data(cims_comarques, overwrite = TRUE, compress = \"xz\")\nÉs recomanable preparar un fitxer per gestionar la nova base de dades i desar-la com a taula (exemple). També cal documentar la nova taula (exemple) i refrescar aquesta pàgina amb devtools::build_rmd(\"data-raw/README.Rmd\").\nPer començar a monitorar la nova base de dades cal crear o afegir-la a un fitxer com limits.qmd."
+    "text": "bd\nn_obj\nn_cols\ncolumnes\n\n\n\n\nPPCC\n1\n6\nname:ca , osm_id , osm_type , name , wikipedia, wikidata\n\n\nterritoris\n13\n7\nname:ca , regio , osm_id , osm_type , name , wikipedia, wikidata\n\n\ncomarques\n96\n9\nname:ca , regio , osm_id , osm_type , name , wikipedia , wikidata , admin_level , historic:admin_level\n\n\nmunicipis\n1699\n9\nname:ca , regio , comarca , osm_id , osm_type , name , wikipedia , wikidata , admin_level\n\n\nloc_admin_centre_municipis\n1674\n12\nregio , comarca , municipi , osm_type , osm_id , name:ca , name , wikidata , wikipedia , place , capital , admin_level\n\n\n\nTopònims dels PPCC\n\n\n\nbd\nn_obj\nn_cols\ncolumnes\n\n\n\n\nmars\n155\n8\nname:ca , name , osm_id , osm_type , alt_name , alt_name:ca, place , wikidata\n\n\nestats\n243\n17\nname:ca , name , osm_id , osm_type , alt_name , alt_name:ca , long_name , native_name , official_name , official_name:ca , old_name , old_name:ca , old_official_name , old_official_name:ca, short_name , short_name:ca , wikidata\n\n\n\nExotopònims\nEn total es monitoritzen 3881 objectes d’OpenStreetMap.\nAbans de revertir canvis a OSM o comentar conjunts de canvis, comproveu les dades i, si cal, corregiu les bases de dades de referència.\n\n\nSi voleu afegir objectes amb les seves etiquetes a les bases de dades, podeu obrir un tiquet o un PR que inclogui la base de dades i el codi per generar els informes.\n\n\nCreeu una taula amb els estats de referència. Cal que cada fila contingui les etiquetes que vulgueu monitorar i els identificadors únics d’OpenStreetMap (osm_type i osm_id). Podeu generar les taules amb el paquet d’R osmdata.\nExemple per generar una taula amb les etiquetes name:ca, name, wikipedia i wikidata de tots els cims dels Països Catalans (relation(id:11747082)):\nlibrary(osmdata)\n#&gt; Data (c) OpenStreetMap contributors, ODbL 1.0. https://www.openstreetmap.org/copyright\n\ncims &lt;- opq(bbox = \"relation(id:11747082)\", out = \"tags\", timeout = \"100\") |&gt;\n  add_osm_feature(key = \"natural\", value = \"peak\") |&gt;\n  opq_csv(fields = c(\"name:ca\", \"::id\", \"::type\", \"name\", \"wikipedia\", \"wikidata\")) |&gt;\n  osmdata_data_frame()\n\nnames(cims) &lt;- gsub(\"^@\", \"osm_\", names(cims))\nhead(cims)\n#&gt;                    name:ca   osm_id osm_type                     name\n#&gt; 1           Puig de l'Ofre 26783257     node           Puig de l'Ofre\n#&gt; 2        Puig de Bassegoda 26862531     node        Puig de Bassegoda\n#&gt; 3           Cap de Boumort 26862611     node           Cap de Boumort\n#&gt; 4             Cap del Verd 26862659     node             Cap del Verd\n#&gt; 5       Pic de Comaloforno 26862732     node       Pic de Comaloforno\n#&gt; 6 Cap de la Gallina Pelada 26862904     node Cap de la Gallina Pelada\n#&gt;                     wikipedia  wikidata\n#&gt; 1           ca:Puig de l'Ofre  Q1652824\n#&gt; 2        ca:Puig de Bassegoda  Q4894784\n#&gt; 3           ca:Cap de Boumort  Q5034453\n#&gt; 4             ca:Cap del Verd  Q5034455\n#&gt; 5       ca:Pic de Comaloforno  Q2984642\n#&gt; 6 ca:Cap de la Gallina Pelada Q17482071\nÉs pràctic afegir la comarca i territori de cada objecte per poder fer les reversions amb conjunts de canvis més petits:\nlibrary(osmdata)\nlibrary(monitorOSM) # comarques\n#&gt; Dades sota llicència ODbL 1.0. (c) Col·laboradors d'OpenStreetMap https://www.openstreetmap.org/copyright\n\ncims_comarca &lt;- mapply(function(id, nom, territori) {\n  out &lt;- opq(bbox = paste0(\"relation(id:\", id, \")\"), out = \"tags\", timeout = \"100\") |&gt;\n    add_osm_feature(key = \"natural\", value = \"peak\") |&gt;\n    opq_csv(fields = c(\"name:ca\", \"::id\", \"::type\", \"name\", \"wikipedia\", \"wikidata\")) |&gt;\n    osmdata_data_frame()\n\n  if (nrow(out) &gt; 0) {\n    out$regio &lt;- territori\n    out$comarca &lt;- nom\n  }\n\n  return(out)\n}, id = comarques$osm_id, nom = comarques$`name:ca`, territori = comarques$regio, SIMPLIFY = FALSE)\n\ncims_comarques &lt;- do.call(rbind, cims_comarca)\nnames(cims_comarques) &lt;- gsub(\"^@\", \"osm_\", names(cims_comarques))\n\ncims_comarques &lt;- cims_comarques[!duplicated(cims_comarques[, c(\"osm_type\", \"osm_id\")]), ] # elimina objectes duplicats\nordre &lt;- order(cims_comarques$regio, cims_comarques$comarca, cims_comarques$`name:ca`)\nordre_columnes &lt;- c(\"name:ca\", \"regio\", \"comarca\", \"osm_id\", \"osm_type\", \"name\", \"wikipedia\", \"wikidata\")\ncims_comarques &lt;- unique(cims_comarques[ordre, ordre_columnes])\nrownames(cims_comarques) &lt;- NULL\n\nhead(cims_comarques)\n#&gt;         name:ca   regio          comarca     osm_id osm_type           name\n#&gt; 1          &lt;NA&gt; Andorra Andorra la Vella 1473165520     node     Pic Carroi\n#&gt; 2          &lt;NA&gt; Andorra Andorra la Vella 2188366026     node Pic de Coll Pa\n#&gt; 3          &lt;NA&gt; Andorra Andorra la Vella 3956298776     node           &lt;NA&gt;\n#&gt; 4          &lt;NA&gt; Andorra Andorra la Vella 9706258659     node Roc dels Corbs\n#&gt; 5          &lt;NA&gt; Andorra Andorra la Vella 9706258725     node Roc de Patapou\n#&gt; 6 Alt de Juclar Andorra          Canillo 3887374186     node  Alt de Juclar\n#&gt;          wikipedia  wikidata\n#&gt; 1             &lt;NA&gt; Q21329274\n#&gt; 2             &lt;NA&gt; Q21329357\n#&gt; 3             &lt;NA&gt;      &lt;NA&gt;\n#&gt; 4             &lt;NA&gt; Q21329430\n#&gt; 5             &lt;NA&gt;      &lt;NA&gt;\n#&gt; 6 ca:Alt de Juclar Q21329826\nUn cop tingueu la base de dades a punt, es pot afegir al paquet de manera que estigui disponible quan el carreguem:\nusethis::use_data(cims_comarques, overwrite = TRUE, compress = \"xz\")\nÉs recomanable preparar un fitxer per gestionar la nova base de dades i desar-la com a taula (exemple). També cal documentar la nova taula (exemple) i refrescar aquesta pàgina amb devtools::build_rmd(\"data-raw/README.Rmd\").\nPer començar a monitorar la nova base de dades cal crear o afegir-la a un fitxer com limits.qmd."
   },
   {
     "objectID": "data-raw/README.html#com-afegir-noves-bases-de-dades",
@@ -119,27 +119,39 @@
     "text": "Si voleu afegir objectes amb les seves etiquetes a les bases de dades, podeu obrir un tiquet o un PR que inclogui la base de dades i el codi per generar els informes.\n\n\nCreeu una taula amb els estats de referència. Cal que cada fila contingui les etiquetes que vulgueu monitorar i els identificadors únics d’OpenStreetMap (osm_type i osm_id). Podeu generar les taules amb el paquet d’R osmdata.\nExemple per generar una taula amb les etiquetes name:ca, name, wikipedia i wikidata de tots els cims dels Països Catalans (relation(id:11747082)):\nlibrary(osmdata)\n#&gt; Data (c) OpenStreetMap contributors, ODbL 1.0. https://www.openstreetmap.org/copyright\n\ncims &lt;- opq(bbox = \"relation(id:11747082)\", out = \"tags\", timeout = \"100\") |&gt;\n  add_osm_feature(key = \"natural\", value = \"peak\") |&gt;\n  opq_csv(fields = c(\"name:ca\", \"::id\", \"::type\", \"name\", \"wikipedia\", \"wikidata\")) |&gt;\n  osmdata_data_frame()\n\nnames(cims) &lt;- gsub(\"^@\", \"osm_\", names(cims))\nhead(cims)\n#&gt;                    name:ca   osm_id osm_type                     name\n#&gt; 1           Puig de l'Ofre 26783257     node           Puig de l'Ofre\n#&gt; 2        Puig de Bassegoda 26862531     node        Puig de Bassegoda\n#&gt; 3           Cap de Boumort 26862611     node           Cap de Boumort\n#&gt; 4             Cap del Verd 26862659     node             Cap del Verd\n#&gt; 5       Pic de Comaloforno 26862732     node       Pic de Comaloforno\n#&gt; 6 Cap de la Gallina Pelada 26862904     node Cap de la Gallina Pelada\n#&gt;                     wikipedia  wikidata\n#&gt; 1           ca:Puig de l'Ofre  Q1652824\n#&gt; 2        ca:Puig de Bassegoda  Q4894784\n#&gt; 3           ca:Cap de Boumort  Q5034453\n#&gt; 4             ca:Cap del Verd  Q5034455\n#&gt; 5       ca:Pic de Comaloforno  Q2984642\n#&gt; 6 ca:Cap de la Gallina Pelada Q17482071\nÉs pràctic afegir la comarca i territori de cada objecte per poder fer les reversions amb conjunts de canvis més petits:\nlibrary(osmdata)\nlibrary(monitorOSM) # comarques\n#&gt; Dades sota llicència ODbL 1.0. (c) Col·laboradors d'OpenStreetMap https://www.openstreetmap.org/copyright\n\ncims_comarca &lt;- mapply(function(id, nom, territori) {\n  out &lt;- opq(bbox = paste0(\"relation(id:\", id, \")\"), out = \"tags\", timeout = \"100\") |&gt;\n    add_osm_feature(key = \"natural\", value = \"peak\") |&gt;\n    opq_csv(fields = c(\"name:ca\", \"::id\", \"::type\", \"name\", \"wikipedia\", \"wikidata\")) |&gt;\n    osmdata_data_frame()\n\n  if (nrow(out) &gt; 0) {\n    out$regio &lt;- territori\n    out$comarca &lt;- nom\n  }\n\n  return(out)\n}, id = comarques$osm_id, nom = comarques$`name:ca`, territori = comarques$regio, SIMPLIFY = FALSE)\n\ncims_comarques &lt;- do.call(rbind, cims_comarca)\nnames(cims_comarques) &lt;- gsub(\"^@\", \"osm_\", names(cims_comarques))\n\ncims_comarques &lt;- cims_comarques[!duplicated(cims_comarques[, c(\"osm_type\", \"osm_id\")]), ] # elimina objectes duplicats\nordre &lt;- order(cims_comarques$regio, cims_comarques$comarca, cims_comarques$`name:ca`)\nordre_columnes &lt;- c(\"name:ca\", \"regio\", \"comarca\", \"osm_id\", \"osm_type\", \"name\", \"wikipedia\", \"wikidata\")\ncims_comarques &lt;- unique(cims_comarques[ordre, ordre_columnes])\nrownames(cims_comarques) &lt;- NULL\n\nhead(cims_comarques)\n#&gt;         name:ca   regio          comarca     osm_id osm_type           name\n#&gt; 1          &lt;NA&gt; Andorra Andorra la Vella 1473165520     node     Pic Carroi\n#&gt; 2          &lt;NA&gt; Andorra Andorra la Vella 2188366026     node Pic de Coll Pa\n#&gt; 3          &lt;NA&gt; Andorra Andorra la Vella 3956298776     node           &lt;NA&gt;\n#&gt; 4          &lt;NA&gt; Andorra Andorra la Vella 9706258659     node Roc dels Corbs\n#&gt; 5          &lt;NA&gt; Andorra Andorra la Vella 9706258725     node Roc de Patapou\n#&gt; 6 Alt de Juclar Andorra          Canillo 3887374186     node  Alt de Juclar\n#&gt;          wikipedia  wikidata\n#&gt; 1             &lt;NA&gt; Q21329274\n#&gt; 2             &lt;NA&gt; Q21329357\n#&gt; 3             &lt;NA&gt;      &lt;NA&gt;\n#&gt; 4             &lt;NA&gt; Q21329430\n#&gt; 5             &lt;NA&gt;      &lt;NA&gt;\n#&gt; 6 ca:Alt de Juclar Q21329826\nUn cop tingueu la base de dades a punt, es pot afegir al paquet de manera que estigui disponible quan el carreguem:\nusethis::use_data(cims_comarques, overwrite = TRUE, compress = \"xz\")\nÉs recomanable preparar un fitxer per gestionar la nova base de dades i desar-la com a taula (exemple). També cal documentar la nova taula (exemple) i refrescar aquesta pàgina amb devtools::build_rmd(\"data-raw/README.Rmd\").\nPer començar a monitorar la nova base de dades cal crear o afegir-la a un fitxer com limits.qmd."
   },
   {
-    "objectID": "web/localitats.html",
-    "href": "web/localitats.html",
-    "title": "Localitats",
+    "objectID": "web/internacional.html",
+    "href": "web/internacional.html",
+    "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Fri 09 Aug 2024 - 08:16:50",
+    "text": "Última actualització: Fri 09 Aug 2024 - 12:32:13",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
-      "Localitats"
+      "Internacional"
     ]
   },
   {
-    "objectID": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
-    "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
-    "title": "Localitats",
-    "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉",
+    "objectID": "web/internacional.html#estats",
+    "href": "web/internacional.html#estats",
+    "title": "Internacional",
+    "section": "Estats",
+    "text": "Estats\nRelacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n🎉 Tot en ordre 🎉",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
-      "Localitats"
+      "Internacional"
+    ]
+  },
+  {
+    "objectID": "web/internacional.html#mars-i-oceans",
+    "href": "web/internacional.html#mars-i-oceans",
+    "title": "Internacional",
+    "section": "Mars i oceans",
+    "text": "Mars i oceans\nObjectes amb place = ocean o place = sea\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nplace\nwikidata\n\n\n\n\nhttps://osm.org/node/5261455417\n+\n\n\n\n\n\n\n\n\nhttps://osm.org/node/5261455417\n-\nRiu de la Plata\nRío de la Plata\n\n\nsea\nQ35827\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/5261455417\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n21\n154979418\n2024-08-08 13:22:28\n*Martin*\n4815\nname:ca\nNA\nRiu de la Plata\n\n\n21\n154979418\n2024-08-08 13:22:28\n*Martin*\n4815\nname\nNA\nRío de la Plata\n\n\n21\n154979418\n2024-08-08 13:22:28\n*Martin*\n4815\nplace\nNA\nsea\n\n\n21\n154979418\n2024-08-08 13:22:28\n*Martin*\n4815\nwikidata\nNA\nQ35827",
+    "crumbs": [
+      "Bases de dades de referència",
+      "Control de canvis",
+      "Internacional"
     ]
   }
 ]
