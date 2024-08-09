@@ -38,6 +38,29 @@ versio_canvis_html(versio_canvis_estats)
 ```
 
 
+## Capitals estatals
+
+*Objectes amb `capital = 2` o `capital = yes` o `role = admin_centre` en relacions d'estats*
+
+[BD de referència](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/capitals.tsv)
+
+```{r capitals}
+cols <- c(
+  "name:ca", "name", "osm_id", "osm_type", "alt_name", "alt_name:ca", "int_name", "loc_name", "long_name", "nat_name",
+  "official_name", "official_name:ca", "old_name", "old_name:ca", "reg_name", "short_name", "shortest_name",
+  "admin_level", "capital", "capital:defacto", "capital:executive", "capital:judicial", "capital:legislative",
+  "wikidata"
+)
+canvis_capitals <- comprova_canvis_osm(capitals[, cols])
+canvis_html(canvis_capitals)
+```
+
+`r if(nrow(canvis_capitals$comparison_df) > 0){"### Conjunts de canvis"}`
+
+```{r capitals_canvis, results='asis'}
+versio_canvis_capitals <- cerca_versio_canvis(canvis_capitals)
+versio_canvis_html(versio_canvis_capitals)
+```
 
 
 ## Mars i oceans
@@ -61,7 +84,7 @@ versio_canvis_html(versio_canvis_mars)
 
 
 ```{r telegram}
-n_canvis <- sapply(list(canvis_estats, canvis_mars), function(x) {
+n_canvis <- sapply(list(canvis_estats, canvis_capitals, canvis_mars), function(x) {
   nrow(x$comparison_df) / 2
 })
 
@@ -70,8 +93,8 @@ if (any(n_canvis > 0) &&
   # format(Sys.Date(), format = "%u") %in% "5" &&  # Només els divendres
   Sys.getenv("GITHUB_WORKFLOW") == "Render and Publish"
 ) {
-  names(n_canvis) <- c("estats", "mars")
-  n_obj <- setNames(sapply(list(estats, mars), nrow), nm = names(n_canvis))
+  names(n_canvis) <- c("estats", "capitals", "mars")
+  n_obj <- setNames(sapply(list(estats, capitals, mars), nrow), nm = names(n_canvis))
   df <- data.frame(dif = n_canvis, obj = n_obj)
   # n_obj <- n_obj[n_canvis > 0]
   # n_canvis <- n_canvis[n_canvis > 0]

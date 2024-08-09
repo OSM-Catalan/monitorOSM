@@ -32,6 +32,7 @@ d'OSM
 d'R
 data-raw
 dbTools
+defacto
 Depends
 deploy
 Description
@@ -46,6 +47,7 @@ else
 Encoding
 engine
 EVENT
+executive
 favicon
 FOSS
 frame
@@ -63,6 +65,7 @@ if
 image
 in
 install
+int
 io
 issue
 issues
@@ -79,6 +82,7 @@ LazyData
 LazyDataCompression
 LC
 left
+legislative
 level
 library
 License
@@ -156,6 +160,7 @@ setdiff
 setlocale
 setNames
 short
+shortest
 sidebar
 site-url
 source
