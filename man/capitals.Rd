@@ -1,13 +1,14 @@
-\name{mars}
-\alias{mars}
+\name{capitals}
+\alias{capitals}
 \docType{data}
-\title{Mars i oceans del mon}
+\title{Capitals d'estats del mon}
 \description{
-Dades dels mars i oceans del mon, objectes amb etiquetes `place = ocean` o `place = sea`.
+Dades de les capitals d'estats del mon, objectes amb etiquetes `capital = 2`, `capital = yes` o nodes amb el rol
+d'`admin_centre` de de relacions d'estats.
 }
-\usage{mars}
+\usage{capitals}
 \format{
-  Un \code{data.frame} amb dades dels 155 mars i oceans per les següents 8 variables.
+  Un \code{data.frame} amb dades de les 155 capitals per les següents 8 variables.
   \describe{
     \item{name:ca}{Etiqueta \code{name:ca}.}
     \item{name}{Etiqueta \code{name}.}
@@ -21,10 +22,10 @@ Dades dels mars i oceans del mon, objectes amb etiquetes `place = ocean` o `plac
 }
 \seealso{
   Altres bases de dades d'exotopònims de referència:
-  \code{\link{estats}}, \code{\link{capitals}}.
+  \code{\link{estats}}, \code{\link{mars}}.
 }
 \concept{Bases de dades de referència}
 \examples{
-mars[, c("name:ca", "name", "wikidata")]
+capitals[, c("name:ca", "name", "wikidata")]
 }
 \keyword{datasets}

@@ -30,7 +30,7 @@ Dades dels estats del mon, relacions amb etiquetes `admin_centre = 2` i `boundar
 }
 \seealso{
   Altres bases de dades d'exotopònims de referència:
-  \code{\link{mars}}.
+  \code{\link{capitals}}, \code{\link{mars}}.
 }
 \concept{Bases de dades de referència}
 \examples{
