@@ -48,8 +48,7 @@ versio_canvis_html(versio_canvis_estats)
 cols <- c(
   "name:ca", "name", "osm_id", "osm_type", "alt_name", "alt_name:ca", "int_name", "loc_name", "long_name", "nat_name",
   "official_name", "official_name:ca", "old_name", "old_name:ca", "reg_name", "short_name", "shortest_name",
-  "admin_level", "capital", "capital:defacto", "capital:executive", "capital:judicial", "capital:legislative",
-  "wikidata"
+  "admin_level", "wikidata"
 )
 canvis_capitals <- comprova_canvis_osm(capitals[, cols])
 canvis_html(canvis_capitals)
@@ -102,7 +101,7 @@ if (any(n_canvis > 0) &&
 
   missatge <- paste0(
     "⚠️ Hi ha ", total_canvis, if (total_canvis > 1) " objectes" else " objecte",
-    " amb canvis a [Internacional](https://osm-catalan.github.io/monitorOSM/web/internacional.html).\n",
+    " amb canvis a [Internacional](https://osm-catalan.github.io/monitorOSM/web/internacional.html).",
     "`\n", paste(capture.output(print(knitr::kable(df))), collapse = "\n"), "\n`"
   )
   m <- missatge_telegram(missatge = missatge)

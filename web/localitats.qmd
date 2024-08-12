@@ -54,7 +54,7 @@ if (any(n_canvis > 0) &&
 
   missatge <- paste0(
     "⚠️ Hi ha ", total_canvis, if (total_canvis > 1) " objectes" else " objecte",
-    " amb canvis a [localitats](https://osm-catalan.github.io/monitorOSM/web/localitats.html).\n",
+    " amb canvis a [localitats](https://osm-catalan.github.io/monitorOSM/web/localitats.html).",
     "`\n", paste(capture.output(print(knitr::kable(df))), collapse = "\n"), "\n`"
   )
   m <- missatge_telegram(missatge = missatge)
