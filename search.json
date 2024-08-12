@@ -4,7 +4,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Mon 12 Aug 2024 - 02:16:28",
+    "text": "Última actualització: Mon 12 Aug 2024 - 09:50:21",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -64,7 +64,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Mon 12 Aug 2024 - 02:16:13",
+    "text": "Última actualització: Mon 12 Aug 2024 - 09:50:04",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -76,7 +76,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1470838297\n+\nGandia\nGandia\nQ33532\nca:Gandia\ntown\n8\n\n\n\nhttps://osm.org/node/1470838297\n-\nGandia\nGandia\nQ33532\nca:Gandia\ncity\n8\n\n\n\nhttps://osm.org/node/1470839505\n+\nTorrent\nTorrent\nQ161945\nca:Torrent (Horta Sud)\ntown\n8\n\n\n\nhttps://osm.org/node/1470839505\n-\nTorrent\nTorrent\nQ161945\nca:Torrent (Horta Sud)\ncity\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1470838297\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n20\n155097788\n2024-08-11 11:32:51\ncdavila\n26599\nplace\ntown\ncity\n\n\n\n\n\n\nhttps://osm.org/node/1470839505\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n23\n155097833\n2024-08-11 11:33:54\ncdavila\n26599\nplace\ntown\ncity",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -123,7 +123,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Mon 12 Aug 2024 - 02:16:19",
+    "text": "Última actualització: Mon 12 Aug 2024 - 09:50:08",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
