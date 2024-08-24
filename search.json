@@ -4,7 +4,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Fri 23 Aug 2024 - 02:14:27",
+    "text": "Última actualització: Sat 24 Aug 2024 - 02:13:59",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -64,7 +64,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Fri 23 Aug 2024 - 02:14:12",
+    "text": "Última actualització: Sat 24 Aug 2024 - 02:13:34",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -76,7 +76,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/283457932\n+\nSant Francesc de Formentera\nSant Francesc de Formentera\nQ1016611\nca:Sant Francesc de Formentera\ntown\n8\n\n\n\nhttps://osm.org/node/283457932\n-\nSant Francesc de Formentera\nSant Francesc de Formentera\nQ1016611\nca:Sant Francesc de Formentera\nvillage\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/283457932\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n17\n155520573\n2024-08-20 17:10:02\nthefabi\n17283956\nplace\ntown\nvillage",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/283457932\n+\nSant Francesc de Formentera\nSant Francesc de Formentera\nQ1016611\nca:Sant Francesc de Formentera\ntown\n8\n\n\n\nhttps://osm.org/node/283457932\n-\nSant Francesc de Formentera\nSant Francesc de Formentera\nQ1016611\nca:Sant Francesc de Formentera\nvillage\n8\n\n\n\nhttps://osm.org/node/393934072\n+\nTagamanent\nTagamanent\nQ24012019\nca:Tagamanent\nvillage\n8\n\n\n\nhttps://osm.org/node/393934072\n-\nTagamanent\nTagamanent\nQ15457\nca:Tagamanent\nvillage\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/283457932\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n17\n155520573\n2024-08-20 17:10:02\nthefabi\n17283956\nplace\ntown\nvillage\n\n\n\n\n\n\nhttps://osm.org/node/393934072\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n17\n155663048\n2024-08-23 16:49:29\nfelGru\n59778\nwikidata\nQ24012019\nQ15457",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -123,7 +123,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Fri 23 Aug 2024 - 02:14:19",
+    "text": "Última actualització: Sat 24 Aug 2024 - 02:13:45",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -147,7 +147,7 @@
     "href": "web/internacional.html#capitals-estatals",
     "title": "Internacional",
     "section": "Capitals estatals",
-    "text": "Capitals estatals\nObjectes amb capital = 2 o capital = yes o role = admin_centre en relacions d’estats\nBD de referència\n\n\n🎉 Tot en ordre 🎉",
+    "text": "Capitals estatals\nObjectes amb capital = 2 o capital = yes o role = admin_centre en relacions d’estats\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nint_name\nloc_name\nlong_name\nnat_name\nofficial_name\nofficial_name:ca\nold_name\nold_name:ca\nreg_name\nshort_name\nshortest_name\nadmin_level\nwikidata\n\n\n\n\nhttps://osm.org/node/1376501203\n+\n\nཐིམ་ཕུ\n\n\nThimphu\n\n\n\n\n\n\n\n\n\n\n2\nQ9270\n\n\nhttps://osm.org/node/1376501203\n-\n\nཐིམ་ཕུ\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ9270\n\n\n\n\n\n\nConjunts de canvis\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/1376501203.",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -159,7 +159,7 @@
     "href": "web/internacional.html#mars-i-oceans",
     "title": "Internacional",
     "section": "Mars i oceans",
-    "text": "Mars i oceans\nObjectes amb place = ocean o place = sea\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nplace\nwikidata\n\n\n\n\nhttps://osm.org/node/5261455417\n+\n\n\n\n\n\n\n\n\nhttps://osm.org/node/5261455417\n-\nRiu de la Plata\nRío de la Plata\n\n\nsea\nQ35827\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/5261455417\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n21\n154979418\n2024-08-08 13:22:28\n*Martin*\n4815\nname:ca\nNA\nRiu de la Plata\n\n\n21\n154979418\n2024-08-08 13:22:28\n*Martin*\n4815\nname\nNA\nRío de la Plata\n\n\n21\n154979418\n2024-08-08 13:22:28\n*Martin*\n4815\nplace\nNA\nsea\n\n\n21\n154979418\n2024-08-08 13:22:28\n*Martin*\n4815\nwikidata\nNA\nQ35827",
+    "text": "Mars i oceans\nObjectes amb place = ocean o place = sea\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nplace\nwikidata\n\n\n\n\nhttps://osm.org/node/5261455417\n+\n\n\n\n\n\n\n\n\nhttps://osm.org/node/5261455417\n-\nRiu de la Plata\nRío de la Plata\n\n\nsea\nQ35827\n\n\nhttps://osm.org/relation/9483512\n+\nMar de Bohai\n渤海\n\n\nyes\nQ181969\n\n\nhttps://osm.org/relation/9483512\n-\nMar de Bohai\n渤海\n\n\nsea\nQ181969\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/5261455417\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n21\n154979418\n2024-08-08 13:22:28\n*Martin*\n4815\nname:ca\nNA\nRiu de la Plata\n\n\n21\n154979418\n2024-08-08 13:22:28\n*Martin*\n4815\nname\nNA\nRío de la Plata\n\n\n21\n154979418\n2024-08-08 13:22:28\n*Martin*\n4815\nplace\nNA\nsea\n\n\n21\n154979418\n2024-08-08 13:22:28\n*Martin*\n4815\nwikidata\nNA\nQ35827\n\n\n\n\n\n\nhttps://osm.org/relation/9483512\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n140\n155670778\n2024-08-23 20:08:23\nÁurea055\n21709701\nplace\nyes\nsea",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",

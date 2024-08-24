@@ -174,10 +174,13 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#conjunts-de-canvis" id="toc-conjunts-de-canvis" class="nav-link" data-scroll-target="#conjunts-de-canvis">Conjunts de canvis</a></li>
   </ul></li>
-  <li><a href="#capitals-estatals" id="toc-capitals-estatals" class="nav-link" data-scroll-target="#capitals-estatals">Capitals estatals</a></li>
-  <li><a href="#mars-i-oceans" id="toc-mars-i-oceans" class="nav-link" data-scroll-target="#mars-i-oceans">Mars i oceans</a>
+  <li><a href="#capitals-estatals" id="toc-capitals-estatals" class="nav-link" data-scroll-target="#capitals-estatals">Capitals estatals</a>
   <ul class="collapse">
   <li><a href="#conjunts-de-canvis-1" id="toc-conjunts-de-canvis-1" class="nav-link" data-scroll-target="#conjunts-de-canvis-1">Conjunts de canvis</a></li>
+  </ul></li>
+  <li><a href="#mars-i-oceans" id="toc-mars-i-oceans" class="nav-link" data-scroll-target="#mars-i-oceans">Mars i oceans</a>
+  <ul class="collapse">
+  <li><a href="#conjunts-de-canvis-2" id="toc-conjunts-de-canvis-2" class="nav-link" data-scroll-target="#conjunts-de-canvis-2">Conjunts de canvis</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OSM-Catalan/monitorOSM/edit/main/web/internacional.qmd" class="toc-action"><i class="bi bi-github"></i>Edita aquesta pàgina</a></li><li><a href="https://github.com/OSM-Catalan/monitorOSM/issues/new" class="toc-action"><i class="bi empty"></i>Informa d'un problema</a></li></ul></div></nav>
@@ -204,7 +207,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Última actualització: Fri 23 Aug 2024 - 02:14:19</p>
+<p>Última actualització: Sat 24 Aug 2024 - 02:13:45</p>
 <section id="estats" class="level2">
 <h2 class="anchored" data-anchor-id="estats">Estats</h2>
 <p><em>Relacions amb <code>admin_centre = 2</code> i <code>boundary = administrative</code></em></p>
@@ -381,10 +384,83 @@ ul.task-list li input[type="checkbox"] {
 <p><em>Objectes amb <code>capital = 2</code> o <code>capital = yes</code> o <code>role = admin_centre</code> en relacions d’estats</em></p>
 <p><a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/capitals.tsv">BD de referència</a></p>
 <div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>🎉 Tot en ordre 🎉</code></pre>
+<div class="cell-output-display">
+<table class="gmisc_table caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">osm_url</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">canvi</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">name:ca</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">name</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">alt_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">alt_name:ca</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">int_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">loc_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">long_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">nat_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">official_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">official_name:ca</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">old_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">old_name:ca</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">reg_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">short_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">shortest_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">admin_level</th>
+<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey;">wikidata</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd" style="background-color: #ffffff;">
+<td style="text-align: left; padding: .2em; color: #999999; background-color: #ffffff;"><a href="https://osm.org/node/1376501203">https://osm.org/node/1376501203</a></td>
+<td style="text-align: center; padding: .2em; color: #52854C; background-color: #ffffff;">+</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;">ཐིམ་ཕུ</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;"></td>
+<td style="text-align: center; padding: .2em; color: #52854C; background-color: #ffffff;">Thimphu</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;">2</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;">Q9270</td>
+</tr>
+<tr class="even" style="background-color: #ffffff;">
+<td style="text-align: left; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"><a href="https://osm.org/node/1376501203">https://osm.org/node/1376501203</a></td>
+<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey;">-</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;">ཐིམ་ཕུ</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"></td>
+<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;">2</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;">Q9270</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
+<section id="conjunts-de-canvis-1" class="level3">
+<h3 class="anchored" data-anchor-id="conjunts-de-canvis-1">Conjunts de canvis</h3>
+<p>No s’ha trobat cap versió en l’estat de referència per <a href="https://osm.org/node/1376501203">https://osm.org/node/1376501203</a>.</p>
+<!-- -->
+</section>
 </section>
 <section id="mars-i-oceans" class="level2">
 <h2 class="anchored" data-anchor-id="mars-i-oceans">Mars i oceans</h2>
@@ -417,21 +493,41 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center; padding: .2em; color: #52854C; background-color: #ffffff;"></td>
 </tr>
 <tr class="even" style="background-color: #ffffff;">
-<td style="text-align: left; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"><a href="https://osm.org/node/5261455417">https://osm.org/node/5261455417</a></td>
-<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey;">-</td>
-<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey;">Riu de la Plata</td>
-<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey;">Río de la Plata</td>
-<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"></td>
-<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff; border-bottom: 2px solid grey;"></td>
-<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey;">sea</td>
-<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff; border-bottom: 2px solid grey;">Q35827</td>
+<td style="text-align: left; padding: .2em; color: #999999; background-color: #ffffff;"><a href="https://osm.org/node/5261455417">https://osm.org/node/5261455417</a></td>
+<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff;">-</td>
+<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff;">Riu de la Plata</td>
+<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff;">Río de la Plata</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #ffffff;"></td>
+<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff;">sea</td>
+<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #ffffff;">Q35827</td>
+</tr>
+<tr class="odd" style="background-color: #dedede;">
+<td style="text-align: left; padding: .2em; color: #999999; background-color: #dedede;"><a href="https://osm.org/relation/9483512">https://osm.org/relation/9483512</a></td>
+<td style="text-align: center; padding: .2em; color: #52854C; background-color: #dedede;">+</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #dedede;">Mar de Bohai</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #dedede;">渤海</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #dedede;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #dedede;"></td>
+<td style="text-align: center; padding: .2em; color: #52854C; background-color: #dedede;">yes</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #dedede;">Q181969</td>
+</tr>
+<tr class="even" style="background-color: #dedede;">
+<td style="text-align: left; padding: .2em; color: #999999; background-color: #dedede; border-bottom: 2px solid grey;"><a href="https://osm.org/relation/9483512">https://osm.org/relation/9483512</a></td>
+<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #dedede; border-bottom: 2px solid grey;">-</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #dedede; border-bottom: 2px solid grey;">Mar de Bohai</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #dedede; border-bottom: 2px solid grey;">渤海</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #dedede; border-bottom: 2px solid grey;"></td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #dedede; border-bottom: 2px solid grey;"></td>
+<td style="text-align: center; padding: .2em; color: #FC4E07; background-color: #dedede; border-bottom: 2px solid grey;">sea</td>
+<td style="text-align: center; padding: .2em; color: #999999; background-color: #dedede; border-bottom: 2px solid grey;">Q181969</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-<section id="conjunts-de-canvis-1" class="level3">
-<h3 class="anchored" data-anchor-id="conjunts-de-canvis-1">Conjunts de canvis</h3>
+<section id="conjunts-de-canvis-2" class="level3">
+<h3 class="anchored" data-anchor-id="conjunts-de-canvis-2">Conjunts de canvis</h3>
 <table class="caption-top table" data-quarto-postprocess="true" data-cellpadding="10" data-;="" data-rules="rows">
 <caption><a href="https://osm.org/node/5261455417">https://osm.org/node/5261455417</a></caption>
 <thead>
@@ -486,6 +582,35 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;">wikidata</td>
 <td style="text-align: center;">NA</td>
 <td style="text-align: center;">Q35827</td>
+</tr>
+</tbody>
+</table>
+
+
+<table class="caption-top table" data-quarto-postprocess="true" data-cellpadding="10" data-;="" data-rules="rows">
+<caption><a href="https://osm.org/relation/9483512">https://osm.org/relation/9483512</a></caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;" data-quarto-table-cell-role="th">version</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">changeset</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">timestamp</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">user</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">uid</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">key</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">value</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">ref_value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">140</td>
+<td style="text-align: center;"><a href="https://osm.org/changeset/155670778">155670778</a></td>
+<td style="text-align: center;">2024-08-23 20:08:23</td>
+<td style="text-align: center;"><a href="https://osm.org/user/Áurea055">Áurea055</a></td>
+<td style="text-align: center;">21709701</td>
+<td style="text-align: center;">place</td>
+<td style="text-align: center;">yes</td>
+<td style="text-align: center;">sea</td>
 </tr>
 </tbody>
 </table>
