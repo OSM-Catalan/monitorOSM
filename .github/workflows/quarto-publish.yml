@@ -6,6 +6,7 @@ on:
     # * is a special character in YAML so you have to quote this string
     # Cada dia a les 1:14
     - cron:  '14 1 * * *'
+  workflow_dispatch:
 
 name: Render and Publish
 
