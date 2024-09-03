@@ -10,7 +10,7 @@ if (nrow(canvis_ppcc$comparison_df) > 0) {
     x = PPCC,
     claus = c("name:ca", "name", "wikipedia", "wikidata"),
     comentari = "Restaura les etiquetes de la relació PPCC.",
-    hashtags = "monitorOSM"
+    hashtags = "#monitorOSM"
   )
   message("Conjunt de canvis a PPCC:")
   print(conjunt_de_canvis_PPCC)
@@ -29,7 +29,7 @@ if (nrow(canvis_territoris$comparison_df) > 0) {
     x = territoris[uid_territoris %in% uid_modificats, ],
     claus = c("name:ca", "name", "wikipedia", "wikidata"),
     comentari = "Restaura les etiquetes dels territoris dels PPCC.",
-    hashtags = "monitorOSM"
+    hashtags = "#monitorOSM"
   )
   message("Conjunt de canvis a territoris:")
   print(conjunt_de_canvis_territoris)
@@ -55,7 +55,7 @@ if (nrow(canvis_comarques$comparison_df) > 0) {
       x = comarques_modificar[comarques_modificar$regio %in% regio, ],
       claus = c("name:ca", "name", "wikipedia", "wikidata"),
       comentari = paste0("Restaura les etiquetes del les comarques a ", regio, "."),
-      hashtags = "monitorOSM"
+      hashtags = "#monitorOSM"
     )
   }
   message("Conjunts de canvis a comarques:")
@@ -82,7 +82,7 @@ if (nrow(canvis_municipis$comparison_df) > 0) {
       x = municipis_modificar[municipis_modificar$comarca %in% comarca, ],
       claus = c("name:ca", "name", "wikipedia", "wikidata"),
       comentari = paste0("Restaura les etiquetes dels municipis a ", comarca, "."),
-      hashtags = "monitorOSM"
+      hashtags = "#monitorOSM"
     )
   }
   message("Conjunts de canvis a municipis:")
@@ -112,7 +112,7 @@ if (nrow(canvis_loc_admin_centre_munici$comparison_df) > 0) {
       x = localitats_modificar[localitats_modificar$comarca %in% comarca, ],
       claus = c("name:ca", "name", "wikipedia", "wikidata", "place", "capital", "admin_level"),
       comentari = paste0("Restaura les etiquetes de les localitats a ", comarca, "."),
-      hashtags = "monitorOSM"
+      hashtags = "#monitorOSM"
     )
   }
   message("Conjunts de canvis a localitats:")
