@@ -23,8 +23,8 @@ suppressPackageStartupMessages(library(monitorOSM, quietly = TRUE))
 
 ```{r estats}
 cols <- c(
-  "name:ca", "name", "osm_id", "osm_type", "official_name", "official_name:ca", "old_name", "old_name:ca",
-  "old_official_name", "old_official_name:ca", "wikidata"
+  "name:ca", "name", "osm_id", "osm_type", "official_name", "official_name:ca", "alt_name", "alt_name:ca",
+  "old_name", "old_name:ca", "old_official_name", "old_official_name:ca", "wikidata"
 )
 canvis_estats <- comprova_canvis_osm(estats[, cols])
 canvis_html(canvis_estats)
