@@ -32,13 +32,17 @@ usethis::use_data(comarques, overwrite = TRUE, compress = "xz")
 
 comarques_osm <- consulta_etiquetes_osm(
   x = comarques,
-  etiquetes = c("name:ca", "osm_id", "osm_type", "name", "wikidata", "wikipedia", "admin_level", "historic:admin_level")
+  etiquetes = c(
+    "name:ca", "osm_id", "osm_type", "name", "wikipedia", "wikidata",
+    "border_type", "admin_level", "historic:admin_level",
+  )
 )
 
 lapply(comarques_osm, unique)
 
 comarques <- comarques_osm[, c(
-  "name:ca", "regio", "osm_id", "osm_type", "name", "wikipedia", "wikidata", "admin_level", "historic:admin_level"
+  "name:ca", "regio", "osm_id", "osm_type", "name", "wikipedia", "wikidata",
+  "border_type", "admin_level", "historic:admin_level"
 )]
 
 

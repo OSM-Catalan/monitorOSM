@@ -32,12 +32,12 @@ usethis::use_data(municipis, overwrite = TRUE, compress = "xz")
 
 municipis_osm <- consulta_etiquetes_osm(
   x = municipis,
-  etiquetes = c("name:ca", "osm_id", "osm_type", "name", "wikidata", "wikipedia", "admin_level")
+  etiquetes = c("name:ca", "osm_id", "osm_type", "name", "wikipedia", "wikidata", "border_type", "admin_level")
 )
 lapply(municipis_osm, unique)
 
 municipis <- municipis_osm[, c(
-  "name:ca", "regio", "comarca", "osm_id", "osm_type", "name", "wikipedia", "wikidata", "admin_level"
+  "name:ca", "regio", "comarca", "osm_id", "osm_type", "name", "wikipedia", "wikidata", "border_type", "admin_level"
 )]
 
 
