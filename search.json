@@ -4,7 +4,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Tue 03 Sep 2024 - 02:18:00",
+    "text": "Última actualització: Tue 03 Sep 2024 - 11:42:35",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -64,7 +64,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Tue 03 Sep 2024 - 02:17:25",
+    "text": "Última actualització: Tue 03 Sep 2024 - 11:42:02",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -123,7 +123,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Tue 03 Sep 2024 - 02:17:43",
+    "text": "Última actualització: Tue 03 Sep 2024 - 11:42:09",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -135,7 +135,7 @@
     "href": "web/internacional.html#estats",
     "title": "Internacional",
     "section": "Estats",
-    "text": "Estats\nRelacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nofficial_name\nofficial_name:ca\nold_name\nold_name:ca\nold_official_name\nold_official_name:ca\nwikidata\n\n\n\n\nhttps://osm.org/relation/1964272\n+\n\nSaint Helena, Ascension and Tristan da Cunha\n\n\nSaint Helena and Dependencies\n\n\n\nQ192184\n\n\nhttps://osm.org/relation/1964272\n-\nSanta Helena, Ascensió i Tristan da Cunha\nSaint Helena, Ascension and Tristan da Cunha\n\n\nSaint Helena and Dependencies\n\n\n\nQ192184\n\n\nhttps://osm.org/relation/5441968\n+\n\nRepública Árabe Saharaui Democrática الجمهورية العربية الصحراوية الديمقراطية\n\n\n\n\n\n\nQ40362\n\n\nhttps://osm.org/relation/5441968\n-\nRepública Àrab Sahrauí Democràtica\nRepública Árabe Saharaui Democrática الجمهورية العربية الصحراوية الديمقراطية\n\n\n\n\n\n\nQ40362\n\n\nhttps://osm.org/relation/54624\n+\nSan Marino\nSan Marino\nSerenissima Repubblica di San Marino\nRepública de San Marino\n\n\n\n\nQ238\n\n\nhttps://osm.org/relation/54624\n-\nSan Marino\nSan Marino\nSerenissima Repubblica di San Marino\nSereníssima República de San Marino\n\n\n\n\nQ238\n\n\nhttps://osm.org/relation/571178\n+\n\nKiribati\n\n\n\n\n\n\nQ710\n\n\nhttps://osm.org/relation/571178\n-\nKiribati\nKiribati\n\nRepública de Kiribati\n\n\n\n\nQ710\n\n\nhttps://osm.org/relation/571771\n+\n\nṂajeḷ\n\n\n\n\n\n\nQ709\n\n\nhttps://osm.org/relation/571771\n-\nIlles Marshall\nṂajeḷ\n\n\n\n\n\n\nQ709\n\n\nhttps://osm.org/relation/571804\n+\nNauru\nNaoero\nRepubrikin Naoero\nRepública de Nauru\nPleasant Island\n\n\n\nQ697\n\n\nhttps://osm.org/relation/571804\n-\nNauru\nNaoero\n\nRepública de Nauru\nPleasant Island\n\n\n\nQ697\n\n\n\n\n\n\nConjunts de canvis\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/1964272.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/5441968.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/54624.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/571178.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/571771.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/571804.",
+    "text": "Estats\nRelacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nofficial_name\nofficial_name:ca\nalt_name\nalt_name:ca\nold_name\nold_name:ca\nold_official_name\nold_official_name:ca\nwikidata\n\n\n\n\nhttps://osm.org/relation/571804\n+\nNauru\nNaoero\nRepubrikin Naoero\nRepública de Nauru\n\n\nPleasant Island\n\n\n\nQ697\n\n\nhttps://osm.org/relation/571804\n-\nNauru\nNaoero\n\nRepública de Nauru\n\n\nPleasant Island\n\n\n\nQ697\n\n\n\n\n\n\nConjunts de canvis\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/571804.",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -147,7 +147,7 @@
     "href": "web/internacional.html#capitals-estatals",
     "title": "Internacional",
     "section": "Capitals estatals",
-    "text": "Capitals estatals\nObjectes amb capital = 2 o capital = yes o role = admin_centre en relacions d’estats\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nint_name\nloc_name\nlong_name\nnat_name\nofficial_name\nofficial_name:ca\nold_name\nold_name:ca\nreg_name\nshort_name\nshortest_name\nadmin_level\nwikidata\n\n\n\n\nhttps://osm.org/node/1376501203\n+\n\nཐིམ་ཕུ\n\n\nThimphu\n\n\n\n\n\n\n\n\n\n\n2\nQ9270\n\n\nhttps://osm.org/node/1376501203\n-\n\nཐིམ་ཕུ\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ9270\n\n\nhttps://osm.org/node/1790048269\n+\nMònaco\nMonaco\n\n\nMonaco\n\n\n\n\n\n\n\n\n\n\n2\nQ235\n\n\nhttps://osm.org/node/1790048269\n-\nMònaco\nMonaco\n\n\nMonaco\n\n\n\nPrincipatu de Múnegu\nPrincipat de Mònaco\n\n\n\n\n\n2\nQ235\n\n\n\n\n\n\nConjunts de canvis\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/1376501203.\n\n\nhttps://osm.org/node/1790048269\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n44\n155789444\n2024-08-26 15:43:43\nAlexis_gast33\n12932872\nofficial_name\nNA\nPrincipatu de Múnegu\n\n\n44\n155789444\n2024-08-26 15:43:43\nAlexis_gast33\n12932872\nofficial_name:ca\nNA\nPrincipat de Mònaco",
+    "text": "Capitals estatals\nObjectes amb capital = 2 o capital = yes o role = admin_centre en relacions d’estats\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nint_name\nloc_name\nlong_name\nnat_name\nofficial_name\nofficial_name:ca\nold_name\nold_name:ca\nreg_name\nshort_name\nshortest_name\nadmin_level\nwikidata\n\n\n\n\nhttps://osm.org/node/1790048269\n+\nMònaco\nMonaco\n\n\nMonaco\n\n\n\n\nPrincipat de Mònaco\n\n\n\n\n\n2\nQ235\n\n\nhttps://osm.org/node/1790048269\n-\nMònaco\nMonaco\n\n\nMonaco\n\n\n\nPrincipatu de Múnegu\nPrincipat de Mònaco\n\n\n\n\n\n2\nQ235\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1790048269\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n44\n155789444\n2024-08-26 15:43:43\nAlexis_gast33\n12932872\nofficial_name\nNA\nPrincipatu de Múnegu",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -159,7 +159,7 @@
     "href": "web/internacional.html#mars-i-oceans",
     "title": "Internacional",
     "section": "Mars i oceans",
-    "text": "Mars i oceans\nObjectes amb place = ocean o place = sea\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nplace\nwikidata\n\n\n\n\nhttps://osm.org/node/5261455417\n+\n\n\n\n\n\n\n\n\nhttps://osm.org/node/5261455417\n-\nRiu de la Plata\nRío de la Plata\n\n\nsea\nQ35827\n\n\nhttps://osm.org/relation/9483512\n+\nMar de Bohai\n渤海\n\n\nyes\nQ181969\n\n\nhttps://osm.org/relation/9483512\n-\nMar de Bohai\n渤海\n\n\nsea\nQ181969\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/5261455417\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n21\n154979418\n2024-08-08 13:22:28\n*Martin*\n4815\nname:ca\nNA\nRiu de la Plata\n\n\n21\n154979418\n2024-08-08 13:22:28\n*Martin*\n4815\nname\nNA\nRío de la Plata\n\n\n21\n154979418\n2024-08-08 13:22:28\n*Martin*\n4815\nplace\nNA\nsea\n\n\n21\n154979418\n2024-08-08 13:22:28\n*Martin*\n4815\nwikidata\nNA\nQ35827\n\n\n\n\n\n\nhttps://osm.org/relation/9483512\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n140\n155670778\n2024-08-23 20:08:23\nÁurea055\n21709701\nplace\nyes\nsea",
+    "text": "Mars i oceans\nObjectes amb place = ocean o place = sea\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nplace\nwikidata\n\n\n\n\nhttps://osm.org/relation/9483512\n+\nMar de Bohai\n渤海\n\n\nyes\nQ181969\n\n\nhttps://osm.org/relation/9483512\n-\nMar de Bohai\n渤海\n\n\nsea\nQ181969\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/9483512\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n140\n155670778\n2024-08-23 20:08:23\nÁurea055\n21709701\nplace\nyes\nsea",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
