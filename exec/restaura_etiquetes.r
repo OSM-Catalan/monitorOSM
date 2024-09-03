@@ -118,3 +118,97 @@ if (nrow(canvis_loc_admin_centre_munici$comparison_df) > 0) {
   message("Conjunts de canvis a localitats:")
   print(conjunts_de_canvis_localitats)
 }
+
+
+## Internacional ----
+
+### Estats ----
+
+cols <- c(
+  "name:ca", "name", "osm_id", "osm_type", "official_name", "official_name:ca", "alt_name", "alt_name:ca",
+  "old_name", "old_name:ca", "old_official_name", "old_official_name:ca", "wikidata"
+)
+canvis_estats <- comprova_canvis_osm(estats[, cols])
+# canvis_html(canvis_estats)
+
+if (nrow(canvis_estats$comparison_df) > 0) {
+  uid_modificats <- gsub("https://osm\\.org/", "", canvis_estats$comparison_df$osm_url)
+  uid_estats <- paste0(estats$osm_type, "/", estats$osm_id)
+
+  estats_modificar <- estats[uid_estats %in% uid_modificats, ]
+
+  conjunts_de_canvis_estats <- structure(character(nrow(estats_modificar)), names = estats_modificar$`name:ca`)
+
+  for (i in seq_along(conjunts_de_canvis_estats)) {
+    conjunts_de_canvis_estats[i] <- modifica_etiquetes_osm(
+      x = estats_modificar[i, ],
+      claus = grep(":ca$", cols, value = TRUE),
+      comentari = paste0("Set Catalan names for ", estats_modificar$name[i], "."),
+      hashtags = "#monitorOSM"
+    )
+  }
+  message("Conjunts de canvis a estats:")
+  print(conjunts_de_canvis_estats)
+}
+
+
+### Capitals ----
+
+cols <- c(
+  "name:ca", "name", "osm_id", "osm_type", "alt_name", "alt_name:ca", "int_name", "loc_name", "long_name", "nat_name",
+  "official_name", "official_name:ca", "old_name", "old_name:ca", "reg_name", "short_name", "shortest_name",
+  "admin_level", "wikidata"
+)
+canvis_capitals <- comprova_canvis_osm(capitals[, cols])
+# canvis_html(canvis_capitals)
+
+if (nrow(canvis_capitals$comparison_df) > 0) {
+  uid_modificats <- gsub("https://osm\\.org/", "", canvis_capitals$comparison_df$osm_url)
+  uid_capitals <- paste0(capitals$osm_type, "/", capitals$osm_id)
+
+  capitals_modificar <- capitals[uid_capitals %in% uid_modificats, ]
+
+  # TODO: omplir les capitals sense estat a la base de dades
+  # estats <- unique(capitals_modificar$estat)
+  # conjunts_de_canvis_capitals <- structure(character(length(estats)), names = estats)
+
+  estats <- seq_len(nrow(capitals_modificar))
+  conjunts_de_canvis_capitals <- structure(character(length(estats)), names = capitals_modificar$name)
+
+  for (estat in estats) {
+    conjunts_de_canvis_capitals[estat] <- modifica_etiquetes_osm(
+      x = capitals_modificar[estat, ], # TODO: [capitals_modificar$estat %in% estat, ],
+      claus = grep(":ca$", cols, value = TRUE),
+      comentari = paste0("Set Catalan names for ", capitals_modificar$name[estat], "."),
+      hashtags = "#monitorOSM"
+    )
+  }
+  message("Conjunts de canvis a capitals:")
+  print(conjunts_de_canvis_capitals)
+}
+
+
+### Mars ----
+
+cols <- c("name:ca", "name", "osm_id", "osm_type", "alt_name", "alt_name:ca", "place", "wikidata")
+canvis_mars <- comprova_canvis_osm(mars[, cols], )
+# canvis_html(canvis_mars)
+
+if (nrow(canvis_mars$comparison_df) > 0) {
+  uid_modificats <- gsub("https://osm\\.org/", "", canvis_mars$comparison_df$osm_url)
+  uid_mars <- paste0(mars$osm_type, "/", mars$osm_id)
+
+  mars_modificar <- mars[uid_mars %in% uid_modificats, ]
+  conjunts_de_canvis_mars <- structure(character(nrow(mars_modificar)), names = mars_modificar$`name:ca`)
+
+  for (i in seq_along(conjunts_de_canvis_mars)) {
+    conjunts_de_canvis_mars[i] <- modifica_etiquetes_osm(
+      x = mars_modificar[i, ],
+      claus = grep(":ca$", cols, value = TRUE),
+      comentari = paste0("Set Catalan names for ", mars_modificar$name[i], "."),
+      hashtags = "#monitorOSM"
+    )
+  }
+  message("Conjunts de canvis a mars:")
+  print(conjunts_de_canvis_mars)
+}
