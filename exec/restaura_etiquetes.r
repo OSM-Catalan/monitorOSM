@@ -53,7 +53,7 @@ if (nrow(canvis_comarques$comparison_df) > 0) {
   for (regio in regions) {
     conjunts_de_canvis_comarques[regio] <- modifica_etiquetes_osm(
       x = comarques_modificar[comarques_modificar$regio %in% regio, ],
-      claus = c("name:ca", "name", "wikipedia", "wikidata"),
+      claus = c("name:ca", "name", "wikipedia", "wikidata", "border_type"),
       comentari = paste0("Restaura les etiquetes del les comarques a ", regio, "."),
       hashtags = "#monitorOSM"
     )
@@ -80,7 +80,7 @@ if (nrow(canvis_municipis$comparison_df) > 0) {
   for (comarca in comarques) {
     conjunts_de_canvis_municipis[comarca] <- modifica_etiquetes_osm(
       x = municipis_modificar[municipis_modificar$comarca %in% comarca, ],
-      claus = c("name:ca", "name", "wikipedia", "wikidata"),
+      claus = c("name:ca", "name", "wikipedia", "wikidata", "border_type"),
       comentari = paste0("Restaura les etiquetes dels municipis a ", comarca, "."),
       hashtags = "#monitorOSM"
     )
