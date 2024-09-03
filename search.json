@@ -4,7 +4,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Mon 02 Sep 2024 - 02:20:37",
+    "text": "Última actualització: Tue 03 Sep 2024 - 02:18:00",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -64,7 +64,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Mon 02 Sep 2024 - 02:20:14",
+    "text": "Última actualització: Tue 03 Sep 2024 - 02:17:25",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -123,7 +123,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Mon 02 Sep 2024 - 02:20:26",
+    "text": "Última actualització: Tue 03 Sep 2024 - 02:17:43",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -135,7 +135,7 @@
     "href": "web/internacional.html#estats",
     "title": "Internacional",
     "section": "Estats",
-    "text": "Estats\nRelacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nofficial_name\nofficial_name:ca\nold_name\nold_name:ca\nold_official_name\nold_official_name:ca\nwikidata\n\n\n\n\nhttps://osm.org/relation/1964272\n+\n\nSaint Helena, Ascension and Tristan da Cunha\n\n\nSaint Helena and Dependencies\n\n\n\nQ192184\n\n\nhttps://osm.org/relation/1964272\n-\nSanta Helena, Ascensió i Tristan da Cunha\nSaint Helena, Ascension and Tristan da Cunha\n\n\nSaint Helena and Dependencies\n\n\n\nQ192184\n\n\nhttps://osm.org/relation/5441968\n+\n\nRepública Árabe Saharaui Democrática الجمهورية العربية الصحراوية الديمقراطية\n\n\n\n\n\n\nQ40362\n\n\nhttps://osm.org/relation/5441968\n-\nRepública Àrab Sahrauí Democràtica\nRepública Árabe Saharaui Democrática الجمهورية العربية الصحراوية الديمقراطية\n\n\n\n\n\n\nQ40362\n\n\nhttps://osm.org/relation/54624\n+\nSan Marino\nSan Marino\nSerenissima Repubblica di San Marino\nRepública de San Marino\n\n\n\n\nQ238\n\n\nhttps://osm.org/relation/54624\n-\nSan Marino\nSan Marino\nSerenissima Repubblica di San Marino\nSereníssima República de San Marino\n\n\n\n\nQ238\n\n\nhttps://osm.org/relation/571178\n+\n\nKiribati\n\n\n\n\n\n\nQ710\n\n\nhttps://osm.org/relation/571178\n-\nKiribati\nKiribati\n\nRepública de Kiribati\n\n\n\n\nQ710\n\n\nhttps://osm.org/relation/571771\n+\n\nṂajeḷ\n\n\n\n\n\n\nQ709\n\n\nhttps://osm.org/relation/571771\n-\nIlles Marshall\nṂajeḷ\n\n\n\n\n\n\nQ709\n\n\n\n\n\n\nConjunts de canvis\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/1964272.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/5441968.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/54624.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/571178.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/571771.",
+    "text": "Estats\nRelacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nofficial_name\nofficial_name:ca\nold_name\nold_name:ca\nold_official_name\nold_official_name:ca\nwikidata\n\n\n\n\nhttps://osm.org/relation/1964272\n+\n\nSaint Helena, Ascension and Tristan da Cunha\n\n\nSaint Helena and Dependencies\n\n\n\nQ192184\n\n\nhttps://osm.org/relation/1964272\n-\nSanta Helena, Ascensió i Tristan da Cunha\nSaint Helena, Ascension and Tristan da Cunha\n\n\nSaint Helena and Dependencies\n\n\n\nQ192184\n\n\nhttps://osm.org/relation/5441968\n+\n\nRepública Árabe Saharaui Democrática الجمهورية العربية الصحراوية الديمقراطية\n\n\n\n\n\n\nQ40362\n\n\nhttps://osm.org/relation/5441968\n-\nRepública Àrab Sahrauí Democràtica\nRepública Árabe Saharaui Democrática الجمهورية العربية الصحراوية الديمقراطية\n\n\n\n\n\n\nQ40362\n\n\nhttps://osm.org/relation/54624\n+\nSan Marino\nSan Marino\nSerenissima Repubblica di San Marino\nRepública de San Marino\n\n\n\n\nQ238\n\n\nhttps://osm.org/relation/54624\n-\nSan Marino\nSan Marino\nSerenissima Repubblica di San Marino\nSereníssima República de San Marino\n\n\n\n\nQ238\n\n\nhttps://osm.org/relation/571178\n+\n\nKiribati\n\n\n\n\n\n\nQ710\n\n\nhttps://osm.org/relation/571178\n-\nKiribati\nKiribati\n\nRepública de Kiribati\n\n\n\n\nQ710\n\n\nhttps://osm.org/relation/571771\n+\n\nṂajeḷ\n\n\n\n\n\n\nQ709\n\n\nhttps://osm.org/relation/571771\n-\nIlles Marshall\nṂajeḷ\n\n\n\n\n\n\nQ709\n\n\nhttps://osm.org/relation/571804\n+\nNauru\nNaoero\nRepubrikin Naoero\nRepública de Nauru\nPleasant Island\n\n\n\nQ697\n\n\nhttps://osm.org/relation/571804\n-\nNauru\nNaoero\n\nRepública de Nauru\nPleasant Island\n\n\n\nQ697\n\n\n\n\n\n\nConjunts de canvis\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/1964272.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/5441968.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/54624.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/571178.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/571771.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/571804.",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
