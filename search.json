@@ -4,7 +4,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Thu 05 Sep 2024 - 02:19:25",
+    "text": "Última actualització: Fri 06 Sep 2024 - 02:19:18",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -64,7 +64,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Thu 05 Sep 2024 - 02:19:11",
+    "text": "Última actualització: Fri 06 Sep 2024 - 02:19:06",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -123,7 +123,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Thu 05 Sep 2024 - 02:19:17",
+    "text": "Última actualització: Fri 06 Sep 2024 - 02:19:11",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -159,7 +159,7 @@
     "href": "web/internacional.html#mars-i-oceans",
     "title": "Internacional",
     "section": "Mars i oceans",
-    "text": "Mars i oceans\nObjectes amb place = ocean o place = sea\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nplace\nwikidata\n\n\n\n\nhttps://osm.org/relation/9483512\n+\nMar de Bohai\n渤海\n\n\nyes\nQ181969\n\n\nhttps://osm.org/relation/9483512\n-\nMar de Bohai\n渤海\n\n\nsea\nQ181969\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/9483512\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n140\n155670778\n2024-08-23 20:08:23\nÁurea055\n21709701\nplace\nyes\nsea",
+    "text": "Mars i oceans\nObjectes amb place = ocean o place = sea\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nplace\nwikidata\n\n\n\n\nhttps://osm.org/relation/9483512\n+\nMar de Bohai\n渤海\n\n\nyes\nQ181969\n\n\nhttps://osm.org/relation/9483512\n-\nMar de Bohai\n渤海\n\n\nsea\nQ181969\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/9483512\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n140\n155670778\n2024-08-23 20:08:23\nuser_21709701\n21709701\nplace\nyes\nsea",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
