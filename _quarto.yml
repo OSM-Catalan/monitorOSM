@@ -40,6 +40,5 @@ format:
     css: styles.css
     toc: true
     lang: ca
-    language: _language-ca.yml # TODO: elimina. Pendent de https://github.com/quarto-dev/quarto-cli/pull/5968
 
 editor: source
