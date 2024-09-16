@@ -2,8 +2,8 @@ library(monitorOSM)
 
 ## Països Catalans ----
 
-canvis_ppcc <- comprova_canvis_osm(PPCC, centre = TRUE)
-# canvis_html(canvis_ppcc)
+canvis_ppcc <- comprova_canvis_osm(PPCC)
+canvis_html(canvis_ppcc)
 
 if (nrow(canvis_ppcc$comparison_df) > 0) {
   conjunt_de_canvis_PPCC <- modifica_etiquetes_osm( # nolint: object_name_linter
@@ -19,8 +19,8 @@ if (nrow(canvis_ppcc$comparison_df) > 0) {
 
 ## Territoris ----
 
-canvis_territoris <- comprova_canvis_osm(territoris[, setdiff(names(territoris), "regio")], centre = TRUE)
-# canvis_html(canvis_territoris)
+canvis_territoris <- comprova_canvis_osm(territoris[, setdiff(names(territoris), "regio")])
+canvis_html(canvis_territoris)
 
 if (nrow(canvis_territoris$comparison_df) > 0) {
   uid_modificats <- gsub("https://osm\\.org/", "", canvis_territoris$comparison_df$osm_url)
@@ -38,8 +38,8 @@ if (nrow(canvis_territoris$comparison_df) > 0) {
 
 ## Comarques ----
 
-canvis_comarques <- comprova_canvis_osm(comarques[, setdiff(names(comarques), "regio")], centre = TRUE)
-# canvis_html(canvis_comarques)
+canvis_comarques <- comprova_canvis_osm(comarques[, setdiff(names(comarques), "regio")])
+canvis_html(canvis_comarques)
 
 if (nrow(canvis_comarques$comparison_df) > 0) {
   uid_modificats <- gsub("https://osm\\.org/", "", canvis_comarques$comparison_df$osm_url)
@@ -65,8 +65,8 @@ if (nrow(canvis_comarques$comparison_df) > 0) {
 
 ## Municipis ----
 
-canvis_municipis <- comprova_canvis_osm(municipis[, setdiff(names(municipis), c("regio", "comarca"))], centre = TRUE)
-# canvis_html(canvis_municipis)
+canvis_municipis <- comprova_canvis_osm(municipis[, setdiff(names(municipis), c("regio", "comarca"))])
+canvis_html(canvis_municipis)
 
 if (nrow(canvis_municipis$comparison_df) > 0) {
   uid_modificats <- gsub("https://osm\\.org/", "", canvis_municipis$comparison_df$osm_url)
@@ -96,7 +96,7 @@ canvis_loc_admin_centre_munici <- comprova_canvis_osm(
   loc_admin_centre_municipis[, setdiff(names(loc_admin_centre_municipis), c("regio", "comarca", "municipi"))],
   centre = TRUE
 )
-# canvis_html(canvis_loc_admin_centre_munici)
+canvis_html(canvis_loc_admin_centre_munici)
 
 if (nrow(canvis_loc_admin_centre_munici$comparison_df) > 0) {
   uid_modificats <- gsub("https://osm\\.org/", "", canvis_loc_admin_centre_munici$comparison_df$osm_url)
@@ -129,7 +129,7 @@ cols <- c(
   "old_name", "old_name:ca", "old_official_name", "old_official_name:ca", "wikidata"
 )
 canvis_estats <- comprova_canvis_osm(estats[, cols])
-# canvis_html(canvis_estats)
+canvis_html(canvis_estats)
 
 if (nrow(canvis_estats$comparison_df) > 0) {
   uid_modificats <- gsub("https://osm\\.org/", "", canvis_estats$comparison_df$osm_url)
@@ -160,7 +160,7 @@ cols <- c(
   "admin_level", "wikidata"
 )
 canvis_capitals <- comprova_canvis_osm(capitals[, cols])
-# canvis_html(canvis_capitals)
+canvis_html(canvis_capitals)
 
 if (nrow(canvis_capitals$comparison_df) > 0) {
   uid_modificats <- gsub("https://osm\\.org/", "", canvis_capitals$comparison_df$osm_url)
@@ -192,7 +192,7 @@ if (nrow(canvis_capitals$comparison_df) > 0) {
 
 cols <- c("name:ca", "name", "osm_id", "osm_type", "alt_name", "alt_name:ca", "place", "wikidata")
 canvis_mars <- comprova_canvis_osm(mars[, cols], )
-# canvis_html(canvis_mars)
+canvis_html(canvis_mars)
 
 if (nrow(canvis_mars$comparison_df) > 0) {
   uid_modificats <- gsub("https://osm\\.org/", "", canvis_mars$comparison_df$osm_url)

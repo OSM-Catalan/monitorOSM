@@ -20,7 +20,7 @@ suppressPackageStartupMessages(library(monitorOSM, quietly = TRUE))
 [BD de referència](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/PPCC.tsv)
 
 ```{r ppcc}
-canvis_ppcc <- comprova_canvis_osm(PPCC, centre = TRUE)
+canvis_ppcc <- comprova_canvis_osm(PPCC)
 canvis_html(canvis_ppcc)
 ```
 
@@ -36,7 +36,7 @@ versio_canvis_html(versio_canvis_ppcc)
 [BD de referència](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/territoris.tsv)
 
 ```{r territoris}
-canvis_territoris <- comprova_canvis_osm(territoris[, setdiff(names(territoris), "regio")], centre = TRUE)
+canvis_territoris <- comprova_canvis_osm(territoris[, setdiff(names(territoris), "regio")])
 canvis_html(canvis_territoris)
 ```
 
@@ -52,7 +52,7 @@ versio_canvis_html(versio_canvis_territoris)
 [BD de referència](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/comarques.tsv)
 
 ```{r comarques}
-canvis_comarques <- comprova_canvis_osm(comarques[, setdiff(names(comarques), "regio")], centre = TRUE)
+canvis_comarques <- comprova_canvis_osm(comarques[, setdiff(names(comarques), "regio")])
 canvis_html(canvis_comarques)
 ```
 
@@ -68,7 +68,7 @@ versio_canvis_html(versio_canvis_comarques)
 [BD de referència](https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/municipis.tsv)
 
 ```{r municipis}
-canvis_municipis <- comprova_canvis_osm(municipis[, setdiff(names(municipis), c("regio", "comarca"))], centre = TRUE)
+canvis_municipis <- comprova_canvis_osm(municipis[, setdiff(names(municipis), c("regio", "comarca"))])
 canvis_html(canvis_municipis)
 ```
 
