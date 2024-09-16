@@ -4,7 +4,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Mon 16 Sep 2024 - 02:35:04",
+    "text": "Última actualització: Mon 16 Sep 2024 - 17:36:33",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -52,7 +52,7 @@
     "href": "web/limits.html#municipis",
     "title": "Municipis, comarques i territoris",
     "section": "Municipis",
-    "text": "Municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\nborder_type\nadmin_level\n\n\n\n\nhttps://osm.org/relation/339573\n+\nVall-de-roures\nValderrobres / Vall de Roures\nes:Valderrobres\nQ1641285\nmunicipi\n8\n\n\nhttps://osm.org/relation/339573\n-\nVall-de-roures\nValderrobres / Vall de Roures\nca:Vall-de-roures\nQ1641285\nmunicipi\n8\n\n\nhttps://osm.org/relation/347244\n+\nla Freixneda\nLa Fresneda / la Freixneda\nes:La Fresneda (Teruel)\nQ1651574\nmunicipi\n8\n\n\nhttps://osm.org/relation/347244\n-\nla Freixneda\nLa Fresneda / la Freixneda\nca:La Freixneda\nQ1651574\nmunicipi\n8\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/339573\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n53\n156648826\n2024-09-15 13:56:12\nAlfonso Aragon\n21938356\nwikipedia\nes:Valderrobres\nca:Vall-de-roures\n\n\n\n\n\n\nhttps://osm.org/relation/347244\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n47\n156648865\n2024-09-15 13:57:10\nAlfonso Aragon\n21938356\nwikipedia\nes:La Fresneda (Teruel)\nca:La Freixneda",
+    "text": "Municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -64,7 +64,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Mon 16 Sep 2024 - 02:34:46",
+    "text": "Última actualització: Mon 16 Sep 2024 - 17:36:21",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -76,7 +76,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1446994048\n+\nMassalió\nMazaleón / Massalió\nQ1651159\nes:Mazaleón\nvillage\n8\n\n\n\nhttps://osm.org/node/1446994048\n-\nMassalió\nMazaleón / Massalió\nQ1651159\nca:Massalió\nvillage\n8\n\n\n\nhttps://osm.org/node/207569049\n+\nLlívia\nLlívia\nQ13745\nca:Llívia\nvillage\n8\n\n\n\nhttps://osm.org/node/207569049\n-\nLlívia\nLlívia\nQ13745\nca:Llívia\ntown\n8\n\n\n\nhttps://osm.org/node/26695245\n+\nPrada\nPrades\nQ212450\nfr:Prades (Pyrénées-Orientales)\nvillage\n7\n\n\n\nhttps://osm.org/node/26695245\n-\nPrada\nPrades\nQ212450\nfr:Prades (Pyrénées-Orientales)\ntown\n7\n\n\n\nhttps://osm.org/node/308372851\n+\nFavara de Matarranya\nFabara / Favara\nQ956450\nes:Fabara\nvillage\n8\n\n\n\nhttps://osm.org/node/308372851\n-\nFavara de Matarranya\nFabara / Favara\nQ956450\nca:Favara de Matarranya\nvillage\n8\n\n\n\nhttps://osm.org/node/739073791\n+\nFaió\nFayón / Faió\nQ1639270\nes:Fayón\nvillage\n8\n\n\n\nhttps://osm.org/node/739073791\n-\nFaió\nFayón / Faió\nQ1639270\nca:Faió\nvillage\n8\n\n\n\nhttps://osm.org/node/739074054\n+\nNonasp\nNonaspe / Nonasp\nQ1628416\nes:Nonaspe\nvillage\n8\n\n\n\nhttps://osm.org/node/739074054\n-\nNonasp\nNonaspe / Nonasp\nQ1628416\nca:Nonasp\nvillage\n8\n\n\n\nhttps://osm.org/node/793210842\n+\nBellmunt\nBelmonte de San José / Bellmunt de Mesquí\nQ1652468\nca:Bellmunt de Mesquí\nvillage\n8\n\n\n\nhttps://osm.org/node/793210842\n-\nBellmunt de Mesquí\nBelmonte de San José / Bellmunt de Mesquí\nQ1652468\nca:Bellmunt de Mesquí\nvillage\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1446994048\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n167\n156649140\n2024-09-15 14:03:50\nAlfonso Aragon\n21938356\nwikipedia\nes:Mazaleón\nca:Massalió\n\n\n\n\n\n\nhttps://osm.org/node/207569049\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n28\n156470769\n2024-09-11 08:07:21\nPymouss\n66675\nplace\nvillage\ntown\n\n\n\n\n\n\nhttps://osm.org/node/26695245\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n30\n156470769\n2024-09-11 08:07:21\nPymouss\n66675\nplace\nvillage\ntown\n\n\n\n\n\n\nhttps://osm.org/node/308372851\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n140\n156649350\n2024-09-15 14:09:53\nAlfonso Aragon\n21938356\nwikipedia\nes:Fabara\nca:Favara de Matarranya\n\n\n\n\n\n\nhttps://osm.org/node/739073791\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n138\n156650686\n2024-09-15 14:41:35\nAlfonso Aragon\n21938356\nwikipedia\nes:Fayón\nca:Faió\n\n\n\n\n\n\nhttps://osm.org/node/739074054\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n147\n156649714\n2024-09-15 14:18:23\nAlfonso Aragon\n21938356\nwikipedia\nes:Nonaspe\nca:Nonasp\n\n\n\n\n\n\nhttps://osm.org/node/793210842\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n282\n155975473\n2024-08-30 13:52:40\nSancho Ramírez I\n21903047\nname:ca\nBellmunt\nBellmunt de Mesquí",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/793210842\n+\nBellmunt\nBelmonte de San José / Bellmunt de Mesquí\nQ1652468\nca:Bellmunt de Mesquí\nvillage\n8\n\n\n\nhttps://osm.org/node/793210842\n-\nBellmunt de Mesquí\nBelmonte de San José / Bellmunt de Mesquí\nQ1652468\nca:Bellmunt de Mesquí\nvillage\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/793210842\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n282\n155975473\n2024-08-30 13:52:40\nSancho Ramírez I\n21903047\nname:ca\nBellmunt\nBellmunt de Mesquí",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -123,7 +123,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Mon 16 Sep 2024 - 02:34:54",
+    "text": "Última actualització: Mon 16 Sep 2024 - 17:36:26",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -135,7 +135,7 @@
     "href": "web/internacional.html#estats",
     "title": "Internacional",
     "section": "Estats",
-    "text": "Estats\nRelacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nofficial_name\nofficial_name:ca\nalt_name\nalt_name:ca\nold_name\nold_name:ca\nold_official_name\nold_official_name:ca\nwikidata\n\n\n\n\nhttps://osm.org/relation/571804\n+\nNauru\nNaoero\nRepubrikin Naoero\nRepública de Nauru\n\n\nPleasant Island\n\n\n\nQ697\n\n\nhttps://osm.org/relation/571804\n-\nNauru\nNaoero\n\nRepública de Nauru\n\n\nPleasant Island\n\n\n\nQ697\n\n\n\n\n\n\nConjunts de canvis\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/571804.",
+    "text": "Estats\nRelacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n🎉 Tot en ordre 🎉",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
