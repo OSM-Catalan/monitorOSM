@@ -4,7 +4,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Tue 24 Sep 2024 - 02:31:17",
+    "text": "Última actualització: Wed 25 Sep 2024 - 02:33:05",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -64,7 +64,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Tue 24 Sep 2024 - 02:31:04",
+    "text": "Última actualització: Wed 25 Sep 2024 - 02:32:46",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -123,7 +123,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Tue 24 Sep 2024 - 02:31:10",
+    "text": "Última actualització: Wed 25 Sep 2024 - 02:32:57",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -147,7 +147,7 @@
     "href": "web/internacional.html#capitals-estatals",
     "title": "Internacional",
     "section": "Capitals estatals",
-    "text": "Capitals estatals\nObjectes amb capital = 2 o capital = yes o role = admin_centre en relacions d’estats\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nint_name\nloc_name\nlong_name\nnat_name\nofficial_name\nofficial_name:ca\nold_name\nold_name:ca\nreg_name\nshort_name\nshortest_name\nadmin_level\nwikidata\n\n\n\n\nhttps://osm.org/node/1790048269\n+\nMònaco\nMonaco\n\n\nMonaco\n\n\n\n\nPrincipat de Mònaco\n\n\n\n\n\n2\nQ235\n\n\nhttps://osm.org/node/1790048269\n-\nMònaco\nMonaco\n\n\nMonaco\n\n\n\nPrincipatu de Múnegu\nPrincipat de Mònaco\n\n\n\n\n\n2\nQ235\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1790048269\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n44\n155789444\n2024-08-26 15:43:43\nAlexis_gast33\n12932872\nofficial_name\nNA\nPrincipatu de Múnegu",
+    "text": "Capitals estatals\nObjectes amb capital = 2 o capital = yes o role = admin_centre en relacions d’estats\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nint_name\nloc_name\nlong_name\nnat_name\nofficial_name\nofficial_name:ca\nold_name\nold_name:ca\nreg_name\nshort_name\nshortest_name\nadmin_level\nwikidata\n\n\n\n\nhttps://osm.org/node/1242998122\n+\nPanamà\nPanamá\nCiudad de Panamá\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ3306\n\n\nhttps://osm.org/node/1242998122\n-\nCiutat de Panamà\nPanamá\nCiudad de Panamá\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ3306\n\n\nhttps://osm.org/node/1790048269\n+\nMònaco\nMonaco\n\n\nMonaco\n\n\n\n\nPrincipat de Mònaco\n\n\n\n\n\n2\nQ235\n\n\nhttps://osm.org/node/1790048269\n-\nMònaco\nMonaco\n\n\nMonaco\n\n\n\nPrincipatu de Múnegu\nPrincipat de Mònaco\n\n\n\n\n\n2\nQ235\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1242998122\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n40\n157045193\n2024-09-24 15:27:10\nAlvarado2510\n7160908\nname:ca\nPanamà\nCiutat de Panamà\n\n\n\n\n\n\nhttps://osm.org/node/1790048269\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n44\n155789444\n2024-08-26 15:43:43\nAlexis_gast33\n12932872\nofficial_name\nNA\nPrincipatu de Múnegu",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
