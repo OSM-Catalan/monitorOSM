@@ -150,7 +150,7 @@
 "Països Baixos"		"Amsterdam"	"268396336"	"node"	"2"			"yes"						"Mokum"							"city"				"Q727"
 "Pakistan"		"اسلام آباد"	"316440978"	"node"	"2"			"yes"									"اسلام آباد وفاقی دارالحکومت علاقہ"				"city"				"Q1362"
 "Palau"		"Ngerulmud"	"4244310289"	"node"	"2"			"yes"													"village"				"Q515229"
-"Panamà"	"Ciutat de Panamà"	"Panamá"	"1242998122"	"node"	"2"	"Ciudad de Panamá"		"yes"													"city"				"Q3306"
+"Panamà"	"Panamà"	"Panamá"	"1242998122"	"node"	"2"	"Ciudad de Panamá"	"Ciutat de Panamà"	"yes"													"city"				"Q3306"
 "Papua Nova Guinea"		"Port Moresby"	"230628786"	"node"	"2"			"yes"													"city"				"Q36526"
 "Paraguai"		"Asunción"	"249854726"	"node"	"2"	"Nuestra Señora Santa María de la Asunción"		"yes"									"La Muy Noble y Leal Ciudad de Nuestra Señora Santa María de la Asunción"				"city"				"Q2933"
 "Perú"		"Lima"	"4289361265"	"node"	"2"			"yes"													"city"				"Q2868"
