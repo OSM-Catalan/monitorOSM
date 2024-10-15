@@ -4,7 +4,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Mon 14 Oct 2024 - 02:34:20",
+    "text": "Última actualització: Tue 15 Oct 2024 - 02:33:05",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -64,7 +64,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Mon 14 Oct 2024 - 02:34:06",
+    "text": "Última actualització: Tue 15 Oct 2024 - 02:32:43",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -123,7 +123,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Mon 14 Oct 2024 - 02:34:12",
+    "text": "Última actualització: Tue 15 Oct 2024 - 02:32:49",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -135,7 +135,7 @@
     "href": "web/internacional.html#estats",
     "title": "Internacional",
     "section": "Estats",
-    "text": "Estats\nRelacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nofficial_name\nofficial_name:ca\nalt_name\nalt_name:ca\nold_name\nold_name:ca\nold_official_name\nold_official_name:ca\nwikidata\n\n\n\n\nhttps://osm.org/relation/536773\n+\nMaldives\nދިވެހިރާއްޖެ\nދިވެހިރާއްޖޭގެ ޖުމްހޫރިއްޔާ\n\n\n\n\n\n\n\nQ826\n\n\nhttps://osm.org/relation/536773\n-\nMaldives\nދިވެހިރާއްޖެ\n\n\n\n\n\n\n\n\nQ826\n\n\n\n\n\n\nConjunts de canvis\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/536773.",
+    "text": "Estats\nRelacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nofficial_name\nofficial_name:ca\nalt_name\nalt_name:ca\nold_name\nold_name:ca\nold_official_name\nold_official_name:ca\nwikidata\n\n\n\n\nhttps://osm.org/relation/184633\n+\nNepal\nनेपाल\nसङ्घीय लोकतान्त्रिक गणतन्त्र नेपाल\n\n\n\n\n\n\n\nQ837\n\n\nhttps://osm.org/relation/184633\n-\nNepal\nनेपाल\n\n\n\n\n\n\n\n\nQ837\n\n\nhttps://osm.org/relation/536773\n+\nMaldives\nދިވެހިރާއްޖެ\nދިވެހިރާއްޖޭގެ ޖުމްހޫރިއްޔާ\n\n\n\n\n\n\n\nQ826\n\n\nhttps://osm.org/relation/536773\n-\nMaldives\nދިވެހިރާއްޖެ\n\n\n\n\n\n\n\n\nQ826\n\n\n\n\n\n\nConjunts de canvis\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/184633.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/536773.",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
