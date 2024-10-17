@@ -4,7 +4,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Wed 16 Oct 2024 - 02:33:56",
+    "text": "Última actualització: Thu 17 Oct 2024 - 02:32:00",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -64,7 +64,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Wed 16 Oct 2024 - 02:33:36",
+    "text": "Última actualització: Thu 17 Oct 2024 - 02:31:42",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -76,7 +76,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'aliguera/L'Alguer/Alghero\n\n\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nit:Alghero\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n225\n157733423\n2024-10-10 21:06:26\ncontempttipoffcrease\n22033076\nwikidata\nNA\nQ166282\n\n\n224\n157677777\n2024-10-09 15:29:21\ncontempttipoffcrease\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero\n\n\n224\n157677777\n2024-10-09 15:29:21\ncontempttipoffcrease\n22033076\nwikipedia\nsc:S'Alighèra\nit:Alghero",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/L'Alguer/Alghero\nQ166282\nca:Alghero\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nit:Alghero\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777\n2024-10-09 15:29:21\ncontempttipoffcrease\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero\n\n\n224\n157677777\n2024-10-09 15:29:21\ncontempttipoffcrease\n22033076\nwikipedia\nsc:S'Alighèra\nit:Alghero",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -123,7 +123,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Wed 16 Oct 2024 - 02:33:41",
+    "text": "Última actualització: Thu 17 Oct 2024 - 02:31:46",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
