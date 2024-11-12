@@ -4,7 +4,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Mon 11 Nov 2024 - 02:31:27",
+    "text": "Última actualització: Tue 12 Nov 2024 - 02:22:06",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -64,7 +64,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Mon 11 Nov 2024 - 02:31:10",
+    "text": "Última actualització: Tue 12 Nov 2024 - 02:21:51",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -76,7 +76,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1731104444\n+\nCampmany\nCapmany\n\n\nvillage\n8\n\n\n\nhttps://osm.org/node/1731104444\n-\nCampmany\nCapmany\nQ24019213\nca:Campmany\nvillage\n8\n\n\n\nhttps://osm.org/node/358084231\n+\nXixona\nXixona / Jijona\nQ747527\nca:Xixona\nvillage\n8\n\n\n\nhttps://osm.org/node/358084231\n-\nXixona\nXixona / Jijona\nQ747527\nca:Xixona\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nL'Alguer\nS'Aliguera/L'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nit:Alghero\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1731104444\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n18\n158597575\n2024-10-31 20:55:41\nkapazao_import\n8770019\nwikidata\nNA\nQ24019213\n\n\n18\n158597575\n2024-10-31 20:55:41\nkapazao_import\n8770019\nwikipedia\nNA\nca:Campmany\n\n\n\n\n\n\nhttps://osm.org/node/358084231\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n22\n158795041\n2024-11-05 21:06:11\nHugoren Martinako\n3392826\nplace\nvillage\ntown\n\n\n\n\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n230\n158189552\n2024-10-21 22:17:57\naboc\n21696131\nname:ca\nL'Alguer\nl'Alguer\n\n\n224\n157677777\n2024-10-09 15:29:21\ncontempttipoffcrease\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero\n\n\n224\n157677777\n2024-10-09 15:29:21\ncontempttipoffcrease\n22033076\nwikipedia\nsc:S'Alighèra\nit:Alghero",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1731104444\n+\nCampmany\nCapmany\n\n\nvillage\n8\n\n\n\nhttps://osm.org/node/1731104444\n-\nCampmany\nCapmany\nQ24019213\nca:Campmany\nvillage\n8\n\n\n\nhttps://osm.org/node/308306628\n+\nSorita\nZorita del Maestrazgo\nQ1901668\nca:Sorita\nvillage\n8\n\n\n\nhttps://osm.org/node/308306628\n-\nSorita\nSorita\nQ1901668\nca:Sorita\nvillage\n8\n\n\n\nhttps://osm.org/node/358084231\n+\nXixona\nXixona / Jijona\nQ747527\nca:Xixona\nvillage\n8\n\n\n\nhttps://osm.org/node/358084231\n-\nXixona\nXixona / Jijona\nQ747527\nca:Xixona\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nL'Alguer\nS'Aliguera/L'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nit:Alghero\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1731104444\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n18\n158597575\n2024-10-31 20:55:41\nkapazao_import\n8770019\nwikidata\nNA\nQ24019213\n\n\n18\n158597575\n2024-10-31 20:55:41\nkapazao_import\n8770019\nwikipedia\nNA\nca:Campmany\n\n\n\n\n\n\nhttps://osm.org/node/308306628\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n29\n158887459\n2024-11-08 09:23:13\nJordi MF\n8278438\nname\nZorita del Maestrazgo\nSorita\n\n\n\n\n\n\nhttps://osm.org/node/358084231\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n22\n158795041\n2024-11-05 21:06:11\nHugoren Martinako\n3392826\nplace\nvillage\ntown\n\n\n\n\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n230\n158189552\n2024-10-21 22:17:57\naboc\n21696131\nname:ca\nL'Alguer\nl'Alguer\n\n\n224\n157677777\n2024-10-09 15:29:21\ncontempttipoffcrease\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero\n\n\n224\n157677777\n2024-10-09 15:29:21\ncontempttipoffcrease\n22033076\nwikipedia\nsc:S'Alighèra\nit:Alghero",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -123,7 +123,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Mon 11 Nov 2024 - 02:31:17",
+    "text": "Última actualització: Tue 12 Nov 2024 - 02:21:57",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
