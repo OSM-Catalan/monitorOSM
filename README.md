@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file and devtools::build_rmd("README.Rmd")-->
 
-# monitorOSM <img src='man/figures/logo.png' align="right" height=130/>
+# monitorOSM <a href="https://osm-catalan.github.io/monitorOSM"><img src='man/figures/logo.svg' align="right" height=130 alt="Web de monitorOSM"/></a>
 
 <!-- badges: start -->
 
