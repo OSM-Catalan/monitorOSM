@@ -42,7 +42,10 @@ versio_canvi_kable <- function(x, titol) {
       out <- paste0(out, ".")
     }
   } else {
-    x$changeset <- paste0("<a href=\"https://osm.org/changeset/", x$changeset, "\">", x$changeset, "</a>")
+    x$changeset <- paste0(
+      "<a href=\"https://osm.org/changeset/", x$changeset, "\">", x$changeset, "</a>",
+      " (<a href=\"https://osmcha.org/changeset/", x$changeset, "\">osmcha</a>)"
+    )
     x$user <- paste0("<a href=\"https://osm.org/user/", x$user, "\">", x$user, "</a>")
     out <- knitr::kable(
       x,
