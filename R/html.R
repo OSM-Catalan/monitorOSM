@@ -44,9 +44,14 @@ versio_canvi_kable <- function(x, titol) {
   } else {
     x$changeset <- paste0(
       "<a href=\"https://osm.org/changeset/", x$changeset, "\">", x$changeset, "</a>",
-      " (<a href=\"https://osmcha.org/changeset/", x$changeset, "\">osmcha</a>)"
+      " (<a href=\"https://osmcha.org/changeset/", x$changeset, "\">OSMcha</a>)"
     )
-    x$user <- paste0("<a href=\"https://osm.org/user/", x$user, "\">", x$user, "</a>")
+    x$user <- paste0(
+      "<a href=\"https://osm.org/user/", x$user, "\">", x$user, "</a>",
+      " (<a href=\"https://osmcha.org/?filters={\"users\":[{\"label\":\"", x$user, "\",\"value\":\"", x$user, "\"}]}",
+      "\">OSMcha</a>)"
+      # https://osmcha.org/?filters={"users":[{"label":"jmaspons","value":"jmaspons"}]}
+    )
     out <- knitr::kable(
       x,
       format = "html", row.names = FALSE, align = "c",
