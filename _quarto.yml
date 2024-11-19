@@ -12,10 +12,10 @@ website:
   repo-actions: [edit, issue]
   site-url: https://osm-catalan.github.io/monitorOSM
   open-graph: true
-  image: man/figures/logo.png
-  favicon: man/figures/logo.png
+  image: man/figures/logo.svg
+  favicon: man/figures/logo.svg
   navbar:
-    logo: man/figures/logo.png
+    logo: man/figures/logo.svg
     left:
       - data-raw/README.md
     right:
