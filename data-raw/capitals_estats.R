@@ -36,7 +36,7 @@ capitals_osm <- consulta_etiquetes_osm(x = capitals, etiquetes = etiquetes)
 
 lapply(capitals_osm, unique)
 
-capitals <- capitals_osm[, etiquetes]
+capitals[, etiquetes] <- capitals_osm[, etiquetes]
 
 
 ## Compara nova base de dades amb la del paquet instal·lat ----

@@ -15,7 +15,7 @@ repos:
         additional_dependencies:
         - git2r
         - compareDF
-        - jmaspons/osmapiR
+        - osmapiR
         - osmdata
         - telegram.bot
     # codemeta must be above use-tidy-description when both are used
@@ -35,6 +35,7 @@ repos:
           .*\.Rds|
           .*\.Rproj|
           .*\.sh|
+          .*\.svg|
           (.*/|)\.gitignore|
           (.*/|)\.gitlab-ci\.yml|
           (.*/|)\.lintr|

@@ -40,7 +40,7 @@ estats_osm <- consulta_etiquetes_osm(x = estats, etiquetes = etiquetes)
 
 lapply(estats_osm, unique)
 
-estats <- estats_osm[, etiquetes]
+estats[, etiquetes] <- estats_osm[, etiquetes]
 
 
 ## Compara nova base de dades amb la del paquet instal·lat ----
