@@ -47,7 +47,7 @@ versio_canvi_kable <- function(x, titol) {
       " (<a href=\"https://osmcha.org/changeset/", x$changeset, "\">OSMcha</a>)"
     )
     url_usr_osmcha <- paste0(
-      "https://osmcha.org/?filters={\"users\":[{\"label\":\"", x$user, "\",\"value\":\"", x$user, "\"}]}"
+      "https://osmcha.org/?filters={\"uids\":[{\"label\":\"", x$uid, "\",\"value\":\"", x$uid, "\"}]}"
     )
     x$user <- paste0(
       "<a href=\"https://osm.org/user/", x$user, "\">", x$user, "</a>",
