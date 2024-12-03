@@ -13,7 +13,6 @@ repos:
           )$
     -   id: roxygenize
         additional_dependencies:
-        - git2r
         - compareDF
         - osmapiR
         - osmdata
