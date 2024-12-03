@@ -58,6 +58,7 @@ q <- opq(bbox = c(xmin = -180, ymin = -90, xmax = 180, ymax = 90), osm_types = "
   add_osm_feature(key = "place", value = c("ocean", "sea")) |>
   add_osm_feature(key = "name")
 # q <-  opq_csv(q, fields = c(etiquetes, "::type", "::id"))
+
 cat(opq_string(q))
 mars <- osmdata_data_frame(q)
 # mars <- mars[, sapply(mars, function(x) !all(is.na(x)))]
