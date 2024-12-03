@@ -51,7 +51,7 @@ versio_canvi_kable <- function(x, titol) {
     )
     x$user <- paste0(
       "<a href=\"https://osm.org/user/", x$user, "\">", x$user, "</a>",
-      " (<a href=\"", URLencode(url_usr_osmcha), "\">OSMcha</a>)"
+      " (<a href=\"", utils::URLencode(url_usr_osmcha), "\">OSMcha</a>)"
       # https://osmcha.org/?filters={"users":[{"label":"jmaspons","value":"jmaspons"}]}
     )
     out <- knitr::kable(
