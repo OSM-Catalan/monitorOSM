@@ -10,7 +10,8 @@ execute:
 ```{r biblioteques}
 suppressPackageStartupMessages(library(monitorOSM, quietly = TRUE))
 
-# TODO: Sys.setlocale("LC_TIME", "ca_AD.UTF-8") # requereix configurar locale a gh action https://github.com/actions/runner-images/issues/762
+# TODO: Sys.setlocale("LC_TIME", "ca_AD.UTF-8")
+# requereix configurar locale a gh action https://github.com/actions/runner-images/issues/762
 ```
 
 Última actualització: `r format(Sys.time(), "%a %d %b %Y - %X")`
@@ -87,10 +88,11 @@ n_canvis <- sapply(list(canvis_estats, canvis_capitals, canvis_mars), function(x
   nrow(x$comparison_df) / 2
 })
 
-if (any(n_canvis > 0) &&
-  Sys.getenv("GITHUB_EVENT_NAME") == "schedule" &&
-  # format(Sys.Date(), format = "%u") %in% "5" &&  # Només els divendres
-  Sys.getenv("GITHUB_WORKFLOW") == "Render and Publish"
+if (
+  any(n_canvis > 0) &&
+    Sys.getenv("GITHUB_EVENT_NAME") == "schedule" &&
+    # format(Sys.Date(), format = "%u") %in% "5" &&  # Només els divendres
+    Sys.getenv("GITHUB_WORKFLOW") == "Render and Publish"
 ) {
   names(n_canvis) <- c("estats", "capitals", "mars")
   n_obj <- setNames(sapply(list(estats, capitals, mars), nrow), nm = names(n_canvis))
