@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Sun 29 Dec 2024 - 02:37:12",
+    "text": "Última actualització: Mon 30 Dec 2024 - 02:33:20",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -28,7 +28,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Sun 29 Dec 2024 - 02:36:43",
+    "text": "Última actualització: Mon 30 Dec 2024 - 02:32:51",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -40,7 +40,7 @@
     "href": "web/internacional.html#estats",
     "title": "Internacional",
     "section": "Estats",
-    "text": "Estats\nRelacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nofficial_name\nofficial_name:ca\nalt_name\nalt_name:ca\nold_name\nold_name:ca\nold_official_name\nold_official_name:ca\nwikidata\n\n\n\n\nhttps://osm.org/relation/1872673\n+\nSamoa\nSāmoa\nMalo Sa'oloto Tuto'atasi o Sāmoa\nEstat Independent de Samoa\n\n\nWestern Samoa;German Samoa\nSamoa Occidental\n\n\nQ683\n\n\nhttps://osm.org/relation/1872673\n-\nSamoa\nSāmoa\nMalo Sa'oloto Tuto'atasi o Sāmoa\nEstat Independent de Samoa\n\n\nWestern Samoa;German Samoa\nSamoa Occidental\n\n\nQ683\n\n\nhttps://osm.org/relation/88210\n+\nEswatini\nEswatini\n\nRegne d'Eswatini\n\nSwazilàndia\n\n\n\nRegne de Swazilàndia\nQ1050\n\n\nhttps://osm.org/relation/88210\n-\nEswatini\neSwatini\n\nRegne d'Eswatini\n\nSwazilàndia\n\n\n\nRegne de Swazilàndia\nQ1050\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/1872673\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n47\n160358975 (OSMcha)\n2024-12-18 16:30:53\nКонстантин Гам (OSMcha)\n392109\nold_name:ca\nSamoa Occidental\nSamoa Occidental\n\n\n\n\n\n\nhttps://osm.org/relation/88210\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n101\n159614978 (OSMcha)\n2024-11-26 12:55:05\nkuba743 (OSMcha)\n21610625\nname\nEswatini\neSwatini",
+    "text": "Estats\nRelacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nofficial_name\nofficial_name:ca\nalt_name\nalt_name:ca\nold_name\nold_name:ca\nold_official_name\nold_official_name:ca\nwikidata\n\n\n\n\nhttps://osm.org/relation/1872673\n+\nSamoa\nSāmoa\nMalo Sa'oloto Tuto'atasi o Sāmoa\nEstat Independent de Samoa\n\n\nWestern Samoa;German Samoa\nSamoa Occidental\n\n\nQ683\n\n\nhttps://osm.org/relation/1872673\n-\nSamoa\nSāmoa\nMalo Sa'oloto Tuto'atasi o Sāmoa\nEstat Independent de Samoa\n\n\nWestern Samoa;German Samoa\nSamoa Occidental\n\n\nQ683\n\n\nhttps://osm.org/relation/192800\n+\nEtiòpia\nኢትዮጵያ إثيوبيا\nየኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ\nRepública Federal Democràtica d'Etiòpia\n\n\nAbyssinia\nAbissínia\n\n\nQ115\n\n\nhttps://osm.org/relation/192800\n-\nEtiòpia\nኢትዮጵያ\nየኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ\nRepública Federal Democràtica d'Etiòpia\n\n\nAbyssinia\nAbissínia\n\n\nQ115\n\n\nhttps://osm.org/relation/88210\n+\nEswatini\nEswatini\n\nRegne d'Eswatini\n\nSwazilàndia\n\n\n\nRegne de Swazilàndia\nQ1050\n\n\nhttps://osm.org/relation/88210\n-\nEswatini\neSwatini\n\nRegne d'Eswatini\n\nSwazilàndia\n\n\n\nRegne de Swazilàndia\nQ1050\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/1872673\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n47\n160358975 (OSMcha)\n2024-12-18 16:30:53\nКонстантин Гам (OSMcha)\n392109\nold_name:ca\nSamoa Occidental\nSamoa Occidental\n\n\n\n\n\n\nhttps://osm.org/relation/192800\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n125\n160767321 (OSMcha)\n2024-12-29 20:45:43\nAhmed500000 (OSMcha)\n10163474\nname\nኢትዮጵያ إثيوبيا\nኢትዮጵያ\n\n\n\n\n\n\nhttps://osm.org/relation/88210\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n101\n159614978 (OSMcha)\n2024-11-26 12:55:05\nkuba743 (OSMcha)\n21610625\nname\nEswatini\neSwatini",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -111,7 +111,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Sun 29 Dec 2024 - 02:37:07",
+    "text": "Última actualització: Mon 30 Dec 2024 - 02:33:14",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
