@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Fri 03 Jan 2025 - 02:30:54",
+    "text": "Última actualització: Sat 04 Jan 2025 - 02:22:27",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -28,7 +28,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Fri 03 Jan 2025 - 02:30:24",
+    "text": "Última actualització: Sat 04 Jan 2025 - 02:21:51",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -52,7 +52,7 @@
     "href": "web/internacional.html#capitals-estatals",
     "title": "Internacional",
     "section": "Capitals estatals",
-    "text": "Capitals estatals\nObjectes amb capital = 2 o capital = yes o role = admin_centre en relacions d’estats\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nint_name\nloc_name\nlong_name\nnat_name\nofficial_name\nofficial_name:ca\nold_name\nold_name:ca\nreg_name\nshort_name\nshortest_name\nadmin_level\nwikidata\n\n\n\n\nhttps://osm.org/node/1790048269\n+\nMònaco\nMonaco\n\n\nMonaco\n\n\n\n\nPrincipat de Mònaco\n\n\n\n\n\n2\nQ235\n\n\nhttps://osm.org/node/1790048269\n-\nMònaco\nMonaco\n\n\nMonaco\n\n\n\nPrincipatu de Múnegu\nPrincipat de Mònaco\n\n\n\n\n\n2\nQ235\n\n\nhttps://osm.org/node/29023813\n+\n\nTórshavn\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ10704\n\n\nhttps://osm.org/node/29023813\n-\n\nTórshavn\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ10704\n\n\nhttps://osm.org/node/305138115\n+\n\nTegucigalpa\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ609188\n\n\nhttps://osm.org/node/305138115\n-\n\nTegucigalpa\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ3238\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1790048269\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n44\n155789444 (OSMcha)\n2024-08-26 15:43:43\nAlexis_gast33 (OSMcha)\n12932872\nofficial_name\nNA\nPrincipatu de Múnegu\n\n\n\n\n\n\nhttps://osm.org/node/29023813\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n29\n160221801 (OSMcha)\n2024-12-12 20:01:57\njso67 (OSMcha)\n11386698\nadmin_level\nNA\n2\n\n\n\n\n\n\nhttps://osm.org/node/305138115\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n41\n160725576 (OSMcha)\n2024-12-28 18:30:16\nRSR2003 (OSMcha)\n15527329\nwikidata\nQ609188\nQ3238",
+    "text": "Capitals estatals\nObjectes amb capital = 2 o capital = yes o role = admin_centre en relacions d’estats\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nint_name\nloc_name\nlong_name\nnat_name\nofficial_name\nofficial_name:ca\nold_name\nold_name:ca\nreg_name\nshort_name\nshortest_name\nadmin_level\nwikidata\n\n\n\n\nhttps://osm.org/node/1790048269\n+\nMònaco\nMonaco\n\n\nMonaco\n\n\n\n\nPrincipat de Mònaco\n\n\n\n\n\n2\nQ235\n\n\nhttps://osm.org/node/1790048269\n-\nMònaco\nMonaco\n\n\nMonaco\n\n\n\nPrincipatu de Múnegu\nPrincipat de Mònaco\n\n\n\n\n\n2\nQ235\n\n\nhttps://osm.org/node/2885136501\n+\n\nPriština/ Prishtinë\nPristina\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ25270\n\n\nhttps://osm.org/node/2885136501\n-\n\nPrishtinë\nPristina\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ25270\n\n\nhttps://osm.org/node/29023813\n+\n\nTórshavn\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ10704\n\n\nhttps://osm.org/node/29023813\n-\n\nTórshavn\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ10704\n\n\nhttps://osm.org/node/305138115\n+\n\nTegucigalpa\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ609188\n\n\nhttps://osm.org/node/305138115\n-\n\nTegucigalpa\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ3238\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1790048269\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n44\n155789444 (OSMcha)\n2024-08-26 15:43:43\nAlexis_gast33 (OSMcha)\n12932872\nofficial_name\nNA\nPrincipatu de Múnegu\n\n\n\n\n\n\nhttps://osm.org/node/2885136501\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n130\n160963196 (OSMcha)\n2025-01-03 19:13:16\nMilos Pejcic (OSMcha)\n21884034\nname\nPriština/ Prishtinë\nPrishtinë\n\n\n\n\n\n\nhttps://osm.org/node/29023813\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n29\n160221801 (OSMcha)\n2024-12-12 20:01:57\njso67 (OSMcha)\n11386698\nadmin_level\nNA\n2\n\n\n\n\n\n\nhttps://osm.org/node/305138115\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n41\n160725576 (OSMcha)\n2024-12-28 18:30:16\nRSR2003 (OSMcha)\n15527329\nwikidata\nQ609188\nQ3238",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -111,7 +111,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Fri 03 Jan 2025 - 02:30:46",
+    "text": "Última actualització: Sat 04 Jan 2025 - 02:22:20",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
