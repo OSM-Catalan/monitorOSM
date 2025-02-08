@@ -85,7 +85,7 @@ versio_canvis_html(versio_canvis_mars)
 
 ```{r telegram}
 n_canvis <- sapply(list(canvis_estats, canvis_capitals, canvis_mars), function(x) {
-  nrow(x$comparison_df) / 2
+  nrow(x$change_count)
 })
 
 if (

@@ -38,7 +38,7 @@ versio_canvis_html(versio_canvis_loc_capital)
 
 ```{r telegram}
 n_canvis <- sapply(list(canvis_loc_capital_municipis), function(x) {
-  nrow(x$comparison_df) / 2
+  nrow(x$change_count)
 })
 
 if (

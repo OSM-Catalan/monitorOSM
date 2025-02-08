@@ -83,7 +83,7 @@ versio_canvis_html(versio_canvis_municipis)
 
 ```{r telegram}
 n_canvis <- sapply(list(canvis_ppcc, canvis_territoris, canvis_comarques, canvis_municipis), function(x) {
-  nrow(x$comparison_df) / 2
+  nrow(x$change_count)
 })
 
 if (
