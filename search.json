@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Sun 09 Feb 2025 - 02:32:11",
+    "text": "Última actualització: Mon 10 Feb 2025 - 02:24:43",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -28,7 +28,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Sun 09 Feb 2025 - 02:31:37",
+    "text": "Última actualització: Mon 10 Feb 2025 - 02:24:03",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -52,7 +52,7 @@
     "href": "web/internacional.html#capitals-estatals",
     "title": "Internacional",
     "section": "Capitals estatals",
-    "text": "Capitals estatals\nObjectes amb capital = 2 o capital = yes o role = admin_centre en relacions d’estats\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nint_name\nloc_name\nlong_name\nnat_name\nofficial_name\nofficial_name:ca\nold_name\nold_name:ca\nreg_name\nshort_name\nshortest_name\nadmin_level\nwikidata\n\n\n\n\nhttps://osm.org/node/1790048269\n+\nMònaco\nMonaco\n\n\nMonaco\n\n\n\n\nPrincipat de Mònaco\n\n\n\n\n\n2\nQ235\n\n\nhttps://osm.org/node/1790048269\n-\nMònaco\nMonaco\n\n\nMonaco\n\n\n\nPrincipatu de Múnegu\nPrincipat de Mònaco\n\n\n\n\n\n2\nQ235\n\n\nhttps://osm.org/node/240109189\n+\nBerlín\nBerlin\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ64\n\n\nhttps://osm.org/node/240109189\n-\nBerlín\nBerlin\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ64\n\n\nhttps://osm.org/node/27565116\n+\nAntananarivo\nAntananarivo\n\n\n\nTana\n\n\n\n\nTananarive\n\n\n\n\n2\nQ3915\n\n\nhttps://osm.org/node/27565116\n-\nAntananarivo\nAntananarivo\n\n\n\nTana\n\n\n\n\nTananarive\n\n\n\n\n2\n\n\n\nhttps://osm.org/node/29023813\n+\n\nTórshavn\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ10704\n\n\nhttps://osm.org/node/29023813\n-\n\nTórshavn\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ10704\n\n\nhttps://osm.org/node/305138115\n+\n\nTegucigalpa\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ609188\n\n\nhttps://osm.org/node/305138115\n-\n\nTegucigalpa\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ3238\n\n\nhttps://osm.org/node/34567423\n+\n\nBrasília\nRA I\n\n\nBSB\n\n\n\n\n\n\nRegião Administrativa Um\n\n\n8\nQ2844\n\n\nhttps://osm.org/node/34567423\n-\n\nBrasília\nRA I\n\n\nBSB\n\n\n\n\n\n\nRegião Administrativa Um\n\n\n2\nQ2844\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1790048269\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n44\n155789444 (OSMcha)\n2024-08-26 15:43:43\nAlexis_gast33 (OSMcha)\n12932872\nofficial_name\nNA\nPrincipatu de Múnegu\n\n\n\n\n\n\nhttps://osm.org/node/240109189\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n169\n161405292 (OSMcha)\n2025-01-16 06:47:18\ngeozeisig (OSMcha)\n66391\nadmin_level\nNA\n2\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/27565116.\n\n\nhttps://osm.org/node/29023813\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n29\n160221801 (OSMcha)\n2024-12-12 20:01:57\njso67 (OSMcha)\n11386698\nadmin_level\nNA\n2\n\n\n\n\n\n\nhttps://osm.org/node/305138115\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n41\n160725576 (OSMcha)\n2024-12-28 18:30:16\nRSR2003 (OSMcha)\n15527329\nwikidata\nQ609188\nQ3238\n\n\n\n\n\n\nhttps://osm.org/node/34567423\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n103\n161425281 (OSMcha)\n2025-01-16 16:27:44\ncompass123 (OSMcha)\n22026478\nadmin_level\n8\n2",
+    "text": "Capitals estatals\nObjectes amb capital = 2 o capital = yes o role = admin_centre en relacions d’estats\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nint_name\nloc_name\nlong_name\nnat_name\nofficial_name\nofficial_name:ca\nold_name\nold_name:ca\nreg_name\nshort_name\nshortest_name\nadmin_level\nwikidata\n\n\n\n\nhttps://osm.org/node/1790048269\n+\nMònaco\nMonaco\n\n\nMonaco\n\n\n\n\nPrincipat de Mònaco\n\n\n\n\n\n2\nQ235\n\n\nhttps://osm.org/node/1790048269\n-\nMònaco\nMonaco\n\n\nMonaco\n\n\n\nPrincipatu de Múnegu\nPrincipat de Mònaco\n\n\n\n\n\n2\nQ235\n\n\nhttps://osm.org/node/240109189\n+\nBerlín\nBerlin\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ64\n\n\nhttps://osm.org/node/240109189\n-\nBerlín\nBerlin\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ64\n\n\nhttps://osm.org/node/27565116\n+\nAntananarivo\nAntananarivo\n\n\n\nTana\n\n\n\n\nTananarive\n\n\n\n\n2\nQ3915\n\n\nhttps://osm.org/node/27565116\n-\nAntananarivo\nAntananarivo\n\n\n\nTana\n\n\n\n\nTananarive\n\n\n\n\n2\n\n\n\nhttps://osm.org/node/29023813\n+\n\nTórshavn\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ10704\n\n\nhttps://osm.org/node/29023813\n-\n\nTórshavn\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ10704\n\n\nhttps://osm.org/node/305138115\n+\n\nTegucigalpa\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ609188\n\n\nhttps://osm.org/node/305138115\n-\n\nTegucigalpa\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nQ3238\n\n\nhttps://osm.org/node/34567423\n+\n\nBrasília\nRA I\n\n\nBSB\n\n\n\n\n\n\nRegião Administrativa Um\n\n\n8\nQ2844\n\n\nhttps://osm.org/node/34567423\n-\n\nBrasília\nRA I\n\n\nBSB\n\n\n\n\n\n\nRegião Administrativa Um\n\n\n2\nQ2844\n\n\nhttps://osm.org/node/671806634\n-\nBogotà\nBogotá\nBogotá D.C.\n\n\n\n\n\nBogotá Distrito Capital\n\n\n\n\n\n\n2\nQ2841\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1790048269\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n44\n155789444 (OSMcha)\n2024-08-26 15:43:43\nAlexis_gast33 (OSMcha)\n12932872\nofficial_name\nNA\nPrincipatu de Múnegu\n\n\n\n\n\n\nhttps://osm.org/node/240109189\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n169\n161405292 (OSMcha)\n2025-01-16 06:47:18\ngeozeisig (OSMcha)\n66391\nadmin_level\nNA\n2\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/27565116.\n\n\nhttps://osm.org/node/29023813\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n29\n160221801 (OSMcha)\n2024-12-12 20:01:57\njso67 (OSMcha)\n11386698\nadmin_level\nNA\n2\n\n\n\n\n\n\nhttps://osm.org/node/305138115\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n41\n160725576 (OSMcha)\n2024-12-28 18:30:16\nRSR2003 (OSMcha)\n15527329\nwikidata\nQ609188\nQ3238\n\n\n\n\n\n\nhttps://osm.org/node/34567423\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n103\n161425281 (OSMcha)\n2025-01-16 16:27:44\ncompass123 (OSMcha)\n22026478\nadmin_level\n8\n2\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/671806634.",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -111,7 +111,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Sun 09 Feb 2025 - 02:32:04",
+    "text": "Última actualització: Mon 10 Feb 2025 - 02:24:34",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
