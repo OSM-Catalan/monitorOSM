@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Tue 25 Feb 2025 - 02:33:39",
+    "text": "Última actualització: Thu 27 Feb 2025 - 02:38:00",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -16,7 +16,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/3717853177\n+\nla Ginebrosa\nLa Ginebrosa / la Ginebrosa\nQ24015109\n\nvillage\n8\n\n\n\nhttps://osm.org/node/3717853177\n-\nla Ginebrosa\nLa Ginebrosa\nQ24015109\n\nvillage\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nL'Alguer\nS'Aliguera/L'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nit:Alghero\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/3717853177\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n71\n162590521 (OSMcha)\n2025-02-16 23:14:54\nJordi MF (OSMcha)\n8278438\nname\nLa Ginebrosa / la Ginebrosa\nLa Ginebrosa\n\n\n\n\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n230\n158189552 (OSMcha)\n2024-10-21 22:17:57\naboc (OSMcha)\n21696131\nname:ca\nL'Alguer\nl'Alguer\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nwikipedia\nsc:S'Alighèra\nit:Alghero",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1460478641\n+\nLlinars\nLlinars\nQ109409944\nca:Llinars de l'Aiguadora\nvillage\n8\n\n\n\nhttps://osm.org/node/1460478641\n-\nLlinars\nLlinars\nQ66987884\n\nvillage\n8\n\n\n\nhttps://osm.org/node/3717853177\n+\nla Ginebrosa\nLa Ginebrosa / la Ginebrosa\nQ24015109\n\nvillage\n8\n\n\n\nhttps://osm.org/node/3717853177\n-\nla Ginebrosa\nLa Ginebrosa\nQ24015109\n\nvillage\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nL'Alguer\nS'Aliguera/L'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nit:Alghero\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1460478641\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n15\n162926783 (OSMcha)\n2025-02-25 10:52:16\nHugoren Martinako (OSMcha)\n3392826\nwikidata\nQ109409944\nQ66987884\n\n\n\n\n\n\nhttps://osm.org/node/3717853177\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n71\n162590521 (OSMcha)\n2025-02-16 23:14:54\nJordi MF (OSMcha)\n8278438\nname\nLa Ginebrosa / la Ginebrosa\nLa Ginebrosa\n\n\n\n\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n230\n158189552 (OSMcha)\n2024-10-21 22:17:57\naboc (OSMcha)\n21696131\nname:ca\nL'Alguer\nl'Alguer\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nwikipedia\nsc:S'Alighèra\nit:Alghero",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -28,7 +28,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Tue 25 Feb 2025 - 02:33:00",
+    "text": "Última actualització: Thu 27 Feb 2025 - 02:37:22",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -111,7 +111,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Tue 25 Feb 2025 - 02:33:33",
+    "text": "Última actualització: Thu 27 Feb 2025 - 02:37:54",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -147,7 +147,7 @@
     "href": "web/limits.html#comarques",
     "title": "Municipis, comarques i territoris",
     "section": "Comarques",
-    "text": "Comarques\nBD de referència\n\n\n🎉 Tot en ordre 🎉",
+    "text": "Comarques\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\nborder_type\nadmin_level\nhistoric:admin_level\n\n\n\n\nhttps://osm.org/relation/1692440\n+\nel Baix Vinalopó\nel Baix Vinalopó\nca:Baix Vinalopó\nQ681222\ncomarca\n7\n\n\n\nhttps://osm.org/relation/1692440\n-\nel Baix Vinalopó\nel Baix Vinalopó\nes:Bajo Vinalopó\nQ681222\ncomarca\n7\n\n\n\nhttps://osm.org/relation/1692447\n+\nel Baix Segura\nel Baix Segura / La Vega Baja\nes:Vega Baja del Segura\nQ972305\ncomarca\n7\n\n\n\nhttps://osm.org/relation/1692447\n-\nel Baix Segura\nel Baix Segura / La Vega Baja del Segura\nes:Vega Baja del Segura\nQ972305\ncomarca\n7\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/1692440\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n11\n162994688 (OSMcha)\n2025-02-27 02:16:25\nJordi MF (OSMcha)\n8278438\nwikipedia\nca:Baix Vinalopó\nes:Bajo Vinalopó\n\n\n\n\n\n\nhttps://osm.org/relation/1692447\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n56\n162994688 (OSMcha)\n2025-02-27 02:16:25\nJordi MF (OSMcha)\n8278438\nname\nel Baix Segura / La Vega Baja\nel Baix Segura / La Vega Baja del Segura",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
