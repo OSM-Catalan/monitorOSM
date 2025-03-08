@@ -1,5 +1,5 @@
 "name:ca"	"name"	"osm_id"	"osm_type"	"alt_name"	"alt_name:ca"	"place"	"wikidata"
-"Oceà Antàrtic"	"Southern Ocean"	"305639157"	"node"			"ocean"	"Q7354"
+"Oceà Antàrtic"		"305639157"	"node"			"ocean"	"Q7354"
 "Oceà Àrtic"		"305639710"	"node"			"ocean"	"Q788"
 "Oceà Atlàntic"		"305640306"	"node"			"ocean"	"Q97"
 "Oceà Índic"		"305640074"	"node"			"ocean"	"Q1239"
