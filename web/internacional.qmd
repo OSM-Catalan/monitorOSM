@@ -84,8 +84,10 @@ versio_canvis_html(versio_canvis_mars)
 
 
 ```{r telegram}
+## Avisa de canvis només per les etiquetes *name:ca*
 n_canvis <- sapply(list(canvis_estats, canvis_capitals, canvis_mars), function(x) {
-  nrow(x$change_count)
+  df <- x$comparison_table_diff_numbers
+  sum(apply(df[, grep("name:ca", names(df))], 1, function(y) any(y != 0)))
 })
 
 if (
