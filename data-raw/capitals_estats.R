@@ -64,7 +64,7 @@ capitals_2 <- osmdata_data_frame(q_capital)
 
 ## busca per rol admin_centre en relacions d'estats
 q_role <- paste(
-  'relation["admin_level"="2"]["boundary"="administrative"];',
+  'relation["admin_level"="2"]["type"="boundary"]["boundary"="administrative"];',
   'node(r:"admin_centre");',
   "out tags;"
 )
