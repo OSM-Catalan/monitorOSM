@@ -46,7 +46,6 @@
 "Mar de Bellingshausen"	"Bellingshausen Sea"	"9359807"	"relation"			"sea"	"Q183455"
 "Mar de Bering"	"Bering Sea"	"305640064"	"node"			"sea"	"Q44725"
 "Mar de Bismarck"	"Bismarck Sea"	"305640096"	"node"			"sea"	"Q199436"
-"Mar de Bohai"	"渤海"	"9483512"	"relation"		Golf de Bohai	"yes"	"Q181969"
 "Mar de Bohol"	"Bohol Sea"	"4787947566"	"node"			"sea"	"Q242326"
 "Mar de Bòtnia"	"Selkämeri / Bottenhavet"	"1195287427"	"node"			"sea"	"Q1649939"
 "Mar de Camotes"	"Camotes Sea"	"4787957262"	"node"			"sea"	"Q540179"
@@ -147,3 +146,4 @@
 	"Lincoln Sea"	"13828096"	"relation"			"sea"	"Q243125"
 	"Prince Gustaf Adolf Sea"	"13890487"	"relation"			"sea"	"Q2322479"
 	"Bay of Bengal"	"17633773"	"relation"			"sea"	"Q38684"
+"Mar de Bohai"	"渤海"	"9483512"	"relation"		"Golf de Bohai"	"yes"	"Q181969"
