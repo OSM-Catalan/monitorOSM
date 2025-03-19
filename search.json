@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Tue 18 Mar 2025 - 02:39:36",
+    "text": "Última actualització: Wed 19 Mar 2025 - 02:38:55",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -28,7 +28,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Tue 18 Mar 2025 - 02:38:57",
+    "text": "Última actualització: Wed 19 Mar 2025 - 02:38:08",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -40,7 +40,7 @@
     "href": "web/internacional.html#estats",
     "title": "Internacional",
     "section": "Estats",
-    "text": "Estats\nRelacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nofficial_name\nofficial_name:ca\nalt_name\nalt_name:ca\nold_name\nold_name:ca\nold_official_name\nold_official_name:ca\nwikidata\n\n\n\n\nhttps://osm.org/relation/49915\n+\nVietnam\nViệt Nam\nCộng hòa xã hội chủ nghĩa Việt Nam\nRepública Socialista del Vietnam\n\n\n\n\n\n\nQ881\n\n\nhttps://osm.org/relation/49915\n-\nVietnam\nViệt Nam\nCộng Hòa Xã Hội Chủ Nghĩa Việt Nam\nRepública Socialista del Vietnam\n\n\n\n\n\n\nQ881\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/49915\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n540\n162731753 (OSMcha)\n2025-02-20 09:24:10\nvietnam321 (OSMcha)\n11196308\nofficial_name\nCộng hòa xã hội chủ nghĩa Việt Nam\nCộng Hòa Xã Hội Chủ Nghĩa Việt Nam",
+    "text": "Estats\nRelacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nofficial_name\nofficial_name:ca\nalt_name\nalt_name:ca\nold_name\nold_name:ca\nold_official_name\nold_official_name:ca\nwikidata\n\n\n\n\nhttps://osm.org/relation/192800\n+\nEtiòpia\nኢትዮጵያ إثيوبيا\nየኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ\nRepública Federal Democràtica d'Etiòpia\n\n\nAbyssinia\nAbissínia\n\n\nQ115\n\n\nhttps://osm.org/relation/192800\n-\nEtiòpia\nኢትዮጵያ\nየኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ\nRepública Federal Democràtica d'Etiòpia\n\n\nAbyssinia\nAbissínia\n\n\nQ115\n\n\nhttps://osm.org/relation/2067731\n+\nTailàndia\nประเทศไทย\nราชอาณาจักรไทย\nRegne de Tailàndia\nPrades Thai;Sayam;Siam\n\n\n\n\n\nQ869\n\n\nhttps://osm.org/relation/2067731\n-\nTailàndia\nประเทศไทย\nราชอาณาจักรไทย\nRegne de Tailàndia\n\n\n\n\n\n\nQ869\n\n\nhttps://osm.org/relation/2185375\n+\nIlles Pitcairn\nPitkern Ailen\n\n\n\n\n\n\n\n\nQ35672\n\n\nhttps://osm.org/relation/2185375\n-\nIlles Pitcairn\nPitcairn Islands\n\n\n\n\n\n\n\n\nQ35672\n\n\nhttps://osm.org/relation/49915\n+\nVietnam\nViệt Nam\nCộng hòa xã hội chủ nghĩa Việt Nam\nRepública Socialista del Vietnam\n\n\n\n\n\n\nQ881\n\n\nhttps://osm.org/relation/49915\n-\nVietnam\nViệt Nam\nCộng Hòa Xã Hội Chủ Nghĩa Việt Nam\nRepública Socialista del Vietnam\n\n\n\n\n\n\nQ881\n\n\nhttps://osm.org/relation/50371\n+\nMyanmar\nမြန်မာ\n\nRepública de la Unió de Myanmar\n\n\n\nBirmània\n\n\nQ836\n\n\nhttps://osm.org/relation/50371\n-\nMyanmar\nမြန်မာ\n\n\n\n\n\n\n\n\nQ836\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/192800\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n127\n163327326 (OSMcha)\n2025-03-07 13:21:55\nAhmed500000 (OSMcha)\n10163474\nname\nኢትዮጵያ إثيوبيا\nኢትዮጵያ\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/2067731.\n\n\nhttps://osm.org/relation/2185375\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n42\n163229107 (OSMcha)\n2025-03-05 05:58:30\npeanuthole (OSMcha)\n22020307\nname\nPitkern Ailen\nPitcairn Islands\n\n\n\n\n\n\nhttps://osm.org/relation/49915\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n540\n162731753 (OSMcha)\n2025-02-20 09:24:10\nvietnam321 (OSMcha)\n11196308\nofficial_name\nCộng hòa xã hội chủ nghĩa Việt Nam\nCộng Hòa Xã Hội Chủ Nghĩa Việt Nam\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/50371.",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -64,7 +64,7 @@
     "href": "web/internacional.html#mars-i-oceans",
     "title": "Internacional",
     "section": "Mars i oceans",
-    "text": "Mars i oceans\nObjectes amb place = ocean o place = sea\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nplace\nwikidata\n\n\n\n\nhttps://osm.org/node/303209363\n+\nMar de la Xina Meridional\nSouth China Sea\n\n\nsea\nQ37660\n\n\nhttps://osm.org/node/303209363\n-\nMar de la Xina Meridional\n南海/Biển Đông/South China Sea\n\n\nsea\nQ37660\n\n\nhttps://osm.org/node/305639414\n+\nMar de la Xina Oriental\nEast China Sea\n\n\nsea\nQ45341\n\n\nhttps://osm.org/node/305639414\n-\nMar de la Xina Oriental\n东海/東海/東シナ海/동중국해/East China Sea\n\n\nsea\nQ45341\n\n\nhttps://osm.org/node/4348295445\n+\nMar Adriàtica\nAdriatic Sea\n\nMar Adriàtic;Mar Hadriàtica;Mar Hadriàtic\nsea\nQ13924\n\n\nhttps://osm.org/node/4348295445\n-\nMar Adriàtica\nJadransko more / Mare Adriatico / Deti Adriatik\n\nMar Adriàtic;Mar Hadriàtica;Mar Hadriàtic\nsea\nQ13924\n\n\nhttps://osm.org/relation/9323456\n+\nMar Roig\nالبحر الأحمر\n\nMar Roja;Mar Vermella;Mar Vermell\nsea\nQ23406\n\n\nhttps://osm.org/relation/9323456\n-\nMar Roig\nMer Rouge / ቀይሕ ባሕሪ / البحر الأحمر\n\nMar Roja;Mar Vermella;Mar Vermell\nsea\nQ23406\n\n\nhttps://osm.org/relation/9326279\n+\nGolf d'Oman\nبحر عمان\n\n\nsea\nQ79948\n\n\nhttps://osm.org/relation/9326279\n-\nGolf d'Oman\nخلیج عمان\n\n\nsea\nQ79948\n\n\nhttps://osm.org/relation/9483512\n+\nMar de Bohai\n渤海\n\n\nyes\nQ181969\n\n\nhttps://osm.org/relation/9483512\n-\nMar de Bohai\n渤海\n\nGolf de Bohai\nyes\nQ181969\n\n\n\n\n\n\nConjunts de canvis\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/303209363.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/305639414.\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/4348295445.\n\n\nhttps://osm.org/relation/9323456\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n367\n160569798 (OSMcha)\n2024-12-24 10:28:56\nAbdullah Abdulrhman (OSMcha)\n10478308\nname\nالبحر الأحمر\nMer Rouge / ቀይሕ ባሕሪ / البحر الأحمر\n\n\n\n\n\n\nhttps://osm.org/relation/9326279\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n36\n160549698 (OSMcha)\n2024-12-23 18:37:56\nSocks2 (OSMcha)\n11264669\nname\nبحر عمان\nخلیج عمان\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/9483512.",
+    "text": "Mars i oceans\nObjectes amb place = ocean o place = sea\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nplace\nwikidata\n\n\n\n\nhttps://osm.org/relation/9323456\n+\nMar Roig\nالبحر الأحمر\n\nMar Roja;Mar Vermella;Mar Vermell\nsea\nQ23406\n\n\nhttps://osm.org/relation/9323456\n-\nMar Roig\nMer Rouge / ቀይሕ ባሕሪ / البحر الأحمر\n\nMar Roja;Mar Vermella;Mar Vermell\nsea\nQ23406\n\n\nhttps://osm.org/relation/9326279\n+\nGolf d'Oman\nبحر عمان\n\n\nsea\nQ79948\n\n\nhttps://osm.org/relation/9326279\n-\nGolf d'Oman\nخلیج عمان\n\n\nsea\nQ79948\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/9323456\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n367\n160569798 (OSMcha)\n2024-12-24 10:28:56\nAbdullah Abdulrhman (OSMcha)\n10478308\nname\nالبحر الأحمر\nMer Rouge / ቀይሕ ባሕሪ / البحر الأحمر\n\n\n\n\n\n\nhttps://osm.org/relation/9326279\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n36\n160549698 (OSMcha)\n2024-12-23 18:37:56\nSocks2 (OSMcha)\n11264669\nname\nبحر عمان\nخلیج عمان",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -111,7 +111,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Tue 18 Mar 2025 - 02:39:31",
+    "text": "Última actualització: Wed 19 Mar 2025 - 02:38:51",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -159,7 +159,7 @@
     "href": "web/limits.html#municipis",
     "title": "Municipis, comarques i territoris",
     "section": "Municipis",
-    "text": "Municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikipedia\nwikidata\nborder_type\nadmin_level\n\n\n\n\nhttps://osm.org/relation/40581\n+\nl'Alguer\nL'Alguer/Alghero\nca:L'Alguer\nQ166282\n\n8\n\n\nhttps://osm.org/relation/40581\n-\nl'Alguer\nl'Alguer/Alghero\nca:L'Alguer\nQ166282\n\n8\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/40581\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n70\n158189552 (OSMcha)\n2024-10-21 22:17:57\naboc (OSMcha)\n21696131\nname\nL'Alguer/Alghero\nl'Alguer/Alghero",
+    "text": "Municipis\nBD de referència\n\n\n🎉 Tot en ordre 🎉",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
