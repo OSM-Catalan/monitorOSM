@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Wed 19 Mar 2025 - 02:38:55",
+    "text": "Última actualització: Thu 20 Mar 2025 - 02:37:35",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -16,7 +16,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/649883120\n+\nCabassers\nCabacés\nQ24015227\n\nvillage\n8\n\n\n\nhttps://osm.org/node/649883120\n-\nCabassers\nCabacés\nQ24015227\nca:Cabassers\nvillage\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/649883120\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n22\n163836377 (OSMcha)\n2025-03-19 20:57:26\nHugoren Martinako (OSMcha)\n3392826\nwikipedia\nNA\nca:Cabassers\n\n\n\n\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -28,7 +28,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Wed 19 Mar 2025 - 02:38:08",
+    "text": "Última actualització: Thu 20 Mar 2025 - 02:36:59",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -40,7 +40,7 @@
     "href": "web/internacional.html#estats",
     "title": "Internacional",
     "section": "Estats",
-    "text": "Estats\nRelacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nofficial_name\nofficial_name:ca\nalt_name\nalt_name:ca\nold_name\nold_name:ca\nold_official_name\nold_official_name:ca\nwikidata\n\n\n\n\nhttps://osm.org/relation/192800\n+\nEtiòpia\nኢትዮጵያ إثيوبيا\nየኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ\nRepública Federal Democràtica d'Etiòpia\n\n\nAbyssinia\nAbissínia\n\n\nQ115\n\n\nhttps://osm.org/relation/192800\n-\nEtiòpia\nኢትዮጵያ\nየኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ\nRepública Federal Democràtica d'Etiòpia\n\n\nAbyssinia\nAbissínia\n\n\nQ115\n\n\nhttps://osm.org/relation/2067731\n+\nTailàndia\nประเทศไทย\nราชอาณาจักรไทย\nRegne de Tailàndia\nPrades Thai;Sayam;Siam\n\n\n\n\n\nQ869\n\n\nhttps://osm.org/relation/2067731\n-\nTailàndia\nประเทศไทย\nราชอาณาจักรไทย\nRegne de Tailàndia\n\n\n\n\n\n\nQ869\n\n\nhttps://osm.org/relation/2185375\n+\nIlles Pitcairn\nPitkern Ailen\n\n\n\n\n\n\n\n\nQ35672\n\n\nhttps://osm.org/relation/2185375\n-\nIlles Pitcairn\nPitcairn Islands\n\n\n\n\n\n\n\n\nQ35672\n\n\nhttps://osm.org/relation/49915\n+\nVietnam\nViệt Nam\nCộng hòa xã hội chủ nghĩa Việt Nam\nRepública Socialista del Vietnam\n\n\n\n\n\n\nQ881\n\n\nhttps://osm.org/relation/49915\n-\nVietnam\nViệt Nam\nCộng Hòa Xã Hội Chủ Nghĩa Việt Nam\nRepública Socialista del Vietnam\n\n\n\n\n\n\nQ881\n\n\nhttps://osm.org/relation/50371\n+\nMyanmar\nမြန်မာ\n\nRepública de la Unió de Myanmar\n\n\n\nBirmània\n\n\nQ836\n\n\nhttps://osm.org/relation/50371\n-\nMyanmar\nမြန်မာ\n\n\n\n\n\n\n\n\nQ836\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/192800\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n127\n163327326 (OSMcha)\n2025-03-07 13:21:55\nAhmed500000 (OSMcha)\n10163474\nname\nኢትዮጵያ إثيوبيا\nኢትዮጵያ\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/2067731.\n\n\nhttps://osm.org/relation/2185375\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n42\n163229107 (OSMcha)\n2025-03-05 05:58:30\npeanuthole (OSMcha)\n22020307\nname\nPitkern Ailen\nPitcairn Islands\n\n\n\n\n\n\nhttps://osm.org/relation/49915\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n540\n162731753 (OSMcha)\n2025-02-20 09:24:10\nvietnam321 (OSMcha)\n11196308\nofficial_name\nCộng hòa xã hội chủ nghĩa Việt Nam\nCộng Hòa Xã Hội Chủ Nghĩa Việt Nam\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/50371.",
+    "text": "Estats\nRelacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nofficial_name\nofficial_name:ca\nalt_name\nalt_name:ca\nold_name\nold_name:ca\nold_official_name\nold_official_name:ca\nwikidata\n\n\n\n\nhttps://osm.org/relation/49915\n+\nVietnam\nViệt Nam\nCộng hòa xã hội chủ nghĩa Việt Nam\nRepública Socialista del Vietnam\n\n\n\n\n\n\nQ881\n\n\nhttps://osm.org/relation/49915\n-\nVietnam\nViệt Nam\nCộng Hòa Xã Hội Chủ Nghĩa Việt Nam\nRepública Socialista del Vietnam\n\n\n\n\n\n\nQ881\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/49915\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n540\n162731753 (OSMcha)\n2025-02-20 09:24:10\nvietnam321 (OSMcha)\n11196308\nofficial_name\nCộng hòa xã hội chủ nghĩa Việt Nam\nCộng Hòa Xã Hội Chủ Nghĩa Việt Nam",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -111,7 +111,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Wed 19 Mar 2025 - 02:38:51",
+    "text": "Última actualització: Thu 20 Mar 2025 - 02:37:30",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
