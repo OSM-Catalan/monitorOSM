@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Tue 22 Apr 2025 - 02:43:53",
+    "text": "Última actualització: Wed 23 Apr 2025 - 02:44:36",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -28,7 +28,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Tue 22 Apr 2025 - 02:43:14",
+    "text": "Última actualització: Wed 23 Apr 2025 - 02:43:58",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -52,7 +52,7 @@
     "href": "web/internacional.html#capitals-estatals",
     "title": "Internacional",
     "section": "Capitals estatals",
-    "text": "Capitals estatals\nObjectes amb capital = 2 o capital = yes o role = admin_centre en relacions d’estats\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nint_name\nloc_name\nlong_name\nnat_name\nofficial_name\nofficial_name:ca\nold_name\nold_name:ca\nreg_name\nshort_name\nshortest_name\nwikidata\n\n\n\n\nhttps://osm.org/node/1790048269\n+\nMònaco\nMonaco\n\n\nMonaco\n\n\n\n\nPrincipat de Mònaco\n\n\n\n\n\nQ235\n\n\nhttps://osm.org/node/1790048269\n-\nMònaco\nMonaco\n\n\nMonaco\n\n\n\nPrincipatu de Múnegu\nPrincipat de Mònaco\n\n\n\n\n\nQ235\n\n\nhttps://osm.org/node/1893015330\n+\nNicòsia\nLefkoşa - Λευκωσία\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ3856\n\n\nhttps://osm.org/node/1893015330\n-\nNicòsia\nΛευκωσία - Lefkoşa\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ3856\n\n\nhttps://osm.org/node/249166495\n+\n\nNouakchott نواكشوط\nNouakchot;Nouakchat\n\n\n\n\n\n\n\n\n\n\n\n\nQ3688\n\n\nhttps://osm.org/node/249166495\n-\n\nنواكشوط\nNouakchot;Nouakchat\n\n\n\n\n\n\n\n\n\n\n\n\nQ3688\n\n\nhttps://osm.org/node/305138115\n+\n\nTegucigalpa\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ609188\n\n\nhttps://osm.org/node/305138115\n-\n\nTegucigalpa\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ3238\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1790048269\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n44\n155789444 (OSMcha)\n2024-08-26 15:43:43\nAlexis_gast33 (OSMcha)\n12932872\nofficial_name\nNA\nPrincipatu de Múnegu\n\n\n\n\n\n\nhttps://osm.org/node/1893015330\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n45\n164600523 (OSMcha)\n2025-04-06 16:50:33\nheyturkiye58 (OSMcha)\n12667120\nname\nLefkoşa - Λευκωσία\nΛευκωσία - Lefkoşa\n\n\n\n\n\n\nhttps://osm.org/node/249166495\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n60\n162517823 (OSMcha)\n2025-02-14 20:44:39\nNouakchott_Rover (OSMcha)\n22499762\nname\nNouakchott نواكشوط\nنواكشوط\n\n\n\n\n\n\nhttps://osm.org/node/305138115\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n41\n160725576 (OSMcha)\n2024-12-28 18:30:16\nRSR2003 (OSMcha)\n15527329\nwikidata\nQ609188\nQ3238",
+    "text": "Capitals estatals\nObjectes amb capital = 2 o capital = yes o role = admin_centre en relacions d’estats\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nint_name\nloc_name\nlong_name\nnat_name\nofficial_name\nofficial_name:ca\nold_name\nold_name:ca\nreg_name\nshort_name\nshortest_name\nwikidata\n\n\n\n\nhttps://osm.org/node/1790048269\n+\nMònaco\nMonaco\n\n\nMonaco\n\n\n\n\nPrincipat de Mònaco\n\n\n\n\n\nQ235\n\n\nhttps://osm.org/node/1790048269\n-\nMònaco\nMonaco\n\n\nMonaco\n\n\n\nPrincipatu de Múnegu\nPrincipat de Mònaco\n\n\n\n\n\nQ235\n\n\nhttps://osm.org/node/1893015330\n+\nNicòsia\nLefkoşa - Λευκωσία\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ3856\n\n\nhttps://osm.org/node/1893015330\n-\nNicòsia\nΛευκωσία - Lefkoşa\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ3856\n\n\nhttps://osm.org/node/249166495\n+\n\nNouakchott نواكشوط\nNouakchot;Nouakchat\n\n\n\n\n\n\n\n\n\n\n\n\nQ3688\n\n\nhttps://osm.org/node/249166495\n-\n\nنواكشوط\nNouakchot;Nouakchat\n\n\n\n\n\n\n\n\n\n\n\n\nQ3688\n\n\nhttps://osm.org/node/305138115\n+\n\nTegucigalpa\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ609188\n\n\nhttps://osm.org/node/305138115\n-\n\nTegucigalpa\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ3238\n\n\nhttps://osm.org/relation/1748490\n+\n\nChișinău\n\n\n\n\n\n\nMunicipiul Chișinău\n\n\n\n\n\n\nQ21197\n\n\nhttps://osm.org/relation/1748490\n-\n\nChișinău\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ21197\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1790048269\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n44\n155789444 (OSMcha)\n2024-08-26 15:43:43\nAlexis_gast33 (OSMcha)\n12932872\nofficial_name\nNA\nPrincipatu de Múnegu\n\n\n\n\n\n\nhttps://osm.org/node/1893015330\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n45\n164600523 (OSMcha)\n2025-04-06 16:50:33\nheyturkiye58 (OSMcha)\n12667120\nname\nLefkoşa - Λευκωσία\nΛευκωσία - Lefkoşa\n\n\n\n\n\n\nhttps://osm.org/node/249166495\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n60\n162517823 (OSMcha)\n2025-02-14 20:44:39\nNouakchott_Rover (OSMcha)\n22499762\nname\nNouakchott نواكشوط\nنواكشوط\n\n\n\n\n\n\nhttps://osm.org/node/305138115\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n41\n160725576 (OSMcha)\n2024-12-28 18:30:16\nRSR2003 (OSMcha)\n15527329\nwikidata\nQ609188\nQ3238\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/1748490.",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -111,7 +111,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Tue 22 Apr 2025 - 02:43:49",
+    "text": "Última actualització: Wed 23 Apr 2025 - 02:44:33",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
