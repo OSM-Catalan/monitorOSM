@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Fri 09 May 2025 - 02:49:54",
+    "text": "Última actualització: Sat 10 May 2025 - 02:43:34",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -16,7 +16,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1470838804\n+\nRiba-roja de Túria\nRiba-roja de Túria\nQ23701\nca:Riba-roja de Túria\ntown\n8\n\n\n\nhttps://osm.org/node/1470838804\n-\nRiba-roja de Túria\nRiba-roja de Túria\nQ23701\nca:Riba-roja de Túria\nvillage\n8\n\n\n\nhttps://osm.org/node/393156631\n+\nSanta Eulàlia de Ronçana\nSanta Eulàlia de Ronçana\nQ15454\nca:Santa Eulàlia de Ronçana\nvillage\n\n\n\n\nhttps://osm.org/node/393156631\n-\nSanta Eulàlia de Ronçana\nSanta Eulàlia de Ronçana\nQ15454\nca:Santa Eulàlia de Ronçana\nvillage\n8\n\n\n\nhttps://osm.org/node/703876119\n+\nla Jonquera\nla Jonquera\nQ31844084\n\nvillage\n8\n\n\n\nhttps://osm.org/node/703876119\n-\nla Jonquera\nla Jonquera\nQ7113\nca:La Jonquera\nvillage\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/739074054\n+\nNonasp\nNonaspe / Nonasp\nQ1628416\nes:Nonaspe\nvillage\n8\n\n\n\nhttps://osm.org/node/739074054\n-\nNonasp\nNonaspe / Nonasp\nQ1628416\nca:Nonasp\nvillage\n8\n\n\n\n\n\n\n\nConjunts de canvis\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/1470838804.\n\n\nhttps://osm.org/node/393156631\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n11\n164136631 (OSMcha)\n2025-03-26 19:45:15\nHugoren Martinako (OSMcha)\n3392826\ncapital\nNA\n8\n\n\n\n\n\n\nhttps://osm.org/node/703876119\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n28\n165704736 (OSMcha)\n2025-05-02 07:05:20\nDavileci (OSMcha)\n8123953\nwikipedia\nNA\nca:La Jonquera\n\n\n27\n165676127 (OSMcha)\n2025-05-01 13:20:46\nDavileci (OSMcha)\n8123953\nwikidata\nQ31844084\nQ7113\n\n\n\n\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero\n\n\n\n\n\n\nhttps://osm.org/node/739074054\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n287\n165663197 (OSMcha)\n2025-05-01 07:57:37\nBrontasiano (OSMcha)\n22851713\nwikipedia\nes:Nonaspe\nca:Nonasp",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1470838804\n+\nRiba-roja de Túria\nRiba-roja de Túria\nQ23701\nca:Riba-roja de Túria\ntown\n8\n\n\n\nhttps://osm.org/node/1470838804\n-\nRiba-roja de Túria\nRiba-roja de Túria\nQ23701\nca:Riba-roja de Túria\nvillage\n8\n\n\n\nhttps://osm.org/node/393156631\n+\nSanta Eulàlia de Ronçana\nSanta Eulàlia de Ronçana\nQ15454\nca:Santa Eulàlia de Ronçana\nvillage\n\n\n\n\nhttps://osm.org/node/393156631\n-\nSanta Eulàlia de Ronçana\nSanta Eulàlia de Ronçana\nQ15454\nca:Santa Eulàlia de Ronçana\nvillage\n8\n\n\n\nhttps://osm.org/node/703876119\n+\nla Jonquera\nla Jonquera\nQ31844084\n\nvillage\n8\n\n\n\nhttps://osm.org/node/703876119\n-\nla Jonquera\nla Jonquera\nQ7113\nca:La Jonquera\nvillage\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/1470838804.\n\n\nhttps://osm.org/node/393156631\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n11\n164136631 (OSMcha)\n2025-03-26 19:45:15\nHugoren Martinako (OSMcha)\n3392826\ncapital\nNA\n8\n\n\n\n\n\n\nhttps://osm.org/node/703876119\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n28\n165704736 (OSMcha)\n2025-05-02 07:05:20\nDavileci (OSMcha)\n8123953\nwikipedia\nNA\nca:La Jonquera\n\n\n27\n165676127 (OSMcha)\n2025-05-01 13:20:46\nDavileci (OSMcha)\n8123953\nwikidata\nQ31844084\nQ7113\n\n\n\n\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -28,7 +28,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Fri 09 May 2025 - 02:49:13",
+    "text": "Última actualització: Sat 10 May 2025 - 02:42:53",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -111,7 +111,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Fri 09 May 2025 - 02:49:48",
+    "text": "Última actualització: Sat 10 May 2025 - 02:43:29",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
