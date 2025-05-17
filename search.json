@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Fri 16 May 2025 - 02:51:51",
+    "text": "Última actualització: Sat 17 May 2025 - 02:47:30",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -16,7 +16,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1446994017\n+\nLes Paüls\nLaspaúles\nQ371846\nes:Laspaúles\nvillage\n8\n\n\n\nhttps://osm.org/node/1446994017\n-\nLes Paüls\nLaspaúles / Les Paüls\nQ371846\nca:Les Paüls\nvillage\n8\n\n\n\nhttps://osm.org/node/1446994048\n+\nMassalió\nMazaleón\nQ1651159\nes:Mazaleón\nvillage\n8\n\n\n\nhttps://osm.org/node/1446994048\n-\nMassalió\nMazaleón / Massalió\nQ1651159\nca:Massalió\nvillage\n8\n\n\n\nhttps://osm.org/node/1474268275\n+\nVensilló\nVencillón\nQ984615\nes:Vencillón\nvillage\n8\n\n\n\nhttps://osm.org/node/1474268275\n-\nVensilló\nVencillón / Vensilló\nQ984615\nca:Vensilló\nvillage\n8\n\n\n\nhttps://osm.org/node/255548972\n+\nMontanui\nMontanuy\nQ768770\nes:Montanuy\nvillage\n8\n\n\n\nhttps://osm.org/node/255548972\n-\nMontanui\nMontanuy / Montanui\nQ768770\nca:Montanui\nvillage\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1446994017\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n263\n166329124 (OSMcha)\n2025-05-16 02:44:33\nJuliana Medice (OSMcha)\n22904610\nname\nLaspaúles\nLaspaúles / Les Paüls\n\n\n263\n166329124 (OSMcha)\n2025-05-16 02:44:33\nJuliana Medice (OSMcha)\n22904610\nwikipedia\nes:Laspaúles\nca:Les Paüls\n\n\n\n\n\n\nhttps://osm.org/node/1446994048\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n375\n166328929 (OSMcha)\n2025-05-16 02:32:41\nJuliana Medice (OSMcha)\n22904610\nname\nMazaleón\nMazaleón / Massalió\n\n\n375\n166328929 (OSMcha)\n2025-05-16 02:32:41\nJuliana Medice (OSMcha)\n22904610\nwikipedia\nes:Mazaleón\nca:Massalió\n\n\n\n\n\n\nhttps://osm.org/node/1474268275\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n212\n166328236 (OSMcha)\n2025-05-16 01:46:57\nartroscopius (OSMcha)\n22904587\nname\nVencillón\nVencillón / Vensilló\n\n\n212\n166328236 (OSMcha)\n2025-05-16 01:46:57\nartroscopius (OSMcha)\n22904587\nwikipedia\nes:Vencillón\nca:Vensilló\n\n\n\n\n\n\nhttps://osm.org/node/255548972\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n251\n166329112 (OSMcha)\n2025-05-16 02:43:53\nJuliana Medice (OSMcha)\n22904610\nname\nMontanuy\nMontanuy / Montanui\n\n\n251\n166329112 (OSMcha)\n2025-05-16 02:43:53\nJuliana Medice (OSMcha)\n22904610\nwikipedia\nes:Montanuy\nca:Montanui\n\n\n\n\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1474268275\n+\nVensilló\nVencillón\nQ984615\nes:Vencillón\nvillage\n8\n\n\n\nhttps://osm.org/node/1474268275\n-\nVensilló\nVencillón / Vensilló\nQ984615\nca:Vensilló\nvillage\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1474268275\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n212\n166328236 (OSMcha)\n2025-05-16 01:46:57\nartroscopius (OSMcha)\n22904587\nname\nVencillón\nVencillón / Vensilló\n\n\n212\n166328236 (OSMcha)\n2025-05-16 01:46:57\nartroscopius (OSMcha)\n22904587\nwikipedia\nes:Vencillón\nca:Vensilló\n\n\n\n\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -28,7 +28,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Fri 16 May 2025 - 02:51:07",
+    "text": "Última actualització: Sat 17 May 2025 - 02:46:39",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -111,7 +111,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Fri 16 May 2025 - 02:51:46",
+    "text": "Última actualització: Sat 17 May 2025 - 02:47:25",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
