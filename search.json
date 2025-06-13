@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Wed 11 Jun 2025 - 02:56:20",
+    "text": "Última actualització: Fri 13 Jun 2025 - 02:56:23",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -16,7 +16,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/279332760\n+\nAlbocàsser\nAlbocàsser\nQ1606574\nca:Albocàsser\nvillage\n7\n\n\n\nhttps://osm.org/node/279332760\n-\nAlbocàsser\nAlbocàsser\nQ1606574\nca:Albocàsser\ntown\n7\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/279332760.\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -28,7 +28,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Wed 11 Jun 2025 - 02:55:54",
+    "text": "Última actualització: Fri 13 Jun 2025 - 02:56:05",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -64,7 +64,7 @@
     "href": "web/internacional.html#mars-i-oceans",
     "title": "Internacional",
     "section": "Mars i oceans",
-    "text": "Mars i oceans\nObjectes amb place = ocean o place = sea\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nplace\nwikidata\n\n\n\n\nhttps://osm.org/node/4787947566\n+\nMar de Bohol\nBohol Sea\n\n\nyes\nQ242326\n\n\nhttps://osm.org/node/4787947566\n-\nMar de Bohol\nBohol Sea\n\n\nsea\nQ242326\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/4787947566\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n13\n166765160 (OSMcha)\n2025-05-26 07:56:06\nhee1 (OSMcha)\n22938653\nplace\nyes\nsea",
+    "text": "Mars i oceans\nObjectes amb place = ocean o place = sea\nBD de referència\n\n\n🎉 Tot en ordre 🎉",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -111,7 +111,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Wed 11 Jun 2025 - 02:56:15",
+    "text": "Última actualització: Fri 13 Jun 2025 - 02:56:17",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
