@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Thu 03 Jul 2025 - 02:59:30",
+    "text": "Última actualització: Fri 04 Jul 2025 - 02:58:50",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -28,7 +28,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Thu 03 Jul 2025 - 02:58:51",
+    "text": "Última actualització: Fri 04 Jul 2025 - 02:58:11",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -40,7 +40,7 @@
     "href": "web/internacional.html#estats",
     "title": "Internacional",
     "section": "Estats",
-    "text": "Estats\nRelacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nofficial_name\nofficial_name:ca\nalt_name\nalt_name:ca\nold_name\nold_name:ca\nold_official_name\nold_official_name:ca\nwikidata\n\n\n\n\nhttps://osm.org/relation/192763\n+\nMauritània\nMauritanie موريتانيا\nالجمهورية الإسلامية الموريتانية\nRepública Islàmica de Mauritània\n\n\n\n\n\n\nQ1025\n\n\nhttps://osm.org/relation/192763\n-\nMauritània\nموريتانيا\nالجمهورية الإسلامية الموريتانية\nRepública Islàmica de Mauritània\n\n\n\n\n\n\nQ1025\n\n\nhttps://osm.org/relation/192800\n+\nEtiòpia\nኢትዮጵያ\nየኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ\nRepública Federal Democràtica d'Etiòpia\n\n\nAbyssinia\nAbissínia\n\n\nQ115\n\n\nhttps://osm.org/relation/192800\n-\nEtiòpia\nኢትዮጵያ إثيوبيا\nየኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ\nRepública Federal Democràtica d'Etiòpia\n\n\nAbyssinia\nAbissínia\n\n\nQ115\n\n\nhttps://osm.org/relation/2088990\n+\nKosovo\nKosova / Kosovo\n\n\n\n\n\n\n\n\n\n\n\nhttps://osm.org/relation/2088990\n-\nKosovo\nKosova / Kosovo\nRepublika e Kosovës\nRepública de Kosovo\n\n\n\n\n\n\nQ1246\n\n\nhttps://osm.org/relation/2103120\n+\nBrunei\nBrunei\nNegara Brunei, Rumah Yang Aman\n\n\n\n\n\n\n\nQ921\n\n\nhttps://osm.org/relation/2103120\n-\nBrunei\nBrunei بروني\nNegara Brunei, Rumah Yang Aman\n\n\n\n\n\n\n\nQ921\n\n\nhttps://osm.org/relation/2108121\n+\nMalàisia\nMalaysia\n\n\n\n\n\n\n\n\nQ833\n\n\nhttps://osm.org/relation/2108121\n-\nMalàisia\nMalaysia مليسيا\n\n\n\n\n\n\n\n\nQ833\n\n\nhttps://osm.org/relation/382313\n+\nJapó\n日本\n日本国\n\n\n\n\n\n\n\nQ17\n\n\nhttps://osm.org/relation/382313\n-\nJapó\n日本\n\n\n\n\n\n\n\n\nQ17\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/192763\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n234\n166694207 (OSMcha)\n2025-05-24 12:09:24\nNouakchott_Rover (OSMcha)\n22499762\nname\nMauritanie موريتانيا\nموريتانيا\n\n\n\n\n\n\nhttps://osm.org/relation/192800\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n128\n167568794 (OSMcha)\n2025-06-13 10:28:19\nDankos (OSMcha)\n10232508\nname\nኢትዮጵያ\nኢትዮጵያ إثيوبيا\n\n\n\n\n\n\nhttps://osm.org/relation/2088990\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n499\n168342497 (OSMcha)\n2025-07-01 08:48:46\nAleksandra Grahovac (OSMcha)\n4758823\nofficial_name\nNA\nRepublika e Kosovës\n\n\n499\n168342497 (OSMcha)\n2025-07-01 08:48:46\nAleksandra Grahovac (OSMcha)\n4758823\nofficial_name:ca\nNA\nRepública de Kosovo\n\n\n499\n168342497 (OSMcha)\n2025-07-01 08:48:46\nAleksandra Grahovac (OSMcha)\n4758823\nwikidata\nNA\nQ1246\n\n\n\n\n\n\nhttps://osm.org/relation/2103120\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n78\n167758797 (OSMcha)\n2025-06-17 22:40:05\nwoodpeck_repair (OSMcha)\n145231\nname\nBrunei\nBrunei بروني\n\n\n\n\n\n\nhttps://osm.org/relation/2108121\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n252\n168406648 (OSMcha)\n2025-07-02 15:36:48\npetajalanterbuka (OSMcha)\n20982069\nname\nMalaysia\nMalaysia مليسيا\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/382313.",
+    "text": "Estats\nRelacions amb admin_centre = 2 i boundary = administrative\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nofficial_name\nofficial_name:ca\nalt_name\nalt_name:ca\nold_name\nold_name:ca\nold_official_name\nold_official_name:ca\nwikidata\n\n\n\n\nhttps://osm.org/relation/192763\n+\nMauritània\nMauritanie موريتانيا\nالجمهورية الإسلامية الموريتانية\nRepública Islàmica de Mauritània\n\n\n\n\n\n\nQ1025\n\n\nhttps://osm.org/relation/192763\n-\nMauritània\nموريتانيا\nالجمهورية الإسلامية الموريتانية\nRepública Islàmica de Mauritània\n\n\n\n\n\n\nQ1025\n\n\nhttps://osm.org/relation/192800\n+\nEtiòpia\nኢትዮጵያ\nየኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ\nRepública Federal Democràtica d'Etiòpia\n\n\nAbyssinia\nAbissínia\n\n\nQ115\n\n\nhttps://osm.org/relation/192800\n-\nEtiòpia\nኢትዮጵያ إثيوبيا\nየኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ\nRepública Federal Democràtica d'Etiòpia\n\n\nAbyssinia\nAbissínia\n\n\nQ115\n\n\nhttps://osm.org/relation/2103120\n+\nBrunei\nBrunei\nNegara Brunei, Rumah Yang Aman\n\n\n\n\n\n\n\nQ921\n\n\nhttps://osm.org/relation/2103120\n-\nBrunei\nBrunei بروني\nNegara Brunei, Rumah Yang Aman\n\n\n\n\n\n\n\nQ921\n\n\nhttps://osm.org/relation/2108121\n+\nMalàisia\nMalaysia\n\n\n\n\n\n\n\n\nQ833\n\n\nhttps://osm.org/relation/2108121\n-\nMalàisia\nMalaysia مليسيا\n\n\n\n\n\n\n\n\nQ833\n\n\nhttps://osm.org/relation/382313\n+\nJapó\n日本\n日本国\n\n\n\n\n\n\n\nQ17\n\n\nhttps://osm.org/relation/382313\n-\nJapó\n日本\n\n\n\n\n\n\n\n\nQ17\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/relation/192763\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n234\n166694207 (OSMcha)\n2025-05-24 12:09:24\nNouakchott_Rover (OSMcha)\n22499762\nname\nMauritanie موريتانيا\nموريتانيا\n\n\n\n\n\n\nhttps://osm.org/relation/192800\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n128\n167568794 (OSMcha)\n2025-06-13 10:28:19\nDankos (OSMcha)\n10232508\nname\nኢትዮጵያ\nኢትዮጵያ إثيوبيا\n\n\n\n\n\n\nhttps://osm.org/relation/2103120\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n78\n167758797 (OSMcha)\n2025-06-17 22:40:05\nwoodpeck_repair (OSMcha)\n145231\nname\nBrunei\nBrunei بروني\n\n\n\n\n\n\nhttps://osm.org/relation/2108121\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n252\n168406648 (OSMcha)\n2025-07-02 15:36:48\npetajalanterbuka (OSMcha)\n20982069\nname\nMalaysia\nMalaysia مليسيا\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/relation/382313.",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -111,7 +111,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Thu 03 Jul 2025 - 02:59:26",
+    "text": "Última actualització: Fri 04 Jul 2025 - 02:58:46",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
