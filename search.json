@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Thu 17 Jul 2025 - 03:06:36",
+    "text": "Última actualització: Fri 18 Jul 2025 - 03:09:46",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -16,7 +16,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1470838266\n+\nEl Prat de Llobregat\nEl Prat de Llobregat\nQ15619\nca:El Prat de Llobregat\ntown\n8\n\n\n\nhttps://osm.org/node/1470838266\n-\nel Prat de Llobregat\nel Prat de Llobregat\nQ15619\nca:El Prat de Llobregat\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1470838266\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n35\n169021034 (OSMcha)\n2025-07-16 15:52:17\nYan Bakhmat (OSMcha)\n12495047\nname:ca\nEl Prat de Llobregat\nel Prat de Llobregat\n\n\n35\n169021034 (OSMcha)\n2025-07-16 15:52:17\nYan Bakhmat (OSMcha)\n12495047\nname\nEl Prat de Llobregat\nel Prat de Llobregat\n\n\n\n\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -28,7 +28,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Thu 17 Jul 2025 - 03:05:56",
+    "text": "Última actualització: Fri 18 Jul 2025 - 03:09:01",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -111,7 +111,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Thu 17 Jul 2025 - 03:06:31",
+    "text": "Última actualització: Fri 18 Jul 2025 - 03:09:41",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
