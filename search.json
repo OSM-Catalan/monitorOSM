@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Thu 31 Jul 2025 - 03:12:40",
+    "text": "Última actualització: Fri 01 Aug 2025 - 03:26:13",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -16,7 +16,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1446994154\n+\nTorrent de Cinca\nTorrente de Cinca\nQ983642\nes:Torrente de Cinca\nvillage\n8\n\n\n\nhttps://osm.org/node/1446994154\n-\nTorrent de Cinca\nTorrente de Cinca / Torrent de Cinca\nQ983642\nca:Torrent de Cinca\nvillage\n8\n\n\n\nhttps://osm.org/node/435353224\n+\nCaldes de Malavella\nCaldes de Malavella\nQ126453409\n\nvillage\n8\n\n\n\nhttps://osm.org/node/435353224\n-\nCaldes de Malavella\nCaldes de Malavella\n\n\nvillage\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1446994154\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n300\n169711792 (OSMcha)\n2025-07-30 10:08:53\nEstopiñon (OSMcha)\n23142551\nname\nTorrente de Cinca\nTorrente de Cinca / Torrent de Cinca\n\n\n300\n169711792 (OSMcha)\n2025-07-30 10:08:53\nEstopiñon (OSMcha)\n23142551\nwikipedia\nes:Torrente de Cinca\nca:Torrent de Cinca\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/435353224.\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1446994048\n+\nMassalió\nMazaleón\nQ1651159\nes:Mazaleón\nvillage\n8\n\n\n\nhttps://osm.org/node/1446994048\n-\nMassalió\nMazaleón / Massalió\nQ1651159\nca:Massalió\nvillage\n8\n\n\n\nhttps://osm.org/node/1446994154\n+\nTorrent de Cinca\nTorrente de Cinca\nQ983642\nes:Torrente de Cinca\nvillage\n8\n\n\n\nhttps://osm.org/node/1446994154\n-\nTorrent de Cinca\nTorrente de Cinca / Torrent de Cinca\nQ983642\nca:Torrent de Cinca\nvillage\n8\n\n\n\nhttps://osm.org/node/435353224\n+\nCaldes de Malavella\nCaldes de Malavella\nQ126453409\n\nvillage\n8\n\n\n\nhttps://osm.org/node/435353224\n-\nCaldes de Malavella\nCaldes de Malavella\n\n\nvillage\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1446994048\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n392\n169794259 (OSMcha)\n2025-07-31 23:58:08\nL Temes 2 (OSMcha)\n23147736\nname\nMazaleón\nMazaleón / Massalió\n\n\n392\n169794259 (OSMcha)\n2025-07-31 23:58:08\nL Temes 2 (OSMcha)\n23147736\nwikipedia\nes:Mazaleón\nca:Massalió\n\n\n\n\n\n\nhttps://osm.org/node/1446994154\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n303\n169793626 (OSMcha)\n2025-07-31 23:20:39\nL Temes 2 (OSMcha)\n23147736\nname\nTorrente de Cinca\nTorrente de Cinca / Torrent de Cinca\n\n\n303\n169793626 (OSMcha)\n2025-07-31 23:20:39\nL Temes 2 (OSMcha)\n23147736\nwikipedia\nes:Torrente de Cinca\nca:Torrent de Cinca\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/435353224.\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -28,7 +28,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Thu 31 Jul 2025 - 03:11:47",
+    "text": "Última actualització: Fri 01 Aug 2025 - 03:25:22",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -111,7 +111,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Thu 31 Jul 2025 - 03:12:31",
+    "text": "Última actualització: Fri 01 Aug 2025 - 03:26:07",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
