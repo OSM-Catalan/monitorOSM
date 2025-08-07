@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Wed 06 Aug 2025 - 03:16:01",
+    "text": "Última actualització: Thu 07 Aug 2025 - 03:16:28",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -16,7 +16,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/435353224\n+\nCaldes de Malavella\nCaldes de Malavella\nQ126453409\n\nvillage\n8\n\n\n\nhttps://osm.org/node/435353224\n-\nCaldes de Malavella\nCaldes de Malavella\n\n\nvillage\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\n\nConjunts de canvis\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/435353224.\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1460478422\n+\nCanovelles\nCanovelles\nQ15402\nca:Canovelles\ntown\n\n\n\n\nhttps://osm.org/node/1460478422\n-\nCanovelles\nCanovelles\nQ15402\nca:Canovelles\ntown\n8\n\n\n\nhttps://osm.org/node/435353224\n+\nCaldes de Malavella\nCaldes de Malavella\nQ126453409\n\nvillage\n8\n\n\n\nhttps://osm.org/node/435353224\n-\nCaldes de Malavella\nCaldes de Malavella\n\n\nvillage\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/908848050\n+\nSalomó\nSalomó\nQ23993221\n\nvillage\n8\n\n\n\nhttps://osm.org/node/908848050\n-\nSalomó\nSalomó\n\n\nvillage\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1460478422\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n20\n170053077 (OSMcha)\n2025-08-06 11:46:10\nHugoren Martinako (OSMcha)\n3392826\ncapital\nNA\n8\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/435353224.\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/908848050.",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -28,7 +28,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Wed 06 Aug 2025 - 03:15:10",
+    "text": "Última actualització: Thu 07 Aug 2025 - 03:15:36",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -111,7 +111,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Wed 06 Aug 2025 - 03:15:56",
+    "text": "Última actualització: Thu 07 Aug 2025 - 03:16:24",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
