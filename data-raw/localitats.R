@@ -1,24 +1,3 @@
-## Cerca localitats a OSM ----
-
-localitats_osm <- by(municipis, municipis$osm_id, function(x) {
-  d <- osmdata::opq(bbox = paste0("relation(id:", x$osm_id, ")"), out = "tags", timeout = 500) |>
-    osmdata::add_osm_feature(key = "place") |>
-    osmdata::osmdata_data_frame()
-
-  area <- x[, c("regio", "comarca", "name:ca")]
-  names(area) <- gsub("^name:ca", "municipi", names(area))
-
-  out <- cbind(area, d)
-
-  return(out)
-})
-
-localitats_osm <- do.call(dbTools::rbind_addColumns, localitats_osm)
-rownames(localitats_osm) <- NULL
-
-# save(localitats_osm, file = "data-raw/localitats_osm.RData", compress = "xz")
-load("data-raw/localitats_osm.RData", verbose = TRUE) # localitats_osm
-
 
 ## Ordena i desa localitats per tipus ----
 
@@ -42,7 +21,10 @@ loc_admin_centre_municipis <- unique(loc_admin_centre_municipis[order(
   loc_admin_centre_municipis$comarca,
   loc_admin_centre_municipis$municipi,
   loc_admin_centre_municipis$`name:ca`
-), ])
+), c("name:ca", "regio", "comarca", "municipi", "osm_type", "osm_id",
+     "name", "wikidata", "wikipedia", "place", "capital", "admin_level",
+     "ref:idescat", "ref:ine", "ref:INSEE"
+)])
 rownames(loc_admin_centre_municipis) <- NULL
 
 usethis::use_data(loc_admin_centre_municipis, overwrite = TRUE, compress = "xz")
@@ -62,33 +44,34 @@ usethis::use_data(loc_admin_centre_municipis, overwrite = TRUE, compress = "xz")
 
 loc_admin_centre_municipis_osm <- consulta_etiquetes_osm(
   x = loc_admin_centre_municipis,
-  etiquetes = c("name:ca", "osm_id", "osm_type", "name", "wikidata", "wikipedia", "place", "capital", "admin_level")
+  etiquetes = c("name:ca", "osm_id", "osm_type", "name", "wikidata", "wikipedia", "place", "capital", "admin_level",
+                "ref:idescat", "ref:ine", "ref:INSEE")
 )
 lapply(loc_admin_centre_municipis_osm, unique)
 
-loc_admin_centre_municipis_osm <- loc_admin_centre_municipis_osm[, c(
-  "name:ca", "regio", "comarca", "osm_id", "osm_type", "name", "wikipedia", "wikidata",
-  "place", "capital", "admin_level"
+loc_admin_centre_municipis <- loc_admin_centre_municipis_osm[, c(
+  "name:ca", "regio", "comarca", "municipi", "osm_id", "osm_type", "name", "wikipedia", "wikidata",
+  "place", "capital", "admin_level", "ref:idescat", "ref:ine", "ref:INSEE"
 )]
 
 # Localitats sense etiqueta capital segons l'admin_level de la relació que fan d'admin_centre
-edita <- loc_admin_centre_municipis_osm[is.na(loc_admin_centre_municipis_osm$capital), ]
+edita <- loc_admin_centre_municipis[is.na(loc_admin_centre_municipis$capital), ]
 
 
 #### Compara nova base de dades amb la del paquet instal·lat ----
 
 library(compareDF)
 
-cols <- intersect(names(loc_admin_centre_municipis_osm), names(monitorOSM::loc_admin_centre_municipis))
+cols <- intersect(names(loc_admin_centre_municipis), names(monitorOSM::loc_admin_centre_municipis))
 diff_loc_admin_centre_muni <- compare_df(
-  loc_admin_centre_municipis_osm[, cols], monitorOSM::loc_admin_centre_municipis[, cols],
+  loc_admin_centre_municipis[, cols], monitorOSM::loc_admin_centre_municipis[, cols],
   group_col = c("osm_type", "osm_id")
 )
 view_html(diff_loc_admin_centre_muni)
 
 
 
-#### Consulta admin_centre de municipis a OSM ----
+## Consulta localitats que són admin_centre de municipis a OSM ----
 
 municipis_osm <- by(municipis, municipis$comarca, function(x) {
   osmapiR::osm_get_objects(osm_type = "relation", osm_id = x$osm_id)
@@ -120,7 +103,7 @@ admin_centre_osm <- consulta_etiquetes_osm(
 )
 
 
-##### Afegeix municipi, comarca i regió ----
+### Afegeix municipi, comarca i regió ----
 
 cols_area <- c("regio", "comarca", "municipi")
 admin_centre_osm[, cols_area] <- NA_character_
@@ -141,7 +124,7 @@ library(compareDF)
 view_html(compare_df(municipis_admin_centre, loc_admin_centre_municipis, group_col = c("osm_type", "osm_id")))
 
 
-#### FET: Afegeix capital a les localitats que no en tenen ----
+### FET: Afegeix capital a les localitats que no en tenen ----
 sense_capital <- loc_admin_centre_municipis[is.na(loc_admin_centre_municipis$capital), ]
 
 rels_obj <- list()
