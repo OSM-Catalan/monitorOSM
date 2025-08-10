@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Sun 10 Aug 2025 - 03:16:39",
+    "text": "Última actualització: Sun 10 Aug 2025 - 14:32:07",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -16,7 +16,19 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\n\n\n\n\nhttps://osm.org/node/1460478422\n+\nCanovelles\nCanovelles\nQ15402\nca:Canovelles\ntown\n\n\n\n\nhttps://osm.org/node/1460478422\n-\nCanovelles\nCanovelles\nQ15402\nca:Canovelles\ntown\n8\n\n\n\nhttps://osm.org/node/435353224\n+\nCaldes de Malavella\nCaldes de Malavella\nQ126453409\n\nvillage\n8\n\n\n\nhttps://osm.org/node/435353224\n-\nCaldes de Malavella\nCaldes de Malavella\n\n\nvillage\n8\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\nhttps://osm.org/node/908848050\n+\nSalomó\nSalomó\nQ23993221\n\nvillage\n8\n\n\n\nhttps://osm.org/node/908848050\n-\nSalomó\nSalomó\n\n\nvillage\n8\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1460478422\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n20\n170053077 (OSMcha)\n2025-08-06 11:46:10\nHugoren Martinako (OSMcha)\n3392826\ncapital\nNA\n8\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/435353224.\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/908848050.",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\nref:idescat\nref:ine\nref:INSEE\n\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero",
+    "crumbs": [
+      "Bases de dades de referència",
+      "Control de canvis",
+      "Localitats"
+    ]
+  },
+  {
+    "objectID": "web/localitats.html#localitats-amb-alguna-etiqueta-ref-de-ladministració",
+    "href": "web/localitats.html#localitats-amb-alguna-etiqueta-ref-de-ladministració",
+    "title": "Localitats",
+    "section": "Localitats amb alguna etiqueta ref:* de l’administració",
+    "text": "Localitats amb alguna etiqueta ref:* de l’administració\nS’ometen objectes que ja són presents en altres taules de localitats.\nBD de referència\n\n\n🎉 Tot en ordre 🎉",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -28,7 +40,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Sun 10 Aug 2025 - 03:15:48",
+    "text": "Última actualització: Sun 10 Aug 2025 - 14:31:11",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -111,7 +123,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Sun 10 Aug 2025 - 03:16:30",
+    "text": "Última actualització: Sun 10 Aug 2025 - 14:31:57",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
