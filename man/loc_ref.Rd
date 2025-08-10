@@ -1,14 +1,14 @@
-\name{loc_admin_centre_municipis}
-\alias{loc_admin_centre_municipis}
+\name{loc_ref}
+\alias{loc_ref}
 \docType{data}
-\title{Centres administratius de les relacions dels municipis dels Països Catalans}
+\title{Localitats amb referència de l'administració als Països Catalans}
 \description{
-Dades de les localitats que fan d'\code{admin_centre} dels municipis dels Països Catalans.
+Dades de les localitats (tenen etiqueta \code{place}) que tenen alguna referència de l'administració (etiquetes \code{ref:idescat} o \code{ref:ine} als Països Catalans.
+Les localitats que compleixen aquestes condicions però que ja són a la taula \code{\link{loc_admin_centre_municipis}}, \code{\link{municipis}} o \code{\link{comarques}}, s'ometen.
 }
-\usage{loc_admin_centre_municipis}
+\usage{loc_ref}
 \format{
-  Un \code{data.frame} amb dades de les 1673 localitats establertes com a \code{admin_centre} de les relacions dels
-  municipis per les següents 10 variables.
+  Un \code{data.frame} amb 4996 objectes amb per les següents 14 variables.
   \describe{
     \item{name:ca}{Etiqueta \code{name:ca}.}
     \item{regio}{Subdivisió ["Aran", "CatNord", "Franja", "Illes", "Principat", "PV", "Sardenya"].}
@@ -24,16 +24,16 @@ Dades de les localitats que fan d'\code{admin_centre} dels municipis dels Païso
     \item{admin_level}{Etiqueta \code{admin_level}.}
     \item{ref:idescat}{Etiqueta \code{ref:idescat}.}
     \item{ref:ine}{Etiqueta \code{ref:ine}.}
-    \item{ref:INSEE}{Etiqueta \code{ref:INSEE}.}
   }
 }
+\note{Els municipis de la Catalunya Nord tenen etiquetes \code{ref:INSEE} però els casos són en altres taules.}
 \seealso{
   Altres bases de dades de referència:
-  \code{\link{loc_ref}}, \code{\link{PPCC}},
+  \code{\link{loc_admin_centre_municipis}}, \code{\link{PPCC}},
   \code{\link{municipis}}, \code{\link{comarques}}, \code{\link{territoris}}.
 }
 \concept{Bases de dades de referència}
 \examples{
-loc_admin_centre_municipis[, c("name:ca", "regio", "municipi", "name")]
+head(loc_ref)
 }
 \keyword{datasets}

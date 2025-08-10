@@ -12,7 +12,10 @@ comarques <- utils::read.table(
   encoding = "UTF-8"
 )
 
-comarques <- unique(comarques[order(comarques$regio, comarques$`name:ca`), ])
+comarques <- unique(comarques[order(
+  comarques$regio, comarques$`name:ca`
+), c("name:ca", "regio", "osm_id", "osm_type", "name", "wikipedia", "wikidata",
+     "border_type", "admin_level", "historic:admin_level", "ref:idescat")])
 rownames(comarques) <- NULL
 
 usethis::use_data(comarques, overwrite = TRUE, compress = "xz")
@@ -34,7 +37,7 @@ comarques_osm <- consulta_etiquetes_osm(
   x = comarques,
   etiquetes = c(
     "name:ca", "osm_id", "osm_type", "name", "wikipedia", "wikidata",
-    "border_type", "admin_level", "historic:admin_level",
+    "border_type", "admin_level", "historic:admin_level", "ref:idescat", "ref:ine", "ref:INSEE"
   )
 )
 
@@ -42,7 +45,7 @@ lapply(comarques_osm, unique)
 
 comarques <- comarques_osm[, c(
   "name:ca", "regio", "osm_id", "osm_type", "name", "wikipedia", "wikidata",
-  "border_type", "admin_level", "historic:admin_level"
+  "border_type", "admin_level", "historic:admin_level", "ref:idescat" #, "ref:ine", "ref:INSEE" # etiquetes buides
 )]
 
 

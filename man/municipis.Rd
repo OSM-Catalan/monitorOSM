@@ -22,7 +22,11 @@ Alguns noms de municipis tenen duplicats. Per construir noms únics (p. ex. per 
     \item{name}{Etiqueta \code{name}.}
     \item{wikipedia}{Etiqueta \code{wikipedia}.}
     \item{wikidata}{Etiqueta \code{wikidata}.}
+    \item{border_type}{Etiqueta \code{border_type}.}
     \item{admin_level}{Etiqueta \code{admin_level}.}
+    \item{ref:idescat}{Etiqueta \code{ref:idescat}.}
+    \item{ref:ine}{Etiqueta \code{ref:ine}.}
+    \item{ref:INSEE}{Etiqueta \code{ref:INSEE}.}
   }
 }
 \note{
@@ -32,7 +36,7 @@ nodes. Els pobles no s'inclouen.
 \seealso{
   Altres bases de dades de referència:
   \code{\link{PPCC}}, \code{\link{comarques}}, \code{\link{territoris}},
-  \code{\link{loc_admin_centre_municipis}}.
+  \code{\link{loc_admin_centre_municipis}}, \code{\link{loc_ref}}.
 }
 \concept{Bases de dades de referència}
 \examples{
