@@ -20,11 +20,17 @@ Dades de les localitats que fan d'\code{admin_centre} dels municipis dels Païso
     \item{wikipedia}{Etiqueta \code{wikipedia}.}
     \item{wikidata}{Etiqueta \code{wikidata}.}
     \item{place}{Etiqueta \code{place}.}
+    \item{capital}{Etiqueta \code{capital}.}
+    \item{admin_level}{Etiqueta \code{admin_level}.}
+    \item{ref:idescat}{Etiqueta \code{ref:idescat}.}
+    \item{ref:ine}{Etiqueta \code{ref:ine}.}
+    \item{ref:INSEE}{Etiqueta \code{ref:INSEE}.}
   }
 }
 \seealso{
   Altres bases de dades de referència:
-  \code{\link{PPCC}}, \code{\link{municipis}}, \code{\link{comarques}}, \code{\link{territoris}}.
+  \code{\link{loc_ref}}, \code{\link{PPCC}},
+  \code{\link{municipis}}, \code{\link{comarques}}, \code{\link{territoris}}.
 }
 \concept{Bases de dades de referència}
 \examples{

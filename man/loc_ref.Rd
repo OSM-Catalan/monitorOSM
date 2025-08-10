@@ -3,7 +3,7 @@
 \docType{data}
 \title{Localitats amb referència de l'administració als Països Catalans}
 \description{
-Dades de les localitats (tenen etiqueta \code{place}) que tenen alguna referència de l'administració (etiquetes \code{ref:idescat} o \code{ref:idescat} als Països Catalans.
+Dades de les localitats (tenen etiqueta \code{place}) que tenen alguna referència de l'administració (etiquetes \code{ref:idescat} o \code{ref:ine} als Països Catalans.
 Les localitats que compleixen aquestes condicions però que ja són a la taula \code{\link{loc_admin_centre_municipis}}, \code{\link{municipis}} o \code{\link{comarques}}, s'ometen.
 }
 \usage{loc_ref}
@@ -29,7 +29,8 @@ Les localitats que compleixen aquestes condicions però que ja són a la taula \
 \note{Els municipis de la Catalunya Nord tenen etiquetes \code{ref:INSEE} però els casos són en altres taules.}
 \seealso{
   Altres bases de dades de referència:
-  \code{\link{loc_admin_centre_municipis}}, \code{\link{PPCC}}, \code{\link{municipis}}, \code{\link{comarques}}, \code{\link{territoris}}.
+  \code{\link{loc_admin_centre_municipis}}, \code{\link{PPCC}},
+  \code{\link{municipis}}, \code{\link{comarques}}, \code{\link{territoris}}.
 }
 \concept{Bases de dades de referència}
 \examples{

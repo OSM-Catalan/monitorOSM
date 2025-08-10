@@ -16,8 +16,10 @@ Dades de les Comarques dels Països Catalans.
     \item{name}{Etiqueta \code{name}.}
     \item{wikipedia}{Etiqueta \code{wikipedia}.}
     \item{wikidata}{Etiqueta \code{wikidata}.}
+    \item{border_type}{Etiqueta \code{border_type}.}
     \item{admin_level}{Etiqueta \code{admin_level}.}
     \item{historic:admin_level}{Etiqueta \code{historic:admin_level}.}
+    \item{ref:idescat}{Etiqueta \code{ref:idescat}.}
   }
 }
 \note{
@@ -26,7 +28,7 @@ Les parròquies d'Andorra corresponen a comarques (\code{admin_level = "7"}) i s
 \seealso{
   Altres bases de dades de referència:
   \code{\link{PPCC}}, \code{\link{municipis}}, \code{\link{territoris}},
-  \code{\link{loc_admin_centre_municipis}}.
+  \code{\link{loc_admin_centre_municipis}}, \code{\link{loc_ref}}.
 }
 \concept{Bases de dades de referència}
 \examples{
