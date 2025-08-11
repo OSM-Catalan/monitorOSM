@@ -93,10 +93,12 @@ if (
     Sys.getenv("GITHUB_WORKFLOW") == "Render and Publish"
 ) {
   missatge <- missatge_resum_informes(
-    PPCC = canvis_ppcc,
-    territoris = canvis_territoris,
-    comarques = canvis_comarques, 
-    municipis = canvis_municipis,
+    list(
+      PPCC = canvis_ppcc,
+      territoris = canvis_territoris,
+      comarques = canvis_comarques, 
+      municipis = canvis_municipis
+    ),
     pagina_informe = "limits"
   )
   m <- envia_missatge_telegram(missatge = missatge)

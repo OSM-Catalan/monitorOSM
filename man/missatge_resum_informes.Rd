@@ -4,11 +4,11 @@
 \alias{missatge_resum_informes}
 \title{Crea missatge de resum d'informes}
 \usage{
-missatge_resum_informes(..., pagina_informe, etiquetes)
+missatge_resum_informes(canvis, pagina_informe, etiquetes)
 }
 \arguments{
-\item{...}{objectes produits per \code{\link[=comprova_canvis_osm]{comprova_canvis_osm()}}. Si els parametres tenen nom, s'usar\if{html}{\out{<c3>}}\if{html}{\out{<a0>}} com a nom de la
-fila de la taula resum. Sin\if{html}{\out{<c3>}}\if{html}{\out{<b3>}}, s'usar\if{html}{\out{<c3>}}\if{html}{\out{<a0>}} el nom de la variable.}
+\item{canvis}{llista amb objectes produits per \code{\link[=comprova_canvis_osm]{comprova_canvis_osm()}}. Si els elements tenen nom, s'usar\if{html}{\out{<c3>}}\if{html}{\out{<a0>}} com
+a nom de la fila de la taula resum.}
 
 \item{pagina_informe}{nom de la p\if{html}{\out{<c3>}}\if{html}{\out{<a0>}}gina de l'informe per generar l'enlla\if{html}{\out{<c3>}}\if{html}{\out{<a7>}} a la web.}
 

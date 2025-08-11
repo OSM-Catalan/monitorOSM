@@ -1,8 +1,8 @@
 
 #' Crea missatge de resum d'informes
 #'
-#' @param ... objectes produits per [comprova_canvis_osm()]. Si els parametres tenen nom, s'usar<c3><a0> com a nom de la
-#'   fila de la taula resum. Sin<c3><b3>, s'usar<c3><a0> el nom de la variable.
+#' @param canvis llista amb objectes produits per [comprova_canvis_osm()]. Si els elements tenen nom, s'usar<c3><a0> com
+#'   a nom de la fila de la taula resum.
 #' @param pagina_informe nom de la p<c3><a0>gina de l'informe per generar l'enlla<c3><a7> a la web.
 #' @param etiquetes Si no <c3><a9>s `NULL`, quan es fa el recompte de canvis, nom<c3><a9>s t<c3><a9> en compte les
 #'   etiquetes que quadren amb aquesta expressi<c3><b3> regular.
@@ -11,25 +11,20 @@
 #' @export
 #'
 #' @examples
-missatge_resum_informes <- function(..., pagina_informe, etiquetes){
-  canvis_taules <- list(...)
-  if (is.null(names(canvis_taules))) {
-    names(canvis_taules) <- sapply(substitute(...()), deparse)
-  }
-
+missatge_resum_informes <- function(canvis, pagina_informe, etiquetes){
   n_canvis <- if (missing(etiquetes)) {
-    sapply(canvis_taules, function(x) {
+    sapply(canvis, function(x) {
       nrow(x$change_count)
     })
   } else {
-    sapply(canvis_taules, function(x) {
+    sapply(canvis, function(x) {
       df <- x$comparison_table_diff_numbers
       sum(apply(df[, grep(etiquetes, names(df))], 1, function(y) any(y != 0)))
     })
   }
 
-  names(n_canvis) <- names(canvis_taules)
-  n_obj <- setNames(vapply(canvis_taules, function(x) x$change_summary[["old_obs"]], FUN.VALUE = 1), nm = names(n_canvis))
+  names(n_canvis) <- names(canvis)
+  n_obj <- setNames(vapply(canvis, function(x) x$change_summary[["old_obs"]], FUN.VALUE = 1), nm = names(n_canvis))
   df <- data.frame(dif = n_canvis, obj = n_obj)
   # n_obj <- n_obj[n_canvis > 0]
   # n_canvis <- n_canvis[n_canvis > 0]

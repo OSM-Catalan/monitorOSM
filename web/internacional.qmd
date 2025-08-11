@@ -96,9 +96,11 @@ if (
     Sys.getenv("GITHUB_WORKFLOW") == "Render and Publish"
 ) {
   missatge <- missatge_resum_informes(
-    estats = canvis_estats,
-    capitals = canvis_capitals,
-    mars = canvis_mars,
+    list(
+      estats = canvis_estats,
+      capitals = canvis_capitals,
+      mars = canvis_mars
+    ),
     pagina_informe = "internacional",
     etiquetes = "name:ca"
   )
