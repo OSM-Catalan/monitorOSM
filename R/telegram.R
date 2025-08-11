@@ -1,13 +1,69 @@
-#' Envia un missatge a al grup de Telegram de la `Comunitat en catal\u00E0 d'OpenStreetMap`
+
+#' Crea missatge de resum d'informes
+#'
+#' @param canvis llista amb objectes produits per [comprova_canvis_osm()]. Si els elements tenen nom, s'usar<c3><a0> com
+#'   a nom de la fila de la taula resum.
+#' @param pagina_informe nom de la p<c3><a0>gina de l'informe per generar l'enlla<c3><a7> a la web.
+#' @param etiquetes Si no <c3><a9>s `NULL`, quan es fa el recompte de canvis, nom<c3><a9>s t<c3><a9> en compte les
+#'   etiquetes que quadren amb aquesta expressi<c3><b3> regular.
+#'
+#' @returns Text en format Markdown amb un missatge resum dels informes.
+#' @export
+#'
+#' @examples
+missatge_resum_informes <- function(canvis, pagina_informe, etiquetes){
+  n_canvis <- if (missing(etiquetes)) {
+    sapply(canvis, function(x) {
+      nrow(x$change_count)
+    })
+  } else {
+    sapply(canvis, function(x) {
+      df <- x$comparison_table_diff_numbers
+      sum(apply(df[, grep(etiquetes, names(df))], 1, function(y) any(y != 0)))
+    })
+  }
+
+  names(n_canvis) <- names(canvis)
+  n_obj <- setNames(vapply(canvis, function(x) x$change_summary[["old_obs"]], FUN.VALUE = 1), nm = names(n_canvis))
+  df <- data.frame(dif = n_canvis, obj = n_obj)
+  # n_obj <- n_obj[n_canvis > 0]
+  # n_canvis <- n_canvis[n_canvis > 0]
+  total_canvis <- sum(n_canvis)
+
+  missatge <- paste0(
+    "<e2><9a><a0><ef><b8><8f> Hi ha ", total_canvis,
+    if (total_canvis > 1) " objectes" else " objecte amb canvis"
+  )
+  if (missing(pagina_informe)) {
+    missatge <- paste0(missatge, ".")
+  } else {
+    missatge <- paste0(
+      missatge, " a [", pagina_informe, "](https://osm-catalan.github.io/monitorOSM/web/", pagina_informe, ".html)."
+    )
+  }
+  missatge <- paste0(missatge, "`\n", paste(capture.output(print(knitr::kable(df))), collapse = "\n"), "\n`")
+
+  return(missatge)
+}
+
+
+#' Envia un missatge a un xat de Telegram
+#'
+#' Aquest repositori est<c3><a0> configurat per enviar missatges al grup de Telegram de la
+#' `Comunitat en catal\u00E0 d'OpenStreetMap` amb el bot `monitorOSM_bot`.
 #'
 #' @param missatge Text del missatge.
 #' @param parse_mode El missatge s'interpreta com a `Markdown` o `HTML`.
+#'
+#' On i amb quin bot s'envia el missatge es configura amb les variables d'entorn `R_TELEGRAM_BOT_MONITOROSM_BOT` i
+#' `TME_OSMCAT_CHATID`. Per usar la funci<c3><b3> a github, cal configurar les accions perqu<c3><a8> carreguin aquestes variables
+#' d'entorn a partir dels secrets del repositori de github.
 #'
 #' @return
 #' @export
 #'
 #' @examples
-missatge_telegram <- function(missatge = "Hi ha canvis a [monitorOSM](https://osm-catalan.github.io/monitorOSM).",
+envia_missatge_telegram <- function(missatge = "Hi ha canvis a [monitorOSM](https://osm-catalan.github.io/monitorOSM).",
                               parse_mode = "Markdown") {
   if (!requireNamespace("telegram.bot", quietly = TRUE)) {
     stop(
