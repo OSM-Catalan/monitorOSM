@@ -15,10 +15,10 @@ envia_missatge_telegram(
 \item{parse_mode}{El missatge s'interpreta com a \code{Markdown} o \code{HTML}.
 
 On i amb quin bot s'envia el missatge es configura amb les variables d'entorn \code{R_TELEGRAM_BOT_MONITOROSM_BOT} i
-\code{TME_OSMCAT_CHATID}. Per usar la funció a github, cal configurar les accions perquè carreguin aquestes variables
+\code{TME_OSMCAT_CHATID}. Per usar la funci\if{html}{\out{<c3>}}\if{html}{\out{<b3>}} a github, cal configurar les accions perqu\if{html}{\out{<c3>}}\if{html}{\out{<a8>}} carreguin aquestes variables
 d'entorn a partir dels secrets del repositori de github.}
 }
 \description{
-Aquest repositori està configurat per enviar missatges al grup de Telegram de la
+Aquest repositori est\if{html}{\out{<c3>}}\if{html}{\out{<a0>}} configurat per enviar missatges al grup de Telegram de la
 \verb{Comunitat en catal\\u00E0 d'OpenStreetMap} amb el bot \code{monitorOSM_bot}.
 }

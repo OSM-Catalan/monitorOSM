@@ -1,11 +1,11 @@
 
 #' Crea missatge de resum d'informes
 #'
-#' @param ... objectes produits per [comprova_canvis_osm()]. Si els parametres tenen nom, s'usarà com a nom de la fila
-#'   de la taula resum. Sinó, s'usarà el nom de la variable.
-#' @param pagina_informe nom de la pàgina de l'informe per generar l'enllaç a la web.
-#' @param etiquetes Si no és `NULL`, quan es fa el recomte de canvis, només té en compte les etiquetes que quadren amb
-#'   aquesta exrpessió regular.
+#' @param ... objectes produits per [comprova_canvis_osm()]. Si els parametres tenen nom, s'usar<c3><a0> com a nom de la
+#'   fila de la taula resum. Sin<c3><b3>, s'usar<c3><a0> el nom de la variable.
+#' @param pagina_informe nom de la p<c3><a0>gina de l'informe per generar l'enlla<c3><a7> a la web.
+#' @param etiquetes Si no <c3><a9>s `NULL`, quan es fa el recompte de canvis, nom<c3><a9>s t<c3><a9> en compte les
+#'   etiquetes que quadren amb aquesta expressi<c3><b3> regular.
 #'
 #' @returns Text en format Markdown amb un missatge resum dels informes.
 #' @export
@@ -35,7 +35,10 @@ missatge_resum_informes <- function(..., pagina_informe, etiquetes){
   # n_canvis <- n_canvis[n_canvis > 0]
   total_canvis <- sum(n_canvis)
 
-  missatge <- paste0("⚠️ Hi ha ", total_canvis, if (total_canvis > 1) " objectes" else " objecte amb canvis")
+  missatge <- paste0(
+    "<e2><9a><a0><ef><b8><8f> Hi ha ", total_canvis,
+    if (total_canvis > 1) " objectes" else " objecte amb canvis"
+  )
   if (missing(pagina_informe)) {
     missatge <- paste0(missatge, ".")
   } else {
@@ -51,14 +54,14 @@ missatge_resum_informes <- function(..., pagina_informe, etiquetes){
 
 #' Envia un missatge a un xat de Telegram
 #'
-#' Aquest repositori està configurat per enviar missatges al grup de Telegram de la
+#' Aquest repositori est<c3><a0> configurat per enviar missatges al grup de Telegram de la
 #' `Comunitat en catal\u00E0 d'OpenStreetMap` amb el bot `monitorOSM_bot`.
 #'
 #' @param missatge Text del missatge.
 #' @param parse_mode El missatge s'interpreta com a `Markdown` o `HTML`.
 #'
 #' On i amb quin bot s'envia el missatge es configura amb les variables d'entorn `R_TELEGRAM_BOT_MONITOROSM_BOT` i
-#' `TME_OSMCAT_CHATID`. Per usar la funció a github, cal configurar les accions perquè carreguin aquestes variables
+#' `TME_OSMCAT_CHATID`. Per usar la funci<c3><b3> a github, cal configurar les accions perqu<c3><a8> carreguin aquestes variables
 #' d'entorn a partir dels secrets del repositori de github.
 #'
 #' @return

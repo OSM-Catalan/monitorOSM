@@ -7,13 +7,13 @@
 missatge_resum_informes(..., pagina_informe, etiquetes)
 }
 \arguments{
-\item{...}{objectes produits per \code{\link[=comprova_canvis_osm]{comprova_canvis_osm()}}. Si els parametres tenen nom, s'usarà com a nom de la fila
-de la taula resum. Sinó, s'usarà el nom de la variable.}
+\item{...}{objectes produits per \code{\link[=comprova_canvis_osm]{comprova_canvis_osm()}}. Si els parametres tenen nom, s'usar\if{html}{\out{<c3>}}\if{html}{\out{<a0>}} com a nom de la
+fila de la taula resum. Sin\if{html}{\out{<c3>}}\if{html}{\out{<b3>}}, s'usar\if{html}{\out{<c3>}}\if{html}{\out{<a0>}} el nom de la variable.}
 
-\item{pagina_informe}{nom de la pàgina de l'informe per generar l'enllaç a la web.}
+\item{pagina_informe}{nom de la p\if{html}{\out{<c3>}}\if{html}{\out{<a0>}}gina de l'informe per generar l'enlla\if{html}{\out{<c3>}}\if{html}{\out{<a7>}} a la web.}
 
-\item{etiquetes}{Si no és \code{NULL}, quan es fa el recomte de canvis, només té en compte les etiquetes que quadren amb
-aquesta exrpessió regular.}
+\item{etiquetes}{Si no \if{html}{\out{<c3>}}\if{html}{\out{<a9>}}s \code{NULL}, quan es fa el recompte de canvis, nom\if{html}{\out{<c3>}}\if{html}{\out{<a9>}}s t\if{html}{\out{<c3>}}\if{html}{\out{<a9>}} en compte les
+etiquetes que quadren amb aquesta expressi\if{html}{\out{<c3>}}\if{html}{\out{<b3>}} regular.}
 }
 \value{
 Text en format Markdown amb un missatge resum dels informes.
