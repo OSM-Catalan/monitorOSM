@@ -95,18 +95,13 @@ if (
     # format(Sys.Date(), format = "%u") %in% "5" &&  # Només els divendres
     Sys.getenv("GITHUB_WORKFLOW") == "Render and Publish"
 ) {
-  names(n_canvis) <- c("estats", "capitals", "mars")
-  n_obj <- setNames(sapply(list(estats, capitals, mars), nrow), nm = names(n_canvis))
-  df <- data.frame(dif = n_canvis, obj = n_obj)
-  # n_obj <- n_obj[n_canvis > 0]
-  # n_canvis <- n_canvis[n_canvis > 0]
-  total_canvis <- sum(n_canvis)
-
-  missatge <- paste0(
-    "⚠️ Hi ha ", total_canvis, if (total_canvis > 1) " objectes" else " objecte",
-    " amb canvis a [Internacional](https://osm-catalan.github.io/monitorOSM/web/internacional.html).",
-    "`\n", paste(capture.output(print(knitr::kable(df))), collapse = "\n"), "\n`"
+  missatge <- missatge_resum_informes(
+    estats = canvis_estats,
+    capitals = canvis_capitals,
+    mars = canvis_mars,
+    pagina_informe = "internacional",
+    etiquetes = "name:ca"
   )
-  m <- missatge_telegram(missatge = missatge)
+  m <- envia_missatge_telegram(missatge = missatge)
 }
 ```
