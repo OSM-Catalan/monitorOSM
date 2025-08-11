@@ -68,7 +68,7 @@ if (
     # format(Sys.Date(), format = "%u") %in% "5" &&  # Només els divendres
     Sys.getenv("GITHUB_WORKFLOW") == "Render and Publish"
 ) {
-  names(n_canvis) <- c("admin_centre")
+  names(n_canvis) <- c("admin_centre", "loc_ref")
   n_obj <- setNames(sapply(list(loc_admin_centre_municipis, loc_ref), nrow), nm = names(n_canvis))
   df <- data.frame(dif = n_canvis, obj = n_obj)
   # n_obj <- n_obj[n_canvis > 0]
