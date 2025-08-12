@@ -41,7 +41,7 @@ missatge_resum_informes <- function(canvis, pagina_informe, etiquetes){
       missatge, " a [", pagina_informe, "](https://osm-catalan.github.io/monitorOSM/web/", pagina_informe, ".html)."
     )
   }
-  missatge <- paste0(missatge, "`\n", paste(capture.output(print(knitr::kable(df))), collapse = "\n"), "\n`")
+  missatge <- paste0(missatge, "`\n", paste(utils::capture.output(print(knitr::kable(df))), collapse = "\n"), "\n`")
 
   return(missatge)
 }
@@ -67,7 +67,7 @@ envia_missatge_telegram <- function(missatge = "Hi ha canvis a [monitorOSM](http
                               parse_mode = "Markdown") {
   if (!requireNamespace("telegram.bot", quietly = TRUE)) {
     stop(
-      "El paquet `telegram.bot` no està instal·lat. Instal·leu-lo amb:\n",
+      "El paquet `telegram.bot` no est\u00E0 instal\u00B7lat. Instal\u00B7leu-lo amb:\n",
       "\tinstall.packages(\"telegram.bot\")"
     )
   }
