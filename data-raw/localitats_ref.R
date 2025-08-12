@@ -2,7 +2,7 @@
 ## Ordena i desa localitats per tipus ----
 
 
-### admin_centre de municipis ----
+### localitats amb etiquetes ref d'administracions (ref:idescat, ref:INSEE, ref:ine) ----
 
 loc_ref <- utils::read.table(
   file = "data-raw/loc_ref.tsv",
