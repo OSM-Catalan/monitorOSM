@@ -18,7 +18,7 @@ canvis_html <- function(x) {
     )
     return(out)
   } else {
-    out <- "\U1F389 Tot en ordre \U1F389"
+    out <- "\u1F389 Tot en ordre \u1F389"
     message(out)
     invisible(out)
   }
@@ -35,7 +35,7 @@ canvis_html <- function(x) {
 versio_canvi_kable <- function(x, titol) {
   titol_valid <- !missing(titol) || !is.null(titol) || !is.na(titol)
   if (nrow(x) == 0) {
-    out <- "No s'ha trobat cap versi\U00F3 en l'estat de refer\U00E8ncia"
+    out <- "No s'ha trobat cap versi\u00F3 en l'estat de refer\u00E8ncia"
     if (titol_valid) {
       out <- paste0(out, " per <a href=\"", titol, "\">", titol, "</a>.")
     } else {
@@ -52,7 +52,6 @@ versio_canvi_kable <- function(x, titol) {
     x$user <- paste0(
       "<a href=\"https://osm.org/user/", x$user, "\">", x$user, "</a>",
       " (<a href=\"", utils::URLencode(url_usr_osmcha), "\">OSMcha</a>)"
-      # https://osmcha.org/?filters={"users":[{"label":"jmaspons","value":"jmaspons"}]}
     )
     out <- knitr::kable(
       x,

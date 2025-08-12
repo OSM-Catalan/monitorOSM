@@ -7,13 +7,13 @@
 missatge_resum_informes(canvis, pagina_informe, etiquetes)
 }
 \arguments{
-\item{canvis}{llista amb objectes produits per \code{\link[=comprova_canvis_osm]{comprova_canvis_osm()}}. Si els elements tenen nom, s'usar\if{html}{\out{<c3>}}\if{html}{\out{<a0>}} com
+\item{canvis}{llista amb objectes produits per \code{\link[=comprova_canvis_osm]{comprova_canvis_osm()}}. Si els elements tenen nom, s'usarà com
 a nom de la fila de la taula resum.}
 
-\item{pagina_informe}{nom de la p\if{html}{\out{<c3>}}\if{html}{\out{<a0>}}gina de l'informe per generar l'enlla\if{html}{\out{<c3>}}\if{html}{\out{<a7>}} a la web.}
+\item{pagina_informe}{nom de la pàgina de l'informe per generar l'enllaç a la web.}
 
-\item{etiquetes}{Si no \if{html}{\out{<c3>}}\if{html}{\out{<a9>}}s \code{NULL}, quan es fa el recompte de canvis, nom\if{html}{\out{<c3>}}\if{html}{\out{<a9>}}s t\if{html}{\out{<c3>}}\if{html}{\out{<a9>}} en compte les
-etiquetes que quadren amb aquesta expressi\if{html}{\out{<c3>}}\if{html}{\out{<b3>}} regular.}
+\item{etiquetes}{Si no és \code{NULL}, quan es fa el recompte de canvis, només es tenen en compte les etiquetes que
+quadren amb aquesta exrpessió regular.}
 }
 \value{
 Text en format Markdown amb un missatge resum dels informes.
