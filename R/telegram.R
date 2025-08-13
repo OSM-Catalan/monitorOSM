@@ -33,7 +33,7 @@ missatge_resum_informes <- function(canvis, pagina_informe, etiquetes){
   # n_canvis <- n_canvis[n_canvis > 0]
   total_canvis <- sum(n_canvis)
 
-  missatge <- paste0("\u26A0 Hi ha ", total_canvis, if (total_canvis > 1) " objectes" else " objecte amb canvis")
+  missatge <- paste0("\u26A0 Hi ha ", total_canvis, if (total_canvis > 1) " objectes" else " objecte", " amb canvis")
   if (missing(pagina_informe)) {
     missatge <- paste0(missatge, ".")
   } else {
