@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Wed 13 Aug 2025 - 02:59:09",
+    "text": "Última actualització: Wed 13 Aug 2025 - 10:48:13",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -16,7 +16,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\nref:idescat\nref:ine\nref:INSEE\n\n\n\n\nhttps://osm.org/node/1446993949\n+\nQueretes\nCretas / Queretes\nQ24015134\nca:Queretes\nvillage\n8\n\n\n44086000101\n\n\n\nhttps://osm.org/node/1446993949\n-\nQueretes\nCretas / Queretes\nQ1652414\nca:Queretes\nvillage\n8\n\n\n44086000101\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1446993949\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n273\n170324159 (OSMcha)\n2025-08-12 06:41:21\nRobot8A (OSMcha)\n393359\nwikidata\nQ24015134\nQ1652414\n\n\n\n\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\nref:idescat\nref:ine\nref:INSEE\n\n\n\n\nhttps://osm.org/node/1446993949\n+\nQueretes\nCretas / Queretes\nQ24015134\nca:Queretes\nvillage\n8\n\n\n44086000101\n\n\n\nhttps://osm.org/node/1446993949\n-\nQueretes\nCretas / Queretes\nQ1652414\nca:Queretes\nvillage\n8\n\n\n44086000101\n\n\n\nhttps://osm.org/node/3717853177\n+\n\nLa Ginebrosa\nQ1651455\nes:La Ginebrosa\nvillage\n8\n\n\n44118000101\n\n\n\nhttps://osm.org/node/3717853177\n-\nla Ginebrosa\nLa Ginebrosa / la Ginebrosa\nQ24015109\n\nvillage\n8\n\n\n44118000101\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\nhttps://osm.org/node/739074054\n+\nNonasp\nNonaspe\nQ1628416\nca:Nonasp\nvillage\n8\n\n\n50189000101\n\n\n\nhttps://osm.org/node/739074054\n-\nNonasp\nNonaspe / Nonasp\nQ1628416\nca:Nonasp\nvillage\n8\n\n\n50189000101\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1446993949\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n273\n170324159 (OSMcha)\n2025-08-12 06:41:21\nRobot8A (OSMcha)\n393359\nwikidata\nQ24015134\nQ1652414\n\n\n\n\n\n\nhttps://osm.org/node/3717853177\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n114\n170381035 (OSMcha)\n2025-08-13 10:12:27\nInvasio Negratas (OSMcha)\n23186412\nname:ca\nNA\nla Ginebrosa\n\n\n114\n170381035 (OSMcha)\n2025-08-13 10:12:27\nInvasio Negratas (OSMcha)\n23186412\nname\nLa Ginebrosa\nLa Ginebrosa / la Ginebrosa\n\n\n114\n170381035 (OSMcha)\n2025-08-13 10:12:27\nInvasio Negratas (OSMcha)\n23186412\nwikidata\nQ1651455\nQ24015109\n\n\n\n\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero\n\n\n\n\n\n\nhttps://osm.org/node/739074054\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n314\n170376443 (OSMcha)\n2025-08-13 08:37:03\nInvasión Africana (OSMcha)\n23186158\nname\nNonaspe\nNonaspe / Nonasp",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -40,7 +40,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Wed 13 Aug 2025 - 02:58:10",
+    "text": "Última actualització: Wed 13 Aug 2025 - 10:47:19",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -123,7 +123,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Wed 13 Aug 2025 - 02:59:04",
+    "text": "Última actualització: Wed 13 Aug 2025 - 10:48:09",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
