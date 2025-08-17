@@ -19,7 +19,7 @@
 #' canvis_html(canvis)
 #' }
 comprova_canvis_osm <- function(x, centre = FALSE) {
-  x_osm <- monitorOSM::consulta_etiquetes_osm(x, etiquetes = names(x), centre = centre)
+  x_osm <- consulta_etiquetes_osm(x, etiquetes = names(x), centre = centre)
 
   x_osm$osm_url <- paste0("https://osm.org/", x_osm$osm_type, "/", x_osm$osm_id)
   x$osm_url <- paste0("https://osm.org/", x$osm_type, "/", x$osm_id)
