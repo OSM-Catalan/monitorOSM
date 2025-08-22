@@ -4,7 +4,7 @@
     "href": "web/localitats.html",
     "title": "Localitats",
     "section": "",
-    "text": "Última actualització: Thu 21 Aug 2025 - 02:48:44",
+    "text": "Última actualització: Fri 22 Aug 2025 - 02:48:39",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -16,7 +16,7 @@
     "href": "web/localitats.html#localitats-que-fan-dadmin_centre-de-relacions-de-municipis",
     "title": "Localitats",
     "section": "Localitats que fan d’admin_centre de relacions de municipis",
-    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\nref:idescat\nref:ine\nref:INSEE\n\n\n\n\nhttps://osm.org/node/1446993949\n+\nQueretes\nCretas / Queretes\nQ24015134\nca:Queretes\nvillage\n8\n\n\n44086000101\n\n\n\nhttps://osm.org/node/1446993949\n-\nQueretes\nCretas / Queretes\nQ1652414\nca:Queretes\nvillage\n8\n\n\n44086000101\n\n\n\nhttps://osm.org/node/249330712\n+\nVall-de-roures\nValderrobres\nQ1641285\nes:Valderrobres\ntown\n7\n\n\n44246000101\n\n\n\nhttps://osm.org/node/249330712\n-\nVall-de-roures\nValderrobres / Vall de Roures\nQ1641285\nca:Vall-de-roures\ntown\n7\n\n\n44246000101\n\n\n\nhttps://osm.org/node/3717853177\n+\nla Ginebrosa\nLa Ginebrosa / la Ginebrosa\nQ24015109\nes:La Ginebrosa\nvillage\n8\n\n\n44118000101\n\n\n\nhttps://osm.org/node/3717853177\n-\nla Ginebrosa\nLa Ginebrosa / la Ginebrosa\nQ24015109\n\nvillage\n8\n\n\n44118000101\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1446993949\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n273\n170324159 (OSMcha)\n2025-08-12 06:41:21\nRobot8A (OSMcha)\n393359\nwikidata\nQ24015134\nQ1652414\n\n\n\n\n\n\nhttps://osm.org/node/249330712\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n268\n170737172 (OSMcha)\n2025-08-20 16:42:24\nMachaleon (OSMcha)\n23209244\nname\nValderrobres\nValderrobres / Vall de Roures\n\n\n268\n170737172 (OSMcha)\n2025-08-20 16:42:24\nMachaleon (OSMcha)\n23209244\nwikipedia\nes:Valderrobres\nca:Vall-de-roures\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/3717853177.\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero",
+    "text": "Localitats que fan d’admin_centre de relacions de municipis\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nwikidata\nwikipedia\nplace\ncapital\nadmin_level\nref:idescat\nref:ine\nref:INSEE\n\n\n\n\nhttps://osm.org/node/1446993949\n+\nQueretes\nCretas / Queretes\nQ24015134\nca:Queretes\nvillage\n8\n\n\n44086000101\n\n\n\nhttps://osm.org/node/1446993949\n-\nQueretes\nCretas / Queretes\nQ1652414\nca:Queretes\nvillage\n8\n\n\n44086000101\n\n\n\nhttps://osm.org/node/3717853177\n+\nla Ginebrosa\nLa Ginebrosa / la Ginebrosa\nQ24015109\nes:La Ginebrosa\nvillage\n8\n\n\n44118000101\n\n\n\nhttps://osm.org/node/3717853177\n-\nla Ginebrosa\nLa Ginebrosa / la Ginebrosa\nQ24015109\n\nvillage\n8\n\n\n44118000101\n\n\n\nhttps://osm.org/node/72994199\n+\nl'Alguer\nS'Aliguera/l'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\nhttps://osm.org/node/72994199\n-\nl'Alguer\nl'Alguer/Alghero\nQ166282\nca:L'Alguer\ntown\n8\n\n\n\n\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/1446993949\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n273\n170324159 (OSMcha)\n2025-08-12 06:41:21\nRobot8A (OSMcha)\n393359\nwikidata\nQ24015134\nQ1652414\n\n\n\nNo s’ha trobat cap versió en l’estat de referència per https://osm.org/node/3717853177.\n\n\nhttps://osm.org/node/72994199\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n224\n157677777 (OSMcha)\n2024-10-09 15:29:21\ncontempttipoffcrease (OSMcha)\n22033076\nname\nS'aliguera/L'Alguer/Alghero\nl'Alguer/Alghero",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -40,7 +40,7 @@
     "href": "web/internacional.html",
     "title": "Internacional",
     "section": "",
-    "text": "Última actualització: Thu 21 Aug 2025 - 02:46:33",
+    "text": "Última actualització: Fri 22 Aug 2025 - 02:47:50",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -76,7 +76,7 @@
     "href": "web/internacional.html#mars-i-oceans",
     "title": "Internacional",
     "section": "Mars i oceans",
-    "text": "Mars i oceans\nObjectes amb place = ocean o place = sea\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nplace\nwikidata\n\n\n\n\nhttps://osm.org/node/305639182\n+\nMar Groga\n黄海 / 황해 / 조선서해\n\n\nsea\nQ37960\n\n\nhttps://osm.org/node/305639182\n-\nMar Groga\nYellow Sea\n\n\nsea\nQ37960\n\n\nhttps://osm.org/node/305639414\n+\nMar de la Xina Oriental\n东海 / 東海 / 東シナ海 / 동중국해\n\n\nsea\nQ45341\n\n\nhttps://osm.org/node/305639414\n-\nMar de la Xina Oriental\n东海/東海/東シナ海/동중국해/East China Sea\n\n\nsea\nQ45341\n\n\nhttps://osm.org/relation/12666169\n+\nMar del Japó\n日本海 / Японское море / 동해 / 조선동해\n\n\nsea\nQ27092\n\n\nhttps://osm.org/relation/12666169\n-\nMar del Japó\n日本海 / Японское море / 동해\n\n\nsea\nQ27092\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/305639182\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n52\n167614885 (OSMcha)\n2025-06-14 14:14:19\nNM$L (OSMcha)\n10231391\nname\n黄海 / 황해 / 조선서해\nYellow Sea\n\n\n\n\n\n\nhttps://osm.org/node/305639414\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n41\n167614885 (OSMcha)\n2025-06-14 14:14:19\nNM$L (OSMcha)\n10231391\nname\n东海/東海/東シナ海/동중국해\n东海/東海/東シナ海/동중국해/East China Sea\n\n\n\n\n\n\nhttps://osm.org/relation/12666169\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n244\n167761114 (OSMcha)\n2025-06-18 01:38:29\nRukkhadevata (OSMcha)\n13203370\nname\n日本海 / Японское море / 동해 / 조선동해\n日本海 / Японское море / 동해",
+    "text": "Mars i oceans\nObjectes amb place = ocean o place = sea\nBD de referència\n\n\n\n\n\nosm_url\ncanvi\nname:ca\nname\nalt_name\nalt_name:ca\nplace\nwikidata\n\n\n\n\nhttps://osm.org/node/305639182\n+\nMar Groga\n黄海 / 황해 / 조선서해\n\n\nsea\nQ37960\n\n\nhttps://osm.org/node/305639182\n-\nMar Groga\nYellow Sea\n\n\nsea\nQ37960\n\n\nhttps://osm.org/node/305639190\n+\nGolf de Mèxic\nGolfo de México\n\n\nsea\nQ131839048\n\n\nhttps://osm.org/node/305639190\n-\nGolf de Mèxic\nGolfo de México\n\n\nsea\nQ12630\n\n\nhttps://osm.org/node/305639414\n+\nMar de la Xina Oriental\n东海 / 東海 / 東シナ海 / 동중국해\n\n\nsea\nQ45341\n\n\nhttps://osm.org/node/305639414\n-\nMar de la Xina Oriental\n东海/東海/東シナ海/동중국해/East China Sea\n\n\nsea\nQ45341\n\n\nhttps://osm.org/relation/12666169\n+\nMar del Japó\n日本海 / Японское море / 동해 / 조선동해\n\n\nsea\nQ27092\n\n\nhttps://osm.org/relation/12666169\n-\nMar del Japó\n日本海 / Японское море / 동해\n\n\nsea\nQ27092\n\n\n\n\n\n\nConjunts de canvis\n\nhttps://osm.org/node/305639182\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n52\n167614885 (OSMcha)\n2025-06-14 14:14:19\nNM$L (OSMcha)\n10231391\nname\n黄海 / 황해 / 조선서해\nYellow Sea\n\n\n\n\n\n\nhttps://osm.org/node/305639190\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n128\n170778242 (OSMcha)\n2025-08-21 12:51:19\nDima Pro (OSMcha)\n23212101\nwikidata\nQ131839048\nQ12630\n\n\n\n\n\n\nhttps://osm.org/node/305639414\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n41\n167614885 (OSMcha)\n2025-06-14 14:14:19\nNM$L (OSMcha)\n10231391\nname\n东海/東海/東シナ海/동중국해\n东海/東海/東シナ海/동중국해/East China Sea\n\n\n\n\n\n\nhttps://osm.org/relation/12666169\n\n\nversion\nchangeset\ntimestamp\nuser\nuid\nkey\nvalue\nref_value\n\n\n\n\n244\n167761114 (OSMcha)\n2025-06-18 01:38:29\nRukkhadevata (OSMcha)\n13203370\nname\n日本海 / Японское море / 동해 / 조선동해\n日本海 / Японское море / 동해",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
@@ -123,7 +123,7 @@
     "href": "web/limits.html",
     "title": "Municipis, comarques i territoris",
     "section": "",
-    "text": "Última actualització: Thu 21 Aug 2025 - 02:48:40",
+    "text": "Última actualització: Fri 22 Aug 2025 - 02:48:28",
     "crumbs": [
       "Bases de dades de referència",
       "Control de canvis",
