@@ -18,7 +18,7 @@ canvis_html <- function(x) {
     )
     return(out)
   } else {
-    out <- "\u1F389 Tot en ordre \u1F389"
+    out <- "\U1F389 Tot en ordre \U1F389"
     message(out)
     invisible(out)
   }
