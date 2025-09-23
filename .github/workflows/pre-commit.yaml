@@ -1,9 +1,11 @@
 name: pre-commit
 on:
-  push:
-    branches: [main, master]
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
+  # Execució manual
+  workflow_dispatch:
+  # push:
+  #   branches: [main, master]
+  # pull_request:
+  #   types: [opened, synchronize, reopened, ready_for_review]
 
 jobs:
   pre-commit:

@@ -35,7 +35,7 @@ jobs:
         shell: bash
         env:
           R_TELEGRAM_BOT_MONITOROSM_BOT: ${{ secrets.R_TELEGRAM_BOT_MONITOROSM_BOT }}
-          TME_OSMCAT_CHATID: ${{ secrets.TME_OSMCAT_CHATID}}
+          TME_OSMCAT_CHATID: ${{ secrets.TME_OSMCAT_CHATID }}
 
 
       - name: Publish to GitHub Pages (and render)
