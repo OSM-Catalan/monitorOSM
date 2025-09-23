@@ -4,7 +4,7 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, include = FALSE}
+```{r configuracio, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -29,7 +29,7 @@ taules <- mapply(function(x, nom) {
 }, x = as.list(d_list), nom = names(d_list), SIMPLIFY = FALSE)
 taules <- do.call(rbind, taules)
 
-toponims <- c("PPCC", "territoris", "comarques", "municipis", "loc_admin_centre_municipis")
+toponims <- c("PPCC", "territoris", "comarques", "municipis", "loc_admin_centre_municipis", "loc_ref")
 exotoponims <- setdiff(rownames(taules), toponims)
 
 knitr::kable(taules[toponims, ], row.names = FALSE, caption = "Topònims dels PPCC")
@@ -73,8 +73,10 @@ head(cims)
 library(osmdata)
 library(monitorOSM) # comarques
 
+comarques <- head(comarques, 3) # subconjunt d'exemple
+
 cims_comarca <- mapply(function(id, nom, territori) {
-  out <- opq(bbox = paste0("relation(id:", id, ")"), out = "tags", timeout = "100") |>
+  out <- opq(bbox = paste0("relation(id:", id, ")"), out = "tags", timeout = "1000") |>
     add_osm_feature(key = "natural", value = "peak") |>
     opq_csv(fields = c("name:ca", "::id", "::type", "name", "wikipedia", "wikidata")) |>
     osmdata_data_frame()
