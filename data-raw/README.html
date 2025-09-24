@@ -256,20 +256,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tr class="odd">
 <td style="text-align: left;"><a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/comarques.tsv">comarques</a></td>
 <td style="text-align: right;">96</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: left;">name:ca , regio , osm_id , osm_type , name , wikipedia , wikidata , admin_level , historic:admin_level</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">name:ca , regio , osm_id , osm_type , name , wikipedia , wikidata , border_type , admin_level , historic:admin_level, ref:idescat</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/municipis.tsv">municipis</a></td>
 <td style="text-align: right;">1699</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: left;">name:ca , regio , comarca , osm_id , osm_type , name , wikipedia , wikidata , admin_level</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">name:ca , regio , comarca , osm_id , osm_type , name , wikipedia , wikidata , border_type, admin_level, ref:idescat, ref:ine , ref:INSEE</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/loc_admin_centre_municipis.tsv">loc_admin_centre_municipis</a></td>
-<td style="text-align: right;">1674</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: left;">regio , comarca , municipi , osm_type , osm_id , name:ca , name , wikidata , wikipedia , place , capital , admin_level</td>
+<td style="text-align: right;">1700</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">name:ca , regio , comarca , municipi , osm_type , osm_id , name , wikidata , wikipedia , place , capital , admin_level, ref:idescat, ref:ine , ref:INSEE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/loc_ref.tsv">loc_ref</a></td>
+<td style="text-align: right;">4996</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">name:ca , regio , comarca , municipi , osm_type , osm_id , name , wikidata , wikipedia , place , capital , admin_level, ref:idescat, ref:ine</td>
 </tr>
 </tbody>
 </table>
@@ -286,7 +292,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/mars.tsv">mars</a></td>
-<td style="text-align: right;">155</td>
+<td style="text-align: right;">148</td>
 <td style="text-align: right;">8</td>
 <td style="text-align: left;">name:ca , name , osm_id , osm_type , alt_name , alt_name:ca, place , wikidata</td>
 </tr>
@@ -305,7 +311,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 <p>Exotopònims</p>
-<p>En total es monitoritzen 4143 objectes d’OpenStreetMap.</p>
+<p>En total es monitoritzen 9158 objectes d’OpenStreetMap.</p>
 <p>Abans de revertir canvis a OSM o comentar conjunts de canvis, comproveu les dades i, si cal, corregiu les bases de dades de referència.</p>
 <section id="com-afegir-noves-bases-de-dades" class="level2">
 <h2 class="anchored" data-anchor-id="com-afegir-noves-bases-de-dades">Com afegir noves bases de dades?</h2>
@@ -315,74 +321,76 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Creeu una taula amb els estats de referència. Cal que cada fila contingui les etiquetes que vulgueu monitorar i els identificadors únics d’OpenStreetMap (<code>osm_type</code> i <code>osm_id</code>). Podeu generar les taules amb el paquet d’R <code>osmdata</code>.</p>
 <p>Exemple per generar una taula amb les etiquetes <code>name:ca</code>, <code>name</code>, <code>wikipedia</code> i <code>wikidata</code> de tots els cims dels Països Catalans (<code>relation(id:11747082)</code>):</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(osmdata)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Data (c) OpenStreetMap contributors, ODbL 1.0. https://www.openstreetmap.org/copyright</span></span></code></pre></div><button title="Copia al porta-retalls" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>cims <span class="ot">&lt;-</span> <span class="fu">opq</span>(<span class="at">bbox =</span> <span class="st">"relation(id:11747082)"</span>, <span class="at">out =</span> <span class="st">"tags"</span>, <span class="at">timeout =</span> <span class="st">"100"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_osm_feature</span>(<span class="at">key =</span> <span class="st">"natural"</span>, <span class="at">value =</span> <span class="st">"peak"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">opq_csv</span>(<span class="at">fields =</span> <span class="fu">c</span>(<span class="st">"name:ca"</span>, <span class="st">"::id"</span>, <span class="st">"::type"</span>, <span class="st">"name"</span>, <span class="st">"wikipedia"</span>, <span class="st">"wikidata"</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">osmdata_data_frame</span>()</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(cims) <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"^@"</span>, <span class="st">"osm_"</span>, <span class="fu">names</span>(cims))</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cims)</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                    name:ca   osm_id osm_type                     name</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1           Puig de l'Ofre 26783257     node           Puig de l'Ofre</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2        Puig de Bassegoda 26862531     node        Puig de Bassegoda</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3           Cap de Boumort 26862611     node           Cap de Boumort</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4             Cap del Verd 26862659     node             Cap del Verd</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5       Pic de Comaloforno 26862732     node       Pic de Comaloforno</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6 Cap de la Gallina Pelada 26862904     node Cap de la Gallina Pelada</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                     wikipedia  wikidata</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1           ca:Puig de l'Ofre  Q1652824</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2        ca:Puig de Bassegoda  Q4894784</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3           ca:Cap de Boumort  Q5034453</span></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4             ca:Cap del Verd  Q5034455</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5       ca:Pic de Comaloforno  Q2984642</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6 ca:Cap de la Gallina Pelada Q17482071</span></span></code></pre></div><button title="Copia al porta-retalls" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Data (c) OpenStreetMap contributors, ODbL 1.0. https://www.openstreetmap.org/copyright</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>cims <span class="ot">&lt;-</span> <span class="fu">opq</span>(<span class="at">bbox =</span> <span class="st">"relation(id:11747082)"</span>, <span class="at">out =</span> <span class="st">"tags"</span>, <span class="at">timeout =</span> <span class="st">"100"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_osm_feature</span>(<span class="at">key =</span> <span class="st">"natural"</span>, <span class="at">value =</span> <span class="st">"peak"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">opq_csv</span>(<span class="at">fields =</span> <span class="fu">c</span>(<span class="st">"name:ca"</span>, <span class="st">"::id"</span>, <span class="st">"::type"</span>, <span class="st">"name"</span>, <span class="st">"wikipedia"</span>, <span class="st">"wikidata"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">osmdata_data_frame</span>()</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(cims) <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"^@"</span>, <span class="st">"osm_"</span>, <span class="fu">names</span>(cims))</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cims)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                    name:ca   osm_id osm_type                     name</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1           Puig de l'Ofre 26783257     node           Puig de l'Ofre</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2        Puig de Bassegoda 26862531     node        Puig de Bassegoda</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3           Cap de Boumort 26862611     node           Cap de Boumort</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4             Cap del Verd 26862659     node             Cap del Verd</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5       Pic de Comaloforno 26862732     node       Pic de Comaloforno</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6 Cap de la Gallina Pelada 26862904     node Cap de la Gallina Pelada</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                     wikipedia  wikidata</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1           ca:Puig de l'Ofre  Q1652824</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2        ca:Puig de Bassegoda  Q4894784</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3           ca:Cap de Boumort  Q5034453</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4             ca:Cap del Verd  Q5034455</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5       ca:Pic de Comaloforno  Q2984642</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6 ca:Cap de la Gallina Pelada Q17482071</span></span></code></pre></div><button title="Copia al porta-retalls" class="code-copy-button"><i class="bi"></i></button></div>
 <p>És pràctic afegir la comarca i territori de cada objecte per poder fer les reversions amb conjunts de canvis més petits:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(osmdata)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(monitorOSM) <span class="co"># comarques</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Dades sota llicència ODbL 1.0. (c) Col·laboradors d'OpenStreetMap https://www.openstreetmap.org/copyright</span></span></code></pre></div><button title="Copia al porta-retalls" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>cims_comarca <span class="ot">&lt;-</span> <span class="fu">mapply</span>(<span class="cf">function</span>(id, nom, territori) {</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">opq</span>(<span class="at">bbox =</span> <span class="fu">paste0</span>(<span class="st">"relation(id:"</span>, id, <span class="st">")"</span>), <span class="at">out =</span> <span class="st">"tags"</span>, <span class="at">timeout =</span> <span class="st">"100"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">add_osm_feature</span>(<span class="at">key =</span> <span class="st">"natural"</span>, <span class="at">value =</span> <span class="st">"peak"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">opq_csv</span>(<span class="at">fields =</span> <span class="fu">c</span>(<span class="st">"name:ca"</span>, <span class="st">"::id"</span>, <span class="st">"::type"</span>, <span class="st">"name"</span>, <span class="st">"wikipedia"</span>, <span class="st">"wikidata"</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">osmdata_data_frame</span>()</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">nrow</span>(out) <span class="sc">&gt;</span> <span class="dv">0</span>) {</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    out<span class="sc">$</span>regio <span class="ot">&lt;-</span> territori</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    out<span class="sc">$</span>comarca <span class="ot">&lt;-</span> nom</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(out)</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>}, <span class="at">id =</span> comarques<span class="sc">$</span>osm_id, <span class="at">nom =</span> comarques<span class="sc">$</span><span class="st">`</span><span class="at">name:ca</span><span class="st">`</span>, <span class="at">territori =</span> comarques<span class="sc">$</span>regio, <span class="at">SIMPLIFY =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>cims_comarques <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind, cims_comarca)</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(cims_comarques) <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"^@"</span>, <span class="st">"osm_"</span>, <span class="fu">names</span>(cims_comarques))</span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>cims_comarques <span class="ot">&lt;-</span> cims_comarques[<span class="sc">!</span><span class="fu">duplicated</span>(cims_comarques[, <span class="fu">c</span>(<span class="st">"osm_type"</span>, <span class="st">"osm_id"</span>)]), ] <span class="co"># elimina objectes duplicats</span></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>ordre <span class="ot">&lt;-</span> <span class="fu">order</span>(cims_comarques<span class="sc">$</span>regio, cims_comarques<span class="sc">$</span>comarca, cims_comarques<span class="sc">$</span><span class="st">`</span><span class="at">name:ca</span><span class="st">`</span>)</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>ordre_columnes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"name:ca"</span>, <span class="st">"regio"</span>, <span class="st">"comarca"</span>, <span class="st">"osm_id"</span>, <span class="st">"osm_type"</span>, <span class="st">"name"</span>, <span class="st">"wikipedia"</span>, <span class="st">"wikidata"</span>)</span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>cims_comarques <span class="ot">&lt;-</span> <span class="fu">unique</span>(cims_comarques[ordre, ordre_columnes])</span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(cims_comarques) <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cims_comarques)</span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;         name:ca   regio          comarca     osm_id osm_type           name</span></span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1          &lt;NA&gt; Andorra Andorra la Vella 1473165520     node     Pic Carroi</span></span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2          &lt;NA&gt; Andorra Andorra la Vella 2188366026     node Pic de Coll Pa</span></span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3          &lt;NA&gt; Andorra Andorra la Vella 3956298776     node           &lt;NA&gt;</span></span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4          &lt;NA&gt; Andorra Andorra la Vella 9706258659     node Roc dels Corbs</span></span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5          &lt;NA&gt; Andorra Andorra la Vella 9706258725     node Roc de Patapou</span></span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6 Alt de Juclar Andorra          Canillo 3887374186     node  Alt de Juclar</span></span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;          wikipedia  wikidata</span></span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1             &lt;NA&gt; Q21329274</span></span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2             &lt;NA&gt; Q21329357</span></span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3             &lt;NA&gt;      &lt;NA&gt;</span></span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4             &lt;NA&gt; Q21329430</span></span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5             &lt;NA&gt;      &lt;NA&gt;</span></span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6 ca:Alt de Juclar Q21329826</span></span></code></pre></div><button title="Copia al porta-retalls" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(osmdata)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(monitorOSM) <span class="co"># comarques</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Dades sota llicència ODbL 1.0. (c) Col·laboradors d'OpenStreetMap https://www.openstreetmap.org/copyright</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>comarques <span class="ot">&lt;-</span> <span class="fu">head</span>(comarques, <span class="dv">3</span>) <span class="co"># subconjunt d'exemple</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>cims_comarca <span class="ot">&lt;-</span> <span class="fu">mapply</span>(<span class="cf">function</span>(id, nom, territori) {</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">opq</span>(<span class="at">bbox =</span> <span class="fu">paste0</span>(<span class="st">"relation(id:"</span>, id, <span class="st">")"</span>), <span class="at">out =</span> <span class="st">"tags"</span>, <span class="at">timeout =</span> <span class="st">"1000"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">add_osm_feature</span>(<span class="at">key =</span> <span class="st">"natural"</span>, <span class="at">value =</span> <span class="st">"peak"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">opq_csv</span>(<span class="at">fields =</span> <span class="fu">c</span>(<span class="st">"name:ca"</span>, <span class="st">"::id"</span>, <span class="st">"::type"</span>, <span class="st">"name"</span>, <span class="st">"wikipedia"</span>, <span class="st">"wikidata"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">osmdata_data_frame</span>()</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">nrow</span>(out) <span class="sc">&gt;</span> <span class="dv">0</span>) {</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    out<span class="sc">$</span>regio <span class="ot">&lt;-</span> territori</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    out<span class="sc">$</span>comarca <span class="ot">&lt;-</span> nom</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(out)</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>}, <span class="at">id =</span> comarques<span class="sc">$</span>osm_id, <span class="at">nom =</span> comarques<span class="sc">$</span><span class="st">`</span><span class="at">name:ca</span><span class="st">`</span>, <span class="at">territori =</span> comarques<span class="sc">$</span>regio, <span class="at">SIMPLIFY =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>cims_comarques <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind, cims_comarca)</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(cims_comarques) <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"^@"</span>, <span class="st">"osm_"</span>, <span class="fu">names</span>(cims_comarques))</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>cims_comarques <span class="ot">&lt;-</span> cims_comarques[<span class="sc">!</span><span class="fu">duplicated</span>(cims_comarques[, <span class="fu">c</span>(<span class="st">"osm_type"</span>, <span class="st">"osm_id"</span>)]), ] <span class="co"># elimina objectes duplicats</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>ordre <span class="ot">&lt;-</span> <span class="fu">order</span>(cims_comarques<span class="sc">$</span>regio, cims_comarques<span class="sc">$</span>comarca, cims_comarques<span class="sc">$</span><span class="st">`</span><span class="at">name:ca</span><span class="st">`</span>)</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>ordre_columnes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"name:ca"</span>, <span class="st">"regio"</span>, <span class="st">"comarca"</span>, <span class="st">"osm_id"</span>, <span class="st">"osm_type"</span>, <span class="st">"name"</span>, <span class="st">"wikipedia"</span>, <span class="st">"wikidata"</span>)</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>cims_comarques <span class="ot">&lt;-</span> <span class="fu">unique</span>(cims_comarques[ordre, ordre_columnes])</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(cims_comarques) <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cims_comarques)</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   name:ca   regio          comarca      osm_id osm_type           name</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1    &lt;NA&gt; Andorra Andorra la Vella  1473165520     node     Pic Carroi</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2    &lt;NA&gt; Andorra Andorra la Vella  2188366026     node Pic de Coll Pa</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3    &lt;NA&gt; Andorra Andorra la Vella  3956298776     node           &lt;NA&gt;</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4    &lt;NA&gt; Andorra Andorra la Vella  9706258659     node Roc dels Corbs</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5    &lt;NA&gt; Andorra Andorra la Vella  9706258725     node Roc de Patapou</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6    &lt;NA&gt; Andorra Andorra la Vella 12359982620     node Roc de Salobre</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   wikipedia  wikidata</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1      &lt;NA&gt; Q21329274</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2      &lt;NA&gt; Q21329357</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3      &lt;NA&gt;      &lt;NA&gt;</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4      &lt;NA&gt; Q21329430</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5      &lt;NA&gt;      &lt;NA&gt;</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6      &lt;NA&gt;      &lt;NA&gt;</span></span></code></pre></div><button title="Copia al porta-retalls" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Un cop tingueu la base de dades a punt, es pot afegir al paquet de manera que estigui disponible quan el carreguem:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_data</span>(cims_comarques, <span class="at">overwrite =</span> <span class="cn">TRUE</span>, <span class="at">compress =</span> <span class="st">"xz"</span>)</span></code></pre></div><button title="Copia al porta-retalls" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_data</span>(cims_comarques, <span class="at">overwrite =</span> <span class="cn">TRUE</span>, <span class="at">compress =</span> <span class="st">"xz"</span>)</span></code></pre></div><button title="Copia al porta-retalls" class="code-copy-button"><i class="bi"></i></button></div>
 <p>És recomanable preparar un fitxer per gestionar la nova base de dades i desar-la com a taula (<a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/data-raw/comarques.R">exemple</a>). També cal documentar la nova taula (<a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/man/comarques.Rd">exemple</a>) i refrescar aquesta pàgina amb <code>devtools::build_rmd("data-raw/README.Rmd")</code>.</p>
 <p>Per començar a monitorar la nova base de dades cal crear o afegir-la a un fitxer com <a href="https://github.com/OSM-Catalan/monitorOSM/blob/main/web/limits.qmd">limits.qmd</a>.</p>
 
