@@ -55,6 +55,13 @@ cerca_versio_canvis <- function(x) { # nolint: cyclocomp_linter
 
     historial <- osmapiR::osm_history_object(osm_type = osm_type, osm_id = osm_id)
 
+    if (nrow(canvi) == 1 && canvi$chng_type == "-") { # eliminat
+      canvis_introduits <- historial[nrow(historial), c("version", "changeset", "timestamp", "user", "uid")]
+      canvis_introduits <- cbind(canvis_introduits, data.frame(canvi = "\u274C eliminat"))
+      return(canvis_introduits)
+    }
+
+    # modificat
     canvi_etiquetes <- apply(canvi[, setdiff(names(canvi), "chng_type")], 2, unique)
     canvi_etiquetes <- canvi_etiquetes[sapply(canvi_etiquetes, length) > 1]
 
