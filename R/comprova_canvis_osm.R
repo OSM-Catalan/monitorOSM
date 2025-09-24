@@ -58,6 +58,7 @@ cerca_versio_canvis <- function(x) { # nolint: cyclocomp_linter
     if (nrow(canvi) == 1 && canvi$chng_type == "-") { # eliminat
       canvis_introduits <- historial[nrow(historial), c("version", "changeset", "timestamp", "user", "uid")]
       canvis_introduits <- cbind(canvis_introduits, data.frame(canvi = "\u274C eliminat"))
+
       return(canvis_introduits)
     }
 
@@ -78,8 +79,8 @@ cerca_versio_canvis <- function(x) { # nolint: cyclocomp_linter
           valor_referencia <- canvi_etiquetes[[clau]][2]
 
           if (!clau %in% etiquetes_analitzar[[1]]$key &&
-            clau %in% etiquetes_analitzar[[2]]$key && # nolint: indentation_linter
-            identical(etiquetes_analitzar[[2]]$value[etiquetes_analitzar[[2]]$key == clau], valor_referencia)) {
+              clau %in% etiquetes_analitzar[[2]]$key && # nolint: indentation_linter
+              identical(etiquetes_analitzar[[2]]$value[etiquetes_analitzar[[2]]$key == clau], valor_referencia)) {
             # Versió anterior correcte i eliminada en aquesta versió
 
             canvis_introduits <- rbind(canvis_introduits, data.frame(
@@ -88,10 +89,10 @@ cerca_versio_canvis <- function(x) { # nolint: cyclocomp_linter
             ))
             canvi_etiquetes <- canvi_etiquetes[setdiff(names(canvi_etiquetes), clau)]
           } else if (clau %in% etiquetes_analitzar[[1]]$key &&
-            clau %in% etiquetes_analitzar[[2]]$key && # nolint: indentation_linter
-            etiquetes_analitzar[[2]]$value[etiquetes_analitzar[[2]]$key == clau] !=
-              etiquetes_analitzar[[1]]$value[etiquetes_analitzar[[1]]$key == clau] &&
-            identical(etiquetes_analitzar[[2]]$value[etiquetes_analitzar[[2]]$key == clau], valor_referencia)) {
+              clau %in% etiquetes_analitzar[[2]]$key && # nolint: indentation_linter
+              etiquetes_analitzar[[2]]$value[etiquetes_analitzar[[2]]$key == clau] !=
+                etiquetes_analitzar[[1]]$value[etiquetes_analitzar[[1]]$key == clau] &&
+              identical(etiquetes_analitzar[[2]]$value[etiquetes_analitzar[[2]]$key == clau], valor_referencia)) {
             # Versió anterior correcte modificada en aquesta versió
 
             canvis_introduits <- rbind(canvis_introduits, data.frame(
@@ -101,6 +102,17 @@ cerca_versio_canvis <- function(x) { # nolint: cyclocomp_linter
               ref_value = valor_referencia
             ))
             canvi_etiquetes <- canvi_etiquetes[setdiff(names(canvi_etiquetes), clau)]
+          } else if (clau %in% etiquetes_analitzar[[1]]$key &&
+              !clau %in% etiquetes_analitzar[[2]]$key && # nolint: indentation_linter
+              is.na(valor_referencia)) {
+            # Etiqueta no present i afegida en aquesta versió
+
+            canvis_introduits <- rbind(canvis_introduits, data.frame(
+              historial[i, c("version", "changeset", "timestamp", "user", "uid")],
+              key = clau,
+              value = etiquetes_analitzar[[1]]$value[etiquetes_analitzar[[1]]$key == clau],
+              ref_value = valor_referencia
+            ))
           }
         }
       }
