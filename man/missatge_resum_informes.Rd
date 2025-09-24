@@ -7,13 +7,13 @@
 missatge_resum_informes(canvis, pagina_informe, etiquetes)
 }
 \arguments{
-\item{canvis}{llista amb objectes produits per \code{\link[=comprova_canvis_osm]{comprova_canvis_osm()}}. Si els elements tenen nom, s'usarà com
+\item{canvis}{llista amb objectes produïts per \code{\link[=comprova_canvis_osm]{comprova_canvis_osm()}}. Si els elements tenen nom, s'usarà com
 a nom de la fila de la taula resum.}
 
 \item{pagina_informe}{nom de la pàgina de l'informe per generar l'enllaç a la web.}
 
 \item{etiquetes}{Si no és \code{NULL}, quan es fa el recompte de canvis, només es tenen en compte les etiquetes que
-quadren amb aquesta exrpessió regular.}
+quadren amb aquesta expressió regular.}
 }
 \value{
 Text en format Markdown amb un missatge resum dels informes.

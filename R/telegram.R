@@ -1,17 +1,16 @@
-
 #' Crea missatge de resum d'informes
 #'
-#' @param canvis llista amb objectes produits per [comprova_canvis_osm()]. Si els elements tenen nom, s'usarà com
+#' @param canvis llista amb objectes produïts per [comprova_canvis_osm()]. Si els elements tenen nom, s'usarà com
 #'   a nom de la fila de la taula resum.
 #' @param pagina_informe nom de la pàgina de l'informe per generar l'enllaç a la web.
 #' @param etiquetes Si no és `NULL`, quan es fa el recompte de canvis, només es tenen en compte les etiquetes que
-#'   quadren amb aquesta exrpessió regular.
+#'   quadren amb aquesta expressió regular.
 #'
 #' @returns Text en format Markdown amb un missatge resum dels informes.
 #' @export
 #'
 #' @examples
-missatge_resum_informes <- function(canvis, pagina_informe, etiquetes){
+missatge_resum_informes <- function(canvis, pagina_informe, etiquetes) {
   n_canvis <- if (missing(etiquetes)) {
     sapply(canvis, function(x) {
       nrow(x$change_count)
@@ -64,7 +63,7 @@ missatge_resum_informes <- function(canvis, pagina_informe, etiquetes){
 #'
 #' @examples
 envia_missatge_telegram <- function(missatge = "Hi ha canvis a [monitorOSM](https://osm-catalan.github.io/monitorOSM).",
-                              parse_mode = "Markdown") {
+                                    parse_mode = "Markdown") {
   if (!requireNamespace("telegram.bot", quietly = TRUE)) {
     stop(
       "El paquet `telegram.bot` no est\u00E0 instal\u00B7lat. Instal\u00B7leu-lo amb:\n",
