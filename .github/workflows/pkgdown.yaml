@@ -39,9 +39,17 @@ jobs:
           extra-packages: any::pkgdown, local::.
           needs: website
 
+      - name: Set locale to Catalan
+        run: |
+          sudo locale-gen ca_AD.UTF-8
+          sudo update-locale LANG=ca_AD.UTF-8
+        shell: bash
+
       - name: Build site
         run: pkgdown::build_site_github_pages(new_process = FALSE, install = FALSE)
         shell: Rscript {0}
+        env:
+          LANG: ca_AD.UTF-8
 
       - name: Deploy to GitHub pages 🚀
         if: github.event_name != 'pull_request'
