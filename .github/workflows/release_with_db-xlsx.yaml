@@ -1,0 +1,73 @@
+name: Crea Release amb BBDD en .xlsx
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - uses: actions/checkout@v5
+
+    - uses: r-lib/actions/setup-r@v2
+
+    - uses: r-lib/actions/setup-r-dependencies@v2
+      with:
+        dependencies: '"hard"'
+        extra-packages: local::., any::openxlsx
+
+    - name: Desa data.frames en xlsx
+      shell: Rscript {0}
+      run: |
+        pkg_name <- read.dcf("DESCRIPTION")[1, "Package"]
+        message("Package: ", pkg_name)
+
+        library(pkg_name, character.only = TRUE)
+
+        datasets <- data(package = pkg_name)
+        object_names <- datasets$results[, "Item"]
+        object_names <- object_names[datasets$results[, "Title"] != ""]
+        message("Data frames found: ", length(object_names))
+
+        if (length(object_names) > 0) {
+          d <- lapply(object_names, function(x) {
+            message("Loading: ", x)
+            data(list = x, package = pkg_name)
+            get(x)
+          })
+          names(d) <- object_names
+
+
+          library(openxlsx)
+
+          for (i in seq_along(d)) {
+            if (!is.data.frame(d[[i]])) {
+              message(names(d)[i], " is not a data.frame.")
+              next
+            }
+
+            filename <- paste0(names(d)[i], ".xlsx")
+            message("Writing: ", filename)
+
+            write.xlsx(d[[i]],
+              file = filename,
+              rowNames = FALSE, borders = "surrounding", colWidths = "auto",
+              firstRow = TRUE, headerStyle = createStyle(textDecoration = "BOLD")
+            )
+          }
+        } else {
+          message("No data frames found in the package.")
+        }
+
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          *.xlsx
+        generate_release_notes: true
+        draft: true
