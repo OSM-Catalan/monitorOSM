@@ -32,7 +32,7 @@ jobs:
         datasets <- data(package = pkg_name)
         object_names <- datasets$results[, "Item"]
         object_names <- object_names[datasets$results[, "Title"] != ""]
-        message("Data frames found: ", length(object_names))
+        message("Documented data objects found: ", length(object_names))
 
         if (length(object_names) > 0) {
           d <- lapply(object_names, function(x) {
@@ -46,8 +46,8 @@ jobs:
           library(openxlsx)
 
           for (i in seq_along(d)) {
-            if (!is.data.frame(d[[i]])) {
-              message(names(d)[i], " is not a data.frame.")
+            if (!is.data.frame(d[[i]]) && !all(sapply(d[[i]], is.data.frame))) {
+              message(names(d)[i], " is not a data.frame or a list of data.frames.")
               next
             }
 
