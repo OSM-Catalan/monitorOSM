@@ -9,9 +9,6 @@ execute:
 
 ```{r biblioteques}
 suppressPackageStartupMessages(library(monitorOSM, quietly = TRUE))
-
-# TODO: Sys.setlocale("LC_TIME", "ca_AD.UTF-8")
-# requereix configurar locale a gh action https://github.com/actions/runner-images/issues/762
 ```
 
 Última actualització: `r format(Sys.time(), "%a %d %b %Y - %X")`
@@ -96,7 +93,7 @@ if (
     list(
       PPCC = canvis_ppcc,
       territoris = canvis_territoris,
-      comarques = canvis_comarques, 
+      comarques = canvis_comarques,
       municipis = canvis_municipis
     ),
     pagina_informe = "limits"

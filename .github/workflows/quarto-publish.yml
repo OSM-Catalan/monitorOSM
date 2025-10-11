@@ -28,6 +28,12 @@ jobs:
         with:
           extra-packages: local::.
 
+      - name: Set locale to Catalan
+        run: |
+          sudo locale-gen ca_AD.UTF-8
+          sudo update-locale LANG=ca_AD.UTF-8
+        shell: bash
+
       - name: Crea i omple .Renviron amb secrets accessibles des d'R
         run: |
           echo R_TELEGRAM_BOT_monitorOSM_bot="$R_TELEGRAM_BOT_MONITOROSM_BOT" >> ~/.Renviron
@@ -37,10 +43,10 @@ jobs:
           R_TELEGRAM_BOT_MONITOROSM_BOT: ${{ secrets.R_TELEGRAM_BOT_MONITOROSM_BOT }}
           TME_OSMCAT_CHATID: ${{ secrets.TME_OSMCAT_CHATID }}
 
-
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LANG: ca_AD.UTF-8
