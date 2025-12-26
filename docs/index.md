@@ -1,0 +1,78 @@
+# monitorOSM
+
+`monitorOSM` és un repositori que serveix per monitoritzar canvis a
+[OpenStreetMap](http://www.openstreemap.com) comparant els objectes amb
+[bases de dades de
+referència](https://github.com/OSM-Catalan/monitorOSM/tree/main/data-raw).
+
+Podeu veure els informes que s’actualitzen diàriament a
+<https://osm-catalan.github.io/monitorOSM>. Els informes de canvis
+mostren taules amb l’estat de les etiquetes a OSM i a les bases de dades
+de referència:
+
+|          osm_url           | canvi |      name:ca      |     name     |  wikipedia  |
+|:--------------------------:|:-----:|:-----------------:|:------------:|:-----------:|
+| <http://osm.org/node/XXXX> |  \+   |     nom a OSM     | Sense canvis |             |
+| <http://osm.org/node/XXXX> |  \-   | nom de referència | Sense canvis | ca:Eliminat |
+
+També es mostra quins conjunts de canvis han trencat les etiquetes amb
+enllaços per si es vol deixar comentaris.
+
+## Afegir nous objectes a les bases de dades
+
+Si voleu afegir objectes amb les seves etiquetes a les bases de dades,
+podeu obrir un
+[tiquet](https://github.com/OSM-Catalan/monitorOSM/issues) o podeu
+provar de fer un PR amb les instruccions que trobareu a
+[aquí](https://osm-catalan.github.io/monitorOSM/data-raw/README.html).
+Fora bo que els estats de referència dels objectes siguin consensuats
+amb la [Comunitat d’OpenStreetmap en
+català](https://wiki.openstreetmap.org/wiki/WikiProject_Catalan#Canals_de_comunicaci%C3%B3_i_mitjans_de_difusi%C3%B3).
+
+## Paquet d’R
+
+La consulta, comparació amb bases de dades de referència i renderització
+de la web es fan amb un paquet d’[R](https://cran.r-project.org/) i
+accions de github. El paquet també inclou funcions per restaurar els
+objectes de manera ràpida, però com a projecte comunitari, és important
+intentar parlar amb els usuaris que discrepen de les bases de dades de
+referència. Vegeu la [documentació del paquet
+d’R](https://osm-catalan.github.io/monitorOSM/docs/reference/) per més
+detalls.
+
+### Exemples d’ús del paquet
+
+Instal·leu el paquet d’R:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("OSM-Catalan/monitorOSM")
+```
+
+### Generació dels informes locals
+
+Per refrescar els informes localment i veure la web, podeu clonar el
+repositori i des d’R situat a la carpeta del projecte:
+
+``` r
+# install.packages("quarto")
+library(quarto)
+quarto_render()
+```
+
+#### Exemple de restauració
+
+Restauració de les etiquetes `name` i `wikipedia` de les comarques del
+País Valencià:
+
+``` r
+library(monitorOSM)
+
+id <- modifica_etiquetes_osm(
+  comarques[comarques$regio == "PV", ],
+  claus = c("name", "wikipedia"),
+  comentari = "Restaura els noms de les comarques dels País Valencià", hashtags = "monitorOSM"
+)
+```
+
+Retorna l’identificador del conjunt de canvis.
