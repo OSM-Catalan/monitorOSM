@@ -10,13 +10,13 @@
 Font:
 [`DESCRIPTION`](https://github.com/OSM-Catalan/monitorOSM/blob/main/DESCRIPTION)
 
-Maspons J (2025). *monitorOSM: Monitor d'OSM*. R package version 0.0.6,
+Maspons J (2026). *monitorOSM: Monitor d'OSM*. R package version 0.0.6,
 <https://github.com/OSM-Catalan/monitorOSM>.
 
     @Manual{,
       title = {monitorOSM: Monitor d'OSM},
       author = {Joan Maspons},
-      year = {2025},
+      year = {2026},
       note = {R package version 0.0.6},
       url = {https://github.com/OSM-Catalan/monitorOSM},
     }
