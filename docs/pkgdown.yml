@@ -2,7 +2,7 @@ pandoc: 3.1.11
 pkgdown: 2.2.0
 pkgdown_sha: ~
 articles: {}
-last_built: 2026-02-24T03:49Z
+last_built: 2026-02-25T03:51Z
 urls:
   reference: https://osm-catalan.github.io/monitorOSM/docs/reference
   article: https://osm-catalan.github.io/monitorOSM/docs/articles
