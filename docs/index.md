@@ -45,6 +45,7 @@ detalls.
 Instal·leu el paquet d’R:
 
 ``` r
+
 # install.packages("remotes")
 remotes::install_github("OSM-Catalan/monitorOSM")
 ```
@@ -55,6 +56,7 @@ Per refrescar els informes localment i veure la web, podeu clonar el
 repositori i des d’R situat a la carpeta del projecte:
 
 ``` r
+
 # install.packages("quarto")
 library(quarto)
 quarto_render()
@@ -66,6 +68,7 @@ Restauració de les etiquetes `name` i `wikipedia` de les comarques del
 País Valencià:
 
 ``` r
+
 library(monitorOSM)
 
 id <- modifica_etiquetes_osm(
